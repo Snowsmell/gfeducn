@@ -108,14 +108,31 @@ $(function () {
 
     //每个栏目加个切换效果，反正生不生效都无所谓
     $("nav>a").on('click', function () {
-        console.log(1)
         $(this).addClass('current').siblings().removeClass('current')
     })
   
-    //切换精品课程和热点资讯
     function changeT(){
-        
+        var sw = $('.changeT section')[0].clientWidth
+        $('.changeT section').each(function(i,v){
+            $(v).css('width',sw)
+        })
+        $('.changeT').css('width',sw*7)
+
     }
+    changeT()
+
+    $('.type1 a').on('click',function(){
+        console.log('进入')
+        var num = $(this).index()
+        var sw = $('.changeT section')[0].clientWidth
+        if(num>6){return}
+        $(this).parent().siblings('article').animate({'marginLeft':-sw*num},1000,'swing')
+    })
+
+
+    $(window).on('resize',function(){
+        changeT()
+    })
 
 
 

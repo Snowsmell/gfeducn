@@ -1554,8 +1554,11 @@ body {
 .quality_course .wrap {
   overflow: hidden;
 }
+.quality_course article section {
+  float: left;
+  width: 100%;
+}
 .quality_course section {
-  height: 500px;
   *zoom: 1;
   zoom: 1;
 }
