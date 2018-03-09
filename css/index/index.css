@@ -1940,7 +1940,12 @@ body {
   min-width: 1000px;
   background-color: #f5f6f8;
 }
+.hot_news .wrap {
+  overflow: hidden;
+}
 .hot_news section {
+  float: left;
+  width: 100%;
   *zoom: 1;
   zoom: 1;
 }

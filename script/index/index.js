@@ -129,11 +129,10 @@ $(function () {
         $(this).parent().siblings('article').animate({'marginLeft':-sw*num},1000,'swing')
     })
 
-
     $(window).on('resize',function(){
         changeT()
     })
-
+    
 
 
 
