@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>考试日历</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/blackHeader.css">
+    <link href="../../css/commoncss/fontmain.css" rel="stylesheet" type="text/css">
+    <link href="../../css/commoncss/common.css" rel="stylesheet" type="text/css">
+    <link href="../../css/newProduct/product-week.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="script2015/html5shiv.js"></script>
+    <script type="text/javascript" src="http://www.gfedu.cn/script2015/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/newProduct/jquery.min.js"></script>  
+    <script src="../../script/commonjs/com.js"></script>
+    <script type="text/javascript" src="../../script/newProduct/calendar.js"></script>
+    <script type="text/javascript" src="../../script/newProduct/cal.js"></script>
+    <script src="../../script/newProduct/laydate.js"></script>
+</head>
+
+<body>
+    <!--顶部菜单-->
+    <div class="index-header2">
+        <div class="wrap">
+            <div class="indexleft">
+                <a href="javascript:;" class="logo">
+                    <img src="../../images/commonimages/logo2.png">
+                </a>
+                <ul>
+                    <li>
+                        <a href="javascript:;">课程</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">题库</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">直播</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">咨询</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">商城</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="indexright">
+                <div class="info">
+                    <ul>
+                        <li class="phone">
+                            <i class="icon-phone"></i>
+                            <i class="icon-uniF0D7"></i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">金程网校APP</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">天天CPA</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">金网公众号</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">金网题库服务号</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">金网CFA APP</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">金网CFA服务号</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <i class="icon-a7"></i>
+                            <span>
+                                <i class="icon-i8"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="icon-gouwuche"></i>
+                            <span>6</span>
+                        </li>
+                        <li class="people">
+                            <i class="icon-nophone"></i>
+                            <i class="icon-uniF0D7"></i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">学习空间</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">个人信息</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">账号设置</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">退出</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchinput">
+                    <input type="text" placeholder="请输入想搜索的内容">
+                    <a href="javascript:;">
+                        <i class="icon-uniF002"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr50"></div>
+    <!--顶部导航-->
+    <div class="topnav">
+        <div class="wrap">
+            <section>
+                2018年大学生CFA一+二+三级通关班组合课程
+            </section>
+            <section>
+                <ul>
+                    <li class="selected">
+                        <a href="javascript:;">今日任务</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">学习计划</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我的回答</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我的问题</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">资料下载</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../images/person/pic_01.jpg" alt="">
+                            <span>班主任</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="calendar">
+        <div class="tword">
+            <em></em>
+            <span></span>
+            <section>
+                <ul>
+                    <li>
+                        <p>任务1：Standard V-Investment Analysis,Rec..</p>
+                        <p>
+                            <span>学时14'15"</span>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>任务1：Standard V-Investment Analysis,Rec..</p>
+                        <p>
+                            <span>学时14'15"
+                            </span>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </p>
+
+                    </li>
+                    <li>
+                        <p>任务1：Standard V-Investment Analysis,Rec..</p>
+                        <p>
+                            <span>学时14'15"
+                            </span>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>任务1：Standard V-Investment Analysis,Rec..</p>
+                        <p>
+                            <span>学时14'15"
+                            </span>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <ul class="explain">
+            <li>
+                <span></span> 未学
+            </li>
+            <li>
+                <span></span> 已学完
+            </li>
+            <li>
+                <span></span> 已达标
+            </li>
+            <li>
+                <span></span> 未达标
+            </li>
+        </ul>
+    </div>    
+
+    <!--修改周期-->
+    <div class="learningwrap">
+    </div>
+    <!-- 没有权限 -->
+    <div class="knowledgetan permission">
+        <h3>温馨提示
+            <a href="javascript:;" class="guan">
+                <i class="icon-gf-wrong32"></i>
+            </a>
+        </h3>
+        <p>你没有权限观看接下的课程</p>
+        <p>去购买课程吧！</p>        
+        <button class="selected plan">去购买课程</button>   
+    </div>
+    <!--修改学习进度-->
+    <!-- <div class="knowledgetan editstudy-process">
+        <h3>温馨提示
+            <a href="javascript:;" class="guan">
+                <i>&#xe127;</i>
+            </a>
+        </h3>
+        <p>是否需要重新安排计划</p>
+        <p>本周之前您有12个任务没有完成</p>        
+        <button class="selected plan">是,需要安排在之后的计划中</button>
+        <button>否,我会抽空完成</button>        
+    </div> -->
+    <!--修改学习进度编辑框-->
+    <div class="knowledgetan editstudy-input">
+        <h3>温馨提示
+            <a href="javascript:;" class="guan">
+                <i class="icon-gf-wrong32"></i>
+            </a>
+        </h3>
+        <div>
+            <div class="des">
+                您之前一共有12个任务没有完成，重新生成学习计划，会将您未完成的任务，根据您的自定义时间，重新规划学习。
+            </div>
+            <ul class="detail">
+                <li>
+                    <span>学习计划名称</span>
+                    <div>
+                        <input type="text" placeholder="张云" value="">
+                    </div>
+                </li>
+                <li>
+                    <span>开始学习</span>
+                    <div class="date">
+                        <input type="text" name="" value="" id="hello">
+                        <span onclick="laydate({elem: '#hello'});"></span>
+                    </div>
+                </li>
+                <li>
+                    <span>周六日</span>
+                    <div>
+                        <select name="" id="">
+                            <option value="">每天2小时</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>学习时长</span>
+                    <div>
+                        <select name="" id="">
+                            <option value="">每天1小时</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>您的休息日为</span>
+                    <div class="dayOff">
+                        <em>周一</em>
+                        <em>周二</em>
+                        <em>周三</em>
+                        <em>周四</em>
+                        <em>周五</em>
+                        <em class="on">周六</em>
+                        <em class="on">周日</em>
+                    </div>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <label for="" class="need"><input type="radio" name="" id="">&nbsp;是否需要学习提醒</label>
+                    </div>
+                </li>
+                <li>
+                    <button class="jsClose">做个有计划的人</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footbottom">
+        <div class="wrap">
+            <div class="footnav">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="javascript:;">如何注册会员</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">如何购买课程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">如何观看课程</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="javascript:;">网校学习方式</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">学习效果如何保障</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">学习条件</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="javascript:;">会计支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">如何购买课程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">如何观看课程</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>关于金程</dt>
+                    <dd>
+                        <a href="javascript:;">关于我们</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">加入我们</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">投诉与建议</a>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>
+                        <h3>
+                            <i class="icon-dh"></i>400-700-9596</h3>
+
+                        <p>(每日9:00-21:00 免长途费)</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="javascript:;">
+                                <i class="icon-qe"></i>在线客服</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="javascript:;">
+                                <i class="icon-weib"></i>@金程教育</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="foota">
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/foot1.png">沪IPC备08016784号-25</a>
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/foot2.png">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/foot3.png">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/foot4.png">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/foot5.png">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/foot6.png">
+                </a>
+            </div>
+            <div class="copy">
+                Copyright © 2001-2017 金程网校 All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+<!-- 日历插件 -->
+<script src="../../script/person/laydate/laydate.js" charset="utf-8"></script>
+</body>
+</html>

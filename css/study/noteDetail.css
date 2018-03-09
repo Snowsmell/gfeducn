@@ -1,0 +1,2369 @@
+/* LESS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+  font-weight: normal;
+}
+em,
+q,
+cite,
+address {
+  font-weight: normal;
+  font-style: normal;
+}
+address {
+  display: inline;
+}
+big,
+small {
+  font-size: 12px;
+}
+body {
+  font: 14px/1.5 "PinFang SC", "Microsoft Yahei", Microsoft Yahei, "Hiragino Sans GB", sans-serif;
+  vertical-align: middle;
+  color: #333;
+  background: #ffffff;
+}
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: "";
+}
+strong {
+  font-weight: bold;
+}
+del {
+  font-family: "PinFang SC", Simsun;
+}
+dfn {
+  padding-right: 2px;
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+  font-weight: normal;
+}
+fieldset,
+legend {
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button,
+input,
+select,
+select optgroup,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+button,
+input,
+select[multiple],
+textarea {
+  background-image: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* link */
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+  outline-style: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #06c;
+  text-decoration: underline;
+  transition: color .20s linear;
+  -o-transition: color .20s linear;
+  -webkit-transition: color .20s linear;
+  -moz-transition: color .20s linear;
+}
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*---------- 实用工具 ----------*/
+/* form */
+input,
+select {
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  color: #333;
+  outline: none;
+}
+input[type="text"]:disabled {
+  background-color: #bbbbbb;
+  color: #666;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 4px;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #33b0c4;
+  color: #fff;
+}
+/* input placeholder color */
+input::-webkit-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+input::-moz-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+/* 清除浮动 */
+/* 圆角 */
+/* link in text */
+a.t {
+  text-decoration: underline;
+}
+a.t:hover {
+  color: #f30;
+  text-decoration: underline;
+}
+/* clear float */
+.cf {
+  zoom: 1;
+}
+/* for IE */
+.cf:after {
+  content: ".";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+/* for other */
+/* end of clear float */
+/* float */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.fnone {
+  float: none;
+}
+.middle {
+  float: left;
+}
+/* text-align */
+.tleft {
+  text-align: left;
+}
+.tright {
+  text-align: right;
+}
+.tcenter {
+  text-align: center;
+}
+/* display */
+.dis {
+  display: block;
+}
+.undis {
+  display: none;
+}
+/*常用字号*/
+/*常用颜色*/
+/* 圆角  */
+/*边框圆角*/
+.sanjiao {
+  border-width: 20px;
+  border-color: transparent transparent #cccccc transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* clicked color */
+.clcikActive {
+  color: #ffffff;
+  background: #33b0c4;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+/*单行载断*/
+/*单行载断溢出省略号*/
+/*3行载断溢出省略号*/
+/* 面包屑 */
+.crumb {
+  display: none;
+}
+@media (min-width: 768px) {
+  .crumb {
+    display: block;
+    *zoom: 1;
+    zoom: 1;
+    line-height: 50px;
+  }
+  .crumb:after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+  .crumb p {
+    color: #999;
+  }
+  .crumb p a {
+    padding: 0 10px;
+  }
+  .crumb p span {
+    padding-left: 10px;
+  }
+}
+/*配模式定位*/
+/*1200屏*/
+/* 背景自适应 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon.eot?-ivr5ln');
+  src: url('../../fonts/icomoon.eot?#iefix-ivr5ln') format('embedded-opentype'), url('../../fonts/icomoon.ttf?-ivr5ln') format('truetype'), url('../../fonts/icomoon.woff?-ivr5ln') format('woff'), url('../../fonts/icomoon.svg?-ivr5ln#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon.eot?kabozi');
+  src: url('../../fonts/icomoon.eot?#iefixkabozi') format('embedded-opentype'), url('../../fonts/icomoon.woff?kabozi') format('woff'), url('../../fonts/icomoon.ttf?kabozi') format('truestype'), url('../../fonts/icomoon.svg?kabozi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"],
+i {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon.eot?-bpt1ef');
+  src: url('../../fonts/icomoon.eot?#iefix-bpt1ef') format('embedded-opentype'), url('../../fonts/icomoon.ttf?-bpt1ef') format('truetype'), url('../../fonts/icomoon.woff?-bpt1ef') format('woff'), url('../../fonts/icomoon.svg?-bpt1ef#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon.eot?z6i63c');
+  src: url('../../fonts/icomoon.eot?#iefixz6i63c') format('embedded-opentype'), url('../../fonts/icomoon.woff?z6i63c') format('woff'), url('../../fonts/icomoon.ttf?z6i63c') format('truetype'), url('../../fonts/icomoon.svg?z6i63c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrap {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1000px;
+}
+.contain {
+  margin-top: 50px;
+}
+.contain .J_Tabs {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 50px;
+  line-height: 50px;
+}
+.maskLayer {
+  display: none;
+  background-color: #000;
+  opacity: .7;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.index-header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  min-width: 1024px;
+  width: 100%;
+  background-color: #000000;
+  *zoom: 1;
+  zoom: 1;
+  height: 50px;
+  z-index: 99;
+}
+.index-header:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.index-header .indexleft {
+  width: 50%;
+  float: left;
+}
+.index-header .indexleft .logo {
+  float: left;
+  margin-top: 10px;
+}
+.index-header .indexleft ul {
+  float: left;
+  margin-left: 20px;
+}
+.index-header .indexleft ul li {
+  float: left;
+  width: 70px;
+  line-height: 50px;
+  text-align: center;
+}
+.index-header .indexleft ul li a {
+  color: #999999;
+}
+.index-header .indexright {
+  width: 50%;
+  float: right;
+}
+.index-header .indexright .searchinput {
+  margin-top: 10px;
+  float: right;
+  height: 30px;
+  width: 224px;
+  position: relative;
+  margin-right: 21px;
+}
+.index-header .indexright .searchinput input {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px solid #71787d;
+  padding-right: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff;
+}
+.index-header .indexright .searchinput a {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  top: 0;
+}
+.index-header .indexright .searchinput a i {
+  font-size: 19px;
+  color: #71787d;
+}
+.index-header .indexright .info {
+  float: right;
+}
+.index-header .indexright .info > ul > li {
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 21px;
+  vertical-align: middle;
+  position: relative;
+}
+.index-header .indexright .info > ul > li .peo-copy {
+  display: none;
+  width: 100%;
+  height: 4px;
+  bottom: -2px;
+  background-color: #262626;
+  position: absolute;
+  z-index: 100;
+}
+.index-header .indexright .info > ul > li:nth-of-type(3) i {
+  font-size: 30px;
+  display: block;
+  float: left;
+  margin-top: 16px;
+  margin-left: 10px;
+}
+.index-header .indexright .info > ul > li i {
+  color: #71787d;
+}
+.index-header .indexright .info > ul > li.phone {
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.index-header .indexright .info > ul > li.phone .people-sel {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -1px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #262626;
+  z-index: 99;
+  border: 1px solid #000000;
+}
+.index-header .indexright .info > ul > li.phone .people-sel ul li {
+  width: 160px;
+  line-height: 40px;
+  border-bottom: 1px solid #000000;
+}
+.index-header .indexright .info > ul > li.phone .people-sel ul li a {
+  color: #999999;
+  font-size: 14px;
+}
+.index-header .indexright .info > ul > li.phone.selected {
+  border-color: #262626;
+  background-color: #262626;
+}
+.index-header .indexright .info > ul > li.phone.selected .peo-copy {
+  display: block;
+}
+.index-header .indexright .info > ul > li.phone.selected .people-sel {
+  display: block;
+}
+.index-header .indexright .info > ul > li.phone i:last-of-type,
+.index-header .indexright .info > ul > li.people i:last-of-type {
+  font-size: 22px;
+  margin: 0 3px;
+}
+.index-header .indexright .info > ul > li:nth-of-type(2) span,
+.index-header .indexright .info > ul > li:nth-of-type(3) span {
+  font-size: 12px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #dd5555;
+  color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 16px;
+}
+.index-header .indexright .info > ul > li:nth-of-type(2) span i {
+  vertical-align: middle;
+  color: #ffffff;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4) {
+  margin-left: 20px;
+  width: 80px;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4) .people-sel {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -1px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #262626;
+  z-index: 99;
+  border: 1px solid #000000;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4) .people-sel ul li {
+  width: 160px;
+  line-height: 40px;
+  border-bottom: 1px solid #000000;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4) .people-sel ul li:last-of-type {
+  border: none;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4) .people-sel ul li a {
+  color: #999999;
+  font-size: 14px;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4).selected {
+  border-color: #262626;
+  background-color: #262626;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4).selected .peo-copy {
+  display: block;
+}
+.index-header .indexright .info > ul > li:nth-of-type(4).selected .people-sel {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .index-header .indexleft ul {
+    margin-left: 60px;
+  }
+  .index-header .indexright .searchinput {
+    margin-right: 30px;
+  }
+}
+.hr50 {
+  height: 50px;
+  overflow: hidden;
+}
+.footbottom {
+  overflow: hidden;
+  background-color: #232323;
+  margin-top: 25px;
+}
+.footbottom .footnav {
+  overflow: hidden;
+  margin-top: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #555555;
+}
+.footbottom .footnav dl {
+  width: 18%;
+  float: left;
+}
+.footbottom .footnav dl dt {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 45px;
+}
+.footbottom .footnav dl dd {
+  line-height: 27px;
+}
+.footbottom .footnav dl dd a {
+  color: #999999;
+  font-size: 14px;
+}
+.footbottom .footnav ul {
+  float: right;
+  width: 28%;
+}
+.footbottom .footnav ul li {
+  margin-top: 12px;
+}
+.footbottom .footnav ul li i {
+  margin-right: 15px;
+}
+.footbottom .footnav ul li h3 {
+  font-size: 24px;
+  color: #999999;
+}
+.footbottom .footnav ul li p {
+  font-size: 14px;
+  color: #999999;
+}
+.footbottom .footnav ul li p i {
+  font-size: 20px;
+  float: left;
+  margin-top: 2px;
+}
+.footbottom .footnav ul li p a {
+  color: #999999;
+}
+.footbottom .footnav ul li:first-of-type p {
+  padding-left: 40px;
+}
+.footbottom .foota {
+  text-align: center;
+  margin-top: 30px;
+}
+.footbottom .foota a {
+  font-size: 14px;
+  margin: 0 15px;
+  color: #999999;
+}
+.footbottom .foota a img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.footbottom .copy {
+  color: #999999;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+}
+.sidelan {
+  width: 56px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-top: -150px;
+}
+.sidelan li {
+  width: 100%;
+  margin-bottom: 2px;
+  background-color: #dddddd;
+  text-align: center;
+  padding: 6px 0;
+}
+.sidelan li a {
+  font-size: 12px;
+  color: #999999;
+}
+.sidelan li a i {
+  font-size: 34px;
+}
+.sidelan li:hover {
+  background-color: #dd5555;
+}
+.sidelan li:hover a {
+  color: #ffffff;
+}
+.sidelan li:last-of-type {
+  padding: 12px 0;
+}
+.sidelan li:last-of-type a i {
+  font-size: 26px;
+}
+.ad {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 1024px;
+  position: relative;
+}
+.ad img {
+  width: 100%;
+  min-height: 34px;
+}
+.ad .guan {
+  width: 30px;
+  height: 30px;
+  background: url(../../images/class/guan.png) no-repeat center center;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  margin-top: -17px;
+  cursor: pointer;
+}
+.contain {
+  margin-top: 50px;
+}
+.page {
+  margin: 20px auto;
+  text-align: center;
+}
+.page span,
+.page a {
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+  margin: 0 5px;
+  background-color: #fff;
+}
+.page a:hover,
+.page a.selected {
+  background-color: #dd5555;
+  color: #fff;
+  border-color: #dd5555;
+}
+.toggleOpen {
+  background: #f9fafb;
+  text-align: center;
+}
+.toggleOpen p {
+  display: none;
+  margin: 0;
+  font-size: 12px;
+  line-height: 25px;
+  color: #666666;
+}
+.toggleOpen p span {
+  display: block;
+  transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  margin-top: -6px;
+  padding-bottom: 4px;
+}
+.itmli dd .img li img,
+.itmli section .img li img {
+  max-height: 100%;
+  width: 100%;
+}
+.tanpoto {
+  display: none;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.tanpoto section {
+  width: 90%;
+  position: fixed;
+  max-width: 600px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+}
+.tanpoto section img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.sedit {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 50px auto 50px -300px;
+  text-align: right;
+}
+.sedit textarea {
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.sedit button {
+  width: 80px;
+  height: 40px;
+  outline: none;
+  margin: 10px;
+  color: #dd5555;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dd5555;
+}
+.sedit button:hover {
+  background-color: #dd5555;
+  color: #fff;
+}
+.backTime em {
+  font-size: 16px;
+}
+.gtopttl {
+  min-width: 1024px;
+}
+.stu3 {
+  display: none;
+}
+.stu3 p {
+  line-height: 50px;
+  text-align: center;
+}
+.stu3 p:first-of-type {
+  margin-top: 30px;
+}
+.stu3 p.fen {
+  font-size: 46px;
+  color: #39b747;
+}
+.stu3 p.fen span {
+  font-size: 14px;
+}
+.stu3 p.share a:first-of-type {
+  color: #8dc81b;
+}
+.stu3 p.share a:nth-of-type(2) {
+  color: #f56467;
+}
+.stu3 p.share a:nth-of-type(3) i {
+  color: #68a5e1;
+}
+.stu3 p.share a i {
+  font-size: 25px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.end {
+  height: 45px;
+  padding-left: 27px;
+  margin-bottom: 78px;
+}
+.end a {
+  padding-top: 15px;
+  display: inline-block;
+  color: #2679bd;
+  font-size: 14px;
+}
+.tankuang {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+.tankuang section {
+  max-width: 772px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: right;
+}
+.tankuang section textarea {
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.tankuang section button {
+  width: 80px;
+  height: 40px;
+  outline: none;
+  margin: 10px;
+  color: #dd5555;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dd5555;
+}
+.tankuang section button:hover {
+  background-color: #dd5555;
+  color: #fff;
+}
+.isTrue {
+  margin-top: 25px;
+  display: inline-block;
+  margin-right: 20px;
+  color: #666;
+  float: right;
+}
+.model .imgUp,
+.modelNote .imgUp {
+  position: relative;
+  margin-top: 20px;
+  float: left;
+  width: 351px;
+}
+.model .imgUp .up,
+.modelNote .imgUp .up {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+  color: #dd5555;
+  border: 1px solid #dd5555;
+  background: url(../../images/index/j_03.jpg) no-repeat 10px center;
+}
+.model .imgUp .filebutton,
+.modelNote .imgUp .filebutton {
+  width: 90px !important;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  border: none;
+  opacity: 0;
+  left: 0;
+}
+.model .imgUp .modelImg,
+.modelNote .imgUp .modelImg {
+  background: #fff;
+  z-index: 55;
+  display: none;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}
+.model .imgUp .modelImg p,
+.modelNote .imgUp .modelImg p {
+  zoom: 1;
+  text-align: left;
+  margin-top: 43px;
+}
+.model .imgUp .modelImg p:after,
+.modelNote .imgUp .modelImg p:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.model .imgUp .modelImg ul,
+.modelNote .imgUp .modelImg ul {
+  position: absolute;
+  left: 91px;
+  z-index: 5;
+  top: 0;
+  padding: 0 8px;
+  zoom: 1;
+}
+.model .imgUp .modelImg ul:after,
+.modelNote .imgUp .modelImg ul:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.model .imgUp .modelImg ul li,
+.modelNote .imgUp .modelImg ul li {
+  border: 1px solid #eee;
+  float: left;
+  width: 65px;
+  height: 30px;
+  position: relative;
+  margin-right: 8px;
+  text-align: left;
+}
+.model .imgUp .modelImg ul li img,
+.modelNote .imgUp .modelImg ul li img {
+  height: 25px;
+  width: 40px;
+  margin: 2px 0 2px 4px;
+}
+.model .imgUp .modelImg ul li span,
+.modelNote .imgUp .modelImg ul li span {
+  width: 17px;
+  height: 25px;
+  right: -25px;
+  float: right;
+  display: block;
+}
+.model .imgUp .modelImg ul li span i,
+.modelNote .imgUp .modelImg ul li span i {
+  color: #999;
+}
+.model .imgUp .modelImg ul li:nth-last-of-type(1),
+.modelNote .imgUp .modelImg ul li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.model .imgUp .modelImg ul li.filebutton,
+.modelNote .imgUp .modelImg ul li.filebutton {
+  width: 80px;
+  height: 80px;
+  background: url(../../images/study/jia_03.jpg) no-repeat center center;
+}
+.model .imgUp .modelImg ul li.filebutton input,
+.modelNote .imgUp .modelImg ul li.filebutton input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.model .imgUp .modelImg .filecton,
+.modelNote .imgUp .modelImg .filecton {
+  display: none;
+  width: 80px;
+  height: 80px;
+  margin: 25px auto 10px;
+  background: url(../../images/study/jia_03.jpg) no-repeat center center;
+}
+.model .imgUp .modelImg .filecton input,
+.modelNote .imgUp .modelImg .filecton input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.model .imgUp .sucess,
+.modelNote .imgUp .sucess {
+  background: #fffdf9;
+  color: #dd5555;
+  font-size: 18px;
+  width: 200px;
+  height: 120px;
+  line-height: 120px;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+  display: none;
+}
+.tanpoto {
+  display: none;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.tanpoto section {
+  width: auto;
+  position: fixed;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+}
+p,
+div,
+span,
+dd,
+dt,
+h1,
+h2,
+h3,
+em,
+a {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+body {
+  background-color: #f4f4f4;
+}
+.tabUl {
+  *zoom: 1;
+  zoom: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tabUl:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.tabUl p {
+  color: #666666;
+  line-height: 53px;
+  font-size: 14px;
+  background: #f4f4f4;
+}
+.tabUl p span {
+  color: #999999;
+}
+.indexwrap {
+  max-width: 1200px;
+  min-width: 1024px;
+  margin: 0px auto;
+  zoom: 1;
+  background: #fff;
+}
+.indexwrap .itmli {
+  position: relative;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  background: #fefdf9;
+  border-bottom: 1px solid #ddd;
+}
+.indexwrap .itmli dt {
+  text-align: center;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  float: left;
+  margin-bottom: 0px;
+  *zoom: 1;
+  zoom: 1;
+  width: 85px;
+}
+.indexwrap .itmli dt:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap .itmli dt img {
+  width: 85px;
+  height: 85px;
+  display: block;
+  border-radius: 50%;
+  float: left;
+  overflow: hidden;
+}
+.indexwrap .itmli dd {
+  padding-left: 140px;
+}
+.indexwrap .itmli dd h3 {
+  color: #666;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+.indexwrap .itmli dd h3 a {
+  color: #3b9f45;
+  background: #dbeacd;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.indexwrap .itmli dd p {
+  color: #333;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 10px 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.indexwrap .itmli dd .img {
+  *zoom: 1;
+  zoom: 1;
+}
+.indexwrap .itmli dd .img:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap .itmli dd .img li {
+  cursor: pointer;
+  width: 120px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.indexwrap .itmli dd .img li img {
+  max-height: 80px;
+  width: 100%;
+}
+.indexwrap .itmli dd div {
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 25px;
+  color: #b7c2c7;
+  *zoom: 1;
+  zoom: 1;
+}
+.indexwrap .itmli dd div:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap .itmli dd div p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+.indexwrap .itmli dd div p em {
+  color: #2679bd;
+}
+.indexwrap .itmli dd div p i {
+  margin-left: 15px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.indexwrap .itmli dd div a {
+  color: #666;
+  float: right;
+  font-size: 14px;
+  padding: 3px 10px;
+  background: #ddd;
+}
+.indexwrap .itmli dd div a.noteAnswer {
+  color: #fff;
+  background: #dd5555;
+}
+.indexwrap .itmli dd div a i {
+  margin-left: 0;
+}
+.indexwrap > p {
+  font-size: 14px;
+  color: #666;
+  background: #f4f5f9;
+  padding: 5px 0;
+  text-indent: 20px;
+  margin: 45px 30px 10px;
+}
+.indexwrap section {
+  padding: 0px 30px 25px 30px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.indexwrap section > p {
+  font-size: 14px;
+  color: #666;
+  background: #f4f5f9;
+  padding: 5px 0;
+  text-indent: 20px;
+}
+.indexwrap section dl {
+  *zoom: 1;
+  zoom: 1;
+  padding-top: 20px;
+  position: relative;
+}
+.indexwrap section dl:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dt {
+  float: left;
+  width: 50px;
+}
+.indexwrap section dl dt img {
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.indexwrap section dl dt p {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+.indexwrap section dl dt span {
+  display: block;
+  color: #d35354;
+  text-align: center;
+}
+.indexwrap section dl dd {
+  padding-left: 67px;
+}
+.indexwrap section dl dd em {
+  font-size: 12px;
+  color: #666666;
+}
+.indexwrap section dl dd .good {
+  color: #2679bd;
+}
+.indexwrap section dl dd .best {
+  margin-right: 10px;
+  color: #3b9f45;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.indexwrap section dl dd .best i {
+  font-size: 45px;
+  color: #4aca5d;
+}
+.indexwrap section dl dd p {
+  font-size: 14px;
+  color: #333333;
+}
+.indexwrap section dl dd .img {
+  *zoom: 1;
+  zoom: 1;
+  margin-bottom: 13px;
+}
+.indexwrap section dl dd .img:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dd .img li {
+  cursor: pointer;
+  width: 120px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.indexwrap section dl dd .img li img {
+  width: 100%;
+  max-height: 80px;
+  border: 1px solid #ddd;
+}
+.indexwrap section dl dd > span {
+  margin-right: 24px;
+  font-size: 12px;
+}
+.indexwrap section dl dd > label {
+  float: right;
+  color: #2679bd;
+  margin-right: 28px;
+}
+.indexwrap section dl dd > label > a {
+  color: #2679bd;
+}
+.indexwrap section dl dd .inputImg {
+  *zoom: 1;
+  zoom: 1;
+  margin-right: 23px;
+  margin-top: 23px;
+}
+.indexwrap section dl dd .inputImg:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dd .inputImg li {
+  position: relative;
+  border: 1px solid #eee;
+  background: #fafafc;
+  padding: 15px 30px 25px 25px;
+  margin-bottom: 22px;
+}
+.indexwrap section dl dd .inputImg li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.indexwrap section dl dd .inputImg li > em {
+  border-width: 10px;
+  border-color: transparent transparent #fafafc transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  right: 18px;
+}
+.indexwrap section dl dd .inputImg li > i {
+  border-width: 10px;
+  border-color: transparent transparent #eee transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: -21px;
+  right: 18px;
+  position: absolute;
+}
+.indexwrap section dl dd .inputImg li > div {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+}
+.indexwrap section dl dd .inputImg li > div input {
+  width: 873px;
+  float: left;
+  padding-left: 55px;
+  border: none;
+}
+.indexwrap section dl dd .inputImg li > div button {
+  float: right;
+  width: 60px;
+  height: 100%;
+  border: none;
+  background: #dd5555;
+  color: #fff;
+}
+.indexwrap section dl dd .inputImg li > div i,
+.indexwrap section dl dd .inputImg li > div img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -mos-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+.indexwrap section dl dd .inputImg li > div i {
+  font-size: 22px;
+  left: 10px;
+  color: #d4d4d4;
+}
+.indexwrap section dl dd .inputImg li > div img {
+  width: 35px;
+  height: 25px;
+  left: 7px;
+}
+.indexwrap section {
+  background: #fff;
+  padding: 0 55px 0 30px;
+  border-bottom: 1px solid #ddd;
+}
+.indexwrap section dl {
+  *zoom: 1;
+  zoom: 1;
+  padding-top: 20px;
+  position: relative;
+}
+.indexwrap section dl:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dt {
+  float: left;
+  width: 50px;
+}
+.indexwrap section dl dt img {
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.indexwrap section dl dt p {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+.indexwrap section dl dt span {
+  display: block;
+  color: #d35354;
+  text-align: center;
+}
+.indexwrap section dl dd {
+  padding-left: 67px;
+}
+.indexwrap section dl dd em {
+  font-size: 12px;
+  color: #666666;
+}
+.indexwrap section dl dd p {
+  font-size: 14px;
+  color: #333333;
+}
+.indexwrap section dl dd .img {
+  *zoom: 1;
+  zoom: 1;
+  margin-bottom: 13px;
+}
+.indexwrap section dl dd .img:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dd .img li {
+  cursor: pointer;
+  width: 120px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.indexwrap section dl dd .img li img {
+  width: 100%;
+  max-height: 80px;
+  border: 1px solid #ddd;
+}
+.indexwrap section dl dd .showUl {
+  margin-right: 24px;
+  font-size: 12px;
+  line-height: 60px;
+}
+.indexwrap section dl dd .listChart {
+  margin-top: 0;
+}
+.indexwrap section dl dd .chart {
+  position: relative;
+  background: #fafafc;
+  margin-top: 25px;
+  *zoom: 1;
+  zoom: 1;
+}
+.indexwrap section dl dd .chart:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dd .chart > em {
+  border-width: 10px;
+  border-color: transparent transparent #fafafc transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  left: 25px;
+}
+.indexwrap section dl dd .chart > i {
+  border-width: 10px;
+  border-color: transparent transparent #eee transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: -21px;
+  left: 25px;
+  position: absolute;
+}
+.indexwrap section dl dd .chart ul {
+  padding: 13px 30px 28px 13px;
+}
+.indexwrap section dl dd .chart ul .chartLeft {
+  float: left;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dt {
+  float: left;
+  width: 40px;
+  text-align: center;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dt img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dt p {
+  font-size: 12px;
+  color: #2679bd;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd {
+  padding-left: 55px;
+  width: 890px;
+  *zoom: 1;
+  zoom: 1;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd .chartContain {
+  position: relative;
+  width: 614px;
+  padding: 10px 15px;
+  float: left;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd .chartContain::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: -10px;
+  display: inline-block;
+  background: url(../../images/study/j_07.jpg) no-repeat;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd .chartContain img {
+  float: left;
+  width: 90px;
+  height: 60px;
+  margin-right: 10px;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd .chartContain p {
+  font-size: 14px;
+  color: #333333;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.indexwrap section dl dd .chart ul .chartLeft dl dd > em {
+  float: left;
+  padding-left: 10px;
+  color: #999;
+}
+.indexwrap section dl dd .chart ul .chartRight {
+  float: right;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dt {
+  float: right;
+  width: 40px;
+  text-align: center;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dt img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dt p {
+  font-size: 12px;
+  color: #49c95c;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dd {
+  padding-right: 55px;
+  width: 790px;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dd .chartContain {
+  position: relative;
+  width: 647px;
+  padding: 10px 15px;
+  float: right;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dd .chartContain::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  right: -13px;
+  display: inline-block;
+  background: url(../../images/study/r_07.jpg) no-repeat;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dd .chartContain img {
+  float: left;
+  width: 90px;
+  height: 60px;
+  margin: 0 11px 0 0px;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dd .chartContain p {
+  width: 84%;
+  float: left;
+  font-size: 14px;
+  color: #333333;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.indexwrap section dl dd .chart ul .chartRight dl dd > em {
+  float: left;
+  color: #999;
+}
+.indexwrap section dl dd .divInput {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 25px;
+  float: right;
+  height: 40px;
+  margin-top: 32px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.indexwrap section dl dd .divInput input {
+  width: 873px;
+  float: left;
+  padding-left: 60px;
+  border: none;
+  height: 100%;
+}
+.indexwrap section dl dd .divInput input[type="file"] {
+  display: none;
+}
+.indexwrap section dl dd .divInput button {
+  float: right;
+  width: 60px;
+  height: 100%;
+  border: none;
+  background: #dd5555;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+.indexwrap section dl dd .divInput .imgDt {
+  position: relative;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 50%;
+  width: 35px;
+  height: 25px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -mos-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+.indexwrap section dl dd .divInput .imgDt span {
+  width: 15px;
+  height: 15px;
+  left: 42px;
+  top: 0;
+  display: block;
+  position: absolute;
+  background: #f08880;
+}
+.indexwrap section dl dd .divInput .imgDt span i {
+  font-size: 12px;
+  left: 1px;
+  top: 4px;
+  position: absolute;
+  color: #fff;
+}
+.indexwrap section dl dd .divInput i,
+.indexwrap section dl dd .divInput img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -mos-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+.indexwrap section dl dd .divInput i {
+  font-size: 22px;
+  left: 10px;
+  color: #d4d4d4;
+}
+.indexwrap section dl dd .divInput img {
+  width: 35px;
+  height: 25px;
+  left: 7px;
+}
+.title {
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+}
+.title span {
+  font-size: 12px;
+  color: #666666;
+  margin-right: 20px;
+}
+.title span.sele {
+  color: #d15452;
+}
+.indexwrap .listChart {
+  background: #fafafc;
+  padding: 0 30px 0 25px;
+  position: relative;
+  display: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.indexwrap .listChart > em {
+  border-width: 10px;
+  border-color: transparent transparent #eee transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  left: 18px;
+}
+.indexwrap .listChart > i {
+  border-width: 10px;
+  border-color: transparent transparent #fafafc transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: -20px;
+  left: 18px;
+  position: absolute;
+}
+.indexwrap .listChart > p {
+  color: #666666;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.indexwrap .listChart textarea {
+  width: 100%;
+  height: 58px;
+  text-indent: 15px;
+  margin: 8px 0;
+  padding: 3px 0;
+  border: 1px solid #ddd;
+}
+.indexwrap .listChart .oh {
+  width: 100%;
+  height: 58px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-y: auto;
+}
+.indexwrap .listChart .oh button {
+  vertical-align: baseline;
+  float: none;
+  cursor: text;
+  display: inline-block;
+  font-size: 1em;
+  border: 0 none;
+  background: none;
+  overflow: visible;
+  padding: 0;
+  margin-right: 1px;
+  text-align: left;
+  width: auto;
+  color: #666;
+}
+.indexwrap .listChart .oh span {
+  float: none;
+}
+.indexwrap .listChart > div {
+  *zoom: 1;
+  zoom: 1;
+}
+.indexwrap .listChart > div:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap .listChart > div > span {
+  color: #999999;
+  font-size: 14px;
+  float: left;
+}
+.indexwrap .listChart > div > button {
+  float: right;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #dd5555;
+  color: #dd5555;
+  background: #fff;
+}
+.indexwrap .listChart ul {
+  *zoom: 1;
+  zoom: 1;
+}
+.indexwrap .listChart ul:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.indexwrap .listChart ul li {
+  margin-top: 15px;
+}
+.indexwrap .listChart ul li:nth-last-of-type(1) {
+  margin-bottom: 25px;
+}
+.indexwrap .listChart ul li span {
+  float: left;
+  color: #666666;
+  font-size: 14px;
+}
+.indexwrap .listChart ul li span em {
+  color: #dd5555;
+  font-size: 14px;
+}
+.indexwrap .listChart ul li .cp {
+  font-size: 14px;
+  color: #333333;
+}
+.indexwrap .listChart ul li p em {
+  font-size: 12px;
+  color: #666666;
+}
+.indexwrap .listChart ul li p a {
+  float: right;
+  font-size: 12px;
+  color: #2679bd;
+  margin-top: 2px;
+}
+.bestReply dl {
+  *zoom: 1;
+  zoom: 1;
+  padding-top: 20px;
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+.bestReply dl:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.bestReply dl dt {
+  float: left;
+  width: 50px;
+}
+.bestReply dl dt img {
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bestReply dl dt p {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+.bestReply dl dt span {
+  display: block;
+  color: #d35354;
+  text-align: center;
+}
+.bestReply dl dd {
+  padding-left: 67px;
+}
+.bestReply dl dd em {
+  font-size: 12px;
+  color: #666666;
+}
+.bestReply dl dd .best {
+  margin-right: 10px;
+  color: #3b9f45;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.bestReply dl dd .best i {
+  font-size: 45px;
+  color: #4aca5d;
+}
+.bestReply dl dd p {
+  font-size: 14px;
+  color: #333333;
+}
+.bestReply dl dd .img {
+  *zoom: 1;
+  zoom: 1;
+  margin-bottom: 13px;
+}
+.bestReply dl dd .img:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.bestReply dl dd .img li {
+  cursor: pointer;
+  max-width: 120px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.bestReply dl dd .img li img {
+  width: 100%;
+  max-height: 80px;
+  max-height: 100%;
+}
+.bestReply dl dd > span {
+  margin-right: 24px;
+  font-size: 12px;
+}
+.bestReply dl dd > label {
+  float: right;
+  color: #2679bd;
+  margin-right: 28px;
+}
+.bestReply dl dd > label a {
+  color: #2679bd;
+}
+.bestReply dl dd .good {
+  color: #2679bd;
+}
+.noneReply {
+  margin-top: 20px;
+  background: #fff;
+}
+.noneReply > div {
+  padding: 120px 40px 170px 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.noneReply > div img {
+  max-width: 100%;
+}
+.noneReply > div button {
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  background: #dd5555;
+  padding: 5px 30px;
+  margin: 20px auto 0;
+  display: block;
+}
+.model {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.model section {
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  border-radius: 4px;
+  min-width: 680px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -mos-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+.model section h2 {
+  font-size: 18px;
+  color: #666666;
+  line-height: 48px;
+  border-bottom: 1px solid #ccc;
+  text-indent: 30px;
+  margin-bottom: 28px;
+}
+.model section h2 span {
+  float: right;
+  padding: 10px;
+}
+.model section > div {
+  margin: 20px auto;
+  width: 620px;
+}
+.model section .tarea {
+  margin-top: 14px;
+  background: #fff;
+  *zoom: 1;
+  zoom: 1;
+  position: relative;
+}
+.model section .tarea:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.model section .tarea textarea {
+  padding: 10px;
+  width: 600px;
+  height: 138px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.model section .tarea span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding-top: 3px;
+  color: #999;
+}
+.model section .imgUp {
+  margin-left: 26px;
+}
+.model section .up {
+  width: 90px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  text-indent: 20px;
+  color: #dd5555;
+  border: 1px solid #dd5555;
+  background: url(../../images/index/j_03.jpg) no-repeat 10px center;
+}
+.model section .up:nth-of-type(2) {
+  border: none;
+  margin-left: 25px;
+  background: url(../../images/index/q_03.jpg) no-repeat left center;
+}
+.model section button {
+  float: right;
+  background: #e16661;
+  color: #fff;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  display: inline-block;
+  margin: 20px 27px 38px;
+}
+.inputImg {
+  *zoom: 1;
+  zoom: 1;
+  display: none;
+  margin-right: 23px;
+  margin-top: 23px;
+}
+.inputImg:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.inputImg li {
+  position: relative;
+  border: 1px solid #eee;
+  background: #fafafc;
+  padding: 15px 30px 25px 25px;
+  margin-bottom: 22px;
+}
+.inputImg li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.inputImg li > em {
+  border-width: 10px;
+  border-color: transparent transparent #fafafc transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  right: 18px;
+}
+.inputImg li > i {
+  border-width: 10px;
+  border-color: transparent transparent #eee transparent;
+  border-style: dashed dashed solid dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: -21px;
+  right: 18px;
+  position: absolute;
+}
+.inputImg li > div {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+}
+.inputImg li > div input {
+  width: 873px;
+  float: left;
+  padding-left: 60px;
+  border: none;
+}
+.inputImg li > div button {
+  float: right;
+  width: 60px;
+  height: 100%;
+  border: none;
+  background: #dd5555;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+.inputImg li > div .imgDt {
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -mos-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+.inputImg li > div .imgDt span {
+  width: 15px;
+  height: 15px;
+  left: 42px;
+  top: 0;
+  display: block;
+  position: absolute;
+  background: #f08880;
+}
+.inputImg li > div .imgDt span i {
+  font-size: 12px;
+  left: 1px;
+  top: 4px;
+  position: absolute;
+  color: #fff;
+}
+.inputImg li > div i,
+.inputImg li > div img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -mos-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+.inputImg li > div i {
+  font-size: 22px;
+  left: 10px;
+  color: #d4d4d4;
+}
+.inputImg li > div img {
+  width: 35px;
+  height: 25px;
+  left: 7px;
+}
+.chart .divInput {
+  margin: 13px 30px 28px 13px;
+  width: 95% !important;
+}
+.ulData {
+  *zoom: 1;
+  zoom: 1;
+}
+.ulData:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.tanpoto {
+  display: none;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.tanpoto section {
+  width: auto;
+  position: fixed;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+}

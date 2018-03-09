@@ -1,0 +1,148 @@
+@import url(../commoncss/variable.less);
+
+body{
+  background-color: #f4f4f4;
+}
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+//我的题库
+.myquestion{
+  border-top:1px solid #ddd;
+  background-color: #f9fafb;
+  padding-bottom: 20px;
+  .myQnav{
+    margin: 20px;
+    >ul{
+      border:1px solid #f6c3bf;
+      border-width: 1px 1px 1px 0;
+      background-color: #fff;
+      display: table;
+      width: 100%;
+      >li{
+        display: table-cell;
+        width: 25%;
+        border-left: 1px solid #f6c3bf;
+        white-space: nowrap;
+        >span[class^="icon-"]{
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          .bdr(50%);
+          line-height: 60px;
+          text-align: center;
+          font-size: 30px;
+          color: #fff;
+          margin-left: 7px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        >span.icon-tiku01{background-color:#a88add;}
+        >span.icon-tiku02{background-color:#6cc788;}
+        >span.icon-tiku03{background-color:#2096f3;}
+        >span.icon-tiku04{background-color:#fcc101;}
+        >em{
+          display: inline-block;
+        }
+        &:hover{
+          background-color: #fbf4f4;
+        }
+        &.disable{
+          cursor: default;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+  .myQmain{
+    margin: 0 20px;
+    >h3{
+      margin-top: 30px;
+      font-size: 16px;
+      border-left: 3px solid @cm0;
+      line-height: 1.2em;
+      padding-left: 10px;
+      >em{
+        color: @cm0;
+      }
+      >i{
+        font-size: 14px;
+      }
+    }
+    .levelsmenu{
+       margin-top: 20px;
+    }
+  }  
+}
+
+.btn{
+  display: inline-block;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  min-width: 6em;
+}
+.btnR{
+  .btn();
+  background-color: @cm0;
+  color: #fff;
+  &:hover{
+    background-color: @cm0 - 20;
+    color: #fff;
+  }
+}
+.btnGr{
+  .btn();
+  background-color: #ccc;
+  color: #fff;
+  &:hover{
+    color: #333;
+  }
+}
+//收藏的题
+.collQue{
+  .til{
+    padding: 10px 0;
+    color: #333;
+  }
+  ol{
+    border-bottom: 1px solid #eee;
+    >li{
+      border-top: 1px solid #eee;
+      padding: 20px;
+      .cf();
+      .rig{
+        display: block;
+        float: right;
+        margin-top: 10px;
+        .btnGr{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+//选择
+.checkList{
+  margin: 0 -5px 20px;
+  a{
+    display: inline-block;
+    background-color: #eee;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 5px;
+    &:hover{
+      color:#333;
+    }
+    &.on{
+      background-color: #f08880;
+      color: #fff;
+    }
+  }
+}

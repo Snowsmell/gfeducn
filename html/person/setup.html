@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/blackHeader.css">
+    <link href="../../css/commoncss/fontmain.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../script/person/laydate/need/laydate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/person/setup.css">
+    <script src="../../script/commonjs/jquery-2.1.4.min.js"></script>
+    <script src="../../script/commonjs/com.js"></script>
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <div class="index-header2">
+        <div class="wrap">
+            <div class="indexleft">
+                <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo2.png"></a>
+                <ul>
+                    <li><a href="javascript:;">课程</a></li>
+                    <li><a href="javascript:;">题库</a></li>
+                    <li><a href="javascript:;">直播</a></li>
+                    <li><a href="javascript:;">咨询</a></li>
+                    <li><a href="javascript:;">商城</a></li>
+                </ul>
+            </div>
+            <div class="indexright">
+                <div class="info">
+                    <ul>
+                        <li class="phone"><i class="icon-phone"></i><i class="icon-uniF0D7"></i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">金程网校APP</a></li>
+                                    <li><a href="javascript:;">天天CPA</a></li>
+                                    <li><a href="javascript:;">金网公众号</a></li>
+                                    <li><a href="javascript:;">金网题库服务号</a></li>
+                                    <li><a href="javascript:;">金网CFA APP</a></li>
+                                    <li><a href="javascript:;">金网CFA服务号</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="icon-a7"></i><span><i class="icon-i8"></i></span></li>
+                        <li><i class="icon-gouwuche"></i><span>6</span></li>
+                        <li class="people"><i class="icon-nophone"></i><i class="icon-uniF0D7"></i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">学习空间</a></li>
+                                    <li><a href="javascript:;">我的订单</a></li>
+                                    <li><a href="javascript:;">个人信息</a></li>
+                                    <li><a href="javascript:;">账号设置</a></li>
+                                    <li><a href="javascript:;">退出</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchinput">
+                    <input type="text" placeholder="请输入想搜索的内容">
+                    <a href="javascript:;"><i class="icon-uniF002"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr50"></div>
+    <!-- 头部 end -->
+    <!-- 170502 space start -->
+    <div class="space">
+        <!-- top start -->
+        <div class="sp_top">
+            <div class="sp_top_box">
+                <div><img src="../../images/person/sp_top2.jpg" alt="pic"></div>
+                <h2>幸福痕迹</h2>
+                <p>幸福就像眼泪，瞬间划过，却留下永远的痕迹。</p>
+                <span class="door"><a href="####"><i class="icon-arrow-right"></i>进入旧版学习空间</a></span>
+            </div>
+        </div>
+        <!-- top end -->
+        <!-- main start -->
+        <div class="sp_main">
+            <!-- left -->
+            <div class="sp_main_left">
+                <a href="javascript:;"><i class="icon--4"></i>学习空间</a>
+                <a href="javascript:;">课程</a>
+                <a href="javascript:;"><i class="icon--5"></i>我的订单</a>
+                <a href="javascript:;"><i class="icon--3"></i>我的资产</a>
+                <a href="javascript:;">优惠券</a>
+                <a href="javascript:;">卡券激活</a>
+                <a href="javascript:;" class="sp_sel"><i class="icon--6"></i>账号设置</a>
+            </div>
+            <!-- left -->
+            <!-- right -->
+            <div class="sp_main_right">
+                <ul class="ulCur">
+                    <li class="sp_selected">个人信息</li>
+                    <li>收货地址</li>
+                    <li>账号安全</li>
+                </ul>
+                <div class="sp_ulSel">
+                    <div class="sp_sel_btn">
+                        <button class="selBtn">基本信息</button>
+                        <button>教育经历</button>
+                        <button>工作经历</button>
+                    </div>
+                    <div class="sp_cur_view">
+                        <div class="sp_cur_basic sp_cur">
+                            <dl>
+                                <dt>
+                                    <div class="pic" id="boxview">
+                                        <img src="../../images/person/sp_top2.jpg" alt="pic">
+                                    </div>
+                                    <span>随机头像</span>
+                                    <div class="updataPic">
+                                        <button>上传头像</button>
+                                        <input type="file" accept="image/gif, image/jpeg, image/x-png" onchange="preview(this)">
+                                    </div>
+                                    <p>支持JPG、PNG、GIF，大小不超过2M</p>
+                                </dt>
+                                <dd>
+                                    <p><span>真实姓名</span><b>*</b></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd>
+                                    <p><span>呢称</span></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd class="div_sel_click">
+                                    <p><span>性别</span><b>*</b></p>
+                                    <div class="radio div_sel">
+                                        <em><i><b></b></i></em> 男
+                                    </div>
+                                    <div class="radio">
+                                        <em><i><b></b></i></em> 女
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p><span>生日</span><b>*</b></p>
+                                    <div class="date">
+                                        <input type="text" name="" value="" id="hello">
+                                        <span onclick="laydate({elem: '#hello'});"></span>
+                                        <i onclick="laydate({elem: '#hello'});">&#xe9ac;</i>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p><span>居住地</span><b>*</b></p>
+                                    <div class="city" data-toggle="distpicker">
+                                        <select id="provinceBox"></select>
+                                        <select id="cityBox"></select>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p><span>联系地址</span><b>*</b></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd>
+                                    <p><span>签名</span></p>
+                                    <textarea name="name" rows="2" class="signName" maxlength="50"></textarea>
+                                    <div class="quantity">
+                                        0/50
+                                    </div>
+                                </dd>
+                                <dd class="basic_sel_click">
+                                    <p style="line-height:2.1em;"><span>兴趣领域</span></p>
+                                    <ul>
+                                        <li class="basic_sel">CFA</li>
+                                        <li>FRM</li>
+                                        <li>CFRM</li>
+                                        <li>RFP</li>
+                                        <li>ACCA</li>
+                                        <li>CMA</li>
+                                        <li>CPA</li>
+                                        <li>考研</li>
+                                        <li>证券从业</li>
+                                        <li>银行从业</li>
+                                        <li>保险从业</li>
+                                    </ul>
+                                </dd>
+                                <dd>
+                                    <button>保存资料</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="sp_cur_work sp_cur">
+                            <dl>
+                                <dd class="div_sel_click">
+                                    <p><span>教育程度</span><b>*</b></p>
+                                    <div class="radio div_sel">
+                                        <em><i><b></b></i></em> 大专
+                                    </div>
+                                    <div class="radio">
+                                        <em><i><b></b></i></em> 本科
+                                    </div>
+                                    <div class="radio">
+                                        <em><i><b></b></i></em> 硕士
+                                    </div>
+                                    <div class="radio">
+                                        <em><i><b></b></i></em> 博士
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p><span>毕业院校</span></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd>
+                                    <p><span>所学专业</span></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd>
+                                    <p><span>毕业时间</span></p>
+                                    <div class="date">
+                                        <input type="text" name="" value="" id="hello2">
+                                        <span onclick="laydate({elem: '#hello2'});"></span>
+                                        <i onclick="laydate({elem: '#hello2'});">&#xe9ac;</i>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <button>保存资料</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="sp_cur_education sp_cur">
+                            <!-- 填写内容 -->
+                            <dl class="xie">
+                                <dd>
+                                    <p><span>公司名称</span><b>*</b></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd>
+                                    <p><span>行业类别</span></p>
+                                    <div class="industry">
+                                        <select>
+                                            <option value="it">it互联网</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p><span>职位名称</span></p>
+                                    <input type="text" name="" value="">
+                                </dd>
+                                <dd>
+                                    <p><span>任职时间</span></p>
+                                    <div class="time">
+                                        <select class="startY">
+                                            <option value="2017">2017年</option>
+                                            <option value="2016">2016年</option>
+                                            <option value="2015">2015年</option>
+                                            <option value="2014">2014年</option>
+                                            <option value="2013">2013年</option>
+                                            <option value="2012">2012年</option>
+                                            <option value="2011">2011年</option>
+                                            <option value="2010">2010年</option>
+                                            <option value="2009">2009年</option>
+                                            <option value="2008">2008年</option>
+                                            <option value="2007">2007年</option>
+                                            <option value="2006">2006年</option>
+                                            <option value="2005">2005年</option>
+                                            <option value="2004">2004年</option>
+                                            <option value="2003">2003年</option>
+                                            <option value="2002">2002年</option>
+                                            <option value="2001">2001年</option>
+                                            <option value="2000">2000年</option>
+                                            <option value="1999">1999年</option>
+                                            <option value="1998">1998年</option>
+                                            <option value="1997">1997年</option>
+                                            <option value="1996">1996年</option>
+                                            <option value="1995">1995年</option>
+                                            <option value="1994">1994年</option>
+                                            <option value="1993">1993年</option>
+                                            <option value="1992">1992年</option>
+                                            <option value="1991">1991年</option>
+                                            <option value="1990">1990年</option>
+                                            <option value="1989">1989年</option>
+                                            <option value="1988">1988年</option>
+                                            <option value="1987">1987年</option>
+                                            <option value="1986">1986年</option>
+                                            <option value="1985">1985年</option>
+                                            <option value="1984">1984年</option>
+                                            <option value="1983">1983年</option>
+                                            <option value="1982">1982年</option>
+                                            <option value="1981">1981年</option>
+                                            <option value="1980">1980年</option>
+                                            <option value="1979">1979年</option>
+                                            <option value="1978">1978年</option>
+                                            <option value="1977">1977年</option>
+                                            <option value="1976">1976年</option>
+                                            <option value="1975">1975年</option>
+                                            <option value="1974">1974年</option>
+                                            <option value="1973">1973年</option>
+                                            <option value="1972">1972年</option>
+                                            <option value="1971">1971年</option>
+                                            <option value="1970">1970年</option>
+                                            <option value="1969">1969年</option>
+                                            <option value="1968">1968年</option>
+                                            <option value="1967">1967年</option>
+                                            <option value="1966">1966年</option>
+                                            <option value="1965">1965年</option>
+                                            <option value="1964">1964年</option>
+                                            <option value="1963">1963年</option>
+                                            <option value="1962">1962年</option>
+                                            <option value="1961">1961年</option>
+                                            <option value="1960">1960年</option>
+                                            <option value="1959">1959年</option>
+                                            <option value="1958">1958年</option>
+                                        </select>
+                                        <select class="startM">
+                                            <option value="12">12月</option>
+                                            <option value="11">11月</option>
+                                            <option value="10">10月</option>
+                                            <option value="9">9月</option>
+                                            <option value="8">8月</option>
+                                            <option value="7">7月</option>
+                                            <option value="6">6月</option>
+                                            <option value="5">5月</option>
+                                            <option value="4">4月</option>
+                                            <option value="3">3月</option>
+                                            <option value="2">2月</option>
+                                            <option value="1">1月</option>
+                                        </select>
+                                        <span></span>
+                                        <select class="endY">
+                                            <option value="2017">2017年</option>
+                                            <option value="2016">2016年</option>
+                                            <option value="2015">2015年</option>
+                                            <option value="2014">2014年</option>
+                                            <option value="2013">2013年</option>
+                                            <option value="2012">2012年</option>
+                                            <option value="2011">2011年</option>
+                                            <option value="2010">2010年</option>
+                                            <option value="2009">2009年</option>
+                                            <option value="2008">2008年</option>
+                                            <option value="2007">2007年</option>
+                                            <option value="2006">2006年</option>
+                                            <option value="2005">2005年</option>
+                                            <option value="2004">2004年</option>
+                                            <option value="2003">2003年</option>
+                                            <option value="2002">2002年</option>
+                                            <option value="2001">2001年</option>
+                                            <option value="2000">2000年</option>
+                                            <option value="1999">1999年</option>
+                                            <option value="1998">1998年</option>
+                                            <option value="1997">1997年</option>
+                                            <option value="1996">1996年</option>
+                                            <option value="1995">1995年</option>
+                                            <option value="1994">1994年</option>
+                                            <option value="1993">1993年</option>
+                                            <option value="1992">1992年</option>
+                                            <option value="1991">1991年</option>
+                                            <option value="1990">1990年</option>
+                                            <option value="1989">1989年</option>
+                                            <option value="1988">1988年</option>
+                                            <option value="1987">1987年</option>
+                                            <option value="1986">1986年</option>
+                                            <option value="1985">1985年</option>
+                                            <option value="1984">1984年</option>
+                                            <option value="1983">1983年</option>
+                                            <option value="1982">1982年</option>
+                                            <option value="1981">1981年</option>
+                                            <option value="1980">1980年</option>
+                                            <option value="1979">1979年</option>
+                                            <option value="1978">1978年</option>
+                                            <option value="1977">1977年</option>
+                                            <option value="1976">1976年</option>
+                                            <option value="1975">1975年</option>
+                                            <option value="1974">1974年</option>
+                                            <option value="1973">1973年</option>
+                                            <option value="1972">1972年</option>
+                                            <option value="1971">1971年</option>
+                                            <option value="1970">1970年</option>
+                                            <option value="1969">1969年</option>
+                                            <option value="1968">1968年</option>
+                                            <option value="1967">1967年</option>
+                                            <option value="1966">1966年</option>
+                                            <option value="1965">1965年</option>
+                                            <option value="1964">1964年</option>
+                                            <option value="1963">1963年</option>
+                                            <option value="1962">1962年</option>
+                                            <option value="1961">1961年</option>
+                                            <option value="1960">1960年</option>
+                                            <option value="1959">1959年</option>
+                                            <option value="1958">1958年</option>
+                                        </select>
+                                        <select class="endM">
+                                            <option value="12">12月</option>
+                                            <option value="11">11月</option>
+                                            <option value="10">10月</option>
+                                            <option value="9">9月</option>
+                                            <option value="8">8月</option>
+                                            <option value="7">7月</option>
+                                            <option value="6">6月</option>
+                                            <option value="5">5月</option>
+                                            <option value="4">4月</option>
+                                            <option value="3">3月</option>
+                                            <option value="2">2月</option>
+                                            <option value="1">1月</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p><span>职责业绩</span></p>
+                                    <textarea name="name" rows="2" class="signName" maxlength="50"></textarea>
+                                    <div class="quantity">
+                                        0/50
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <button>保存资料</button>
+                                </dd>
+                            </dl>
+                            <!-- 显示内容 -->
+                            <dl class="see">
+                                <dd>
+                                    <p><span>公司名称</span></p>
+                                    <div>qwerqertqetr</div>
+                                </dd>
+                                <dd>
+                                    <p><span>行业类别</span></p>
+                                    <div>IT行业</div>
+                                </dd>
+                                <dd>
+                                    <p><span>职位名称</span></p>
+                                    <div>UI</div>
+                                </dd>
+                                <dd>
+                                    <p><span>任职时间</span></p>
+                                    <div>2014年</div>
+                                </dd>
+                                <dd>
+                                    <p><span>职责业绩</span></p>
+                                    <div>--站点站点站点站点站点站点站点站点站点站点
+                                        <br> --APP设计
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <button>修改资料</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp_ulSel sp_address">
+                    <ul class="address">
+                        <li class="addressSel">
+                            <h3>幸福痕迹</h3>
+                            <h4>13822578999</h4>
+                            <h5>1234567@qq.com</h5>
+                            <h6>
+								<p>上海  上海市虹口区松花江路复旦科技园1号楼12楼  (200030)</p>
+								<span class="editAddress">编辑</span>
+								<span class="deleteAddress">删除</span>
+							</h6>
+                            <div>
+                                <em>默认地址</em>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>幸福痕迹</h3>
+                            <h4>13822578999</h4>
+                            <h5>1234567@qq.com</h5>
+                            <h6>
+								<p>上海  上海市虹口区松花江路复旦科技园1号楼12楼  (200030)</p>
+								<span class="editAddress">编辑</span>
+								<span class="deleteAddress">删除</span>
+							</h6>
+                            <div>
+                                <em>默认地址</em>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>幸福痕迹</h3>
+                            <h4>13822578999</h4>
+                            <h5>1234567@qq.com</h5>
+                            <h6>
+								<p>上海  上海市虹口区松花江路复旦科技园1号楼12楼  (200030)</p>
+								<span class="editAddress">编辑</span>
+								<span class="deleteAddress">删除</span>
+							</h6>
+                            <div>
+                                <em>默认地址</em>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="add">添加地址</button>
+                    <div class="addPopup">
+                        <div>
+                        <dl>
+                            <dt>添加收货地址<i class="icon-gf-wrong32"></i></dt>
+                            <dd>
+                                <span><i>*</i>收货人</span>
+                                <input type="text" name="name" placeholder="请输入真实姓名">
+                            </dd>
+                            <dd>
+                                <span><i>*</i>手机号码</span>
+                                <input type="text" name="tel" placeholder="请输入手机号">
+                            </dd>
+                            <dd>
+                                <span><i>*</i>邮箱地址</span>
+                                <input type="text" name="email" placeholder="请输入邮箱">
+                            </dd>
+                            <dd>
+                                <span>邮政编码</span>
+                                <input type="text" name="code" placeholder="请输入邮政编码">
+                            </dd>
+                            <dd>
+                                <span><i>*</i>省市地区</span>
+                                <div class="addAddress" data-toggle="distpicker">
+                                    <select class="proAds"></select>
+                                    <select class="cityAds"></select>
+                                </div>
+                            </dd>
+                            <dd>
+                                <span><i>*</i>详细地址</span>
+                                <textarea name="address" rows="2" placeholder="请输入详情地址"></textarea>
+                            </dd>
+                            <dd>
+                                <div class="radioAddress div_sel">
+                                    <em><i><b></b></i></em> 设为默认地址
+                                </div>
+                            </dd>
+                            <dd>
+                                <button class="addressSave">保存资料</button>
+                                <button class="addressCancel">取消</button>
+                            </dd>
+                        </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp_ulSel sp_bind">
+                    <div class="sp_sel_btn">
+                        <button class="selBtn">账号绑定</button>
+                        <button>修改密码</button>
+                    </div>
+                    <div class="sp_cur_view">
+                        <div class="sp_cur_bind sp_cur">
+                            <ul>
+                                <li>
+                                    <i class="tel icon-weixin">&#xe996;</i>
+                                    <!-- <span class="icon-资源-8">&#xe996;</span> -->
+                                    <h4>手机</h4>
+                                    <p>138***4567</p>
+                                    <button onclick="telBind()">更换手机</button>
+                                </li>
+                                <li>
+                                    <i class="email">&#xe9c5;</i>
+                                    <h4>邮箱</h4>
+                                    <p>暂未绑定</p>
+                                    <button class="bind" onclick="emailBind()">立即绑定</button>
+                                </li>
+                                <li>
+                                    <i class="wx">&#xe999;</i>
+                                    <h4>微信</h4>
+                                    <p>暂未绑定</p>
+                                    <button onclick="unBind()">解除绑定</button>
+                                </li>
+                                <li>
+                                    <i class="qq">&#xe998;</i>
+                                    <h4>QQ</h4>
+                                    <p>暂未绑定</p>
+                                    <button class="bind" onclick="emailBind()">立即绑定</button>
+                                </li>
+                                <li>
+                                    <i class="wb">&#xe997;</i>
+                                    <h4>微博</h4>
+                                    <p>暂未绑定</p>
+                                    <button class="bind" onclick="emailBind()">立即绑定</button>
+                                </li>
+                            </ul>
+                            <div class="telPopup">
+                                <div class="tel1">
+                                    <h3>更换手机绑定<i class="icon-gf-wrong32"></i></h3>
+                                    <div>
+                                        <i>&#xe906;</i>
+                                        <input type="password" name="" placeholder="请输入密码">
+                                    </div>
+                                    <button>下一步</button>
+                                </div>
+                                <div class="tel2">
+                                    <h3>更换手机绑定<i class="icon-gf-wrong32"></i></h3>
+                                    <div>
+                                        <i>&#xe9a2;</i>
+                                        <input type="tel" name="" placeholder="请输入11位手机号">
+                                    </div>
+                                    <div>
+                                        <i>&#xe9a3;</i>
+                                        <input type="text" name="" placeholder="请输入验证码">
+                                        <img src="../../images/person/CheckCode.gif" alt="check">
+                                    </div>
+                                    <div>
+                                        <i>&#xe9aa;</i>
+                                        <input type="text" name="" placeholder="获取动态码">
+                                        <button>获取动态码</button>
+                                    </div>
+                                    <button>确定</button>
+                                </div>
+                                <div class="tel3">
+                                    <h3>更换手机绑定<i class="icon-gf-wrong32"></i></h3>
+                                    <div>
+                                        <h4>
+											<i>&#xe903;</i>
+											更换手机绑定成功
+										</h4>
+                                        <p>您现在可以用手机号码直接登录</p>
+                                    </div>
+                                    <button>确定</button>
+                                </div>
+                            </div>
+                            <div class="emailPopup">
+                                <div class="email1">
+                                    <h3>邮箱绑定<i class="icon-gf-wrong32"></i></h3>
+                                    <div>
+                                        <i>&#xe90a;</i>
+                                        <input type="text" name="" placeholder="请输入邮箱">
+                                        <!-- 邮箱、微信、qq、微博 -->
+                                    </div>
+                                    <button>确定</button>
+                                </div>
+                                <div class="email2">
+                                    <h3>邮箱绑定<i class="icon-gf-wrong32"></i></h3>
+                                    <!-- 邮箱、微信、qq、微博 -->
+                                    <div>
+                                        <h4>
+											<i>&#xe903;</i>
+											已成功发送绑定链接
+										</h4>
+                                        <p>请到邮箱<span>25341342@qq.com</span>接收邮件，并点击邮件的链接进行下一步操作</p>
+                                    </div>
+                                    <button>确定</button>
+                                </div>
+                            </div>
+                            <div class="unbind">
+                                <div class="un1">
+                                    <h3>解除绑定<i class="icon-gf-wrong32"></i></h3>
+                                    <p>解绑后将不能再使用邮箱登录金程网。</p>
+                                    <!-- 邮箱、微信、qq、微博 -->
+                                    <div>
+                                        <i>&#xe906;</i>
+                                        <input type="password" name="" placeholder="请输入金程网登陆密码">
+                                    </div>
+                                    <button>下一步</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp_cur_password sp_cur">
+                            <dl>
+                                <dd>
+                                    <p><span>原登陆密码</span></p>
+                                    <input type="password" name="" placeholder="请输入原密码">
+                                    <a href="javascript:;">忘记密码?</a>
+                                </dd>
+                                <dd>
+                                    <p><span>设置新密码</span></p>
+                                    <input type="password" name="" placeholder="请输入新密码">
+                                </dd>
+                                <dd>
+                                    <p><span>确认新密码</span></p>
+                                    <input type="password" name="" placeholder="再次输入密码">
+                                </dd>
+                                <dd>
+                                    <button>保存修改</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+        </div>
+        <!-- main end -->
+    </div>
+    <!-- 170502 space end -->
+    <!--底部-->
+    <div class="footbottom">
+        <div class="wrap">
+            <div class="footnav">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="javascript:;">如何注册会员</a></dd>
+                    <dd><a href="javascript:;">如何购买课程</a></dd>
+                    <dd><a href="javascript:;">如何观看课程</a></dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="javascript:;">网校学习方式</a></dd>
+                    <dd><a href="javascript:;">学习效果如何保障</a></dd>
+                    <dd><a href="javascript:;">学习条件</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="javascript:;">会计支付</a></dd>
+                    <dd><a href="javascript:;">如何购买课程</a></dd>
+                    <dd><a href="javascript:;">如何观看课程</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于金程</dt>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                    <dd><a href="javascript:;">投诉与建议</a></dd>
+                </dl>
+                <ul>
+                    <li>
+                        <h3><i class="icon-dh"></i>400-700-9596</h3>
+                        <p>(每日9:00-21:00 免长途费)</p>
+                    </li>
+                    <li>
+                        <p><a href="javascript:;"><i class="icon-qe"></i>在线客服</a></p>
+                    </li>
+                    <li>
+                        <p><a href="javascript:;"><i class="icon-weib"></i>@金程教育</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="foota">
+                <a href="javascript:;"><img src="../../images/commonimages/foot1.png">沪IPC备08016784号-25</a>
+                <a href="javascript:;"><img src="../../images/commonimages/foot2.png"></a>
+                <a href="javascript:;"><img src="../../images/commonimages/foot3.png"></a>
+                <a href="javascript:;"><img src="../../images/commonimages/foot4.png"></a>
+                <a href="javascript:;"><img src="../../images/commonimages/foot5.png"></a>
+                <a href="javascript:;"><img src="../../images/commonimages/foot6.png"></a>
+            </div>
+            <div class="copy">
+                Copyright © 2001-2017 金程网校 All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    <!-- 遮罩层 -->
+    <!-- <div class="maskLayer"></div> -->
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+    <script src="../../script/person/laydate/laydate.js" charset="utf-8"></script>
+    <!-- 	<script src="../../script/person/city/distpicker.data.js" charset="utf-8"></script>
+	<script src="../../script/person/city/distpicker.js" charset="utf-8"></script> -->
+    <script src="../../script/person/space.js" charset="utf-8"></script>
+    <!--设置省市的js,姑且用了绝对路径-->
+    <script src="/script/setProvinceCity.js"></script>
+</body>
+
+
+</html>

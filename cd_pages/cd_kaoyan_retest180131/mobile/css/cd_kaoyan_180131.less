@@ -1,0 +1,859 @@
+@import url(../../../../css/commoncss/variable.less);
+
+//清除默认样式和自定义的各种基础样式
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.boxs() {
+    box-sizing: border-box;
+}
+ul,ol,li {
+    list-style: none;
+}
+
+@cf1:#283a73;//blue
+@cf2:#ec7731;//orange
+//start
+.cd_kaoyan_180131 {
+    .btn{
+        max-width: 115px;
+        width: 100%;
+        line-height: 35px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 23px;
+        margin-top: 13px;
+    }
+    max-width: 830px;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    // padding: 30px;
+    color:#666;
+    h2{
+        font-size: 18px;
+        color: #ec5f31;
+        text-align: center;
+        line-height: 1em;
+        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/title_bg_01.jpg) no-repeat center center;
+    }
+    @media (min-width:640px) {
+        h2{
+            font-size: 24px;
+        }
+    }
+    .topBanner,.botBanner{
+        img{
+            width: 100%;
+        }
+    }
+    // 复试常见问题 start
+    .fourcourse{
+        margin-top: 45px;
+        padding: 0 10px;
+        .mainBox{
+            border: 1px solid #f2f2f2;
+            margin-top: 30px;
+            padding: 30px 30px 8px 35px;
+            .cf();
+            background: #fff;
+            text-indent: 2em;
+            >img{
+                float: left;
+                max-width: 100%;
+                // height: 104px;
+                margin-top: -22px;
+                margin-right: 10px
+            }
+            line-height:1.9em;
+            text-align: justify;
+            font-size: 14px;
+            color: #666;
+            >b{
+                color:@cf1;
+            }
+        }
+    }
+    @media (min-width:640px) {
+        .fourcourse{
+            margin-top: 40px;
+            padding: 0 30px;
+            .mainBox{
+                border: 1px solid #f2f2f2;
+                margin-top: 30px;
+                padding: 30px 30px 8px 35px;
+                .cf();
+                text-indent: 2em;
+                >img{
+                    float: left;
+                    max-width: 100%;
+                    // height: 104px;
+                    margin-top: -22px;
+                    margin-right: 45px
+                }
+                line-height:1.9em;
+                text-align: justify;
+                font-size: 16px;
+                color: #666;
+                >b{
+                    color:@cf1;
+                }
+            }
+        }
+    }
+    // 你都准备好了吗？ start
+    .ready{
+        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/ready_bg.jpg) no-repeat center;
+        background-size: cover;
+        margin-top: 45px; 
+        padding: 42px 10px;
+       h2{
+        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/title_bg_02.jpg) no-repeat center;
+       }
+       >p{
+        text-align: center;
+        margin-top: 10px;
+        span{
+            font-size: 14px;
+            color: #fff;
+            display: inline-block;
+            em{
+                // display:block;
+                font-size: 16px;
+            }
+            &:last-child{
+                color: #ec5f31;
+                font-size: 26px;
+            }
+        }
+       }
+       .points{
+            .cf();
+            margin-top: 38px;
+            dl{
+                .cf();
+                background: #fff;
+                max-width: 376px;
+                min-height: 305px;
+                border: 1px solid #eeeeee;
+                border-radius: 3px;
+                float: left;
+                width: 49%;
+                padding: 0 10px;
+                margin-bottom: 8px;
+                &:nth-child(even){
+                    float: right;
+                }
+                dt{
+                    // float: right;
+                    margin-top: 16px;
+                    margin-bottom: 5px;
+                    min-height: 144px;
+                    text-align: center;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                dd{
+                    margin-bottom: 15px;
+                    h3{
+                        font-size: 18px;
+                        color: #1f2e85;
+                        margin: 20px auto;
+
+                    }
+                    p{
+                        color: #666;
+                        font-size: 14px;
+                        line-height: 24px;
+                        .ellipsis()
+                    }
+                }
+            }
+       }
+    }
+    @media (min-width:640px) {
+        .ready{
+            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/ready_bg.jpg) no-repeat center;
+            background-size: cover;
+            margin-top: 45px; 
+            padding: 42px 30px;
+           h2{
+            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/title_bg_02.jpg) no-repeat center;
+           }
+           >p{
+            text-align: center;
+            margin-top: 10px;
+            span{
+                font-size: 16px;
+                color: #fff;
+                display: inline-block;
+                em{
+                    // display:block;
+                    font-size: 18px;
+                }
+                &:last-child{
+                    color: #ec5f31;
+                    font-size: 36px;
+                }
+            }
+           }
+           .points{
+                .cf();
+                margin-top: 38px;
+                dl{
+                    .cf();
+                    background: #fff;
+                    max-width: 376px;
+                    min-height: 100%;
+                    border: 1px solid #eeeeee;
+                    border-radius: 3px;
+                    float: left;
+                    width: 49%;
+                    padding: 0 20px;
+                    margin-bottom: 20px;
+                    &:nth-child(even){
+                        float: right;
+                    }
+                    dt{
+                        float: right;
+                        margin-top: 16px;
+                        margin-bottom: 5px;
+                        min-height: auto;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                    dd{
+                        margin-bottom: 0;
+                        h3{
+                            font-size: 20px;
+                            color: #1f2e85;
+                            margin: 20px auto;
+                        }
+                        p{
+                            color: #666;
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+           }
+        }
+    }
+    // 你都准备好了吗？ start
+    .hearts{
+        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/ready_bg.jpg) no-repeat center;
+       margin-top: 45px; 
+       padding: 42px 30px;
+       h2{
+        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/title_bg_02.jpg) no-repeat center;
+       }
+       .points{
+            .cf();
+            margin-top: 22px;
+            margin-left: 10px;
+            >div{
+                display: table-cell;
+                margin-top: 10px;
+                border-left: 10px solid #fff;
+                width:33.33%;
+                background-color: #edeff2;
+                .bdr(4px);
+                padding-bottom: 10px;
+                .til{
+                    text-align: center;
+                    font-size: 18px;
+                    color:#fff;
+                    height: 54px;
+                    line-height: 54px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    .bg(cover);
+                    .bdr(2px 2px 0 0);
+                    margin-bottom: 20px;
+                }
+                &:nth-child(1){
+                    .til{
+                        background-image: url(http://static.gfedu.net/special/cd_kaoyan_reader180122/pc/images/bg_point01.jpg);
+                    }
+                    margin-left: 0px;
+                }
+                &:nth-child(2){
+                    .til{
+                        background-image: url(http://static.gfedu.net/special/cd_kaoyan_reader180122/pc/images/bg_point02.jpg);
+                    }
+                }
+                &:nth-child(3){
+                    .til{
+                        background-image: url(http://static.gfedu.net/special/cd_kaoyan_reader180122/pc/images/bg_point03.jpg);
+                    }
+                }
+                >p{
+                    margin:0 25px 10px 35px;
+                    text-align: justify;
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #aaa;
+                        .bdr(50%);
+                        margin-right: 10px;
+                        margin-left: -15px;
+                    }
+                }
+            }
+       }
+    }
+
+    //
+
+    //细致的课程体系 start
+    .flag{
+        margin-top: 45px;
+        >p{
+           margin-top: 15px;
+           margin-bottom: -15px;
+           color: #ccc;
+           text-align: center;
+        }
+        >div{
+            width: 96%;
+            margin: 0 auto;
+            margin-top: 40px;
+            text-align: center;
+            overflow-x: auto;
+            .cf();
+            img{
+                width: 770px;
+                // max-width: 100%;
+            }
+        }
+    }
+    @media (min-width:830px) {
+        .flag{
+            >p{
+               display: none;
+            }
+        }
+    }
+
+    //
+    .steps{
+        margin-top: 50px;
+        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson.jpg) no-repeat center;
+        background-size: cover;
+        margin-top: 45px;
+        padding: 42px 10px;
+        h2{
+            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/title_bg_02.jpg) no-repeat center;
+        }
+        .mainBox{
+            // margin-top: 30px;
+            >img{
+                max-width: 100%;
+            }
+            .cf();
+            >div{
+                float: left;
+                position: relative;
+                // max-width: 247px;
+                width: 100%;
+                // height: 415px;
+                background: #fff;
+                margin-bottom: 15px;
+                .til{
+                    text-align: center;
+                    text-align: left;
+                    padding: 12px 10px 12px 15%;
+                    background:url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_01.jpg) no-repeat center center;
+                    background-size: cover;
+                    color:#fff;
+                    position: relative;
+                    h3{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                        opacity: 0.7;
+                        margin: 3px 0;
+                        padding-bottom: 6px;
+                    }
+                }
+                >div.one{
+                    padding: 0 15%;
+                    >p{
+                        border-bottom: 1px solid #eeeeee;
+                        color: #ec5f31;
+                        font-size: 26px;
+                        margin-top: 10px;
+                        padding-bottom: 6px;
+                        margin-bottom: 7px;
+                        span{
+                            font-size: 16px;
+                            color: #999;
+                            vertical-align: 5px;
+                        }
+                    }
+                    dl{
+                        .cf();
+                        dt{
+                            width: 8px;
+                            height: 8px;
+                            display: inline-block;
+                            margin-right: 8px;
+                            background: #f6b7a2;
+                        }
+                        dd{
+                            display: inline-block;
+                            color: #999999;
+                            font-size: 14px;
+                            line-height: 42px;
+                            span{
+                                font-size: 24px;
+                                color: #333;
+
+                            }
+                        }
+                    }
+                    a{
+                        background:  #ec5f31;
+                        color: #fff;
+                        border: none;
+                        box-shadow: 0px 3px 4px 2px #faded8;
+                        &:hover{
+                            color: #ec5f31;
+                            border: 1px solid #ec5f31;
+                            background: #fff;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                >img{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+                &:nth-child(2){
+                    .til{
+                        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_02.jpg) no-repeat center;
+                        background-size: cover;
+                    }
+                    >div.one{
+                        p{
+                            color: #f39b11;
+                        }
+                        dl{
+                            dt{
+                                background: #f6d499;
+                            }
+                        }
+                        a{
+                            background: #eca01c;
+                            color: #fff;
+                            border: none;
+                            box-shadow: 0px 3px 4px 2px #f2e6d0;
+                            &:hover{
+                                color: #eca01c;
+                                border: 1px solid #eca01c;
+                                background: #fff;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    margin-right: 0;
+                    .til{
+                        background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_03.jpg) no-repeat center;
+                        background-size: cover;
+                    }
+                    >div.one{
+                        p{
+                            color: #24b5a9;
+                            &:nth-child(1){
+                                border-bottom: none;
+                            }
+                            &:nth-child(2){
+                                color: #666666;
+                            }
+                        }
+                        dl{
+                            dt{
+                                background: #9cded8;
+                            }
+                        }
+                        a{
+                            background: #24b5a9;
+                            color: #fff;
+                            box-shadow: 0px 3px 4px 2px #d2e8e6;
+                            border: none;
+                            margin-top: 20px;
+                            &:hover{
+                                color: #24b5a9;
+                                border: 1px solid #24b5a9;
+                                background: #fff;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >p{
+            margin-top: 35px;
+            text-align: center;
+            color: #d0cccd;
+            font-size: 16px;
+            span{
+                color: #ec5f31;
+                vertical-align: middle;
+            }
+        }
+    }
+    @media (min-width:470px) {
+        .steps{
+            .mainBox{
+                >div{
+                    // max-width: 247px;
+                    width: 49%;
+                    min-height: 404px;
+                    float: left;
+                    &:nth-child(even){
+
+                        float: right;
+                    }
+                    >div.one{
+                        padding: 0 10px;
+                        position: relative;
+                        p{
+                            border-bottom: 1px solid #eeeeee;
+                            color: #ec5f31;
+                            font-size: 26px;
+                            margin-bottom: 7px;
+                            span{
+                                font-size: 16px;
+                                color: #999;
+                                vertical-align: 5px;
+                            }
+                        }
+                        &:nth-child(3){
+                            min-height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width:570px) {
+        .steps{
+            .mainBox{
+                >div{
+                    // max-width: 247px;
+                    width: 49%;
+                    min-height: 404px;
+                    float: left;
+                    &:nth-child(even){
+
+                        float: right;
+                    }
+                    >div.one{
+                        padding: 0 15%;
+                        position: relative;
+                        p{
+                            border-bottom: 1px solid #eeeeee;
+                            color: #ec5f31;
+                            font-size: 26px;
+                            margin-bottom: 7px;
+                            span{
+                                font-size: 16px;
+                                color: #999;
+                                vertical-align: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width:770px) {
+        .steps{
+            .mainBox{
+                margin-top: 30px;
+                >img{
+                    max-width: 100%;
+                }
+                .cf();
+                >div{
+                    float: left;
+                    width: 32%;
+                    height:419px;
+                    margin-right: 15px;
+                    &:nth-child(even){
+                        margin-right: 15px;
+                        float: left;
+                    }
+                    &:nth-child(3){
+                        margin-right:0;
+                        float: left;
+                    }
+                    >div.one{
+                        padding: 0 20px;
+                        position: relative;
+                        p{
+                            border-bottom: 1px solid #eeeeee;
+                            color: #ec5f31;
+                            font-size: 36px;
+                            margin-bottom: 7px;
+                            span{
+                                font-size: 16px;
+                                color: #999;
+                                vertical-align: 16px;
+                            }
+                        }
+                        dl{
+                            .cf();
+                            dt{
+                                width: 8px;
+                                height: 8px;
+                                display: inline-block;
+                                margin-right: 8px;
+                                background: #f6b7a2;
+                            }
+                            dd{
+                                display: inline-block;
+                                color: #999999;
+                                font-size: 14px;
+                                line-height: 42px;
+                                span{
+                                    font-size: 24px;
+                                    color: #333;
+
+                                }
+                            }
+                        }
+                        
+                        >img{
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(2){
+                        .til{
+                            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_02.jpg) no-repeat center;
+                            background-size: cover;
+                        }
+                        >div.one{
+                            p{
+                                color: #f39b11;
+                            }
+                            dl{
+                                dt{
+                                    background: #f6d499;
+                                }
+                            }
+                            a{
+                                background: #eca01c;
+                                color: #fff;
+                                border: none;
+                                box-shadow: 0px 3px 4px 2px #f2e6d0;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        margin-right: 0;
+                        .til{
+                            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_03.jpg) no-repeat center;
+                            background-size: cover;
+                        }
+                        >div.one{
+                            p{
+                                color: #24b5a9;
+                                &:nth-child(1){
+                                    border-bottom: none;
+                                }
+                                &:nth-child(2){
+                                    color: #666666;
+                                }
+                            }
+                            dl{
+                                dt{
+                                    background: #9cded8;
+                                }
+                            }
+                            a{
+                                background: #24b5a9;
+                                color: #fff;
+                                box-shadow: 0px 3px 4px 2px #d2e8e6;
+                                border: none;
+                                margin-top: 90px;
+                            }
+                        }
+                    }
+                }
+            }
+            >p{
+                margin-top: 35px;
+                text-align: center;
+                color: #d0cccd;
+                font-size: 16px;
+                span{
+                    color: #ec5f31;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    @media (min-width:830px) {
+        .steps{
+            margin-top: 50px;
+            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson.jpg) no-repeat center;
+            background-size: cover;
+            margin-top: 55px;
+            padding: 42px 30px;
+            h2{
+                background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/title_bg_02.jpg) no-repeat center;
+            }
+            .mainBox{
+                margin-top: 30px;
+                >img{
+                    max-width: 100%;
+                }
+                .cf();
+                >div{
+                    float: left;
+                    width: 247px;
+                    height: 431px;
+                    background: #fff;
+                    margin-right: 14px;
+                    .til{
+                        text-align: center;
+                        text-align: left;
+                        padding: 12px;
+                        background:url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_01.jpg) no-repeat center;
+                        color:#fff;
+                        position: relative;
+                        h3{
+                            font-size: 24px;
+                        }
+                        p{
+                            font-size: 16px;
+                            opacity: 0.7;
+                            margin: 3px 0;
+                            padding-bottom: 6px;
+                        }
+                    }
+                    >div.one{
+                        padding: 0 20px;
+                        position: relative;
+                        p{
+                            border-bottom: 1px solid #eeeeee;
+                            color: #ec5f31;
+                            font-size: 36px;
+                            margin-bottom: 7px;
+                            span{
+                                font-size: 16px;
+                                color: #999;
+                                vertical-align: 16px;
+                            }
+                        }
+                        dl{
+                            .cf();
+                            dt{
+                                width: 8px;
+                                height: 8px;
+                                display: inline-block;
+                                margin-right: 8px;
+                                background: #f6b7a2;
+                            }
+                            dd{
+                                display: inline-block;
+                                color: #999999;
+                                font-size: 14px;
+                                line-height: 42px;
+                                span{
+                                    font-size: 24px;
+                                    color: #333;
+
+                                }
+                            }
+                        }
+                        >img{
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(2){
+                        .til{
+                            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_02.jpg) no-repeat center;
+                        }
+                        >div.one{
+                            p{
+                                color: #f39b11;
+                            }
+                            dl{
+                                dt{
+                                    background: #f6d499;
+                                }
+                            }
+                            a{
+                                background: #eca01c;
+                                color: #fff;
+                                border: none;
+                                box-shadow: 0px 3px 4px 2px #f2e6d0;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        margin-right: 0;
+                        .til{
+                            background: url(http://static.gfedu.net/special/cd_kaoyan_retest180131/mobile/images/lesson_03.jpg) no-repeat center;
+                        }
+                        >div.one{
+                            p{
+                                color: #24b5a9;
+                                &:nth-child(1){
+                                    border-bottom: none;
+                                }
+                                &:nth-child(2){
+                                    color: #666666;
+                                }
+                            }
+                            dl{
+                                dt{
+                                    background: #9cded8;
+                                }
+                            }
+                            a{
+                                background: #24b5a9;
+                                color: #fff;
+                                box-shadow: 0px 3px 4px 2px #d2e8e6;
+                                border: none;
+                                margin-top: 81px;
+                            }
+                        }
+                    }
+                }
+            }
+            >p{
+                margin-top: 35px;
+                text-align: center;
+                color: #d0cccd;
+                font-size: 16px;
+                span{
+                    color: #ec5f31;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+}

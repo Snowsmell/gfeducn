@@ -1,0 +1,1672 @@
+/* LESS Document */
+
+/**
+*  type:CPA资讯首页
+*  author: lotus
+*  date: 2016-03-30 14:00
+*  description：－－
+
+**************************************************/
+
+@import '../../../css/information/CFA/common/variable.less';
+@import 'cfavariable.less';
+
+/*导入字体*/
+//iconfont
+@font-face {
+  font-family: 'iconfont';
+  src:url('fonts/icomoon.eot?-ivr5ln');
+  src:url('fonts/icomoon.eot?#iefix-ivr5ln') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?-ivr5ln') format('truetype'),
+  url('fonts/icomoon.woff?-ivr5ln') format('woff'),
+  url('fonts/icomoon.svg?-ivr5ln#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('fonts/icomoon.eot?kabozi');
+  src: url('fonts/icomoon.eot?#iefixkabozi') format('embedded-opentype'),
+  url('fonts/icomoon.woff?kabozi') format('woff'),
+  url('fonts/icomoon.ttf?kabozi') format('truestype'),
+  url('fonts/icomoon.svg?kabozi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body,html{overflow-x: hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 标题样式 */
+div[class^="procfa_"], div[class*="procfa_"]{
+	h2{
+		.f18();
+		padding:10px 0px;
+		.pos(r);
+		i{
+			display: inline-block;
+			width: 4px;
+			height: 23px;
+			background: @proc1;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+		a{
+			display: inline-block;
+			float: right;
+			.f14();
+			color: #ff7711;
+			.pos(a);
+			top:25px;
+			right:10px;
+		}
+		span{
+			display: block;
+			color: @c9;
+			.f14();
+			padding-left: 10px;
+		}
+	}
+}
+@media (min-width: 768px){
+	div[class^="procfa_"], div[class*=" procfa_"]{
+		h2{
+			.f24();
+			padding:20px 0px;
+			i{
+				width: 5px;
+				height: 25px;
+				margin-right: 18px;
+			}
+			span{.f16();padding-left: 20px;}
+		}
+	}
+}
+//背景
+.bground{
+	background:#f8f8f8;
+	width: 100%;.cf();
+	padding: 20px 0px 50px;
+	margin-top:30px;
+	border-top: 1px solid @cd;
+	border-bottom: 1px solid @cd;
+}
+//按钮
+.yuetips{
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background: #e9f8fe;
+	border:1px solid #DBECF3;
+	box-sizing: border-box;
+	.tcenter();
+	.f16();
+	.bdr(5px);
+	margin-top: 20px;
+	color: @proc1;
+	cursor: pointer;
+	&:hover{background: @proc1;color: @cw;}
+}
+
+
+.wrap{
+	padding:0 15px;
+	box-sizing:border-box;
+}
+@media (min-width: 768px){
+	.wrap{
+		padding:0;
+	}
+}
+a:hover{text-decoration: none;color:@c3;}
+/* 广告位平台链接 */
+
+.ie8 .g-fadeSlide-list li { background-color: #fff;}
+
+.procfa_banner{
+	.cf();
+	margin-top: 25px;
+	.topleft{
+		.cf();
+		.undis();
+		box-sizing: border-box;
+		padding:10px 20px 0px;
+		border:1px solid @cd;
+		width: 200px;
+		dl{
+			.cf();
+			border-bottom: 1px solid @cd;
+			padding-bottom: 5px;
+			dt{.f16();margin-bottom: 10px;}
+			dd{
+				width: 50%;
+				.left();
+				margin-bottom: 10px;
+				a{.dis();color: @c9;}
+				&:last-child{
+					width:135px;
+					height: 25px;
+					line-height: 25px;
+					box-sizing: border-box;
+					background: #e8eaeb;;
+					.bdr(20px); 
+					.tcenter();
+					a{color:@proc1;}
+					&:hover{background:@proc1;a{color:@cw;}}
+				}
+			}
+			&:not(:first-child){padding-top: 15px;}
+			&:last-child{border-bottom: none;}
+		}
+	}
+	.ads{.undis();}
+	.topbanner{
+		.cf();
+		width: 100%;
+		margin:auto;
+		max-height: 450px;
+		overflow: hidden;
+		.pos(r);
+		ul{
+			.cf();
+			.pos(a);
+			left:0px;
+			top:0px;
+			width: 100%;
+			li{
+				width: 100%;
+				.left();
+				overflow: hidden;
+				a{.dis();.tcenter();}
+				img{max-width: 100%;}
+			}
+		}
+		.hdIndex {
+	      .pos(a);
+	      bottom: 30px;
+	      left: 45%;
+	      width: 100%;
+	      ul {
+	        li {
+	          float: left;
+	          width: 13px;
+	          height: 13px;
+	          cursor: pointer;
+	          background: @cw;
+	          color: @cw;
+	          line-height: 20px;
+	          text-align: center;
+	          .bdrhalf();
+	          margin: 5px;
+	          overflow: hidden;
+	          text-indent: -99999em;
+	        }
+	        .on {
+	          background: @proc1;
+	          color: #e5ca29;
+	          width: 28px;
+	          .bdr(10px);
+	        }
+	      }
+    	}
+	}
+}
+@media(min-width:1200px){
+	.procfa_banner{
+		.topleft{
+			.dis();
+			.left();
+		}
+		.topbanner{
+			max-width: 700px;
+			.left();
+			margin:0 20px;
+		}
+		.ads{
+			.cf();
+			.dis();
+			float: right;
+		}
+	}
+}
+
+
+/* 最新公告广告 */
+.procfa_notice{
+	.cf();
+	padding:20px 10px;
+	h2{
+		.cf();
+		float:left;
+		background-color:@proc1;
+		color:@cw;
+		padding:15px 20px;
+		text-align:center;
+		height:120px;
+		box-sizing:border-box;
+		overflow:hidden;
+		img{
+			width:90%;
+			max-width:113px;
+			display:block;
+			margin:0 auto;
+			padding-bottom:10px;
+		}
+	}
+	ul{
+		overflow:hidden;
+		border:solid 1px @cd; 
+		border-left:none;
+		.cf();
+		height:120px;
+		box-sizing:border-box;
+	}
+	li{
+		padding:15px 20px;
+		a{
+			width:100%;
+			line-height:35px;
+			.ellipsis();
+			.f14();
+			.dis();
+		}
+		p{
+			width:100%;
+			color:@c9;
+			.f14();
+			line-height:30px;
+			.spill2();
+		    height: 60px;
+		}
+	}
+	article{
+		padding-top:20px;
+		img{ width:100%;}
+	}
+}
+@media (min-width: 768px){
+	.procfa_notice{
+		padding:30px 0 20px;
+		h2,ul{
+			height:135px;
+		}
+		h2{
+			width:200px;
+			padding-top:40px;
+			font-size: 18px;
+		}
+		li{
+			width:33.33%;
+			float:left;
+			height:100%;
+			overflow:hidden;
+			padding-top:10px;
+			box-sizing:border-box;
+			border-left:solid 1px @cd;
+			a{.f18(); line-height:50px;}
+			// p{ display:block;}
+		}
+		article{
+			padding-top:40px;
+		}
+	}
+
+}
+
+/* 考试推荐 */
+.procfa_live{
+	// h2{border-bottom: 1px solid @cd;}
+	ul{
+		.cf();
+		// border:solid 1px @cd;
+	}
+	li{
+		width:100%;
+		padding:15px;
+		box-sizing:border-box;
+		text-align:center;
+		float:left;
+		a{.pos(r);.dis();}
+		h4{
+			width:100%;
+			overflow:hidden;
+			img{
+				width:100%;
+
+			}
+		}
+		h3{
+			.f14();
+			padding:5px 0;
+			text-align: center;
+			.ellipsis();
+			.pos(a);
+			left:50%;
+			transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			-ms-transform:translateX(-50%);
+			-moz-transform:translateX(-50%);
+			-o-transform:translateX(-50%);
+			width: 100%;
+			color: @cw;
+			background:rgba(0, 0, 0, 0.6);
+			-webkit-background:rgba(0, 0, 0, 0.6);
+			-moz-background:rgba(0, 0, 0, 0.6);
+			-ms-background:rgba(0, 0, 0, 0.6);
+			-o-background:rgba(0, 0, 0, 0.6);
+			bottom:5px;
+		}
+		// &:nth-child(1){ border-bottom:solid 1px @cd;}
+		// &:nth-child(2){ border-bottom:solid 1px @cd;}
+		&:nth-child(3){ display:none;}
+		&:nth-child(4){ display:none;}
+	}
+}
+@media (min-width: 480px){
+	.procfa_live{
+		li{
+			width:50%;
+			&:nth-child(3){ display:block;}
+			&:nth-child(4){ display:block;}
+		}
+	}
+}
+@media (min-width: 768px){
+	.procfa_live{
+		li{
+			width:25%;
+			padding:15px 10px 0px;
+			h4{
+				max-height:185px;
+				img{
+					width:auto;
+					-webkit-transition: .3s;
+					-moz-transition: .3s;
+					-ms-transition: .3s;
+					-o-transition: .3s;
+					transition: .3s;
+					height: 100%;
+					&:hover{
+						-webkit-transform: scale(1.2);
+						-moz-transform: scale(1.2);
+						-ms-transform: scale(1.2);
+						-o-transform: scale(1.2);
+						transform: scale(1.2);
+					}
+				}
+			}
+			h3{
+				.f16();
+				bottom:0px;
+			}
+			&:nth-child(1){border-bottom: none;}
+			&:nth-child(2){border-bottom: none;}
+			&:last-child{border-right: none;}
+		}
+	}
+}
+@media (min-width: 1200px){
+	.procfa_live{
+		li:first-child{padding-left: 0px;}
+		li:last-child{padding-right: 0px;}
+	}
+}
+
+.procfa_live2{
+	.cf();
+	ul{.cf();}
+	li{
+		width: 48%;
+		float: left;
+		margin-right: 7px;
+		margin-bottom: 10px;
+		&:nth-child(even){margin-right: 0px;}
+		a{.pos(r);.dis();}
+		h4{
+			// width: 283px;
+			// height: 180px;
+			img{
+				width:100%;
+				height: 100%;
+
+			}
+		}
+		h3{
+			.f14();
+			padding:5px 0;
+			text-align: center;
+			.ellipsis();
+			.pos(a);
+			left:50%;
+			transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			-ms-transform:translateX(-50%);
+			-moz-transform:translateX(-50%);
+			-o-transform:translateX(-50%);
+			width: 100%;
+			color: @cw;
+			background:rgba(0, 0, 0, 0.6);
+			-webkit-background:rgba(0, 0, 0, 0.6);
+			-moz-background:rgba(0, 0, 0, 0.6);
+			-ms-background:rgba(0, 0, 0, 0.6);
+			-o-background:rgba(0, 0, 0, 0.6);
+			bottom:0px;
+		}
+	
+	}
+}
+@media(min-width:640px){
+	.procfa_live2{
+		li{width: 47%;margin-right: 22px;margin-bottom: 22px;}
+	}
+}
+@media(min-width:768px){
+	.procfa_live2{
+		li{width: 32%;max-width:32%;margin-right: 15px;margin-bottom: 22px;
+			&:nth-child(2){margin-right: 15px;}
+			&:nth-child(3){margin-right: 0px;}
+			&:nth-child(4){.undis();}
+		}
+	}
+}
+@media(min-width:1000px){
+	.procfa_live2{
+		li{width: 23%;max-width:23%;margin-right: 25px;margin-bottom: 22px;
+			&:nth-child(2){margin-right: 25px;}
+			&:nth-child(3){margin-right: 25px;}
+			&:nth-child(4){.dis();}
+		}
+	}
+}
+/* 精品课程 */
+.procfa_course{
+	.cf();}
+.proc_content{
+	.cf();
+	margin-bottom: 25px;
+	// border:1px solid @cd;
+	// background: @cw;
+	dl{
+		.cf();
+		h3{.f16();line-height: 45px;.ellipsis();}
+		dd{
+			.cf();
+			p{
+				.f14();
+				color: @c9;
+				.spill3();
+				max-height: 75px;
+			}
+			.bgc{
+				padding:20px 10px;
+			 	// background: #f6f6f6;
+			 	margin: 20px auto;
+			 	clear: both;
+			 	span{
+					display: inline-block;
+					.f14();
+					color: #ff7611;
+					i{
+						.f18();
+						color: #adafb3;
+						margin-right:5px;
+					}
+					&:nth-child(2){.right();}
+				}
+			}
+			
+		}
+		&:hover{background: @cw; box-shadow:0px 1px 5px @cc;
+      -webkit-box-shadow:0px 1px 5px  @cc;
+        -moz-box-shadow:0px 1px 5px  @cc;
+        -ms-box-shadow:0px 1px 5px  @cc;
+        -o-box-shadow:0px 1px 5px  @cc;}
+	}
+	article{
+		.cf();
+		// padding:15px;
+		background: url(../../../images/information/CFA/banner5.png) no-repeat;
+		.bg(cover);
+		width:270px;
+		margin: auto;
+		box-sizing: border-box;
+		height: 616px;
+		.pos(r);
+		img{width: 100%;}
+		.yt{
+			.pos(a);
+			left:50%;
+			top:58%;
+			color: @cw;
+			width: 211px;
+			line-height: 26px;
+			transform:translate(-50%);
+			-webkit-transform:translate(-50%);
+			-moz-transform:translate(-50%);
+			-ms-transform:translate(-50%);
+			h4{
+				.dis();
+				.f20();
+				padding-bottom: 10px;
+
+			}
+			a{
+				.dis();
+				margin-top: 15px;
+				width: 100%;
+				.tcenter();
+				.bdr(4px);
+				height: 45px;
+				.f18();
+				line-height: 45px;
+				color: @cw;
+				background: #25b9f6;
+			}
+		}
+	}
+	section{.undis();}
+}
+@media(min-width:640px){
+	.proc_content{
+		article{.left();}
+		section{
+			.dis();
+			.left();
+			.cf();
+			// border-left: 1px solid @cd;
+			box-sizing: border-box;
+			max-width: 928px;
+			dl{
+				width: 33.3%;
+				.left();
+				.cf();
+				.undis();
+				box-sizing: border-box;
+				padding:10px;
+				dt{
+					.cf();
+					width: 300px;
+					max-width: 100%;
+					margin:auto;
+					img{
+					width: 100%;
+					height: 200px;
+					}
+				}
+				dd{
+					padding:0 20px;
+					width: 264px;
+					.bgc{
+						margin: 0px auto;
+						// background: @cw;
+						padding:5px 0px;
+						a{
+							display: inline-block;
+							margin-right: 10px;
+							color:@proc1;
+							padding:3px 9px;
+							border:1px solid @proc1;
+							.bdr(3px);
+							background: #e9f8fe;
+
+						}
+						span{.right();margin-top: 5px;} 
+					}
+				}
+				&:nth-child(1),&:nth-child(4){
+					.dis();
+					width: 100%;
+					float: none;
+				}
+			}
+			
+		}
+	}
+}
+@media(min-width:992px){
+	.proc_content{
+		section{
+			max-width: 703px;
+			// border-top: 1px solid #3794d1;
+			dl{
+				&:nth-child(1),&:nth-child(4),
+				&:nth-child(2),&:nth-child(5)
+				{
+					.dis();
+					width: 50%;
+					float: left;
+				}
+			}
+		}
+	}
+}
+@media(min-width:1200px){
+	.proc_content{
+		article{height: 586px;}
+		section{
+			max-width: 928px;
+			padding-left: 20px;
+			dl{
+				.dis();
+				width: 33.3%;
+				box-sizing: border-box;
+				border:1px solid transparent;
+				&:nth-child(1),&:nth-child(4),
+				&:nth-child(2),&:nth-child(5)
+				{
+					.dis();
+					width: 33.3%;
+					float: left;
+				}
+				dt{width: 270px;img{height: 180px;}}
+				dd{padding:0 10px;}
+			}
+		}
+	}
+}
+
+// CFA精讲直播
+.procfa_living{
+	.cf();
+	.pos(r);
+	width:100%;
+	box-sizing: border-box;
+	overflow:hidden;
+	ul{
+		.cf();
+		height: 393px;
+		background:@cw;
+		li{
+			width: 280px;
+			.left();
+			.pos(r);
+			box-sizing: border-box;
+			border:1px solid @cd;
+			border-right:transparent;
+			span{
+				display: block;
+				background:url(../../../images/information/CFA/fbg_03.jpg) no-repeat center center;
+				padding:15px 0px;
+				color: @cw;
+				.f16();
+				.tcenter();
+				margin: 20px auto;
+			}
+			h4{
+				width: 240px;
+				height:160px;
+				overflow: hidden;
+				margin: auto;
+				.pos(r);
+				img{width: 100%;}
+				em{
+					.pos(a);
+					.tcenter();
+					color: @cw;
+					left:0px;
+					bottom: 0px;
+					width: 100%;
+					height: 36px;
+					line-height: 36px;
+					background: rgba(0, 0, 0, 0.6);
+					-webkit-background: rgba(0, 0, 0, 0.6);
+					-moz-background: rgba(0, 0, 0, 0.6);
+					-ms-background: rgba(0, 0, 0, 0.6);
+				}
+			 }
+			 p{
+			 	.tcenter();
+			 	margin: 15px auto;
+			 	padding:0 40px;
+			 	line-height: 26px;
+			 	.f16();
+			 	max-height: 52px;
+			 }
+			 .yuetips{
+					width:173px; 
+					margin: auto auto 20px;
+				}
+			&:last-child{
+				padding:20px 30px 30px;
+				width: 359px;
+				border-right:1px solid @cd;
+				h3{
+					.f20();
+					padding: 10px 0px 10px;
+					border-bottom: 1px solid @cd;
+				}
+				.yuetips{
+					width:73px;
+					height: 26px;
+					line-height: 26px;
+					.f14();
+				 }
+				 h5{
+				 	padding:23px 0px 11px;
+				 	.f16();
+				 	.pos(r);
+				 	.ellipsis();
+				 	padding-right: 65px;
+				 	a{float: right;position: absolute;top:22px;right:0px;}
+				 	i{
+				 		display: inline-block;
+				 		height: 15px;
+				 		width: 15px;
+				 		.bdr(50%);
+				 		.f12();
+				 		background: #ff7711;
+				 		.tcenter();
+				 		color: @cw;
+				 		line-height: 15px;
+				 		.ellipsis();
+				 		vertical-align: middle;
+				 		margin-right: 10px;
+				 	}
+				 }
+			}
+			&:hover{border:1px solid @proc1;}
+		}
+	}
+}
+
+//CFA备考题库
+.procfa_itemsbank{
+	.cf();
+	.undis();
+	box-sizing: border-box;
+	padding:25px 0px; 
+	.contains{
+		width: 1161px;
+		height: 621px;
+		margin:40px  auto 0px;
+		background: url(../../../images/information/CFA/tv_03.png) no-repeat center center;
+		background-size: 100%;
+		.pos(r);
+		display: block;
+		ul{
+			.cf();
+			width: 918px;
+			margin: auto;
+			padding:55px 45px 25px;
+			box-sizing: border-box;
+			.undis();
+			&:first-child{.dis();}
+			li{
+				.cf();
+				box-sizing: border-box;
+				padding: 20px 50px;
+				border-bottom: 1px solid @cd;
+				.pos(r);
+				h3{.f16();}
+				i{
+					.pos(a);
+					left:0px;
+					top:20px;
+				}
+				p{
+					.cf();
+					width: 100%;
+					color: @c9;
+					span{
+						display: inline-block;
+						.left();
+						padding-top: 10px;
+						padding-right: 20px;
+					}
+				}
+				.yuetips{
+					.pos(a);
+					right:0px;
+					top:20px;
+					width: 140px;
+					margin-top: 0px;
+				}
+				&:last-child{border-bottom: none;}
+			}
+		}
+		.sectab{
+			.cf();
+			width: 100%;
+			.pos(a);
+			bottom: 47px;
+			left: 0px;
+			ul{.cf();padding:0px;display: block;}
+			li{
+				width: 20%;
+				.left();
+				border-bottom: none;
+				border-right: 1px solid @cw;
+				background: @proc1;
+				height: 70px;
+				padding:0px;
+				.tcenter();
+				&:last-child{border-right: none;}
+				a{
+					color: @cw;
+					line-height: 70px;
+					.dis();
+					.f20();
+				}
+				&.selected{
+					background: #137eaa;
+
+				}
+			}
+		}
+	}
+}
+@media(min-width:1200px){
+	.procfa_itemsbank{.dis();}
+}
+/* 名师风采 */
+.procfa_teacher{
+	margin-bottom:20px;
+	.pos(r);
+	padding:0px 0 200px;
+	.procpatabttl2{
+		.pos(a);
+		bottom:30px;
+		left:0;
+		width:100%;
+		height:140px;
+		overflow:hidden;
+		.cf();
+		ul{
+			.cf();
+		}
+		li{
+			float:left;
+			padding:0 10px;
+			height:140px;
+			width: 162px;
+			a{
+				width:120px;
+				height:120px;
+				.bdr(50%);
+				display:block;
+				border:solid 1px @cd;
+				margin:10px 0;
+				img{
+					width:100%;
+					.bdr(50%);
+				}
+			}
+			&:hover,&.selected{a{
+				width:140px;
+				height:140px;
+				background-color:@cw;
+				border:solid 1px @proc1;
+				margin:0;
+			}}
+		}
+	}
+	.procpat_content{
+		.cf();
+		background-color:#f8f8f8;
+		border:solid 1px @cd;
+		padding:20px;
+		width:100%;
+		box-sizing:border-box;
+		display:none;
+		&:first-child{ display:block;}
+		h4{
+			text-align:center;
+			img{
+				width:100%;
+				max-width:360px;
+			}
+		}
+		dl{
+			.cf();
+			max-width:687px;
+			margin: auto;
+		}
+		dt{
+			.f14();
+			h3{
+				.f18();
+				color:@c3;
+				line-height:50px;
+				padding-bottom: 20px;
+				border-bottom: 1px dashed @cd;
+				strong{.f30();}
+				button{
+					width: 150px;
+					height: 35px;
+					line-height: 35px;
+					border:1px solid @proc1;
+					.bdr(20px);
+					background: @cw;
+					color: @proc1;
+					margin-left: 25px;
+					&:hover{
+						background: @proc1;
+						color: @cw;
+					}
+				}
+			}
+			p{
+				.f14();
+				line-height:30px;
+				color:@c6;
+				padding:5px 0;
+				.ellipsis();
+				span{color:@c9;}
+				&:first-child{ border-top:dashed 1px @cd}
+				&:last-child{ border-bottom:dashed 1px @cd}
+				i{
+					vertical-align:middle;
+					padding:0 15px;
+					color: #9a9ea4;
+					.f24();
+				}
+			}
+		}
+		dd{
+			p{
+				.f14();
+				color:@c9;
+				line-height:30px;
+				.spill4();
+				margin:15px 0;
+				display:none;
+			}
+			a{
+				width:240px;
+				display:block;
+				text-align:center;
+				height:40px;
+				line-height:40px;
+				color:@cw;
+				background-color:@proc1;
+				margin:10px auto;
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	.procfa_teacher{
+		margin-bottom:60px;
+		.procpatabttl2{
+		}
+		.procpat_content{
+			padding-bottom:0;
+			h4{
+				width:30%;
+				float:left;
+				img{
+					vertical-align:bottom;
+				}
+			}
+			dl{
+				overflow:hidden;
+				padding:20px;
+			}
+			dd{
+				p{display:block;.spill3();max-height: 90px;}
+			}
+			
+		}
+	}
+}
+@media (min-width: 1200px){
+	.procfa_teacher{
+		width: 1200px;
+		margin:auto;
+		.procpatabttl2{
+			width:1200px;
+			left:50%;
+			margin-left:-600px;
+		}
+		.procpat_content{
+			.lgscreen();
+			h4{
+				width:360px;
+			}
+		}
+	}
+}
+
+/* CFA通关指南 */
+.procfa_passtips{
+	.cf();
+	.undis();
+	dl{
+		.cf();
+		width: 25%;
+		.left();
+		padding:20px;
+		box-sizing: border-box;
+		border: 1px solid @cd;
+		border-right:transparent;
+		dt{
+			width:264px;
+			height: 120px;
+			overflow: hidden;
+			a{.dis();img{width: 100%;}} 
+		}
+		dd{
+			.cf();
+			padding-top: 20px;
+			a{
+				.dis();
+				color: @c6;
+				.f14();
+				.ellipsis();
+				.pos(r);
+				margin: 10px auto;
+				padding-left: 10px;
+				&:before{
+					display: inline-block;
+					.left();
+					content: "";
+					width: 4px;
+					height: 4px;
+					background:@cc;
+					.pos(a);
+					left:0px;
+					top:10px;
+				}
+			}
+		}
+		&:last-child{
+			border-right: 1px solid @cd;
+			padding-bottom: 0px;
+			dd{
+				a{
+					border-bottom: 1px dashed @cd;
+					padding:0px 10px 3px;
+					margin: 7px auto;
+					.f16();
+					&:before{top:10px;}
+					&:last-child{border-bottom: none;}
+				}
+			}
+		}
+		&:hover{border:1px solid @proc1;}
+	}
+}
+@media (min-width: 1200px){
+	.procfa_passtips{
+		.dis();
+	}
+}
+//学员分享
+.procfa_learnshare{
+	.cf();
+	.procontainer{
+		.cf();
+		padding:29px 12px 29px 10px;
+		background: @cw;
+		box-sizing: border-box;
+		margin-top: 20px;
+		max-width: 100%;
+		position: relative;
+		section{.undis();float: left;}
+
+		#slides {
+			.cf();
+			  display: block!important;
+	  		  // width: 320px;
+	  		  height: 180px;
+	  		  margin:auto;
+	  		  img{width: 100%;}
+		}	
+
+		.slidesjs-navigation {
+		  float: right;
+		  margin-top: 10px;
+		  padding-right: 5px;
+		}
+
+		.slidesjs-navigation a {
+		  font: bold 20px / normal simsun;
+		  text-decoration: none;
+		  color: #333;
+		}
+
+		.slidesjs-navigation a:hover {
+		  color: #C00;
+		}
+
+		.slidesjs-pagination {
+		  left: 45%;
+		  bottom: 9px;
+		  // // padding-left: 5px;
+		  // z-index: 100;
+		  position: absolute;
+		  margin-left: -33px;
+		}
+
+		.slidesjs-pagination li {
+		  float: left;
+		  padding: 0 3px;
+		}
+
+		.slidesjs-pagination li a {
+		  display: block;
+		  .left();
+		        text-indent:-9999em;
+		        margin-right:15px;
+		  		width:10px;
+		        height:10px;
+		        .bdr(100%);
+		        overflow:hidden;
+		        background:#dedede;
+		}
+
+		.slidesjs-pagination li a.active,
+		.slidesjs-pagination li a:hover.active {
+		  			background: @proc1;
+		          width: 30px;
+		          height: 10px;
+		          .bdr(20px);
+		}
+
+		.slidesjs-pagination li a:hover {
+		  background: @proc1;
+		          width: 30px;
+		          height: 10px;
+		          .bdr(20px);
+		}
+		
+	}
+
+	
+
+	.proc_right{
+		.cf();
+		max-width: 640px;
+		margin:20px auto 0px;
+		li{
+			max-width: 188px;
+			margin-bottom: 9px;
+			.left();
+			width: 33.3%;
+			box-sizing: border-box;
+			padding:0px 10px;
+			a{.dis();.pos(r);}
+			img{max-width:100%;max-height: 138px;}
+			span{
+				background:rgba(0,0, 0, 0.6);
+				.f14();
+				color: @cw;
+				.tcenter();
+				.pos(a);
+				bottom:0px;
+				left:0px;
+				width: 100%;
+				.ellipsis();
+			}
+		}
+	}
+}
+@media(min-width:640px){
+	.procfa_learnshare{
+		.procontainer{
+			#slides{
+				width:480px;
+				height: 270px;
+			}
+		}
+	}
+}
+@media(min-width:1200px){
+	.procfa_learnshare{
+		.procontainer{
+			.left();
+			max-width: 980px;
+			.pvedio{
+			.cf();
+			padding:20px;
+			max-width: 480px;
+			.left();
+			filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/
+-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+box-shadow:2px 2px 10px #909090;/*opera或ie9*/
+		}
+			#slides{
+				// .left();
+				.slidesjs-pagination {
+				  left: 20%;
+				  bottom: 20px;
+				}
+			}
+			section{
+				width: 400px;
+				padding-left: 38px;
+				display: block;
+				// &:first-child{.dis();}
+				h4{color: @c3;.f20();}
+				div{
+					border-top:1px solid #ff7711;
+					box-sizing: border-box;
+					padding-top: 20px;
+					margin-top: 20px;
+					p{
+						line-height: 28px;
+						max-height: 80px;
+						color: @c6;
+						.spill3();
+						font-size: 17px;
+						margin-top: 20px;
+					}
+					a{
+						.f18();
+						color: #25b9f6;
+						 .right();
+						.dis();
+						margin-top: 75px;
+					}
+				}
+			}
+		}
+		.proc_right{
+			.right();
+			max-width: 170px;
+			li{
+				width: 100%;
+				padding:0px;
+				img{max-width: 170px;}
+				span{.f16();}
+			}
+		}
+	}
+}
+
+/*培训机构*/
+.procfa_organiz{
+	.cf();
+	margin-top: 50px;
+	.procfa_vedio{
+		.cf();
+		margin-top: 20px;
+		section{
+			margin: auto;
+			max-width: 600px;
+			.pos(r);
+			img{max-width: 100%;width: 100%;}
+			i{
+				.pos(a);
+				left:50%;
+				top:50%;
+				cursor: pointer;
+				-webkit-transform:translate(-50%,-50%);
+		  		  -moz-transform:translate(-50%,-50%);
+		  		  -ms-transform:translate(-50%,-50%);
+		  		  -o-transform:translate(-50%,-50%);
+		  		  transform:translate(-50%,-50%);
+		  		  color: @proc1;
+		  		  .f60();
+			}
+		}
+		h4{.right();.undis();}
+	}
+}
+@media(min-width:1200px){
+	.procfa_organiz{
+		.procfa_vedio{
+			section{
+				.left();
+			}
+			h4{.dis();}
+		}
+	}
+}
+
+/* 快捷入口 */
+.procfa_link{
+	box-sizing: border-box;
+	.undis();
+	ul{border:none;}
+	li{
+		border: none;
+		h4{height: 135px;border:1px solid @cd;}
+		p{.tcenter();
+			color: @c6;
+			max-height:48px;
+			.spill2();
+			margin:10px auto;
+			width: 90%;
+			.f16();
+			display: block;
+			box-sizing: border-box;
+		}
+	}
+	}
+
+@media (min-width: 1200px){
+	.procfa_link{
+		.dis();
+		margin-bottom:60px;
+	}
+}
+
+//友情链接
+.procfa_friendslink{
+	.cf();
+	width: 1200px;
+	margin: auto;
+	display: none;
+	padding-bottom: 100px;
+	h2{
+		width: 100%;
+		border-bottom: 2px solid @cd;
+		margin-bottom: 30px;
+		.pos(r);
+		em{
+			display: inline-block;
+			.pos(a);
+			bottom: -2px;
+			left:0px;
+			background:@proc1;
+			width: 80px;
+			height: 2px;
+
+		}
+	}
+	ul{
+		.cf();
+		li{
+			width: 160px;
+			height: 36px;
+			border: 2px solid @cd;
+			.left();
+			margin-right: 42px;
+			margin-bottom: 30px;
+			a{
+				line-height: 36px;
+				.dis();
+				.tcenter();
+
+			}
+			&:nth-child(6){margin-right: 0px;}
+
+		}
+	}
+}
+@media (min-width: 1200px){
+	.procfa_friendslink{
+		display: block;
+	}
+}
+
+
+//预约提醒弹窗
+.blockUI{
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0,0.7);
+    -webkit-background-color: rgba(0, 0, 0,0.7);
+    -moz-background-color: rgba(0, 0, 0,0.7);
+    -ms-background-color: rgba(0, 0, 0,0.7);
+    cursor: pointer;
+}
+.blockMsg{
+	z-index: 1011;
+	.cf();
+    position: fixed;
+    padding: 0px;
+    color: rgb(77, 77, 77);
+    border: none;
+    cursor: default;
+    background:none;
+    width: 85%;
+    left: 50%;
+    margin: 0;
+    top: 35%;
+    transform:translate(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+	span{
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          color: @cc;
+          border: 2px solid @cc;
+          display: inline-block;
+          position: absolute;
+          right:0px;
+          text-align: center;
+          line-height: 20px;
+          .bdr(50%);
+      }
+}
+ #qpdiv{
+	 z-index: 99999;
+	 cursor: text;
+	 .tit1 {
+	    position: relative;
+	    line-height: 28px;
+	    text-align: left;
+	    font-size: 28px;
+	    // z-index: 9999;
+	}
+	.tab-cma {
+    .cf();
+    em{background-color: #000;color:@cw;}
+    #sgd{
+    }
+    #fgd{float: left;}
+    em{
+    	.tcenter();
+    	display: inline-block;
+    	 border-top-left-radius: 6px;
+	    border-top-right-radius: 6px;
+	    cursor: pointer;
+	    margin-left: 10px;
+	    height: 50px;
+	   line-height: 50px;
+	   padding: 0 10px;
+	   width: 45%;
+	   font-size: 13px;
+	   box-sizing: border-box;
+    }
+	    em.current{
+	    	background: #fff;
+	    	color: @c3;
+	    }
+	}
+
+
+	.cma_tab_div {
+    	padding: 15px;
+    	border: solid 5px #f5f5f5;
+    	border-radius: 6px;
+    	background: #fff!important;
+	}
+	.floatDiv .failTips {
+    	margin: 10px 0 0;
+    	border: solid 1px #ffc7c7;
+    	padding: 5px 30px;
+    	    display: none;
+	}
+	.lgCont .yzm {
+    	position: relative;
+    	margin-top: 15px;
+    	.yzmBtn {
+   			 top: 0;
+   			 right: 0;
+   			 position: absolute;
+   			 // height: 35px;
+   			 .btn{
+   			 	background:#ff5151;
+   			 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff5151), to(#e63939));
+   			 	background: -moz-gradient(linear, 0 0, 0 100%, from(#ff5151), to(#e63939));
+   			 	background: -ms-gradient(linear, 0 0, 0 100%, from(#ff5151), to(#e63939));
+   			 	background: gradient(linear, 0 0, 0 100%, from(#ff5151), to(#e63939));
+   			 	border: none;
+   			 	width: 118px;
+   			 	padding:4px 0 4px;
+   			 	color: @cw;
+   			 }
+		}
+	}
+	.lgCont input[type="text"], #qpdiv .lgCont input[type="password"]{
+		padding: 15px 10px;
+		-webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    border: 1px solid #ababab;
+	    -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+	    width: 100%;
+	}
+	input{background: @cw;height: 50px!important;}
+	.form-item {
+   		 margin-top: 15px;
+	}
+	.btndiv {
+    	margin: 25px 0;
+    	.btn-success {
+		    line-height: 18px;
+		    height: 40px;
+		        background: #e63939;
+			    background: -moz-linear-gradient(top, #ff5151, #e63939);
+			    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff5151), to(#e63939));
+			    font-size: 20px;
+			    box-shadow: none;
+			    text-shadow: none;
+			    border: none;
+			        text-align: center;
+			    vertical-align: middle;
+			    cursor: pointer;
+		}
+	}
+
+	#qpdiv .cRed {
+    font-size: 20px;
+  	color:#ff0000;
+	}
+	.pwd{width: 100%;border: 1px solid #ababab;color:@c0;}
+}
+
+@media(min-width:640px){
+	.blockMsg{
+		max-width: 580px;
+		.tab-cma {
+			   font-size: 20px;
+			 #fgd,#sgd{
+	    	.f18();
+	    	padding: 0 30px;
+	    	}
+		}
+	}
+}
+
+//视频弹窗
+.popbox {
+    display: none;
+   width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    z-index: 9999999;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+@media(min-width:640px){
+	.popbox { width: 640px;
+    height: 360px;}
+}
+
+
+
+
+
+//修改
+
+#slideBoxIndex {
+	.cf();
+	.pos(r);
+	width:100%;
+		 max-width:480px;
+		// height:319px;
+		overflow:hidden;
+		margin:0 auto;
+		.cf();
+		.bdIndex{
+			ul li{
+				overflow: hidden;
+				img{width:100%;}
+			}
+		}
+	img{width:100%;}
+	.hdIndex{
+		.pos(a);
+		bottom: 15px;
+		left:50%;
+		transform:translateX(-50%);
+		-webkit-transform:translateX(-50%);
+		-ms-transform:translateX(-50%);
+		-moz-transform:translateX(-50%);
+		ul{
+			.cf();
+			li{
+				width: 8px;
+				height: 8px;
+				border-radius: 100%;
+				background: @cd;
+				float: left;
+				margin-right: 10px;
+				text-indent: 9999px;
+				&.on{background: @proc1;}
+			}
+		}
+	}
+} 
+@media(min-width:640px){
+	#slideBoxIndex {
+		img{width: 100%;}
+	}
+}
+@media(min-width:1200px){
+	#slideBoxIndex {
+		width: 480px;
+		img{height: 320px;}
+	}
+}

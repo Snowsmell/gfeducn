@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?cwpoz7');
+  src:  url('fonts/icomoon.eot?cwpoz7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cwpoz7') format('truetype'),
+    url('fonts/icomoon.woff?cwpoz7') format('woff'),
+    url('fonts/icomoon.svg?cwpoz7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart-hollow:before {
+  content: "\e906";
+}
+.icon-question-solid:before {
+  content: "\e907";
+}
+.icon-tiku01:before {
+  content: "\e900";
+}
+.icon-tiku02:before {
+  content: "\e901";
+}
+.icon-tiku03:before {
+  content: "\e902";
+}
+.icon-tiku04:before {
+  content: "\e903";
+}
+.icon-wrench01:before {
+  content: "\e904";
+}
+.icon-wrench02:before {
+  content: "\e905";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}

@@ -1,0 +1,405 @@
+@import "../../css/commoncss/common.less";
+
+[class^="icon-"], [class*=" icon-"], i {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+	min-width: 1024px;
+	background-color: #f4f4f4;
+}
+.hp_top {
+	margin-top: 50px;
+	margin-bottom: 36px;
+	background: url("../../images/help/bg_top.jpg") center no-repeat;
+	.bg(cover);
+	.hp_top_box {
+		max-width: 1200px;
+		margin: 0 auto 1.5em;
+		box-sizing: border-box;
+		>div{
+			margin-left: 120px;
+			background: url("../../images/help/bg_top_til.png") center no-repeat;
+			width: 580px;
+			height: 150px;
+			box-sizing: border-box;
+			padding-top: 46px;
+			padding-left: 110px;
+			.cf();
+			i{
+				.left();
+				margin-right: 16px;
+			}
+			h2 {
+				.f24();
+			}
+			p {
+				color: @c9;
+			}
+		}
+	}
+}
+.sp_main {
+	max-width: 1200px;
+	margin: auto;
+	font-size: 14px;
+	.cf();
+
+	.sp_main_left {
+		width: 15%;
+		float: left;
+		background: #fff;
+		padding: 0.4em 0;
+
+		a {
+			display: block;
+			padding-left: 35%;
+			line-height: 2.8em;
+			box-sizing: border-box;
+
+			i {
+				margin-left: -1.2em;
+				margin-right: 0.2em;
+				font-size: 1.2em;
+				color: #d25454;
+				vertical-align: 10%;
+			}
+		}
+
+		.sp_sel {
+			background: #e45050;
+			color: #fff;
+
+			i {
+				color: #fff;
+			}
+		}
+	}
+
+	.sp_main_right {
+    		width: 83.333%;
+    		float: right;
+    		// background: #fff;
+    		//padding: 0 25px 25px;
+    		margin-bottom: 50px;
+    		box-sizing: border-box;
+        section{
+          padding: 30px 60px;
+          background: #fff;
+          h2{
+            font-size: 20px;
+            color: @c3;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            em{
+              font-size: 14px;
+              color: @c9;
+              margin-left: 5px;
+            }
+          }
+          article{
+            padding: 10px 0;
+             >p{
+               font-size: 14px;
+               color: @c6;
+               line-height: 25px;
+               margin-top: 10px;
+               text-indent: 30px;
+
+             }
+             .circle{
+               .cf();
+               position: relative;
+               margin-top: 30px;
+              width: 466px;
+               margin: 30px auto 15px;
+               img{
+                 display: block;
+                 margin: 0 auto;
+               }
+               .circleLi{
+                  li{
+                    position: absolute;
+                    width: 230px;
+                    &:before{
+                      content: " ";
+                      width: 16px;
+                      height: 16px;
+                      display: inline-block;
+                      background: url(../../images/help/a_01.png)no-repeat;
+                    }
+                    &.select{
+                      img{
+                        display: block;
+                      }
+                      h3{
+                        color: #dd5555;
+                      }
+                    }
+                    img{
+                      display: none;
+                    }
+                    h3{
+                      font-size: 18px;
+                      color: @c6;
+                    }
+                    p{
+                      font-size: 14px;
+                      color: @c9;
+                    }
+                    &:nth-of-type(1){
+                      left: -148px;
+                      top: 53px;
+                      width: 240px;
+                      &:before{
+                        content: " ";
+                        width: 16px;
+                        height: 16px;
+                        right: 0;
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        background: url(../../images/help/a_01.png)no-repeat;
+                      }
+                      img{
+                        right: 0;
+                        position: absolute;
+                        top: 0;
+                        margin-top: -41px;
+                        margin-right: -41px;
+                      }
+                    }
+                    &:nth-of-type(2){
+                      left:-120px;
+                      top: 220px;
+                      width: 190px;
+                      &:before{
+                        content: " ";
+                        width: 16px;
+                        height: 16px;
+                        right: 0;
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        background: url(../../images/help/a_01.png)no-repeat;
+                      }
+                      img{
+                        right: 0;
+                        position: absolute;
+                        top: 0;
+                        margin-top: -41px;
+                        margin-right: -41px;
+                      }
+                    }
+                    &:nth-of-type(3){
+                      left: -167px;
+                      top: 377px;
+                      width: 240px;
+                      &:before{
+                        content: " ";
+                        width: 16px;
+                        height: 16px;
+                        right: 0;
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        background: url(../../images/help/a_01.png)no-repeat;
+                      }
+                      img{
+                        right: 0;
+                        position: absolute;
+                        top: 0;
+                        margin-top: -41px;
+                        margin-right: -41px;
+                      }
+                    }
+                    &:nth-of-type(6){
+                      left: 425px;
+                      top: 53px;
+                      width: 240px;
+                      &:before{
+                        content: " ";
+                        width: 16px;
+                        height: 16px;
+                        left: -55px;
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        background: url(../../images/help/a_01.png)no-repeat;
+                      }
+                      img{
+                        left: -55px;
+                        position: absolute;
+                        top: 0;
+                        margin-top: -41px;
+                        margin-left: -41px;
+                      }
+                    }
+                    &:nth-of-type(5){
+                      left: 437px;
+                      top: 220px;
+                      width: 240px;
+                      &:before{
+                        content: " ";
+                        width: 16px;
+                        height: 16px;
+                        left: -45px;
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        background: url(../../images/help/a_01.png)no-repeat;
+                      }
+                      img{
+                       left: -45px;
+                        position: absolute;
+                        top: 0;
+                        margin-top: -41px;
+                        margin-left: -41px;
+                      }
+                    }
+                    &:nth-of-type(4){
+                      left: 427px;
+                      top: 385px;
+                      width: 240px;
+                      &:before{
+                        content: " ";
+                        width: 16px;
+                        height: 16px;
+                        left: -45px;
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        background: url(../../images/help/a_01.png)no-repeat;
+                      }
+                      img{
+                        left: -45px;
+                        position: absolute;
+                        top: 0;
+                        margin-top: -41px;
+                        margin-left: -41px;
+                      }
+                    }
+
+                  }
+               }
+             }
+          }
+        }
+        .function{
+          .cf();
+           h2{
+              font-size: 16px;
+              color: @c3;
+              line-height: 76px;
+           }
+           ul{
+             .cf();
+             li{
+               .cf();
+               &:nth-of-type(2n){
+                  dt{
+                    position: absolute;
+                    right: 0;
+                  }
+                  dd{
+                    float: left;
+                  }
+               }
+               &:nth-of-type(2){
+                 dt{
+                   background: #00bfa5;
+                 }
+                 dd{
+                  //  FILTER:
+                  //  progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##15A216,endColorStr=#fafafa);
+                  background:-moz-linear-gradient(left,#15A216,#fafafa);
+                  background:-webkit-gradient(linear, 9% 0%, 100% 100%,from(#f0faf9), to(#fff));
+                  background-image: -webkit-gradient(linear,top left,top right,color-start(0, #f0faf9),color-stop(1, #fff));
+                  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0faf9', endColorstr='#fff');
+                  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0faf9', endColorstr='#fff')";
+                 }
+               }
+               &:nth-of-type(1){
+
+                 dd{
+                   background: #fafcfe;
+                   background:-moz-linear-gradient(left,#15A216,#fafafa);
+                   background:-webkit-gradient(linear, 9% 0%, 100% 100%,from(#fff), to(#f1f7f3));
+                   background-image: -webkit-gradient(linear,top left,top right,color-start(0, #fff),color-stop(1, #f1f7f3));
+                   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#fff', endColorstr='#f1f7f3');
+                   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#fff', endColorstr='#f1f7f3')";
+                 }
+               }
+               &:nth-of-type(3){
+                 dt{
+                   background: #448aff;
+                 }
+                 dd{
+                   background: #fafcfe;
+                 }
+               }
+               &:nth-of-type(4){
+                 dt{
+                   background: #ff6f40;
+                 }
+               }
+             }
+           }
+           dl{
+             .cf();
+             margin-bottom: 12px;
+             position: relative;
+
+             dt{
+              //  float: left;
+               width: 25%;
+               background: #00c853;
+               height: 100%;
+               position: absolute;
+               img{
+                 margin-left: -45px;
+                 position: absolute;
+                 left: 50%;
+                 top: 50%;
+                 margin-top: -38px;
+               }
+             }
+             dd{
+               width: 66%;
+               float: right;
+              //  padding-left: 255px;
+               background: #f9fcfa;
+               padding: 35px ;
+               h3{
+                 font-size: 20px;
+                 color: @c3;
+                 margin-bottom: 15px;
+               }
+               p{
+                 font-size: 14px;
+                 color: @c6;
+                 line-height: 25px;
+                 margin-bottom: 10px;
+                 text-indent: 28px;
+                 &:nth-last-of-type(1){
+                   margin-bottom: 0;
+                 }
+               }
+             }
+           }
+        }
+
+
+	}
+}

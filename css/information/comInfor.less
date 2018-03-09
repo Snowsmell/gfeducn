@@ -1,0 +1,345 @@
+@import "../../css/commoncss/variable.less";
+@cm0:#d55;//红色
+@cf1:#4c87c4;
+
+/*机构资讯首页*/
+
+@cm01:#007ada;//蓝色
+
+
+html,body{
+	height: 100%;
+}
+.boxS{
+	box-sizing: border-box;
+}
+body{
+	background-color: #f4f4f4;
+}
+@media (max-width:1100px) {
+	body{
+		font-size: 12px;
+	}
+}
+.icon-right{
+  font-size: 0.8em;
+  color:#ccc;
+}
+
+//公共盒子
+.img{
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    -moz-transition: .618s -moz-transform;
+    -webkit-transition: .618s -webkit-transform;
+    -o-transition: .618s -o-transform;
+    transition: .618s transform;    
+  }
+  &:hover{
+    img{
+      -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      transform:scale(1.1);
+    }
+  }
+}
+
+.adOneimg {
+    margin-top: 30px;
+    img{
+      width: 100%;
+      display: block;
+    }
+}
+.btn0B{
+  display: inline-block;
+  border:1px solid @cf1;
+  color:@cf1;
+  width: 100px;
+  height: 34px;
+  .bdr(4px);
+  line-height: 34px;
+  background-color: #fff;
+  text-align: center;
+}
+.btn0W{
+  display: inline-block;
+  border:1px solid #fff;
+  color:#fff;
+  padding: 0 14px;
+  height: 28px;
+  .bdr(15px);
+  line-height: 28px;
+  background-color: transparent;
+  text-align: center;
+  >i{
+    font-size: 0.7em;
+  }
+  &:hover{
+    background-color: #fff;
+    color:@cf1;
+  }
+}
+.textList{
+  li{
+    margin-top: 15px;
+    a{
+      display: block;
+      height: 1.5em;
+      .spill(1);
+      margin-left: 16px;
+    }
+    &:before{
+      float: left;
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #ccc;
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-top: 8px;
+    }
+  }
+}
+
+.posaa{
+  position: absolute;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+}
+//资讯logo区域 start
+.depart-head{
+  background-color: #fff;
+  padding: 25px 0 20px;
+  h1,.h1{
+    display: inline-block;    
+    font-size: 24px;
+    >em{
+    	color:@cm01;
+    }    
+  }
+  .poplist-nav{
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+    padding-bottom:10px;
+    vertical-align: middle;
+    >i{
+      cursor: pointer;
+      font-size: 18px;
+    }
+    >dl{
+      display: none;
+      position: absolute;
+      z-index: 20;
+      left: -6px;
+      margin-top:5px;
+      background-color: #fffdf9;
+      border:1px solid #ddd;
+      padding: 10px 30px;
+      width: 335px;
+      &:before{
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: #fffdf9;
+        border-top:1px solid #ddd;
+        border-left:1px solid #ddd;
+        transform:rotate(45deg);
+      }
+      dd{
+        color: @c6;
+        margin: 10px 0;
+        .cf();
+        padding-left: 4em;
+        strong{
+          display: inline-block;
+          width: 4em;
+          color: @cm01;
+          text-align: right;
+          float: left;
+          margin-left: -4em;
+        }
+        a{
+          margin: 0 0 10px 20px;
+          display: inline-block;
+        }
+      }      
+    }
+    &.on,&:hover{
+      >dl{display: block;}
+    }
+
+  }
+	.countDown{
+		margin-left: 15px;
+    	color:#666;
+    	vertical-align: 20%;
+    	>em{
+    		color:@cm0;
+    		padding: 0 8px;
+    	}
+    }
+  .rig{
+    float: right;
+    .searchInput{
+    	float: left;
+		height: 40px;
+		position: relative;
+    z-index: 1;
+		.tag{
+			position: absolute;
+      z-index: 5;
+			top:8px;
+			right: 65px;
+			display: inline-block;
+			>a{
+				display: inline-block;
+				background-color: #f6f8f9;
+				color:#666;
+				padding: 2px 8px;
+			}
+		}
+		input{
+			float: left;
+		}
+		input[type = 'text']{
+			border:1px solid #ddd;
+			border-width:1px 0 1px 1px;
+			height: 22px;
+			line-height: 22px;
+			padding: 8px;
+			width: 324px;
+		}
+		input[type = "button"]{
+			background-color: @cm01;
+			color:#fff;
+			font-size: 16px;
+			height: 40px;
+			width: 60px;
+			text-align: center;
+			border:1px solid @cm01;
+			&:hover{
+				background-color: @cm01 - 20;
+			}
+		}
+    .searchlist{
+      display: none;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top:40px;
+      width: 324px;
+      background-color: #fff;
+      box-shadow: 0 5px 10px 0 #ccc;
+      padding: 0 20px 20px;
+      .til{
+        color:#999;
+        border-bottom:1px solid #eee;
+        padding-bottom: 10px;
+      }
+      >li{
+        padding-top: 15px;
+        a{
+          display: block;
+        }
+      }
+      &.on{
+        display: block;
+      }
+    }
+		@media (min-width:1100px) {
+			margin-right: 50px;
+			input[type = 'text']{
+				width: 424px;
+			}
+		}
+    }
+    >a{
+    	display: block;
+    	float: left;
+    	margin-top: 7px;
+    	margin-left: 30px;
+    	>i{
+    		margin-right: 8px;
+    		color:@cm01;
+    		font-size: 1.8em;
+    		vertical-align: middle;
+    	}
+    }
+  }
+}
+.livelist-nav{
+  .cf();
+  li{
+    float: left;
+    margin-right: 30px;
+    cursor: pointer;
+    &.on{
+      color: @cm01;
+      a{color: @cm01;}
+    }
+  }
+}
+//sec-nav start
+.sec-nav{
+	.cf();
+	background-color: @cm01;
+	a{
+		float: left;
+		width: 128px;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		display: block;
+		color:#fff;
+		font-size: 16px;
+		&:hover{
+			background-color: @cm01 + 20;
+		}
+	}
+}
+
+//tab切换
+.tabSwitch{  
+  >ul{
+    border-bottom: 2px solid #f4f4f4;
+    box-sizing: border-box;
+    >li {
+      display: inline-block;
+      color: #666;
+      margin:0 20px -2px 25px;
+      border-bottom: 2px solid transparent;
+      padding: 1.3em 0 1.1em;
+      cursor: pointer;
+      font-size: 16px;
+      &.on{
+        border-color: @cm01;
+        color: @cm01;
+      }
+    }
+  } 
+  >div{
+    display: none;
+    &.on{
+      display: block;
+    }
+  }
+
+}
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>新网校弹出层模板</title>
+
+	<link rel="stylesheet" type="text/css" href="../../../css/commoncss/common.css">	
+    <link rel="stylesheet" type="text/css" href="../../../css/live/style.css">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/commoncss/popup2/popupLayer.css">
+
+	<script src="../../../script/commonjs/jquery-2.1.4.min.js"></script>
+	<script src="../../../script/commonjs/popup2/popupLayer.js"></script>
+
+	<script src="../../../script/commonjs/common_textarea.js"></script>
+
+	<style type="text/css">
+		h1{font-size: 20px; font-weight: bold; text-align: center; padding: 20px;}
+		.poplist{text-align: center;}
+		.poplist > li{display: inline-block;width: 360px;height: 280px;margin:10px;border:1px solid #eee;}
+		.poplist > li img{width: 100%; height: 240px; display: block;}
+		.poplist > li a{display: block;margin: 10px;}
+	</style>
+</head>
+<body>
+<h1>弹出层实例集</h1>
+<ul class="poplist">
+	<li>
+		<img src="example01.png">
+		<a href="####" class="popOut" data-popname="#countdown_pop">倒计时提示框</a>
+	</li>
+	<li>
+		<img src="example02.png">
+		<a href="####" class="popOut" data-popname="#interactive_pop">用户交互提示框</a>
+	</li>
+	<li>
+		<img src="example03.png">
+		<a href="####" class="popOut" data-popname="#scancode_pop">微信扫码</a>
+	</li>
+	<li>
+		<img src="example04.png">
+		<a href="####" class="popOut" data-popname="#form_pop">表单输入</a>
+	</li>
+	<li>
+		<img src="example05.png">
+		<a href="####" class="popOut" data-popname="#hasnext_pop">多步骤</a>
+	</li>
+	<li>
+		<img src="example06.png">
+		<a href="####" class="popOut" data-popname="#special_pop">特殊框</a>
+	</li>
+</ul>
+
+<!-- 弹出层 -->
+<div class="popupLayer">
+
+	<!-- 倒计时提示框 start-->
+    <div class="popBox" id='countdown_pop'>
+        <span class="closeX icon-gf-wrong32"></span>
+        <div class="mes green"><i class="icon-44"></i>您已预约</div>
+        <!-- <div class="mes red"><i class="icon-prompt"></i>您已取消预约</div> -->
+        <p><span class='countdown' data-count="5">5</span>S后自动关闭</p><!-- data-count 填入需要计时的时间 -->
+    </div>
+    <!-- 倒计时提示框 end -->
+
+	<!-- 用户交互提示框 start -->
+    <div class="popBox" id="interactive_pop">
+        <span class="closeX icon-gf-wrong32"></span>
+        <div class="mes"><i class="icon-prompt"></i>支付完成前，请不要关闭此窗口。</div>
+        <p>请在新打开的页面完成支付。<a href="####" class="c_blue">选择其他支付方式&gt;</a></p>
+        <button class="btn_1 wc jsClose">已完成支付</button><button class="btn_2">支付遇到问题</button>
+    </div>
+    <!-- 用户交互提示框 end -->
+
+	<!-- 微信扫码 start -->
+	<div class="popBox" id="scancode_pop">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">微信扫码支付</h3>
+        <p class="pay-zj">支付<span>2999.00</span>元</p>
+        <div class="ewm">
+            <img src="../../../images/commonimages/popup/wxewm.png" class="img1">
+            <img src="../../../images/commonimages/popup/sys.png" class="img2">
+        </div>
+        <div class="ewm_bottom">
+            <p class="left"><img src="../../../images/commonimages/popup/sm.png"></p>
+            <p class="right"><span>打开手机微信</span><span>扫一扫继续付款</span></p>
+        </div>
+    </div>
+	<!-- 微信扫码 end -->
+
+	<!-- 表单输入 start -->
+	<div class="popBox" id="form_pop">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">用户输入</h3>
+        <form id="person">
+        <div class="formList">
+          <section>
+            <span><i>*</i>发票抬头</span>
+            <div class="tait">
+              <label class="on" data-con="person"><input type="radio" name="billT" checked="checked" value=" ">个人</label>
+              <label data-con="company"><span></span>公司</label>
+              <input type="text" name="" class="need">
+            </div>
+          </section>
+          <section>
+            <span><i>*</i>发票类型</span>
+            <div class="fap">
+              <label class="on" data-fplx="p"><input type="radio" name="faplx" checked="checked" value=" ">增值税普通发票<i>&#xf060;</i></label>
+            </div>
+          </section>
+          <section>
+          	<span><i>*</i>省市地区</span>
+            <div class="addr">
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+          </section>
+          <section>
+          	<span>&nbsp;</span>
+          	<div class="checkbox">
+          		<label>设为默认地址</label>
+          	</div>
+          </section>
+        </div>
+      </form>
+      <form id="company" style="display: none;">
+        <div class="formList">
+          <section>
+            <span><i>*</i>发票抬头</span>
+            <div class="tait">
+              <label data-con="person"><span></span>个人</label>
+              <label class="on" data-con="company"><input type="radio" name="billT" checked="checked" value=" ">公司</label>
+              <input type="text" name="" class="need">
+            </div>
+          </section>
+          <section>
+            <span><i>*</i>发票类型</span>
+            <div class="fap">
+              <label class="on" data-fplx="p"><input type="radio" name="faplx" checked="checked" value=" ">增值税普通发票<i>&#xf060;</i></label>
+              <label data-fplx="z" ><input type="radio" name="faplx" value=" ">增值税专用发票<i>&#xf060;</i></label>
+            </div>
+          </section>
+          <section>
+            <span>备注</span>
+            <div><textarea></textarea></div>
+          </section>
+        </div>
+      </form>
+      <div class="xuz">
+        <ol>
+          <li>发票抬头不能为空，您可以选择个人、公司名称或者您的姓名；</li>
+        </ol>
+      </div>
+      <button class='btnRed jsBtnBillQd' data-con="person">确定</button>                
+	    <div class="messages">
+	      <p class="red yqts"><span>友情提示：</span>请仔细核对您的填写信息，确认提交后，填写信息不可更改</p>
+	    </div> 		
+    </div>
+	<!-- 表单输入 end -->
+
+	<!-- 多步骤 start -->
+	<div class="popBox" id="hasnext_pop">
+        <span class="closeX icon-gf-wrong32"></span>
+		<h3 class="popTitle">更换手机绑定</h3>
+        <div class="tel1">
+            <div>
+                <i>&#xe92c;</i>
+                <input type="password" name="" placeholder="请输入密码">
+            </div>
+            <button>下一步</button>
+        </div>
+        <div class="tel2">
+            <div>
+                <i>&#xe9a2;</i>
+                <input type="tel" name="" placeholder="请输入11位手机号">
+            </div>
+            <div>
+                <i>&#xe9a3;</i>
+                <input type="text" name="" placeholder="请输入验证码">
+                <img src="../../../images/person/CheckCode.gif" alt="check">
+            </div>
+            <div>
+                <i>&#xe9aa;</i>
+                <input type="text" name="" placeholder="获取动态码">
+                <button>获取动态码</button>
+            </div>
+            <button>确定</button>
+        </div>
+        <div class="tel3">
+            <div>
+                <h4>
+					<i class="icon-44"></i>
+					更换手机绑定成功
+				</h4>
+                <p>您现在可以用手机号码直接登录</p>
+            </div>
+            <button>确定</button>
+        </div>
+    </div>
+	<!-- 多步骤 end -->
+
+	<!-- 特殊框 start -->
+	<div class="popBox" id="special_pop">
+        <span class="closeX icon-gf-wrong32"></span>
+	    <div class="modelTop">
+	       <div class="modelImg">
+	           <img src="../../../images/index/k_03.png" alt="吐槽">
+	           <p>对不起！让你吐槽了</p>
+	       </div>
+	       <div class="opinion">
+	           <h3>意见反馈</h3>
+	           <ul>
+	             <li class="sele">新版建议</li>
+	             <li>新版建议</li>
+	             <li>新版建议</li>
+	             <li>新版建议</li>
+	           </ul>
+	       </div>
+	    </div>
+	    <div class="contCenter">
+	      <div class="tarea">
+	        <textarea onkeyup="javascript:checkWord(this);" onmousedown="javascript:checkWord(this);"
+	          name="content"  placeholder="请填写具体内容帮助我们了解您的意见与建议"></textarea>
+	          <span><label id="wordCheck">0</label>/1000</span>
+	      </div>
+	      <div class="imgUp">
+	           <p class="up">上传图片</p>
+	           <input type="file" class="filebutton" />
+	           <div class="modelImg">
+	               <ul class="ulData">
+	                  <li class="imgDta">
+	                    <span><i class="icon-gf-wrong32"></i></span>
+	                    <img src="../../../images/study/i_03.jpg"/>
+	                  </li>
+	                  <li class="imgDta">
+	                    <span><i class="icon-gf-wrong32"></i></span>
+	                    <img src="../../../images/study/i_03.jpg"/>
+	                  </li>
+	                  <li class="imgDta">
+	                    <span><i class="icon-gf-wrong32"></i></span>
+	                    <img src="../../../images/study/i_03.jpg"/>
+	                  </li>
+	               </ul>
+	               <p>可上传多张图片</p>
+	           </div>
+	           <div class="sucess">
+	               成功上传图片!
+	           </div>
+	      </div>
+	      <input type="text" name="" placeholder="请留下QQ、邮箱或手机号，方便答疑解惑">
+	      <button type="button">提交</button>
+	      <button type="button" class="cancel jsClose">取消</button>
+	    </div>
+    </div>
+	<!-- 特殊框 end -->
+
+</div>
+</body>
+</html>

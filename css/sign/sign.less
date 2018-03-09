@@ -1,0 +1,392 @@
+@import "../../css/commoncss/common.less";
+
+body {
+  background-color: #f4f4f4
+}
+
+//登录页头部
+.login_header {
+  margin-top: 100px;
+  margin-bottom: 16px;
+  .cf();
+  .login_hleft {
+    float: left;
+    img {
+      vertical-align: middle
+    }
+    line-height: 40px;
+  }
+  .login_hright {
+    float: right;
+    color: @c6;
+    line-height: 20px;
+    margin-top: 20px;
+    a {
+      color: @c499
+    }
+  }
+}
+
+//登录页登录区域
+.logincontainer {
+  border: 1px solid #ddd;
+  height: 520px;
+  .loginc_left {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: @cw;
+    .loginform,.perfectform {
+      width: 320px;
+      margin: 0 auto;
+      margin-top: 65px;
+      .logintab {
+        text-align: center;
+        font-size: 18px;
+        color: @c6;
+        line-height: 50px;
+        a {
+          padding: 12px 15px;
+          margin-right: 20px;
+          color: @c6;
+          &.selected {
+            color: @d5;
+            border-bottom: 2px solid @d5;
+          }
+        }
+        margin-bottom: 20px;
+      }
+      .pclogin {
+        ul {
+          li {
+            color: @c6;
+            .cf();
+            .pcinput {
+              width: 100%;
+              height: 40px;
+              line-height: 38px;
+              border: 1px solid #ddd;
+              position: relative;
+              span {
+                display: block;
+                float: left;
+                width: 40px;
+                height: 38px;
+                line-height: 44px;
+                text-align: center;
+                i {
+                  color: #ccc;
+                  font-size: 20px;
+                }
+              }
+              .sbsote{
+                position: absolute;
+                right: 10px;
+                top: 0;
+                display: none;
+                i{
+                  color: #ccc;
+                }
+              }
+              input {
+                border: none;
+                width: 280px;
+              }
+            }
+            .warning {
+              display: none;
+              line-height: 20px;
+              color: @d5;
+              position: absolute;
+              bottom: -17px;
+              left: 0;
+            }
+            margin-bottom: 16px;
+            position: relative;
+            vertical-align: middle;
+            &.mian {
+              span {
+                float: left;
+              }
+              a {
+                float: right;
+                color: #4a90e2;
+              }
+            }
+            &.sub {
+              button {
+                border: none;
+                height: 40px;
+                width: 100%;
+                border-radius: 5px;
+                background-color: @d5;
+                color: @cw;
+                font-size: 18px;
+              }
+            }
+            &.cor {
+              margin-top: -10px;
+              a {
+                &:first-of-type {
+                  i {
+                    color: @d5;
+                  }
+                }
+                &:nth-of-type(2) {
+                  i {
+                    color: #6092bd;
+                  }
+                }
+                &:nth-of-type(3) {
+                  i {
+                    color: #81b84d;
+                  }
+                }
+                margin: 0 6px;
+                i {
+                  font-size: 30px;
+                  vertical-align: 2%;
+                }
+              }
+            }
+          }
+        }
+        .check_radio{
+          margin-right: 7px;
+          i{
+            display: none;
+          }
+        }
+        .cehecked{
+          border:1px solid #5fc57d;
+          i{
+            display: block;
+            color: #5fc57d;
+          }
+        }
+      }
+      .pclogin {
+        display: none;
+      }
+      .phonelogin, .inforest, .pl {
+        ul {
+          li {
+            color: @c6;
+            .cf();
+            .pcinput {
+              width: 100%;
+              height: 40px;
+              line-height: 38px;
+              border: 1px solid #ddd;
+              position: relative;
+              span {
+                display: block;
+                float: left;
+                width: 40px;
+                height: 38px;
+                line-height: 44px;
+                text-align: center;
+                i {
+                  color: #ccc;
+                  font-size: 20px;
+                }
+              }
+              .sbsote{
+                position: absolute;
+                right: 10px;
+                top: 0;
+                display: none;
+                i{
+                  color: #ccc;
+                }
+              }
+              input {
+                border: none;
+                width: 280px;
+                padding-right: 10px;
+                box-sizing: border-box;
+              }
+            }
+            .warning {
+              display: none;
+              line-height: 20px;
+              color: @d5;
+              position: absolute;
+              bottom: -17px;
+              left: 0;
+            }
+            margin-bottom: 16px;
+            position: relative;
+            vertical-align: middle;
+            &.yan, &.dongtai {
+              input {
+                width: 164px;
+                box-sizing: border-box;
+              }
+              a {
+                display: block;
+                width: 115px;
+                float: right;
+                height: 100%;
+                border-left: 1px solid #ddd;
+                background-color: #ededed;
+                text-align: center;
+                color: @c6;
+              }
+            }
+            &.yan {
+               display: none;
+              .pcinput {
+                a {
+                  color: @d5;
+                  font-size: 24px;
+                }
+              }
+            }
+            &.dongtai{
+              // display: none;
+            }
+            &.zuce {
+              button {
+                border: none;
+                height: 40px;
+                width: 100%;
+                background-color: @d5;
+                color: @cw;
+                font-size: 18px;
+              }
+            }
+            &.will{
+              color: @c9;
+              font-size: 12px;
+              a{
+                color: #4c87c4;
+              }
+            }
+            .agree {
+              color: @c9;
+              a {
+                color: @c9
+              }
+              .check_radio{margin-right: 7px;}
+              .cehecked{
+                border:1px solid #5fc57d;
+                i{
+                  display: block;
+                  color: #5fc57d;
+                }
+              }
+            }
+          }
+        }
+      }
+      .zulevel {
+        button {
+          border: none;
+          height: 40px;
+          width: 48%;
+          background-color: @d5;
+          color: @cw;
+          font-size: 18px;
+          float: left;
+          &:last-of-type {
+            margin-left: 4%;
+          }
+        }
+      }
+      &.loginform1 {
+        margin-top: 50px;
+        .logintab {
+          margin-bottom: 5px;
+        }
+      }
+      .check_radio {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        text-align: center;
+        line-height: 15px;
+        vertical-align: middle;
+        &.selected {
+          border-color: #5fc57d;
+          i {
+            color: #5fc57d;
+            &::before {
+              content: "\f053";
+            }
+          }
+        }
+      }
+    }
+    .perfectform{
+      display: none;
+      .sub{
+        button{
+          border: none;
+          height: 40px;
+          width: 100%;
+          border-radius: 5px;
+          background-color: #d55;
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+    .restsucess {
+      display: blck;
+      width: 320px;
+      margin: 0 auto;
+      margin-top: 65px;
+      text-align: center;
+      h3 {
+        font-size: 18px;
+        color: @c6;
+        line-height: 50px;
+        margin-top: 115px;
+      }
+      .restcontent {
+        p {
+          color: @c9;
+          font-size: 18px;
+          i {
+            color: #3fb54d;
+            font-size: 36px;
+          }
+          &:last-of-type {
+            line-height: 50px;
+          }
+        }
+        margin-bottom: 60px;
+        margin-top: 20px;
+      }
+      button {
+        height: 40px;
+        width: 100%;
+        background-color: @d5;
+        line-height: 40px;
+        text-align: center;
+        color: @cw;
+        font-size: 18px;
+        border: none;
+      }
+    }
+  }
+  .loginc_right {
+    height: 100%;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    background: url("../../images/sign/loginimg1.png") no-repeat center center;
+    background-color: #f9f9f9;
+  }
+}
+.copy {
+  color: @c9;
+  text-align: center;
+  margin: 20px 0;
+}
+
+

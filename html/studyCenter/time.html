@@ -1,0 +1,58 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+  <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+  <!-- <script src="../../script/study/backtime.js"></script> -->
+<script type="text/javascript">
+
+$(function () {
+    var hour = 00, minute =00, second = 00;
+    var t = 3500;
+    var a=true;
+  function protime(n) {
+      return n = n < 10 ? '0' + n : n;
+  }
+  studyTime()
+  function studyTime(){
+      hour=parseInt(t/60/60);
+      minute=parseInt(t/60%60);
+      second=parseInt(t%60);
+
+      var hour = protime(hour);
+      var minute = protime(minute);
+      var second = protime(second);
+      document.getElementById('t_s').innerHTML=second;
+      document.getElementById('t_h').innerHTML=hour;
+      document.getElementById('t_m').innerHTML=minute;
+      // t = t + 1;
+      if(a){
+				  t = t + 1;
+     }
+  }
+  //终止学习计时器
+
+   var tim=setInterval(studyTime, 1000);
+    $(".stopTime").click(function(){
+      a=false;
+    })
+    $(".go").click(function(){
+       a=true;
+
+    })
+})
+
+</script>
+</head>
+<body>
+<form>
+  <small class="backTime change">
+    <em id="t_h">00</em>:<em id="t_m">00</em>:<em id="t_s">00</em>
+  </small>
+  <input type="text" name="" value="" id="time">
+  <button type="button" name="button" class="stopTime">停止</button>
+  <button type="button" name="button" class="go">继续</button>
+</form>
+<!-- <p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“停止计时”按钮可以终止计时。</p>
+<p>timedCount(),1000ms自己调自己。</p> -->
+</body>
+</html>

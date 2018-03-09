@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body { font-family:"微软雅黑"; margin:0; padding:0; background:#ffffff;}
+div,form,img,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,img{ margin:0; padding:0; border:0; font-weight:normal; font-size:12px;}
+img{ border:none; vertical-align:middle;}
+ul,li{ list-style-type: none; }
+button{ vertical-align:middle; cursor:pointer;}
+input, button{	vertical-align:middle; border:none; font-family:"微软雅黑";}
+.clear { clear:both; overflow:hidden; height:0px;}
+.blank{ display:block; height:10px; clear:both; overflow:hidden; visibility:hidden;}
+.lft{ float:left;}
+.rgt{ float:right;}
+.clearfix{ overflow:hidden; zoom:1;}
+
+
+.delay01s{
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+.delay03s{
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+.delay05s{
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.delay07s{
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+.delay08s{
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.delay09s{
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+.delay1s{
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.delay11s{
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+.delay13s{
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+.delay15s{
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.delay17s{
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+.delay19s{
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+}
+.delay21s{
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+.delay23s{
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>商城列表</title>
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/blackHeader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/live/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/questionfonts.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/comque.css">
+    <link rel="stylesheet" type="text/css" href="../../css/live/live.css">
+    <link rel="stylesheet" type="text/css" href="../../css/live/livelist.css">
+    <link rel="stylesheet" type="text/css" href="../../css/mall/mall.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../../script/html5shiv.js"></script>
+    <script type="text/javascript" src="../../script/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/commonjs/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!--顶部菜单-->
+<div class="index-header2">
+      <div class="wrap">
+          <div class="indexleft">
+              <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo2.png"></a>
+              <ul>
+                  <li><a href="javascript:;">课程</a></li>
+                  <li><a href="javascript:;">题库</a></li>
+                  <li><a href="javascript:;">直播</a></li>
+                  <li><a href="javascript:;">咨询</a></li>
+                  <li><a href="javascript:;">商城</a></li>
+              </ul>
+          </div>
+          <div class="indexright">
+              <div class="info">
+                  <ul>
+                      <li class="phone"><i class="icon-xx">&#xf002;</i><i class="icon-xx">&#xf020;</i>
+                          <div class="peo-copy"></div>
+                          <div class="people-sel">
+                              <ul>
+                                  <li><a href="javascript:;">金程网校APP</a></li>
+                                  <li><a href="javascript:;">天天CPA</a></li>
+                                  <li><a href="javascript:;">金网公众号</a></li>
+                                  <li><a href="javascript:;">金网题库服务号</a></li>
+                                  <li><a href="javascript:;">金网CFA APP</a></li>
+                                  <li><a href="javascript:;">金网CFA服务号</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><i class="icon-xx">&#xe92d;</i><span><i class="icon-xx">&#xf038;</i></span></li>
+                      <li><i class="icon-xx">&#xf004;</i><span>6</span></li>
+                      <li class="people"><i class="icon-xx">&#xf005;<!--<img src="http://img0.imgtn.bdimg.com/it/u=4128355576,3453965016&fm=214&gp=0.jpg">--></i><i class="icon-xx">&#xf020;</i>
+                          <div class="peo-copy"></div>
+                          <div class="people-sel">
+                              <ul>
+                                  <li><a href="javascript:;">学习空间</a></li>
+                                  <li><a href="javascript:;">我的订单</a></li>
+                                  <li><a href="javascript:;">个人信息</a></li>
+                                  <li><a href="javascript:;">账号设置</a></li>
+                                  <li><a href="javascript:;">退出</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <!-- <li id="loginM"><a href="/user/login">登录</a></li>
+                      <li id="registerM"><a href="/user/register">注册</a></li> -->
+                  </ul>
+              </div>
+              <div class="searchinput">
+                  <input type="text" placeholder="请输入想搜索的内容">
+                  <a href="javascript:;"><i class="icon-xx">&#xf001;</i></a>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="hr50"></div>
+<!-- 直播列表 start -->
+<div class="wrap">
+
+<!-- 课程列表 start-->
+<div class="livelist-top">
+  <h1>金程商城考研</h1>
+  <div class="poplist-nav"><i class="icon-b1"></i>
+  <dl>
+  <dd><strong>金融</strong><a href="####">CFA</a><a href="####">FRM</a><a href="####">CFRM</a><a href="####">保荐代表人</a></dd>
+  <dd><strong>从业</strong><a href="####">证券</a><a href="####">银行</a><a href="####">期货</a><a href="####">基金</a></dd>
+  <dd><strong>理财</strong><a href="####">RFP</a><a href="####">精算师</a></dd>
+  <dd><strong>国内会计</strong><a href="####">CPA</a><a href="####">税务师</a><a href="####">会计职称</a><a href="####">保荐代表人</a></dd>
+  <dd><strong>国外会计</strong><a href="####">CMA</a><a href="####">CIMA</a><a href="####">USCPA</a><a href="####">ACCA</a></dd>
+  </dl></div> 
+</div>
+
+<div class="c-classify-content mailList">
+  <dl>
+      <dt>全部课程</dt>
+      <dd>
+          <ul id="ly">
+              <li class="selected"><a href="javascript:;">全部</a> </li>
+              <li><a href="javascript:;">CFA一级</a> </li>
+              <li><a href="javascript:;">CFA二级</a> </li>
+              <li><a href="javascript:;">CFA三级</a> </li>
+          </ul>
+      </dd>
+  </dl>
+  <dl>
+      <dt>图书分类</dt>
+      <dd>
+          <ul id="xk">
+              <li class="selected"><a href="javascript:;">全部</a></li>
+              <li><a href="javascript:;">图书</a> </li>
+              <li><a href="javascript:;">电子书</a> </li>
+              <li><a href="javascript:;">在线试卷</a> </li>
+              <li><a href="javascript:;">电子优惠券</a> </li>              
+          </ul>
+      </dd>
+  </dl>
+  <dl>
+      <dt>年份</dt>
+      <dd>
+          <ul id="km">
+              <li class="selected"><a href="javascript:;">全部</a> </li>
+              <li><a href="javascript:;">2017年</a> </li>
+              <li><a href="javascript:;">2018年</a> </li>
+              <li><a href="javascript:;">2019年</a> </li>
+          </ul>
+      </dd>
+  </dl>
+</div>
+<!--列表部分-->
+<div class="list">
+    <div class="listleft">
+        <div class="listtitle">
+            <div class="titleleft">
+                <a href="javascript:;" class="selected">默认</a>
+                <a href="javascript:;">时间<i>&#xf055;</i></a>
+                <a href="javascript:;">人气<i>&#xf055;</i></a>
+            </div>
+            <div class="titleright">
+                <span>1/13</span>
+                <a href="javascript:;"><i>&#xf021;</i></a>
+                <a href="javascript:;"><i>&#xf022;</i></a>
+            </div>
+        </div>
+        <div class="livelist mailList">
+          <ul class="line">
+            <li>
+              <div class="img"><a href="####"><img src="http://img3m9.ddimg.cn/50/30/22788959-1_b_3.jpg" alt="偷影子的人"></a></div>
+              <div class="mid">
+                <p class='til'><a href="####">CFA一级零基础教你瞬间秒</a></p>
+                <p class="tim l">操作风险测量与管理部分在FRM二级的5门科目中占比达到25%，内容繁多，且与实务紧密结合科目中占比达到25%，内容繁多，且与实务紧密结合</p>
+                <div class="oth"><b>金程学术研究院</b><span class="p">￥2199.00<del>￥3810.00</del></span></div> 
+              </div>
+              <div class="rig">
+                <a href="####" class="btnG">预定商品</a>
+                <p class="yuy"><span class="jsHeart addC"><i class="icon-heart-hollow"></i>加入心愿单</span></p>
+              </div>
+            </li>
+            <li>
+              <div class="img"><a href="####"><img src="http://www.gfedu.cn/images/index/k2.png"></a></div>
+              <div class="mid">
+                <p class='til'><a href="####">CFA一级零基础教你瞬间秒懂金融产品备考级零基础教你瞬间秒懂金融产品备考一CFA一级零基础教你瞬间秒懂金融产品备考</p>
+                <p class="tim l">内容繁多，且与实务紧密结合科目中占比达到25%，内容繁多，且与实务紧密结合</p>
+                <div class="oth"><b>金程学术研究院</b><span class="p">￥299<del>399</del></span></div> 
+              </div>
+              <div class="rig">
+                <a href="####" class="btnR">加入购物车</a>
+                <p class="yuy"><span class="jsHeart addC"><i class="icon-heart-hollow"></i>加入心愿单</span></p><!-- <i class="icon-heart"></i>已在心愿单-->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="pages">
+            <div class="pagesword">3/13 页</div>
+            <div class="page">
+                <span><i>&#xf058;</i></span>
+                <span class="prev"><i>&#xf021;</i></span>
+                <a href="javascript:;" class="selected">1</a>
+                <a href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <i>&#xf038;</i>
+                <span class="next"><i>&#xf022;</i></span>
+                <span><i>&#xf059;</i></span>
+            </div>
+        </div>
+    </div>
+    <div class="bottomright">
+        <div class="aboutcourse">
+            <h3>相关课程</h3>
+            <ul>
+                <li>
+                    <div class="img">
+                        <img src="../../images/class/n1.jpg">
+                    </div>
+                    <h3>2017年6月CFA一级速赢强化套餐班</h3>
+                    <p>￥2999</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="../../images/class/n2.jpg">
+                    </div>
+                    <h3>2017年6月CFA一级速赢强化套餐班</h3>
+                    <p>￥2999</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="../../images/class/n3.jpg">
+                    </div>
+                    <h3>2017年6月CFA一级速赢强化套餐班</h3>
+                    <p>￥2999</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- 课程列表 end-->
+<div class="hr50"></div>
+<!-- 直播列表 end -->
+
+
+<!--底部-->
+<div class="footbottom">
+    <div class="wrap">
+        <div class="footnav">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="javascript:;">如何注册会员</a></dd>
+                <dd><a href="javascript:;">如何购买课程</a></dd>
+                <dd><a href="javascript:;">如何观看课程</a></dd>
+            </dl>
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="javascript:;">网校学习方式</a></dd>
+                <dd><a href="javascript:;">学习效果如何保障</a></dd>
+                <dd><a href="javascript:;">学习条件</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="javascript:;">会计支付</a></dd>
+                <dd><a href="javascript:;">如何购买课程</a></dd>
+                <dd><a href="javascript:;">如何观看课程</a></dd>
+            </dl>
+            <dl>
+                <dt>关于金程</dt>
+                <dd><a href="javascript:;">关于我们</a></dd>
+                <dd><a href="javascript:;">联系我们</a></dd>
+                <dd><a href="javascript:;">加入我们</a></dd>
+                <!-- <dd><a href="javascript:;">投诉与建议</a></dd> -->
+            </dl>
+            <ul>
+                <li>
+                    <p><a href="javascript:;"><i>&#xf028;</i>@金程教育</a></p>
+                </li><li>
+                    <p><img src="../../images/index/bottomWX.png"></p>
+                </li>
+            </ul>
+        </div>
+        <div class="foota">
+            <a href="javascript:;"><img src="../../images/index/foot1.png">沪IPC备08016784号-25</a>
+            <a href="javascript:;"><img src="../../images/index/foot2.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot3.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot4.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot5.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot6.png"></a>
+        </div>
+        <div class="copy">
+            Copyright © 2001-2017 金程网校 All Rights Reserved.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+<div class="sidelan">
+    <ul>
+        <li><a href="javascript:;"><i>&#xf007;</i>
+            <p>课程咨询</p></a>
+        </li>
+        <li id="hotline">
+            <a href="javascript:;">
+                <i>&#xf009;</i>
+                <p>24h热线</p>
+            </a>
+                <!--<p class="telr"><span><i></i><span>24H热线</span></span>-->
+                <em>400-700-9596</em><!--</p>-->
+        </li>
+        <li class="outModel"><a href="javascript:;"><i class="icon-c1">&#xe940;</i>
+            <p>意见反馈</p></a>
+        </li>
+        <!-- <li><a href="javascript:;"><i>&#xf009;</i>
+
+            <p>24h热线</p></a></li> -->
+        <li><a href="javascript:scroll(0,0);"><i>&#xf010;</i></a></li>
+    </ul>
+</div>
+<div class="model">
+  <section>
+    <div class="modelTop">
+       <div class="modelImg">
+           <img src="../../images/index/k_03.png" alt="吐槽">
+           <p>对不起！让你吐槽了</p>
+       </div>
+       <div class="opinion">
+           <h3>意见反馈</h3>
+           <ul>
+             <li class="sele">新版建议</li>
+             <li>新版建议</li>
+             <li>新版建议</li>
+             <li>新版建议</li>
+           </ul>
+       </div>
+    </div>
+    <div class="contCenter">
+      <div class="tarea">
+        <textarea onkeyup="javascript:checkWord(this);" onmousedown="javascript:checkWord(this);"
+          name="content"  placeholder="请填写具体内容帮助我们了解您的意见与建议"></textarea>
+          <span><label id="wordCheck">0</label>/1000</span>
+
+      </div>
+      <div class="imgUp">
+           <p class="up">上传图片</p>
+           <input type="file" class="filebutton" />
+           <div class="modelImg">
+               <ul class="ulData">
+                  <li class="imgDta">
+                    <span><i>&#xf054;</i></span>
+                    <img src="../../images/study/i_03.jpg"/>
+                  </li>
+                  <li class="imgDta">
+                    <span><i>&#xf054;</i></span>
+                    <img src="../../images/study/i_03.jpg"/>
+                  </li>
+                  <li class="imgDta">
+                    <span><i>&#xf054;</i></span>
+                    <img src="../../images/study/i_03.jpg"/>
+                  </li>
+                  <!-- <li class="filebutton"><input type="file"></li> -->
+               </ul>
+               <p>可上传多张图片</p>
+           </div>
+           <div class="sucess">
+               成功上传图片!
+           </div>
+      </div>
+      <input type="text" name="" placeholder="请留下QQ、邮箱或手机号，方便答疑解惑">
+      <button type="button" name="button">提交</button>
+      <button type="button" name="button" class="cancel">取消</button>
+    </div>
+  </section>
+
+</div>
+
+<script type="text/javascript" src="../../script/mall/mall.js"></script>
+</body>
+</html>

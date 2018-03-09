@@ -1,0 +1,208 @@
+﻿html,body{ font-size: 100px;}
+@media only screen and (min-width: 1300px){
+	html,body{ font-size:100px;}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+	html,body{ font-size:80px;}
+	body{ background: #6381B9;}
+}
+@media only screen and (min-width: 800px) and (max-width: 1120px) {
+	html,body{ font-size:70px;}
+}
+
+
+/*导航*/
+.fullpage{min-width: 320px; font-family:youyuan}
+.in{ opacity: 1 !important;}
+
+#fp-nav{ width: 20px; height: 155px; background: rgba(0,0,0,.82); border-radius: 10px; border: 2px solid #434343; display:none}
+#fp-nav ul{ margin-top: 16px;}
+#fp-nav ul li{ width: 13px; height: 13px; margin: 0 auto 9px;}
+#fp-nav ul li a span{ width: 13px; height: 13px; top: 0; left: 0; border: 1px solid #cccccc; box-sizing: border-box;}
+#fp-nav ul li a.active span{ background: #d8aa53; border: none;}
+
+.section{ background-size: cover; background-position: center center; background-repeat: none; position: relative;}
+.center{ width:1200px; margin:0 auto}
+
+.next-page{ position:fixed; bottom:30px; left:-20px; margin-left:50%; cursor:pointer; z-index:999}
+.next-page img{ width:60%}
+
+.section1{ background:#000 !important;}
+.section1 h1{ font-size:55px; color:#ffffff; text-align:center; line-height:90px; font-family:youyuan}
+.section1 h1 span{ display:block; font-size:20px; color:#bbbbbb}
+.section1 .addNewEff{ opacity: 0; transition: all 0.3s; width: 100%;}
+.section1 .addNewEff.in{animation: bounceIn 3s;-webkit-animation: bounceIn 3s;-moz-animation: bounceIn 3s;-ms-animation: bounceIn 3s;-o-animation: bounceIn 3s; opacity: 1;}
+.section1 .section1_2{ text-align:center; margin-top:60px}
+
+.section2{ background-image:url(../images/section2.jpg)}
+.section2 .section2_1{ font-size:30px; color:#333333; opacity: 0; transition: all 0.8s 0.8s ease-in-out; font-family:youyuan}
+.section2 .section2_1 span{ font-family:"微软雅黑"}
+.section2 .section2_1.in{ opacity:1}
+.section2 .section2_2{ padding:20px 0}
+.section2 .section2_2 .section2_img{ width:370px; text-align:left; opacity: 0; transition: all 0.8s 1.2s ease-in-out;}
+.section2 .section2_2 .section2_img.in{ opacity:1}
+.section2 .section2_2 .section2_text{ margin-left:120px}
+.section2 .section2_2 .section2_txt{ font-size:20px; color:#666666; line-height:46px; margin:30px 0 60px 0; opacity: 0; transition: all 0.8s 1.6s ease-in-out; font-family:youyuan}
+.section2 .section2_2 .section2_txt.in{opacity: 1;}
+.section2 .section2_2 .section2_txt span{ display:block; font-size:30px; color:#333333; background:url(../images/2_cur.png) left no-repeat; padding-left:26px}
+.section2 .section2_3{ font-size:16px; color:#666666; line-height:28px; opacity: 0; transition: all 0.8s 1.8s ease-in-out; font-family:youyuan}
+.section2 .section2_3.in{ opacity:1}
+
+.section3{ background-image:url(../images/section3.jpg)}
+.section3 .section3_1{ font-size:30px; color:#ffffff; text-align:left; padding-bottom:100px; opacity:0; transition: all 0.8s 1.2s ease-in-out;}
+.section3 .section3_1.in{ opacity:1}
+.section3 .section3-cont{ float:left; width:33.3%; text-align:center}
+.section3 .section3-cont .section3-text{ font-size:14px; color:#bbbbbb; line-height:30px; padding:0 16%}
+.section3 .section3-cont .section3-text span{ display:block; font-size:32px; color:#ffffff; line-height:80px; padding-top:16px}
+.section3 .section3-cont .section3-text b{ font-weight:normal}
+.section3 .postion3-1{ position:relative; left:-100%}
+.section3 .postion3-2{ opacity:1; transition: all 1s 1.2s ease-in-out; position:relative; bottom:-700px}
+.section3 .postion3-2.in{ opacity:1}
+.section3 .postion3-3{ position:relative; right:-100%}
+
+.section4{ background-image:url(../images/section4.jpg)}
+.section4 .postion4{ background:#FFF; height:200px; position:absolute; top:0; left:0; width:100%;}
+.section4 h1{ font-size:40px; color:#333333; text-align:center; line-height:55px; padding-top:45px; font-family:youyuan; opacity:0; transition: all 0.8s ease-in-out;}
+.section4 h3{ display:block; font-size:18px; color:#999999; text-align:center; font-family:youyuan; line-height:55px; opacity:0; transition: all 0.8s 0.5s ease-in-out;}
+.section4 .section4-cont{ padding-top:200px}
+.section4 .section4-cont .cont4-0{ float:left; width:25%; text-align:center; opacity:0}
+.section4 .section4-cont .cont4-0 .cont4-text{ font-size:16px; color:#bbbbbb; line-height:46px; padding-top:20px}
+.section4 .section4-cont .cont4-0 .cont4-text span{ display:block; font-size:29px; color:#ffffff}
+.section4 .section4-cont .cont4-0.flipInY{-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: flipInY;animation-name: flipInY; opacity: 1;}
+
+.section5 h1{ font-size:40px; color:#333333; text-align:center; line-height:55px; font-family:youyuan; opacity:0; transition: all 0.8s ease-in-out;}
+.section5 h3{ display:block; font-size:20px; color:#999999; text-align:center; font-family:youyuan; line-height:36px; opacity:0; transition: all 0.8s 0.5s ease-in-out; padding-top:20px}
+.module{ background:url(../images/title-back.png) center no-repeat; width:280px; height:60px; text-align:center; line-height:60px; font-size:20px; color:#666666; opacity:0; transition: all 0.8s 1s ease-in-out;}
+.section5 .module{ margin:40px auto 0 auto}
+.section5 .section5-img{ text-align:center; margin-top:20px; opacity:0; transition: all 0.8s 1.5s ease-in-out}
+
+.section6{ background-image:none; background:#F1F1F1 !important}
+.section6 h1{ font-size:40px; color:#333333; text-align:left; line-height:60px; font-family:youyuan; position:relative; left:-100%}
+.section6 .module{ margin-top:10px; position:relative; right:-100%; opacity:1; transition: all 0s 0s ease-in-out;}
+.section6 h3{ display:block; font-size:18px; color:#999999; text-align:left; font-family:youyuan; line-height:36px; padding-top:30px; position:relative; left:-100%}
+.section6 h3 span{ display:block}
+.section6 .section6-text{ float:left; width:680px}
+.section6 .section6-img{ float:left; width:520px}
+.section6 .section6-img img{ opacity:0; transition: all 0.8s 1s ease-in-out; width:85%}
+
+.section7{ background-image:none; background:#202730 !important}
+.section7 h1{ font-size:40px; color:#ffffff; text-align:center; line-height:55px; font-family:youyuan; opacity:0; transition: all 0.8s ease-in-out;}
+.section7 h3{ display:block; font-size:18px; color:#9dadbf; text-align:center; font-family:youyuan; line-height:36px; opacity:0; transition: all 0.8s 0.5s ease-in-out; padding-top:20px}
+.section7 .module{ margin:10px auto 0 auto; color:#9dadbf}
+.section7 .section7-cont{ width:1020px; margin:20px auto 0 auto}
+.section7 .section7-cont .cont7-0{ float:left; width:218px; border:solid 1px #999999; text-align:center; background:#252E38; border-radius:18px; padding:29px 0; margin:0 60px; opacity:0}
+.section7 .section7-cont .cont7-0 .cont7-txt{ font-size:16px; color:#999999; line-height:24px; padding-top:46px;}
+.section7 .section7-cont .cont7-0 .cont7-txt span{ display:block; font-size:24px; color:#ffffff; text-align:center; padding-bottom:12px}
+.section7 .section7-cont .cont7-0.flipInY{-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: flipInY;animation-name: flipInY; opacity: 1;}
+
+.section8 h1{ font-size:40px; color:#333333; text-align:left; line-height:60px; font-family:youyuan; position:relative; left:-100%}
+.section8 .module{ margin-top:10px; position:relative; right:-100%; opacity:1; transition: all 0s 0s ease-in-out;}
+.section8 h3{ display:block; font-size:18px; color:#999999; text-align:left; font-family:youyuan; line-height:36px; padding-top:30px; position:relative; left:-100%}
+.section8 h3 span{ display:block}
+.section8 .section8-text{ float:left; width:680px}
+.section8 .section8-img{ float:left; width:520px}
+.section8 .section8-img img{ opacity:0; transition: all 0.8s 1s ease-in-out;}
+
+.section9{ background-image:url(../images/section9.jpg)}
+.section9 .section9-cont{ width:1300px; margin:0 auto}
+.section9 .section9-right{ width:600px}
+.section9 .section9-1{ font-size:47px; color:#FFF; font-family:youyuan; opacity:0; transition: all 1s 0.5s ease-in-out;}
+.section9 .section9-2{ font-size:20px; color:#ffffff; line-height:36px; font-family:youyuan; padding-top:12px; opacity:0; transition: all 1s 0.5s ease-in-out;}
+.section9 .section9-2 span{ display:block; padding-bottom:12px}
+
+.section10 .section10-cont{ opacity:0; transition: all 1.5s 1s ease-in-out;}
+.section10 .section10-cont.flipInY{-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: flipInY;animation-name: flipInY; opacity: 1;}
+.section10 .section10-cont .section10-1{ font-size:48px; color:#010101; text-align:center; font-family:youyuan}
+.section10 .section10-cont .section10-2 a{ display:block; font-size:18px; line-height:46px; width:200px; margin:60px auto 0 auto; background:#13B2CF; text-align:center; border-radius:12px; color:#FFF; text-decoration:none}
+
+@keyframes sizeChange{
+	0%,100%{ transform: scale(1);}
+	50%{ transform: scale(1.2);}
+}
+
+@-webkit-keyframes sizeChange{
+	0%,100%{  -webkit-transform: scale(1);}
+	50%{ -webkit-transform: scale(1.2);}
+}
+
+
+html { font-size: 100px; }
+@media(min-width: 320px) { html { font-size: 100px; } }
+@media(min-width: 360px) { html { font-size: 112.5px; } }
+@media(min-width: 400px) { html { font-size: 125px; } }
+@media(min-width: 640px) { html { font-size: 200px; } }
+
+@media screen and (max-width:1000px){
+	*{position:static!important;transform:translate3d(0px,0px,0px)!important;overflow:auto; opacity:1!important}
+	.next-page{ display:none !important}
+	.fp-tableCell,.section{ height:auto !important}
+	.section{ padding:0.3rem 0;}
+	.center{ width:96%; margin:0 auto}
+	.section1 .section1_2{ margin-top:0}
+	.section1 h1{ font-size:0.21rem; line-height:0.30rem}
+	.section1 h1 span{ font-size:0.18rem}
+	
+	.section2 .section2_1{ font-size:0.18rem}
+	.section2 .section2_2 .section2_img{ width:40%; padding-right:5%}
+	.section2 .section2_2 .section2_text{ margin-left:0px}
+	.section2 .section2_2 .section2_txt{ font-size:0.14rem; line-height:0.26rem; margin:0px 0 0px 0}
+	.section2 .section2_2 .section2_txt span{ display:block; font-size:0.18rem; color:#333333; background:url(../images/2_cur.png) left no-repeat; padding-left:0.26rem}
+	.section2 .section2_3{ font-size:0.14rem;}
+	
+	.section3{ background-image:none; background:#2D2E32 !important; padding:0 0 0.3rem 0}
+	.section3 .section3_1{ font-size:0.18rem; padding:0.3rem 0}
+	.section3 .section3-cont{ width:100%; margin-top:0.15rem}
+	.section3 .section3-cont .section3-img img{ width:40%}
+	.section3 .section3-cont .section3-text{ padding:0 3%}
+	.section3 .section3-cont .section3-text span{ display:block; font-size:0.16rem; color:#ffffff; line-height:0.60rem; padding-top:0px}
+	.section3 .section3-cont .section3-text b{}
+	
+	.section4{ background-image:none; background:#2D2E32 !important;}
+	.section4 .postion4{ background:#FFF; height:auto; min-height:1.0rem;}
+	.section4 h1{ font-size:0.18rem; line-height:0.3rem; padding-top:0;}
+	.section4 h3{ font-size:0.14rem; line-height:0.3rem;}
+	.section4 .section4-cont{ padding-top:0.2rem}
+	.section4 .section4-cont .cont4-0{ width:100%}
+	.section4 .section4-cont .cont4-0 .cont4-img{min-height:0.7rem}
+	.section4 .section4-cont .cont4-0 .cont4-img img{ width:25%}
+	.section4 .section4-cont .cont4-0 .cont4-text{ font-size:0.14rem; line-height:0.3rem; padding-top:0.1rem}
+	.section4 .section4-cont .cont4-0 .cont4-text span{ font-size:0.18rem;}
+	
+	.section5 h1{ font-size:0.18rem; line-height:0.3rem; padding-top:0;}
+	.section5 h3{ font-size:0.14rem; line-height:0.3rem;}
+	.section5 .module{ font-size:0.14rem; margin:0.1rem auto 0 auto; }
+	.section5 .section5-img{ margin-top:0.15rem;}
+	.section5 .section5-img img{ width:90%}
+	
+	.section6 h1{ font-size:0.18rem; line-height:0.3rem;}
+	.section6 h3{ font-size:0.14rem; line-height:0.26rem; }
+	.section6 h3 span{ display:inline}
+	.section6 .section6-text{ float:left; width:100%}
+	.section6 .section6-img{ width:100%; text-align:center}
+	.section6 .section6-img img{ width:70%}
+	
+	.section7 h1{ font-size:0.18rem; line-height:0.3rem;}
+	.section7 h3{ font-size:0.14rem; line-height:0.26rem; padding-top:0.1rem}
+	.section7 .module{ margin:10px auto 0 auto; color:#9dadbf}
+	.section7 .section7-cont{ width:100%}
+	.section7 .section7-cont .cont7-0{ width:60%; margin:0.1rem 20% 0 20%}
+	
+	.section8 h1{ font-size:0.18rem; line-height:0.3rem;}
+	.section8 h3{ font-size:0.14rem; line-height:0.26rem; }
+	.section8 h3 span{ display:inline}
+	.section8 .section8-text{ float:left; width:100%}
+	.section8 .section8-img{ width:100%; text-align:center; padding-top:0.1rem}
+	.section8 .section8-img img{ width:70%}
+	
+	.section9{ background-image:none; background:#191C21 !important}
+	.section9 .section9-cont{ width:96%; margin:0 auto}
+	.section9 .section9-right{ width:100%}
+	.section9 .section9-1{ font-size:0.2rem;}
+	.section9 .section9-2{ font-size:0.16rem; line-height:0.26rem; padding-top:0.12rem}
+	.section9 .section9-2 span{ padding-bottom:0.12rem}
+	
+	.section10 .section10-cont .section10-1{ font-size:0.21rem; color:#010101; text-align:center; font-family:youyuan}
+	.section10 .section10-cont .section10-2 a{ font-size:0.14rem; line-height:0.3rem; width:1.6rem; margin:0.3rem auto 0 auto; border-radius:0.6rem}
+}
+

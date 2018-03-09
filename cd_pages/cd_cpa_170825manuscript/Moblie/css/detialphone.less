@@ -1,0 +1,237 @@
+@import url(../../../../css/commoncss/variable.less);
+@import url(../../../../css/commoncss/common.less);
+
+.cd_studenty{
+    background-color: #ebecf3;
+}
+.server {
+    background: #f2f3f8;
+    padding: 10px 0;
+    .cf();
+    h3 {
+        font-size: 20px;
+        color: #333;
+        margin: 25px 0;
+        margin-left: -5px;
+    }
+    section {
+        max-width: 580px;
+        margin: 0 auto;
+        article {
+            padding: 5px 15px;
+            h4 {
+                font-size: 16px;
+                color: #f86924;
+                padding-bottom: 10px;
+                border-bottom: 1px dashed #d2d2d2;
+                span {
+                    float: right;
+                    font-size: 6px;
+                    color: #666;
+                    display: none;
+                    margin-top: 5px;
+                }
+                .showed {
+                    display: block;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: #666;
+                line-height: 25px;
+                &:nth-of-type(1) {
+                    margin-top: 10px;
+                }
+                &:nth-last-of-type(1) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.phone-name {
+    .cf();
+    margin-top: 10px;
+    padding: 40px 0 25px 0;
+    background: #fff;
+    section {
+        max-width: 580px;
+        margin: 0 auto;
+        .cf();
+        .phone-left {
+            width: 100%;
+            dl {
+                dt {
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    img {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                dd {
+                    margin-left: 75px;
+                    h3 {
+                        font-size: 20px;
+                        color: #333;
+                        margin-bottom: 10px;
+                        span {
+                            font-size: 14px;
+                            color: #f96827;
+                            border: 1px solid #f96827;
+                            padding: 3px 6px;
+                            font-weight: normal;
+                            border-radius: 4px;
+                        }
+                    }
+                    p {
+                        line-height: 25px;
+                        color: #999;
+                        font-size: 14px;
+                        margin-right: 26px;
+                    }
+                }
+            }
+        }
+        .phone-right {
+            display: none;
+            width: 100%;
+            h4 {
+                padding-left: 12px
+            }
+            img {
+                display: block;
+                margin: 10px auto;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media ( min-width: 540px) {
+    .phone-name section .phone-right {
+        float: right;
+        width: 24%;
+        border-left: 1px dashed #d2d2d2;
+    }
+    .phone-name section .phone-left {
+        float: left;
+        width: 75.8%;
+    }
+}
+//课程列表start
+.courselist {
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    h3 {
+        font-size: 24px;
+        color: #333;
+        margin: 15px 0;
+    }
+    .course {
+        margin-bottom: 15px;
+        h4 {
+            font-size: 15px;
+            color: #f86924;
+            margin-bottom: 15px;
+            span {
+                float: right;
+                width: 18px;
+                height: 18px;
+                margin: 3px 13px 0 0;
+            }
+            span.hide {
+                background: url('http://static.gfedu.net/special/cd_cpa_manuscript170825/Mobile/images/open.png') no-repeat center center;
+            }
+            span.open {
+                background: url('http://static.gfedu.net/special/cd_cpa_manuscript170825/Mobile/images/hide.png') no-repeat center center;
+            }
+        }
+        ul {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            li {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+                box-sizing: border-box;
+                padding-left: 90px;
+                line-height: 32px;
+                font-size: 13px;
+                padding-right: 30px;
+                position: relative;
+                >p {
+                    font-size: 14px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #666;
+                    margin-bottom: 10px;
+                    b {
+                        color: #f86924;
+                        font-weight: 400;
+                    }
+                }
+                >p.off {
+                    display: none;
+                }
+                >div {
+                    position: absolute;
+                    top: 11px;
+                    right: 15px;
+                    width: 14px;
+                    height: 8px;
+                    cursor: pointer;
+                }
+                >div.closed {
+                    background: url("http://static.gfedu.net/special/cd_cpa_manuscript170825/Mobile/images/down.png") no-repeat center center;
+                }
+                >div.opend {
+                    background: url("http://static.gfedu.net/special/cd_cpa_manuscript170825/Mobile/images/up.png") no-repeat center center;
+                }
+                >span {
+                    display: inline-block;
+                    width: 80px;
+                    height: 32px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    text-align: center;
+                }
+                >a {
+                    position: absolute;
+                    width: 60%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+                &:last-of-type {
+                    border-bottom: none;
+                }
+                &:hover {
+                    background-color: #f4f6f8;
+                    color: #f86924;
+                    >p {
+                        color: #666;
+                        b {
+                            color: #f86924
+                        }
+                    }
+                }
+            }
+        }
+        ul.off {
+            display: none;
+        }
+    }
+}

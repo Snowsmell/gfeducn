@@ -1,0 +1,219 @@
+/**
+*  description:公用样式
+*  author: Dolores
+*  date: 2015-6-4 15:58
+**************************************************/
+
+@import 'core.less';   	   //基本样式
+@import 'variable.less';   //全局变量
+
+@import 'footer.less';     //尾部公用样式
+@import 'jMmenu.less';     //移动端左侧推出样式
+@import 'share.less'; 	   //公用样式（mb头+尾）
+@import 'indexadd.less';   //注册登录弹框
+
+@import 'login_after.less'; //pc非首页登录后顶部样式
+
+@import 'nav.less';   //公共二级资讯导航
+.copyright{
+ p{
+   text-align: center;
+   color: @cw;
+   img{vertical-align: middle}
+   a{
+     color: @cw;
+     margin: 0 5px;
+     img{
+       margin-right: 5px;
+     }
+   }
+ }
+}
+
+/* 资讯项目 HREO */
+.hero{
+
+  .cf();
+
+  h1,.cfa-title{
+    color:#a18f69;
+    font-size:12px;
+    line-height:60px;
+    strong{
+      font-size:45px;
+      color:#33b0c4;
+      font-style:italic;
+      vertical-align:middle;
+    }
+  }
+  .herother{
+    color:#a18f69;
+    margin: 0 auto;
+    text-align: center;
+    .cf();
+    h1,.cfa-title{
+      span:nth-of-type(1){margin-right:15px;}
+      color:#33b0c4;
+      a{
+        color:#39bbf5;
+      }
+    }
+    strong,
+    span{
+      display:inline-block;
+      line-height:60px;
+    }
+    span{
+      padding-left:10px;
+      position:relative;
+      background-image:url(../../images2015/prolistnav.png);
+      background-repeat:no-repeat;
+      background-position:center right;
+      padding-right:12px;
+      a{
+        
+      
+      }
+      ul{
+        display:none;
+      }
+      &:hover{
+        ul{
+          display:block;
+          position:absolute;
+          top:40px;
+          left:0;
+          width:140px;
+          padding:5px;
+          background-color:#fff;
+          border:solid 1px #eee;
+          border-radius:2px;
+          z-index: 1;
+          li{
+            text-align:center;
+            width:50%;
+            line-height:30px;
+            float:left;
+            a{
+              color:#666;
+              &:hover{
+                color:#33b0c4;
+              }
+            }
+          }
+        }
+      }
+    }
+    q{
+      display:block;
+      line-height:20px;
+      color:#a18f69;
+    }
+  }
+  p{
+    height:48px;
+    input[type="text"]{
+    }
+    input[type="button"]{
+      background-color:#a18f69;
+    }
+  }
+  h3{
+    width:100%;
+    display:block;
+    .cf();
+    line-height:40px;
+    a{
+      padding:0 15px;
+      font-size:12px;
+      color:#666;
+    }
+  }
+}
+
+@media (min-width:480px){
+  .hero{
+    .herother{
+      padding-bottom:0;
+      q{
+      display: inline-block;
+      line-height:60px;
+      color:#a18f69;
+      padding-left:20px;
+      }
+      span{
+        &:hover{
+          ul{
+            width:220px;
+            li{
+              width:33.33%;
+            }
+          }
+        }
+      }
+    }
+    p{
+      padding-top:10px;
+    }
+  }
+}
+@media (min-width:768px){
+  .hero{
+        width: 65%;
+    float: left;
+    box-sizing:border-box;
+    .herother,
+    .herologo{
+      text-align: left;
+      width:80%;
+      float:left;
+      box-sizing:border-box;
+    }
+    h1,.cfa-title{
+      padding-left:10px;
+      strong{
+        font-size:65px;
+      }
+    }
+    p{
+      width:40%;
+      float:left;
+      box-sizing:border-box;
+      text-align:right;
+      padding-right:20px;
+    }
+  }
+}
+@media (min-width:992px){
+  .hero{
+    .herother{
+      q{
+        padding-left:50px;
+      }
+    }
+    p{
+      input[type="text"]{
+        width:300px;
+      }
+      input[type="button"]{
+        padding-left:30px;
+        padding-right:30px;
+      }
+    }
+  }
+}
+@media (min-width:1200px){
+  .hero{
+    /* width:1200px;
+    margin: 0 auto; */
+    padding-top: 50px;
+    .herother{text-align: left;}
+    p{
+      input[type="text"]{
+        width:340px;
+      }
+    }
+  }
+}
+
+

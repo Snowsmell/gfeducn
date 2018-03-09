@@ -1,0 +1,73 @@
+@import "variable.less";
+
+@cm0:#d55;
+/*中间部分*/
+.selftest{
+  .cf();
+  h2{
+    padding:40px 0px;
+    .tcenter();
+    .f20();
+  }
+  ul{
+    .cf();
+    box-sizing: border-box;
+    padding:0px 55px;
+    margin-bottom: 60px;
+  }
+  li{
+    box-sizing: border-box;
+    padding:15px 20px;
+    height: 50px;
+    color: @c6;
+    margin-bottom: 10px;
+    background: #f6f8f9;
+    position: relative;
+    h3{
+      .f16();
+      .ellipsis();
+      margin-right: 190px;
+    }
+    span{
+      .dis();
+      position: absolute;
+      top:14px;
+      right:17px;
+      em{
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        border:1px solid @cc;
+        .bdr(3px);
+        .tcenter();
+        line-height: 16px;
+        background: @cw;
+        display: inline-block;
+        margin-right: 5px;
+        i{.undis();}
+      }
+      label{
+        margin-left: 37px;
+        display: inline-block;
+        cursor: pointer;
+         &.on{em{
+          background: @c39b;
+          border-color:@c39b;color: @cw;
+          i{display: inline-block;}
+          }}
+      }
+    }
+  }
+ .submitok{
+  display: block;
+  width: 245px;
+  margin:0 auto 40px;
+  height: 50px;
+  background: @cm0;
+  .bdr(3px);
+  border:none;
+  .f20();
+  color: @cw;
+ }
+}
+

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/orderflow.css">
+    <script src="../commonjs/jquery-2.1.4.min.js"></script>
+    <script src="script/shop.js"></script>
+    <!-- <script src="script/addMess.js"></script> -->
+    <!-- 弹窗 start -->
+    <!-- <script src="script/jsbank.js"></script> -->
+</head>
+<!-- 开始2017-5-2结束2017-5-2 制作陈明 -->
+<body>
+    <!-- 头部 start -->
+    <div class="index-header2">
+        <div class="wrap">
+            <div class="indexleft">
+                <a href="javascript:;" class="logo"><img src="../commonimages/logo2.png"></a>
+                <ul>
+                    <li><a href="javascript:;">课程</a></li>
+                    <li><a href="javascript:;">题库</a></li>
+                    <li><a href="javascript:;">直播</a></li>
+                    <li><a href="javascript:;">咨询</a></li>
+                    <li><a href="javascript:;">商城</a></li>
+                </ul>
+            </div>
+            <div class="indexright">
+                <div class="info">
+                    <ul>
+                        <li class="phone"><i>&#xf002;</i><i>&#xf020;</i>
+
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">金程网校APP</a></li>
+                                    <li><a href="javascript:;">天天CPA</a></li>
+                                    <li><a href="javascript:;">金网公众号</a></li>
+                                    <li><a href="javascript:;">金网题库服务号</a></li>
+                                    <li><a href="javascript:;">金网CFA APP</a></li>
+                                    <li><a href="javascript:;">金网CFA服务号</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li><i>&#xf003;</i><span><i>&#xf038;</i></span></li>
+                        <li><i>&#xf004;</i><span>6</span></li>
+                        <li class="people"><i>&#xf005;</i><i>&#xf020;</i>
+
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">学习空间</a></li>
+                                    <li><a href="javascript:;">我的订单</a></li>
+                                    <li><a href="javascript:;">个人信息</a></li>
+                                    <li><a href="javascript:;">账号设置</a></li>
+                                    <li><a href="javascript:;">退出</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchinput">
+                    <input type="text" placeholder="请输入想搜索的内容">
+                    <a href="javascript:;"><i>&#xf001;</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 end -->
+    <div class="hr50"></div>
+    <!-- 主体 start -->
+    <div class="top_bg">
+        <div class="wrap settlement">
+            <div class="row-left">
+                <h1>结算中心</h1>
+            </div>
+            <div id="fuelux-wizard" class="row-fluid">
+                <ul class="wizard-steps">
+                    <li class="active_1">
+                        <span class="step step_1">1</span>
+                        <span class="title">我的购物车</span>
+                    </li>
+
+                    <li class="active">
+                        <span class="step">2</span>
+                        <span class="title">填写核对订单信息</span>
+                    </li>
+
+                    <li>
+                        <span class="step">3</span>
+                        <span class="title">提交订单</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content wrap setcenter">
+        <h2>商品清单 <a href="">返回修改购物车</a></h2>
+        <section>
+            <div class="conTop">
+                <ul>
+                    <li>课程名称</li>
+                    <li>原价</li>
+                    <li>数量</li>
+                    <li>套餐优惠</li>
+                    <li>小计</li>
+                </ul>
+            </div>
+            <div class="allText">
+                <div class="imgText">
+                    <ul class="imgTop">
+                        <li class="dlText">
+                            <dl class="textTop">
+                                <dt class="liimg">
+                                    <img src="images/1_07.jpg">
+                                </dt>
+                                <dd class="listwc">
+                                    <h3>2017年6月CFA一级百题巅峰预测班（现售套餐）</h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p>¥39999.00</p>
+                        </li>
+                        <li>
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <p>¥300.00</p>
+                        </li>
+                        <li>
+                            <p class="red">¥39999.00</p>
+                        </li>
+                    </ul>
+                    <div class="detail">
+                        <ul class="imgTop">
+                            <li class="dlText">
+                                <dl class="textTop">
+                                    <dt class="liimg">
+                                        <img src="images/1_07.jpg">
+                                    </dt>
+                                    <dd class="listwc">
+                                        <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>¥39999.00</p>
+                            </li>
+                        </ul>
+                        <ul class="imgTop">
+                         <li class="dlText">
+                            <dl class="textTop">
+                                <dt class="liimg">
+                                    <img src="images/1_07.jpg">
+                                </dt>
+                                 <dd class="listwc">
+                                     <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                 </dd>
+                            </dl>
+                         </li>
+                         <li>
+                           <p>¥39999.00</p>
+                         </li>
+                        </ul>
+                        <ul class="imgTop">
+                             <li class="dlText">
+                                <dl class="textTop">
+                                    <dt class="liimg">
+                                        <img src="images/1_07.jpg">
+                                    </dt>
+                                     <dd class="listwc">
+                                         <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                     </dd>
+                                </dl>
+                             </li>
+                             <li>
+                               <p>¥39999.00</p>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="tiele-list">
+                        <h4 class="kai">【包含课程】：CPA会计2016真题讲解</h4>
+                        <h4 class="kai">【包含课程】：CPA会计2016真题讲解 </h4>
+                    </div>
+                    <h4 class="kai">【包含课程】：CPA会计2016真题讲解 &nbsp;&nbsp;<span class="open">共3项<i class="icon-up2"></i></span></h4>
+                </div>
+                <div class="imgText">
+                    <ul class="imgTop">
+                        <li class="dlText">
+                            <dl class="textTop">
+                                <dt class="liimg">
+                                    <img src="images/1_07.jpg">
+                                </dt>
+                                <dd class="listwc">
+                                    <h3>2017年6月CFA一级百题巅峰预测班（现售套餐）</h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p>¥39999.00</p>
+                        </li>
+                        <li>
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <p>¥300.00</p>
+                        </li>
+                        <li>
+                            <p class="red">¥39999.00</p>
+                        </li>
+                    </ul>
+                    <div class="detail" style="display: block;">
+                        <ul class="imgTop">
+                            <li class="dlText">
+                                <dl class="textTop">
+                                    <dt class="liimg">
+                                        <img src="images/1_07.jpg">
+                                    </dt>
+                                    <dd class="listwc">
+                                        <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>¥39999.00</p>
+                            </li>
+                        </ul>
+                        <ul class="imgTop">
+
+                         <li class="dlText">
+                            <dl class="textTop">
+                                <dt class="liimg">
+                                    <img src="images/1_07.jpg">
+                                </dt>
+                                 <dd class="listwc">
+                                     <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                 </dd>
+                            </dl>
+                         </li>
+                         <li>
+                           <p>¥39999.00</p>
+                         </li>
+                        </ul>
+                        <ul class="imgTop  will">
+                             <li class="dlText">
+                                <dl class="textTop">
+                                    <dt class="liimg">
+                                        <img src="images/1_07.jpg">
+                                    </dt>
+                                     <dd class="listwc">
+                                         <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                     </dd>
+                                </dl>
+                             </li>
+                             <li>
+                               <p>¥39999.00</p>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="tiele-list" style="display: block;">
+                        <h4 class="kai">【包含课程】：CPA会计2016真题讲解</h4>
+                        <h4 class="kai">【包含课程】：CPA会计2016真题讲解 </h4>
+                    </div>
+                    <h4 class="kai">【包含课程】：CPA会计2016真题讲解 &nbsp;&nbsp;<span class="open">共3项<i class="icon-up2"></i></span></h4>
+                </div>
+                <div class="imgText textOne">
+                    <ul class="imgTop">
+                        <li class="dlText">
+                            <dl class="textTop">
+                                <dt class="liimg">
+                                    <img src="images/1_07.jpg">
+                                </dt>
+                                <dd class="listwc">
+                                    <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p>¥39999.00</p>
+                        </li>
+                        <li>
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <p>¥300.00</p>
+                        </li>
+                        <li>
+                            <p class="red">¥39999.00</p>
+                        </li>
+                    </ul>
+                    <div class="detail" style="display: block;">
+                        <ul class="imgTop">
+                            <li class="dlText">
+                                <dl class="textTop">
+                                    <dt class="liimg">
+                                        <img src="images/1_07.jpg">
+                                    </dt>
+                                    <dd class="listwc">
+                                        <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>¥39999.00</p>
+                            </li>
+                        </ul>
+                        <ul class="imgTop">
+                         <li class="dlText">
+                            <dl class="textTop">
+                                <dt class="liimg">
+                                    <img src="images/1_07.jpg">
+                                </dt>
+                                 <dd class="listwc">
+                                     <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                 </dd>
+                            </dl>
+                         </li>
+                         <li>
+                           <p>¥39999.00</p>
+                         </li>
+                        </ul>
+                        <ul class="imgTop will">
+                             <li class="dlText">
+                                <dl class="textTop">
+                                    <dt class="liimg">
+                                        <img src="images/1_07.jpg">
+                                    </dt>
+                                     <dd class="listwc">
+                                         <h3>CFA一级零基础教你你瞬间秒懂金融(32课时)</h3>
+                                     </dd>
+                                </dl>
+                             </li>
+                             <li>
+                               <p>¥39999.00</p>
+                             </li>
+                        </ul>
+                    </div>
+                    <h4 class="kai">【包含课程】：CPA会计2016真题讲解 &nbsp;&nbsp;<span class="open">共3项<i class="icon-up2"></i></span></h4>
+                </div>
+            </div>
+        </section>
+        <section class="bdnone">
+            <div class="addinfo">
+                <h2>收货信息 <a href="">新增地址&nbsp;</a></h2>
+                <ul class="address">
+                    <li class="add-active">
+                        <span>幸福痕迹</span>
+                        <span>13623652154</span>
+                        <span class="email">2555@qq.com</span>
+                        <span>200030</span>
+                        <span>上海  上海市虹口区松花江路复旦科技园1号楼 12楼</span>
+                        <span class="set">
+                            <a href="javascript:;">设为默认地址 |</a>
+                            <a href="javascript:;">编辑 |</a>
+                            <a href="javascript:;" class="del">删除</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>幸福痕迹</span>
+                        <span>13623652154</span>
+                        <span class="email">2555@qq.com</span>
+                        <span>200030</span>
+                        <span>上海  上海市虹口区松花江路复旦科技园1号楼 12楼</span>
+                        <span class="set">
+                            <a href="javascript:;">设为默认地址 |</a>
+                            <a href="javascript:;">编辑 |</a>
+                            <a href="javascript:;" class="del">删除</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>幸福痕迹</span>
+                        <span>13623652154</span>
+                        <span class="email">2555@qq.com</span>
+                        <span>200030</span>
+                        <span>上海  上海市虹口区松花江路复旦科技园1号楼 12楼</span>
+                        <span class="set">
+                            <a href="javascript:;">设为默认地址 |</a>
+                            <a href="javascript:;">编辑 |</a>
+                            <a href="javascript:;" class="del">删除</a>
+                        </span>
+                    </li>
+                    <h4 class="kai"><span class="open">更多地址<i class="icon-up2"></i></span></h4>
+                </ul>
+                <div class="cont bdtop">
+                    <h2><span><img src="images/choose.png"></span>发票信息</h2>
+                    <!-- <p><a href="javascript:void(0)"><b></b>不需要发票</a>
+                        <a href="javascript:void(0)"><b></b>需要发票</a></p> -->
+                    <p>发票抬头 <input type="text"> </p>
+                    <p>发票内容：培训费</p>
+                    <div class="explain"><span>发票说明：</span>
+                        <ul class="fpsm">
+                            <li>1、培训发票</li>
+                            <li>2、培训发票</li>
+                            <li>3、培训发票</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <h2><span class="open">使用优惠券</span><i>&#xf062;</i></h2> -->
+
+                <div class="yhq">
+                    <h2><span  class="open">使用优惠券<i class="icon-down2"></i></span></h2>
+                    <div class="yhq-list" style="display: none" >
+                        <p>可用优惠券</p>
+                        <ul>
+                            <li>
+                                <div class="sp_coupon">
+                                    <div class="sp_coupon_left">
+                                        ￥20
+                                    </div>
+                                    <div class="sp_coupon_right">
+                                        有效期至：
+                                        <time>2017.08.30</time>
+                                    </div>
+                                </div>
+                                <em><i class="icon-xiaogou"></i></em>
+                            </li>
+                            <li>
+                                <div class="sp_coupon">
+                                    <div class="sp_coupon_left">
+                                        9.5折
+                                    </div>
+                                    <div class="sp_coupon_right">
+                                        有效期至：
+                                        <time>2017.08.30</time>
+                                    </div>
+                                </div>
+                                <em><i class="icon-xiaogou"></i></em>
+                            </li>
+                        </ul>
+                        <p>抵用金额：<span>￥50</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bdnone">
+            <div class="js-bottom">
+                <p>总额：<span>8000</span></p>
+                <p>运费：<span>20</span></p>
+                <p>优惠券：<span>-50</span></p>
+                <div class="bottShop">
+                    <p>应付：<label>￥29999.00</label> </p>
+                    <p>寄送至：上海市虹口区松花江路复旦科技园1号楼 12楼</p>
+                    <p>收件人：阿拉蕾  13822578999</p>
+                    <p>资料发送邮箱：1234567@qq.com</p>
+                </div>
+                <ul>
+                    <li>
+                        <span><label class="all-radio"><i>&#xf053;</i></label>我已阅读并同意<span class="jcwx">《金程网校协议》</span>。</span>
+                    </li>
+                    <li>
+                        <button>结算</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- 主体 end -->
+
+    <!--底部-->
+    <div class="footbottom">
+        <div class="wrap">
+            <div class="footnav">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="javascript:;">如何注册会员</a></dd>
+                    <dd><a href="javascript:;">如何购买课程</a></dd>
+                    <dd><a href="javascript:;">如何观看课程</a></dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="javascript:;">网校学习方式</a></dd>
+                    <dd><a href="javascript:;">学习效果如何保障</a></dd>
+                    <dd><a href="javascript:;">学习条件</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="javascript:;">会计支付</a></dd>
+                    <dd><a href="javascript:;">如何购买课程</a></dd>
+                    <dd><a href="javascript:;">如何观看课程</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于金程</dt>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                    <dd><a href="javascript:;">投诉与建议</a></dd>
+                </dl>
+                <ul>
+                    <li>
+                        <h3><i>&#xf048;</i>400-700-9596</h3>
+
+                        <p>(每日9:00-21:00 免长途费)</p>
+                    </li>
+                    <li>
+                        <p><a href="javascript:;"><i>&#xf027;</i>在线客服</a></p>
+                    </li>
+                    <li>
+                        <p><a href="javascript:;"><i>&#xf028;</i>@金程教育</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="foota">
+                <a href="javascript:;"><img src="../commonimages/foot1.png">沪IPC备08016784号-25</a>
+                <a href="javascript:;"><img src="../commonimages/foot2.png"></a>
+                <a href="javascript:;"><img src="../commonimages/foot3.png"></a>
+                <a href="javascript:;"><img src="../commonimages/foot4.png"></a>
+                <a href="javascript:;"><img src="../commonimages/foot5.png"></a>
+                <a href="javascript:;"><img src="../commonimages/foot6.png"></a>
+            </div>
+            <div class="copy">
+                Copyright © 2001-2017 金程网校 All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

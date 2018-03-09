@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/study/learning0.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/study/directory.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../css/study/online.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="script2015/html5shiv.js"></script>
+    <script type="text/javascript" src="http://www.gfedu.cn/script2015/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+    <script src="../../script/study/notes.js"></script>
+    <script src="../../script/study/courseLearn.js"></script>
+    <script src="../../script/study/online.js"></script>
+    <script src="../../script/study/analyze.js"></script>
+    <script src="../../script/study/baseJs.js"></script>
+    <!-- <script src="../../script/study/backtime.js"></script> -->
+
+</head>
+
+<body id="analyze">
+    <!--顶部菜单-->
+    <!-- <div class="index-header">
+        <div class="wrap">
+            <div class="indexleft">
+                <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo.png"></a>
+                <ul>
+                    <li><a href="javascript:;">课程</a></li>
+                    <li><a href="javascript:;">题库</a></li>
+                    <li><a href="javascript:;">直播</a></li>
+                    <li><a href="javascript:;">咨询</a></li>
+                    <li><a href="javascript:;">商城</a></li>
+                </ul>
+            </div>
+            <div class="indexright">
+                <div class="info">
+                    <ul>
+                        <li class="phone"><i>&#xf002;</i><i>&#xf020;</i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">金程网校APP</a></li>
+                                    <li><a href="javascript:;">天天CPA</a></li>
+                                    <li><a href="javascript:;">金网公众号</a></li>
+                                    <li><a href="javascript:;">金网题库服务号</a></li>
+                                    <li><a href="javascript:;">金网CFA APP</a></li>
+                                    <li><a href="javascript:;">金网CFA服务号</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i>&#xe902;</i><span><i>&#xf038;</i></span></li>
+                        <li><i>&#xf004;</i><span>6</span></li>
+                        <li class="people"><i>&#xf005;</i><i>&#xf020;</i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">学习空间</a></li>
+                                    <li><a href="javascript:;">我的订单</a></li>
+                                    <li><a href="javascript:;">个人信息</a></li>
+                                    <li><a href="javascript:;">账号设置</a></li>
+                                    <li><a href="javascript:;">退出</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchinput">
+                    <input type="text" placeholder="请输入想搜索的内容">
+                    <a href="javascript:;"><i>&#xf001;</i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="contain">
+        <div class="tabUl">
+            <p>老汤十招测长投</p>
+            <a href="#" class="ct_title1">独家有秘笈 敢不敢试 测一测你有多牛？ </a>
+            <a href="#" class="ct_title2">老汤说：会做这10道题，你基本上可以通过CPA会计</a>
+        </div>
+        <div class="wrap">
+            <div class="nav">
+                <ul>
+                    <li class="selit">
+                        <a href="javascript:;"><i>&#xe97b;</i><p>答题卡</p>
+                          <div class="copydiv"></div>
+                      </a>
+                        <div class="answer_card">
+                            <ul>
+                                <li>01</li>
+                                <li>02</li>
+                                <li>03</li>
+                                <li>04</li>
+                                <li>05</li>
+                                <li>06</li>
+                                <li>07</li>
+                                <li>08</li>
+                                <li>09</li>
+                                <li>10</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="selit">
+                        <a href="javascript:;"><i>&#xe97f;</i>
+                          <small class="backTime change">
+                            <em>00</em>:<em id="minute">00</em>:<em id="second">00</em>
+                          </small>
+                          <div class="copydiv"></div>
+                      </a>
+                    </li>
+                    <li class="sub">
+                        <a href="javascript:;"><i>&#xe982;</i>
+                          <p>提交</p>
+                          <div class="copydiv"></div>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ques">
+                <div class="allItem">
+                    <div id="item-0" class="item basics_item">
+                        <h3>第1题：成本法转权益法</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>甲公司20×8年1月1日购得乙公司100%的股份，初始成本为600元，当日乙公司可辨认净资产公允价值为500元，20×8年全年实现净利润50元，其中乙公司持有的可供出售金融资产增值25元。
+                              20×9年4月1日甲公司出售了乙公司60%的股份，售价为480元。剩余40%股权当日的公允价值为320元，剩余股份能够保证甲公司对乙公司的重大影响。甲乙公司提取盈余公积的比例均为10%。下列说法正确的是（）。
+                              </p>
+                            </div>
+                            <div class="jz">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>20×9年4月1日甲公司个别报表中确认投资收益120元；
+                                  </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                   20×9年4月1日甲公司个别报表中确认剩余长期股权投资账面价值为240万元；
+                                  </dd>
+                                </dl>
+                                <dl class="sel">
+                                      <dt><a href="javascript:;">C</a></dt>
+                                      <dd>
+                                          20×9年4月1日甲公司合并报表中确认投资收益150元；
+                                      </dd>
+                                  </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                      20×9年4月1日甲公司合并报表中要将剩余股权的其他综合收益转入投资收益。
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、C、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、C、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="videos">
+                                        <div class="videoRight">
+                                            <p>选项B，20×9年4月1日甲公司个别报表中确认剩余长期股权投资账面价值为240+30=270万元。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3></h3>
+                                    <div class="articlep">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-1" class="item basics_item">
+                        <h3>第2题：金融工具到权益法</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>20×7年1月1日，甲公司从二级市场购入A公司的10%的股票，对A公司不具有重大影响，甲公司将其作为可供出售金融资产核算，按公允价值计量。其成本为500元，公允价值变动借方余额为60元。
+                              20×8年4月1日，甲公司追加1800元投资获得A公司30%股份，可以对被投资企业实施重大影响，A公司当日的各项可辨认资产等的公允价值为10000元。假定甲公司在取得对A公司的长期股权投资后A公司未宣告发放现金股利。下列说法正确的是（）。
+
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司追加投资时确认投资收益100元
+                                  </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        甲公司追加投资时确认投资收益40元
+                                    </dd>
+                                </dl>
+                                <dl>
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        甲公司长期股权投资的初始入账价值为2400元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        甲公司追加投资时确认营业外收入1600元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        原10%股权投资作为可供出售金融资产的公允价值=1800/30%*10%=600，则处置对应的投资收益=600-500=100万元；长投初始投资成本=600+1800=2400万元，由于重大影响则权益法后续计量后，则长投入账价值=4000万元，营业外收入=1600万元。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-2" class="item basics_item">
+                        <h3>第3题：权益法到成本法</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>20×7年1月1日，甲公司支付2000元从二级市场购入A公司的40%的股份，对A公司具有重大影响，甲公司采取权益法核算该项股权投资，A公司可辨认净资产的公允价值为4000元。 20×7年度A公司以公允价值持续计算的利润为600元，因A公司持有可供出售金融工具而导致其他综合收益增加500元。
+                              20×8年1月3日，甲公司售出A公司30%股权，取得价款2400元，剩余股权投资转为可供出售金融资产，公允价值为800元。下列说法正确的是（）
+
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司20×7年1月1日确认长期股权投资2 000元
+                                  </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        处置时长期股权投资的账面价值为2 240元
+                                    </dd>
+                                </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        处置时确认投资收益960元
+                                  </dd>
+                              </dl>
+                                <dl >
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        处置时确认投资收益760元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、C  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、C  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        处置时长期股权投资的账面价值为2 440元=2000+（600+500）*40%，处置投资收益=3200-2440+500*40%=960元。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-3" class="item basics_item">
+                        <h3>第4题：成本法到金融工具</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>甲公司20×7年1月1日支付600元购得乙公司100%的股份，能够控制乙公司，购买当日乙公司可辨认净资产公允价值为500元。在20×7年度，乙公司实现的以公允价值持续计量的净利润为50元，乙公司持有的可供出售金融资产导致净资产增加25元；20×8年第一季度乙公司实现公允价值持续计量的净利润为40元。
+                              20×8年4月1日甲公司出售了乙公司90%的股份，售价为720元。剩余10%股权当日的公允价值为80元，剩余的股份甲公司将其分类为交易性金融资产。下列说法中正确的是（）
+
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  处置时个别报表中长期股权投资的账面价值为600元
+                                  </dd>
+                                </dl>
+                                <dl >
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        处置时个别报表中长期股权投资的账面价值为675元
+                                    </dd>
+                                </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        处置时个别报表中确认投资收益200元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        处置时合并报表中确认投资收益150元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、C、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、C、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        处置价款=720+80=800元，个别报表中的投资收益=800-600=200元；
+                                        合并报表中的投资收益=800-（600+50+25）+25=150=800-600-50=150元。
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-4" class="item basics_item">
+                        <h3>第5题：权益法会计处理（顺流交易）</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>甲企业持有乙公司20%有表决权股份，能够对乙公司的财务和生产经营决策施加重大影响。20×7年，甲企业将其账面价值为600元的商品以1 000元的价格出售给乙公司。至20×7年资产负债表日，该批商品尚未对外部第三方出售。假定甲企业取得该项投资时，乙公司各项可辨认资产、负债的公允价值与其账面价值相同，两者在以前期间未发生过内部交易。乙公司20×7年净利润为2 000元。假定不考虑所得税因素。下列说法中正确的是（）
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl>
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司个别报表中应确认投资收益400元
+                                  </dd>
+                                </dl>
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        甲公司个别报表中应确认投资收益320元
+                                    </dd>
+                                </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        若甲公司需要编制合并报表，合并报表中应确认投资收益400元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        若甲公司需要编制合并报表，合并报表中确认的收入为800元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B、C、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B、C、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        甲公司对乙公司的股权投资采用权益法核算，在确认投资收益时，双方之间发生的未实现内部交易损益应予以抵销。在个别报表中应确认的投资收益=2000×20%-（1000-600）×20%=320（元），所以选项A错误，选项B正确。在编制合并报表时，应在个别报表确认的投资收益基础上进行调整，借“营业收入”（1000×20%=200元），贷“营业成本（600×20%=120元）”，贷“投资收益”（200-120=80元），所以合并报表中应确认投资收益金额=320+80=400元，应确认营业收入金额=1000-200=800元。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-5" class="item basics_item">
+                        <h3>第6题：权益法会计处理（逆流交易）</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>甲企业于20×7年1月1日取得乙公司20%有表决权股份，能够对乙公司施加重大影响。假定甲企业取得该项投资时，乙公司各项可辨认资产、负债的公允价值与其账面价值相同。20×7年8月1日，乙公司将其成本为600元的某商品以1000元的价格出售给甲企业，甲企业将取得的商品作为存货。至20×7年资产负债表日，甲企业仍未对外出售该存货。乙公司2007年实现净利润为3200元。假定不考虑所得税因素。下列说法中正确的是（）
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl >
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司个别报表中应确认投资收益640元
+                                  </dd>
+                                </dl>
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        甲公司个别报表中应确认投资收益560元
+                                    </dd>
+                                </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        若甲公司需要编制合并报表，合并报表中确认的投资收益为640元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        若甲公司需要编制合并报表，合并报表中存货的账面价值为920元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B、C、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B、C、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        个别报表中应确认的投资收益=3200×20%-（1000-600）×20%=560元，所以选项B正确，选项A错误；合并报表中应确认的投资收益为3200×20%=640元，选项C正确，未实现内部交易损益的部分隐含于存货价值中，应做一以下调整借“长期股权投资”（80），贷“存货”（80），所以，合并报表中存货的账面价值=1000-80=920元。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-6" class="item basics_item">
+                        <h3>第7题：权益法核算（顺流形成固定资产）</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>甲企业持有乙公司20%有表决权股份，能够对乙公司的财务和生产经营决策施加重大影响。20×7年6月1日，甲企业将其账面价值为600元的固定资产以1000元的价格出售给乙公司作为管理用固定资产并于当月投入使用，折旧年限10年，预计净残值为零，采用年限平均法计提折旧。假定甲企业取得该项投资时，乙公司各项可辨认资产、负债的公允价值与其账面价值相同，两者在以前期间未发生过内部交易。乙公司20×7年净利润为2000元。假定不考虑所得税因素。下列说法中正确的是（）
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司个别报表中应确认投资收益400元
+                                  </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        甲公司个别报表中应确认投资收益320元
+                                    </dd>
+                                </dl>
+                                <dl >
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        若甲公司需要编制合并报表，合并报表中确认的投资收益为400元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        若甲公司需要编制合并报表，合并报表中的营业外收入为320元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B、C、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B、C、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        甲公司个别报表中应确认的投资收益金额=2000×20%-（1000-600）×20%=320元，选项A错误，选项B正确；合并报表中，应当进行以下调整，借“营业外收入”（400×20%=80元），贷“投资收益”（80元），所以合并报表中确认的投资收益金额=320+80=400元，选项C正确；甲公司个人报表中确认的营业外收入的金额=1000-600=400元，合并报表在个别报表的基础上调减了80元，所以合并报表中的金额=400-80=320元，选项D正确。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-7" class="item basics_item">
+                        <h3>第8题：权益法核算（顺流交易形成固定资产）</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>甲企业持有乙公司20%有表决权股份，能够对乙公司的财务和生产经营决策施加重大影响。20×7年6月1日，乙公司将其账面价值为600元的商品以1000元的价格出售给甲企业作为管理用固定资产并于当月投入使用，折旧年限10年，预计净残值为零，采用年限平均法计提折旧。假定甲企业取得该项投资时，乙公司各项可辨认资产、负债的公允价值与其账面价值相同，两者在以前期间未发生过内部交易。乙公司20×7年净利润为2000元。假定不考虑所得税因素。下列说法中正确的是（）
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  20×7年12月31日甲公司个别报表中应确认投资收益324元
+                                  </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        20×7年12月31日甲公司个别报表中应确认投资收益320元
+                                    </dd>
+                                </dl>
+                                <dl >
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        如甲公司需要编制合并报表，20×7年末合并报表中固定资产账面价值为950元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        如甲公司需要编制合并报表，20×7年末合并报表中固定资产账面价值为874元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                         甲公司会计处理如下：<br>
+                                          <b>乙公司有利润，甲公司按对应的比例确认投资收益（不考虑内部交易损益时）：</b>
+                                        借：  长期股权投资-损益调整 400（2 000×20%）
+                                            贷：  投资收益    400
+                                           <b>在逆流交易的情况下，对于内部交易未实现损益：</b><br>
+                                           在个别报表中，内部交易形成固定资产时，固定资产折旧的过程是内部交易损益实现的过程，则2017年已实现的内部交易损益=（1 000-600）/10/12×6=20,未实现内部交易损益=（1 000-600）-20=380元，<b>按对应的比例抵销未实现部分，金额为</b>=内部交易未实现的金额380×对于被投资公司的投资比例20%=76元
+                                        借：  投资收益    76
+                                            贷：  长期股权投资-损益调整 76
+                                           <b>在合并报表中的合并资产负债表，个别报表中的“数字是对的”，但是会计科目的“名称是不对的”，所以，只需调整相应的会计科目。</b>
+                                        借：  长期股权投资  76
+                                            贷：  固定资产    76
+                                        所以甲公司个别报表中应确认的投资收益=400-76=324元，选项A正确，选项B错误；甲公司个别报表中固定资产的账面价值=1000-1000/10/2=950元，合并报表中调减固定资产76元，所以合并报表中固定资产的账面=950-76=874元，选项C错误，选项D正确。
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-8" class="item basics_item">
+                        <h3>第9题：以固定资产向合营方投资的会计处理</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>2015年3月31日，甲公司与B公司出资设立丙公司，各占50%的股权，双方共同控制丙公司。甲公司以公允价值为1000万元的固定资产出资，该固定资产的成本为1000万元，累计折旧600万元，未计提减值准备。甲公司投出的非货币性资产交易具有商业实质，当月固定资产达到了预定可使用状态。从投资日起到年末，当年度丙公司的利润为1000万元。
+                              假定该项固定资产尚可使用年限为10年，采用年限平均法计提折旧，净残值为零。假定甲公司需要编制合并财务报表，不考虑其他因素。下列说法正确的是（）
+
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司个别报表中应确认投资收益222
+                                  </dd>
+                                </dl>
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        甲公司个别报表中应确认营业外收入600元
+                                    </dd>
+                                </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        如甲公司需要编制合并报表，合并报表中营业外收入为300元
+                                  </dd>
+                              </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        如甲公司需要编制合并报表，合并报表投资收益为522.5元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、B、C、D  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、B、C、D  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        个别报表中，应确认投资收益1000×50%-（600-600/10×9/12）×50%=222.5元，应确认营业外收入=1000-400=600万元；由于在个别报表中已经在投资收益中作了相关抵销分录，所以在合并报表中只需要将个别报表中已经在“投资收益”中抵销的未实现收益600的50%=300，调整至“营业外收入”就可以了，借“营业外收入”，贷“投资收益”，合并报表中应确认的营业外收入是600-300=300元，应确认的投资收益=300+222.5=522.5元，选项C和选项D正确。
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item-9" class="item basics_item">
+                        <h3>第10题：以非货币性资产投资合营企业的会计处理</h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>A公司和B公司于2010年6月30日共同出资设立C公司，注册资本为2200万元，A公司和B公司分别持有C公司注册资本的50%，按照公司章程，公司重要的财务和经营决策需要双方共同决定。A公司以其厂房出资，并依法移交该厂房的产权，该厂房的原价为1 200万元，累计折旧为300万元，公允价值为1200万元，未计提减值；B公司以1000万元的现金出资，另支付A公司100万元现金。假定厂房的尚可使用年限为10年，采用年限平均法计提折旧，无残值。C公司2010年（半年）实现净利润为1000万元。不考虑各种税费的影响。（金额单位用万元表示）。下列说法中正确的是（）
+                              </p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>  甲公司个别报表中应确认投资收益369.375元
+                                  </dd>
+                                </dl>
+                                <dl >
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        甲公司个别报表中应确认投资收益381.875元
+                                    </dd>
+                                </dl>
+                                <dl class="sel">
+                                  <dt><a href="javascript:;">C</a></dt>
+                                  <dd>
+                                        如甲公司需要编制合并报表，合并报表中营业外收入为137.5元
+                                  </dd>
+                              </dl>
+                                <dl>
+                                  <dt><a href="javascript:;">D</a></dt>
+                                  <dd>
+                                        如甲公司需要编制合并报表，合并报表中营业外收入为150元
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <!-- <a href="javascript:;" class="next">下一题</a> -->
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案A、C  <span class="error_answer">您的答案 <em>A</em></span></span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案A、C  您的答案正确</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析</h3>
+                                    <div class="articlep">
+                                        个别报表中，应确认的投资收益金额=(1000+13.75）×50%-（300-25）×50%=369.375元，选项A正确，选项B错误；合并报表中，应该在个别报表的基础上（个别报表中确认的营业外收入是300）做调整分录借“营业外收入”（137.5），贷“投资收益”（137.5），所以合并报表中应确认营业外收入162.5元，选项C正确，选项D错误。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,522 @@
+/*导入字体*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微软雅黑';
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxs {
+  box-sizing: border-box;
+}
+.indis {
+  display: inline-block;
+}
+.curp {
+  cursor: pointer;
+}
+i {
+  font-style: normal;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.tra {
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+}
+.cd_cfa_pc_math171117 {
+  width: 100%;
+  max-width: 830px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.cd_cfa_banner {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+.cd_cfa_banner img {
+  width: 100%;
+  max-width: 830px;
+}
+.title {
+  text-align: center;
+  margin: 60px 0 40px 0;
+}
+.title p {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+  padding: 0 10px;
+  color: #262626;
+  font-weight: bold;
+}
+.title img {
+  margin: 5px auto;
+  display: block;
+}
+@media (max-width: 480px) {
+  .title p {
+    font-size: 15px;
+  }
+}
+.cd_cfa_importance {
+  background: #fdf9f6;
+  overflow: hidden;
+}
+.cd_cfa_importance section {
+  width: 50%;
+  float: left;
+  margin: 0 auto 70px;
+}
+.cd_cfa_importance section:nth-of-type(1) article p {
+  padding: 43px 0;
+  height: 56px;
+}
+.cd_cfa_importance section:nth-of-type(2) p {
+  padding: 15px;
+  width: 230px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .cd_cfa_importance section {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}
+.cd_cfa_importance article {
+  margin: auto;
+  background: url(../../mobile/images/bg1.jpg) center center no-repeat;
+  background-size: cover;
+  width: 289px;
+  height: 263px;
+  text-align: center;
+}
+.cd_cfa_importance article img {
+  margin: 30px 0 44px 0;
+}
+.cd_cfa_importance article p {
+  height: 112px;
+  width: 260px;
+  background: #eaeaea;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #2a2a2a;
+  line-height: 1.7;
+}
+.cd_cfa_importance article p i {
+  color: #f96e31;
+}
+.cd_cfa_nice {
+  background: #fdf9f7;
+  text-align: center;
+  overflow: hidden;
+}
+.cd_cfa_nice ul {
+  overflow: hidden;
+}
+.cd_cfa_nice ul li {
+  float: left;
+  margin-left: 4%;
+  background: #ff8149;
+  border-radius: 7px;
+  width: 42%;
+}
+.cd_cfa_nice ul li:nth-of-type(1) {
+  margin-left: 6%;
+}
+@media (max-width: 560px) {
+  .cd_cfa_nice ul li {
+    width: 96%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+  }
+  .cd_cfa_nice ul li:nth-of-type(1) {
+    margin-left: 2%;
+  }
+}
+.cd_cfa_nice ul li div {
+  text-align: center;
+}
+.cd_cfa_nice ul li div p {
+  padding: 26px 10px 10px 20px;
+  font-size: 16px;
+  min-height: 120px;
+  line-height: 1.875;
+  color: #666666;
+}
+.cd_cfa_nice ul li div p i {
+  color: #333333;
+}
+.cd_cfa_nice ul li div a {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #f96e31;
+}
+.cd_cfa_nice ul li div:nth-of-type(2) {
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-bottom: none;
+  background: #fdf9f7;
+}
+@media (max-width: 698px) {
+  .cd_cfa_nice ul li div:nth-of-type(2) {
+    min-height: 186px;
+  }
+}
+.cd_cfa_nice ul li div:nth-of-type(3) {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-top: none;
+  background: #f2f2f2;
+}
+.cd_cfa_nice > a {
+  display: inline-block;
+  width: 122px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  background: #f96e31;
+  font-size: 16px;
+  border-radius: 14px;
+  margin: 40px 0 60px 0;
+  color: #ffffff;
+}
+.cd_cfa_nice > a:nth-of-type(1) {
+  margin: 40px 4% 60px 0 ;
+}
+.cd_cfa_math {
+  overflow: hidden;
+  margin: 56px 0 0 0 ;
+}
+.cd_cfa_math > img {
+  width: 92%;
+  margin: 0 4%;
+}
+.cd_cfa_math p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 2;
+  width: 92%;
+  margin: 30px 4% 0 ;
+}
+@media (max-width: 480px) {
+  .cd_cfa_math p {
+    font-size: 12px;
+  }
+}
+.cd_cfa_math a {
+  display: inline-block;
+  float: right;
+  margin: 40px 0 0 0;
+}
+.cd_cfa_teacher {
+  overflow: hidden;
+  background: #fdf9f7;
+}
+.cd_cfa_teacher > div:nth-of-type(2) {
+  overflow: hidden;
+  height: 303px;
+  width: 88%;
+  margin-left: 6%;
+  position: relative;
+  min-width: 623px;
+  background: #f6f6f6;
+}
+.cd_cfa_teacher > div:nth-of-type(2) div {
+  background: #d2d5d8;
+  overflow: hidden;
+  margin: 50px 0 0 0;
+  height: 253px;
+  padding-left: 400px;
+}
+.cd_cfa_teacher > div:nth-of-type(2) div h3 {
+  margin: 30px 0 5px 0;
+  font-size: 30px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.cd_cfa_teacher > div:nth-of-type(2) div p:nth-of-type(1) {
+  width: 189px;
+  font-size: 20px;
+  border-top: 1px solid #a4a7aa;
+  font-style: italic;
+  color: #333333;
+  line-height: 2.4;
+}
+.cd_cfa_teacher > div:nth-of-type(2) div p:nth-of-type(2) {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.929;
+}
+.cd_cfa_teacher > div:nth-of-type(2) img {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+}
+@media (max-width: 640px) {
+  .cd_cfa_teacher > div:nth-of-type(2) {
+    width: 96%;
+    margin-left: 2%;
+    height: initial;
+    min-width: initial;
+    text-align: center;
+  }
+  .cd_cfa_teacher > div:nth-of-type(2) div {
+    margin: -4px 0 0 0;
+    height: initial;
+    padding: 0 20px;
+  }
+  .cd_cfa_teacher > div:nth-of-type(2) div p:nth-of-type(1) {
+    width: initial;
+  }
+  .cd_cfa_teacher > div:nth-of-type(2) div p:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+  .cd_cfa_teacher > div:nth-of-type(2) img {
+    position: initial;
+  }
+}
+.cd_cfa_recommend {
+  background: #fdf9f7;
+  margin: 0 0 40px 0;
+  overflow: hidden;
+}
+.cd_cfa_recommend ul li {
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  width: 88%;
+  overflow: hidden;
+  margin: 0 auto 23px;
+}
+.cd_cfa_recommend ul li img {
+  float: left;
+  width: 34%;
+  height: 167px;
+}
+.cd_cfa_recommend ul li div {
+  float: left;
+  width: 66%;
+  height: 100%;
+  background: #f8f8f8;
+  position: relative;
+}
+.cd_cfa_recommend ul li div p {
+  padding-left: 20px;
+}
+.cd_cfa_recommend ul li div p:nth-of-type(1) {
+  font-size: 24px;
+  padding: 13px 20px;
+  color: #333333;
+  line-height: 1.2;
+}
+.cd_cfa_recommend ul li div p:nth-of-type(2) {
+  font-size: 18px;
+  color: #666666;
+}
+.cd_cfa_recommend ul li div p:nth-of-type(3) {
+  font-size: 22px;
+  color: #f96e31;
+  padding: 40px 0 20px 20px;
+}
+.cd_cfa_recommend ul li div p:nth-of-type(3) i {
+  font-size: 16px;
+  width: 9px;
+  height: 12px;
+  display: inline-block;
+  background: url(http://static.gfedu.net/special/cd_frm_english171120/phone/images/money.jpg ) no-repeat;
+}
+.cd_cfa_recommend ul li div a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 109px;
+  height: 27px;
+  background: #f96e31;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 27px;
+  border-radius: 13px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .cd_cfa_recommend ul li img {
+    width: 100%;
+  }
+  .cd_cfa_recommend ul li div {
+    width: 100%;
+  }
+}
+.cd_cfa_class {
+  margin-bottom: 87px;
+}
+.cd_cfa_class .zyck {
+  color: #666;
+  text-align: center;
+  margin: 15px auto;
+}
+.cd_cfa_class .table_cont {
+  overflow: hidden;
+  width: 100%;
+  overflow-x: auto;
+}
+.cd_cfa_class table {
+  border-collapse: collapse;
+  width: 830px;
+  border: #ddd;
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+}
+.cd_cfa_class table tr {
+  line-height: 28px;
+}
+.cd_cfa_class table tr:first-child {
+  font-size: 18px;
+}
+.cd_cfa_class table tr:first-child td {
+  background: #ff8d5b;
+  color: #fff;
+  text-align: center;
+}
+.cd_cfa_class table tr:first-child td:first-child {
+  width: 167px;
+  line-height: 57px;
+}
+.cd_cfa_class table tr:nth-of-type(2) td,
+.cd_cfa_class table tr:nth-of-type(3) td {
+  text-align: center;
+}
+.cd_cfa_class table tr:nth-of-type(2) td:first-child,
+.cd_cfa_class table tr:nth-of-type(3) td:first-child {
+  background: #ffdbcb;
+  color: #f96e31;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cd_cfa_class table tr ul li {
+  position: relative;
+  margin-bottom: 50px;
+}
+.cd_cfa_class table tr ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 4px;
+  background: #666666;
+  height: 4px;
+  border-radius: 2px;
+  left: -18px;
+  top: 12px;
+}
+@media (min-width: 830px) {
+  .cd_cfa_class .zyck {
+    display: none;
+  }
+}
+.cd_cfa_quality {
+  margin: 0 0 40px 0;
+  overflow: hidden;
+}
+.cd_cfa_quality ul {
+  margin-top: 25px;
+}
+.cd_cfa_quality ul li {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.cd_cfa_quality ul li p {
+  background: #f4ebe8;
+  font-size: 16px;
+  box-shadow: 0px 4px;
+  color: #f96e31;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-radius: 0  30px 0  30px;
+  border: 1px solid #f96e31;
+}
+.cd_cfa_quality ul li p span {
+  background: #f96e31;
+  width: 6px;
+  height: 6px;
+  display: none;
+  border-radius: 100%;
+}
+.cd_cfa_quality ul li:nth-child(2) {
+  width: 96%;
+  margin: 0 8px;
+}
+.cd_cfa_quality ul li:nth-child(2) img {
+  max-width: 147px;
+  width: 100%;
+}
+.cd_cfa_quality ul li:nth-child(3) p {
+  border-radius: 30px 0 30px 0;
+}
+@media (min-width: 830px) {
+  .cd_cfa_quality ul {
+    margin-top: 65px;
+  }
+  .cd_cfa_quality ul li {
+    float: left;
+    width: 323px;
+  }
+  .cd_cfa_quality ul li p {
+    margin-bottom: 25px;
+    padding: 10px 0;
+    text-align: right;
+    padding-right: 14px;
+    position: relative;
+  }
+  .cd_cfa_quality ul li p span {
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+  }
+  .cd_cfa_quality ul li:nth-child(2) {
+    width: 147px;
+    margin: 0 15px;
+  }
+  .cd_cfa_quality ul li:nth-child(3) p {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .cd_cfa_quality ul li:nth-child(3) p span {
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+  }
+}

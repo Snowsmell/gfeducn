@@ -1,0 +1,921 @@
+/* LESS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,
+textarea,p,blockquote,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,
+main,nav,section,summary,audio,canvas,video {  margin: 0;  padding: 0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+  display: block;
+}
+audio,canvas,video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+b,strong {
+  font-weight: bold;
+}
+code,kbd,pre,samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+del {
+  font-family: Arial;
+}
+h1,h2,h3,h4,h5,h6,small {
+  font-size: 100%;
+  font-weight: normal;
+}
+em,q,cite,address {
+  font-weight: normal;
+  font-style: normal;
+}
+address {
+  display: inline;
+}
+big,small {
+  font-size: 12px;
+}
+body {
+  font: 14px/1.5 "PinFang SC", "Microsoft Yahei", Microsoft Yahei, "Hiragino Sans GB", sans-serif;
+  vertical-align: middle;
+  color: #333;
+  background: #ffffff;
+}
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: "";
+}
+strong {
+  font-weight: bold;
+}
+del {
+  font-family: Simsun;
+}
+dfn {
+  padding-right: 2px;
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+  font-weight: normal;
+}
+fieldset,
+legend {
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button,
+input,
+select,
+select optgroup,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+button,
+input,
+select[multiple],
+textarea {
+  background-image: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* link */
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+  outline-style: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #06c;
+  text-decoration: underline;
+  transition: color .20s linear;
+  -o-transition: color .20s linear;
+  -webkit-transition: color .20s linear;
+  -moz-transition: color .20s linear;
+}
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*---------- 实用工具 ----------*/
+/* form */
+input,
+select {
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  color: #333;
+  outline: none;
+}
+input[type="text"]:disabled {
+  background-color: #bbbbbb;
+  color: #666;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 4px;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #33b0c4;
+  color: #fff;
+}
+/* input placeholder color */
+input::-webkit-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+input::-moz-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+/* 圆角 */
+ .borderRadius(@radius){
+     border-radius: @radius;
+     -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+     -ms-border-radius: @radius;
+     -o-border-radius: @radius;
+ }
+
+/* link in text */
+a.t { text-decoration:underline;}
+a.t:hover { color:#f30; text-decoration:underline;}
+
+/* clear float */
+.cf { zoom:1;} /* for IE */
+.cf:after { content:"."; display: block; clear:both; font-size:0; height:0; visibility:hidden; overflow:hidden;} /* for other */
+/* end of clear float */
+/* 圆角  */
+.bdr(@borderadius){
+    border-radius:@borderadius;
+    -moz-border-radius:@borderadius;
+    -webkit-border-radius:@borderadius;
+    -ms-border-radius:@borderadius;
+    -o-border-radius:@borderadius;
+}
+/*3行载断溢出省略号*/
+.spill(@n){
+    overflow:hidden;
+    display:-webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp:@n;
+    -webkit-box-orient: vertical;
+}
+/* 背景自适应 */
+.bg(@background-size){
+    background-size: @background-size;
+    -webkit-background-size:@background-size;
+    -moz-background-size: @background-size;
+    -o-background-size: @background-size;
+    -ms-background-size:@background-size;
+}
+/* text-align */
+.tleft { text-align:left;}
+.tright { text-align:right;}
+.tcenter { text-align:center;}
+
+/*配模式定位*/
+.pos(r){position:relative;}
+.pos(a){position:absolute;}
+.pos(f){position:fixed;}
+
+/* display */
+.dis { display:block;}
+.undis { display:none;}
+
+.fx(@x){font-size:@x;}
+
+.boxS{box-sizing: border-box;}
+
+.spill(n){
+    overflow:hidden;
+    display:-webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp:n;
+    -webkit-box-orient: vertical;
+}
+//color
+@cw:#fff;
+@cf0:#ff6d26;
+//base
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1501829543052');
+  src: url('iconfont.eot?t=1501829543052#iefix') format('embedded-opentype'), 
+  url('iconfont.woff?t=1501829543052') format('woff'),
+  url('iconfont.ttf?t=1501829543052') format('truetype'),
+  url('iconfont.svg?t=1501829543052#iconfont') format('svg'); 
+}  
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:14px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-up:before { content: "\e633"; }
+
+.icon-down:before { content: "\e6b0"; }
+
+
+.container { 
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.boxS() {
+    box-sizing: border-box;
+}
+
+@tc: #f3b54a;
+//170801 nationaldayS start snowsmell/cc
+.cd_cpa_nationalday170810 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 830px; //banner start 
+    .banner {
+        padding: 0 15px;
+        .boxS();
+        background: url("http://pc.gfedu.cn/special/cd_cpa_nationalday170810/images/banner-bg.jpg") no-repeat center center;
+        width: 100%;
+        .bg(cover);
+        .banner-left {
+            padding-top: 45px;
+            padding-bottom: 30px;
+            background: url("http://pc.gfedu.cn/special/cd_cpa_nationalday170810/images/bg_banner-left.png") no-repeat right center;
+            .bg(47% auto);
+            h2 {
+                color: @tc;
+                .fx(21px);
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            img {
+                max-width: 100%;
+                margin-bottom: 25px;
+                display: block;
+            }
+            span {
+                display: inline-block;
+                padding: 10px 15px;
+                line-height: 24px;
+                .fx(21px);
+                color: @cw;
+                font-weight: 600;
+                background-image: -moz-linear-gradient( 112deg, rgb(249, 133, 70) 0%, rgb(247, 109, 73) 49%, rgb(245, 84, 76) 100%);
+                background-image: -webkit-linear-gradient( 112deg, rgb(249, 133, 70) 0%, rgb(247, 109, 73) 49%, rgb(245, 84, 76) 100%);
+                background-image: -ms-linear-gradient( 112deg, rgb(249, 133, 70) 0%, rgb(247, 109, 73) 49%, rgb(245, 84, 76) 100%);
+            }
+            p {
+                margin: 18px 0;
+                &:first-of-type {
+                    color: @tc;
+                    .fx(18px);
+                    line-height: 24px;
+                }
+                &:last-of-type {
+                    color: @cw;
+                    .fx(14px);
+                    line-height: 16px;
+                }
+            }
+            a {
+                display: block;
+                background-color: #00adbf;
+                padding: 5px 15px;
+                width: 100px;
+                .tcenter();
+                .bdr(5px);
+                color: @cw;
+                font-size: 16px;
+                margin-top: 50px;
+                font-weight: 600;
+                &:hover {
+                    background-color: @cw;
+                    color: #00adbf;
+                }
+            }
+        }
+        .banner-slogan {
+            padding: 12px 0;
+            .boxS();
+            background: #fff;
+            position: relative;
+            margin-bottom: -20px;
+            width: 100%;
+            border: 1px solid #eee;
+            .bdr(5px);
+            .tcenter();
+            display: table;
+            >div {
+                display: table-cell;
+                width: 32%;
+                .boxS();
+                color: #b45057;
+                .fx(12px);
+                font-weight: 600;
+                border-left: 1px solid #ccc;
+                vertical-align: middle;
+                >img {
+                    max-width: 100%;
+                    margin:2px 5px;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                >span{
+                    display: inline-block;
+                    margin:2px 5px;
+                }
+                &:first-child{
+                    border-left: none;
+                }
+            }
+        }
+    }
+    @media(max-width:550px) {
+        .banner {
+            .banner-left {
+                background-image: none;
+            }
+        }
+    }
+    @media(max-width:414px) {
+        .banner {
+            .banner-left {
+                padding-bottom: 10px;
+                span {
+                    .fx(18px);
+                }
+                p:last-of-type {
+                    .fx(13px);
+                }
+            }
+            .banner-slogan{
+                >div{
+                    >span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    } //banner end
+    //suitable start
+    .suitable {
+        background: #fff;
+        padding: 60px 0 50px;
+        .boxS();
+        .container {
+            padding: 0 15px;
+            .boxS();
+            background: url(http://pc.gfedu.cn/special/cd_cpa_nationalday170810/images/sec-right.png) no-repeat right bottom;
+            .bg(41% auto);
+            .suit-left {
+                h3 {
+                    .fx(24px);
+                    font-weight: normal;
+                    color: #333;
+                    margin-bottom: 22px;
+                    span {
+                        color: #f98546;
+                    }
+                }
+                >p {
+                    .fx(13px);
+                    span {
+                        display: inline-block;
+                        margin-right: 6px;
+                        letter-spacing: 2px;
+                    }
+                    em {
+                        font-weight: 600;
+                    }
+                }
+                .suit-detail {
+                    margin-top: 23px;
+                    padding-top: 20px;
+                    border-top: 1px solid #ccc;
+                    width: 59%;
+                    ul {
+                        li {
+                            padding-left: 20px;
+                            position: relative;
+                            .fx(12px);
+                            color: #999;
+                            span {
+                                position: absolute;
+                                width: 13px;
+                                line-height: 13px;
+                                color: @cw;
+                                background-color: #89c997;
+                                left: 0;
+                                top: 4px;
+                                .tcenter();
+                                .bdr(3px);
+                                font-size: 10px;
+                            }
+                            h5 {
+                                letter-spacing: 2px;
+                                margin: 5px 0;
+                                .fx(13px);
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:505px) {
+        .suitable {            
+            .container {
+                background: none;
+                .suit-left {
+                    >p {
+                        span {
+                            width: 100%;
+                            padding-left: 20px;
+                        }
+                    }
+                    .suit-detail{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } //suitable end
+    //special start
+    .special {
+        background-color: #e8eef1;
+        padding: 38px 15px 45px;
+        .container {
+            overflow: hidden;
+            background: url(http://pc.gfedu.cn/special/cd_cpa_nationalday170810/images/third-left.png) no-repeat left bottom;
+            .bg(34% auto);
+            h3 {
+                .tcenter();
+                color: #f98546;
+                .fx(24px);
+            }
+            .special-right {
+                width: 58.19%;
+                margin-left: 41.81%;                
+                >div {
+                    border-top: 1px solid #ccc;
+                    width: 95%;
+                    margin-top: 20px;
+                }
+                >h4 {
+                    margin-top: 20px;
+                    color: #f98546;
+                    .fx(16px);
+                    position: relative;
+                    padding-left: 25px;
+                    >div {
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        top: 6px;
+                        left: 0;
+                        background-color: #f2ca4c;
+                        .bdr(3px);
+                    }
+                }
+                >p {
+                    color: #888;
+                    padding-left: 25px;
+                    margin-top: 8px;
+                    .fx(12px);
+                    em {
+                        color: #333;
+                    }
+                    span {
+                        margin-right: 5px;
+                        display: inline-block;
+                        >em {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:500px) {
+        .special {
+            .container {
+                background: none;
+                .special-right {
+                    width: 100%;
+                    margin-left: 0;
+                    >p {
+                        span {
+                            width: auto;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    } //special end
+    //teacher start
+    .teacher {
+        position: relative;
+        background-image: -moz-linear-gradient( -73deg, rgb(37, 23, 113) 0%, rgb(33, 35, 126) 14%, rgb(28, 46, 138) 35%, rgb(19, 90, 164) 72%, rgb(10, 134, 190) 100%);
+        background-image: -webkit-linear-gradient( -73deg, rgb(37, 23, 113) 0%, rgb(33, 35, 126) 14%, rgb(28, 46, 138) 35%, rgb(19, 90, 164) 72%, rgb(10, 134, 190) 100%);
+        background-image: -ms-linear-gradient( -73deg, rgb(37, 23, 113) 0%, rgb(33, 35, 126) 14%, rgb(28, 46, 138) 35%, rgb(19, 90, 164) 72%, rgb(10, 134, 190) 100%);
+        h3 {
+            .tcenter();
+            color: #f98546;
+            .fx(24px);
+        }
+        padding: 35px 15px;
+        
+        .container {
+            overflow: hidden;
+            .carousel {
+              margin-top: 30px;
+                width: 100%;
+                border-top:1px solid rgba(255,255,255,.5);
+                border-bottom: 1px solid rgba(255,255,255,.5);
+                .boxS();
+                padding-left: 50px;
+                overflow: hidden;
+                height: 200px;
+                position: relative;
+                
+                ul {
+                  transition: transform 1s;
+                  -webkit-transition: transform 1s;
+                  -moz-transition: transform 1s;
+                  -ms-transition: transform 1s;
+                    li {                        
+                        .boxS();
+                        padding: 20px 0;
+                        height: 200px;
+                        opacity: .1;
+                        .car-li-left {
+                            float: left;
+                            img {
+                                width: 58px;
+                                height: 58px;
+                                .bdr(50%);
+                            }
+                        }
+                        .car-li-right {
+                            margin-left: 78px;
+                            color: @cw;
+                            h5 {
+                                .fx(18px);
+                                span {
+                                    color: #f98546;
+                                    font-size: .88em;
+                                }
+                            }
+                            p {
+                                .fx(12px);
+                                line-height: 1.5;
+                                color: #c2cbf6;
+                                overflow: hidden;
+                                text-align: justify;
+                                height: 10.5em;
+                                .spill(11);
+                            }
+                        }
+                        @media (max-width: 414px) {
+                          .car-li-left {
+                            img {
+                                width: 38px;
+                                height: 38px;
+                            }
+                          }
+                          .car-li-right {
+                            margin-left: 48px;
+                          }
+                        }
+                    }
+                    .on {
+                        opacity: 1;
+                    }
+                }
+                .buttons {
+                    position: absolute;
+                    width: 40px;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -57px;
+                    z-index: 999;
+                    .tcenter();
+                    a {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        .bdr(50%);
+                        border: 2px solid #fff;
+                        margin: 15px 0;
+                        color:@cw;
+                        
+                        line-height: 30px;
+                        &:hover{
+                            background-color: @cw;
+                            i{color:#251771;}
+                        }
+                    }
+                }
+            }
+            .list {
+              margin-top: 30px;
+                width: 100%;
+                >ul {
+                   .cf();
+                    li {
+                      float: left;
+                      .bdr(4px);
+                      background-color: #000;
+                      width: 16%;
+                      margin: 0 0.33%;
+                        cursor: pointer;
+                        img {
+                            width: 100%;
+                            display: block;
+                            opacity: .7;
+                        }
+                        &.on,&:hover{
+                          img{
+                            opacity: 1;
+                          }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+     //teacher end
+    //timeArrange start
+    .timeArrange {
+        background-color: #fff;
+        padding: 30px 0;
+        .tcenter();
+        h3 {
+            .fx(24px);
+            color: #f98546;
+            margin-bottom: 20px;
+        }
+        .table01,.table02{
+          margin-top: 10px;
+          padding: 4px;
+          background-color: #393f4c;
+          .bdr(6px);
+          >div{
+            text-align: left;
+            span{
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              margin: 4px;
+              background-color: #4b974e;
+              .bdr(50%);
+              &:first-child{
+                background-color: #f95746;
+              }
+              &:nth-child(2){
+                background-color: #f98546;
+              }
+            }
+          }
+          >h4{
+            background-color: #17191e;
+            color:#fff;
+            line-height: 28px;
+            padding-left: 10px;
+            .fx(12px);
+            text-align: left;
+          }
+          table{
+            width: 100%;
+            th,td{
+              height: 28px;
+              .fx(12px);
+              .tcenter();
+              padding: 2px;
+              word-break: break-all;
+            }
+            td{
+              color:#666;
+            }
+            tr:last-child{
+              td:first-child{
+                border-radius: 0 0 0 6px;
+              }
+              td:last-child{
+                border-radius: 0 0 6px 0;
+              }
+            }
+          }
+        }
+        .table01{          
+          th{
+            background-color: #8cb541;
+            color: #fff;
+            &:first-child{
+              background-color: #648f1d;
+            }
+          }
+          tr{
+            background-color: #fff;
+          }
+          td:first-child{
+            background-color: #07a0b1;
+            color: #fff;
+          }
+          tr:nth-child(even){
+              background-color: #f2f8fc;
+              >td:first-child{
+                background-color: #1db6c6;
+              }
+          }
+        }
+        .table02{
+          th{
+            background-color: #f5ac2f;
+            color: #fff;
+            &:first-child{
+              background-color: #de826d;
+            }
+          }
+          tr{
+            background-color: #fff;
+          }
+          td:first-child{
+            background-color: #de826d;
+            color: #fff;
+          }
+          tr:nth-child(even){
+            background-color: #f2f8fc;
+            >td:first-child{
+              background-color: #f59883;
+            }
+          }
+        }
+        >img {
+          display:  block;
+          margin: 5px auto;
+          width: auto;
+          max-width: 100%;
+        }
+    }
+  //timeArrange end
+    //discount start
+    .discount {
+        background-color: #e8eef1;
+        padding: 35px 15px;
+        h3 {
+            .fx(24px);
+            .tcenter();
+            span {
+                color: #f98546;
+            }
+            margin-bottom: 30px;
+        }
+        .container {
+          .cf();
+          .tcenter();
+          max-width: 640px;
+            overflow: hidden;
+            background: url(http://pc.gfedu.cn/special/cd_cpa_nationalday170810/images/discount-center.png) no-repeat center;
+            .bg(33% auto);
+            >div{
+              display: inline-block;
+              .tleft();
+              margin-top: 20px;
+            }
+            .dis-left {
+              float: left;
+              width: 210px;
+                ul {
+                    li {
+                        margin-bottom: 18px;
+                        .fx(12px);
+                        color: #666;
+                        h5 {
+                            .fx(16px);
+                            font-weight: 600;
+                            color: @cf0;
+                        }
+                    }
+                }
+                >span {
+                    color: #999;
+                    .fx(12px);
+                }
+            }
+            .dis-right {
+              float: right;
+                width: 210px;
+                >div {
+                    .fx(16px);
+                    color: @cf0;
+                }
+                p {
+                  .fx(12px);
+                  color: #666;
+                    margin-top: 18px;
+                    a {
+                        color: #666;
+                        &:hover {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+            @media (max-width:500px) {
+              background: none;
+              .dis-left,.dis-right{
+                float: none;
+                vertical-align: top;
+                width: 100%;
+              }
+            }
+        }
+    }
+}
+
+    
+//170808 nationaldayS end cc

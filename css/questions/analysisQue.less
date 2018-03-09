@@ -1,0 +1,327 @@
+@import url(../commoncss/variable.less);
+
+body{
+  background-color: #f4f4f4;
+}
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+
+//
+
+.analysisQue{
+  background-color: #fff;
+  padding: 0 45px 20px 30px;
+}
+
+.ques .item>h3{
+  padding-right: 0;
+}
+
+// .imgUp .up{
+//   margin-top: 0;
+// }
+.isTrue{
+  display: inline-block;
+}
+.binsBox{
+  float: right;
+  white-space: nowrap;
+  >span{
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+  }
+  .sc,.bj{
+    >i{
+      display: none;
+      &:first-child{
+        display: inline-block;
+      }
+    }
+    &.on{
+      >i{
+        display: inline-block;
+        &:first-child{
+          display: none;
+        }
+      }
+    }
+  }
+  .sc.on{
+    color: #f38e34;
+  }
+  .bj.on{
+    color: #419f45;
+  }
+  .jc.on{
+    color: #f38e34;
+  }
+}
+
+// 答题卡
+.answer_card_full{
+  display: none;
+  border:1px solid #ddd;
+  color: #666;
+  width: 100%;
+  margin-top: 24px;
+  .top{
+    background-color: #f4f5f9;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    height: 39px;
+    padding: 7px 20px 0;
+    box-sizing: border-box;
+    .cf();
+    &:before{
+      content: "";
+      display: block;
+      width: 17px;
+      height: 19px;
+      position: absolute;
+      top:10px;
+      left:-17px;
+      background: url(../../images/questions/icon-left.png) center no-repeat;
+    }
+    >a{
+      float: left;
+      display: block;
+      border: 1px solid #ddd;
+      padding: 0 5px;
+      height: 22px;
+      line-height: 22px;
+      color: #666;
+      &:hover,&.on{
+        border-color: @cm0;
+        color: @cm0;
+      }
+    }
+    .rig{
+      float: right;
+      >span{
+        margin-left: 12px;
+        &:before{
+          content: "";
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          vertical-align: middle;
+          margin-right: 4px;
+        }
+        &.y{
+          &:before{background-color: #ff8868;}
+        }
+        &.w{
+          &:before{background-color: @cm0;}
+        }
+        &.r{
+          &:before{background-color: #24c788;}
+        }
+        &.n{
+          &:before{background-color: #fff; border:1px solid #ddd; width: 11px; height: 11px;}
+        }
+      }
+    }
+  }
+  .mainBox{
+    >div{
+      display: none;
+      &.on{
+        display: block;
+      }
+    }
+  }
+  dl{
+    text-align: left;
+    margin: 20px;
+    dt{
+      color: #999;
+      line-height: 1.2;
+    }
+    dd{
+      display: inline-block;
+      margin-top: 10px;
+      height: 29px;
+      min-width: 29px;
+      text-align: center;
+      line-height: 29px;
+      border:1px solid #ddd;
+      .bdr(4px);
+      margin-right: 10px;
+      a{
+        display: block;
+      }
+      &.w{
+        &,>a{color: #fff;}
+        border-color: @cm0;
+        background-color: @cm0;
+      }
+      &.r{
+        &,>a{color: #fff;}
+        border-color: #24c788;
+        background-color: #24c788;
+      }
+      &.y{
+        &,a{color:#fff}
+        border-color:#ff8868;
+        background-color: #ff8868;
+      }
+      position: relative;
+      overflow: hidden;
+      &:before{
+        position: absolute;
+        font-size: 12px;
+        top:-10px;
+        left: 50%;
+        margin-left: -5px;
+        color:#f8cf12;
+      }
+    }
+  }
+}
+
+.jiucuo{
+  width: 600px;
+  .main{
+    margin: 20px;
+  }
+  .opinion{
+    margin: 10px 0;
+    padding:10px 20px;
+    background-color: #f3f4f6;
+    li{
+      display: inline-block;
+      text-indent: 27px;
+      font-size: 14px;
+      margin: 10px;
+      background: url(../../images/index/q_06.jpg)no-repeat left center;
+      cursor: pointer;
+      &.sele{
+       background: url(../../images/index/q_03.jpg)no-repeat left center;
+      }
+    }
+  }
+  .tarea{
+    position: relative;
+     span{
+       position: absolute;
+       right: 10px;
+       bottom: 10px;
+      padding-top: 3px;
+      color: #999;
+     }
+   }
+   textarea{
+    width: 100%;
+    height: 83px;
+    resize:none;
+    box-sizing: border-box;
+    padding: 6px 10px 30px 10px;
+    border: 1px solid #ddd;
+   }
+   .btns{
+    text-align: center;
+   }
+   button{
+     width: 150px;
+     height: 40px;
+     background: #dd5555;
+     line-height: 40px;
+     border: none;
+     margin-top: 25px;
+     color: #fff;
+     margin-bottom: 20px;
+     &:nth-of-type(2){
+       margin-left: 36px;
+       background: #ebe6e1;
+       color: #999;
+     }
+   }
+}
+
+// 用户交互提示框
+.unfin,.fin{
+    border: 1px solid #eee;
+    width: 400px;
+    box-sizing: border-box;
+    color:#333;
+    overflow: hidden;
+    .main{
+      padding: 40px 20px 60px;
+      text-align: center;
+    }
+    p{
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .btn_1,.btn_2,button{
+      display: inline-block;
+      width: 150px;
+      height: 40px;
+      padding: 0;
+      font-size: 14px;
+      line-height: 40px;
+      margin: 25px 12px 0;
+    }
+    .btn_1{
+      background: #db5557;
+      color: #fff;
+      border: 1px solid #db5557;
+    }
+    .btn_2{
+      background: @cw;
+      color: #db5557;
+      border: 1px solid #db5557;
+    }
+}
+
+#getUserMes{
+  width: 780px;
+  padding-bottom: 40px;
+  .main{
+    width: 90%;
+    margin:0 auto;
+    dl{
+      margin-top: 15px;
+      .cf();
+      dt{
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      dd{
+        float: left;
+        min-width: 195px;
+        margin-right: 15px;
+        input[type=radio]{
+          width: 15px;
+          height: 15px;
+          visibility: hidden;
+        }
+        background: url(../../images/index/q_06.jpg)no-repeat left center;
+        &.sele{
+         background: url(../../images/index/q_03.jpg)no-repeat left center;
+        }
+      }
+    }
+  }
+  .btnR{
+    display:block;
+    border:none;
+    height: 40px;
+    line-height: 40px;
+    background-color: @cm0;
+    color:#fff;
+    font-size: 16px;
+    text-align: center;
+    width: 160px;
+    margin: 30px auto;
+    &:hover{
+      background-color: @cm0 - 20;
+    }
+  }
+}

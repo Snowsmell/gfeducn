@@ -1,0 +1,1854 @@
+/*导入字体*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微软雅黑';
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd_kaoyancurriculum section {
+  max-width: 1200px;
+  margin: 70px auto 63px;
+  text-align: center;
+}
+.cd_kaoyancurriculum section h2 {
+  line-height: 23px;
+  font-size: 24px;
+  color: #1d57ae;
+}
+.cd_kaoyancurriculum section h2 img {
+  margin: 0 10px -4px;
+}
+.oldexam {
+  overflow: hidden;
+  background: #fff;
+}
+.oldexam section {
+  max-width: 1200px;
+  margin: 70px auto 63px;
+  text-align: center;
+}
+.oldexam section h2 {
+  line-height: 23px;
+  font-size: 24px;
+  color: #000;
+}
+.oldexam section h2 img {
+  margin: 0 10px -4px;
+}
+@media (max-width: 892px) {
+  .oldexam section h2 img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .oldexam section {
+    margin: 30px auto 25px;
+  }
+  .oldexam section h2 {
+    font-size: 20px;
+  }
+}
+.cd_kaoyanschool {
+  overflow: hidden;
+  background: #fff;
+}
+.cd_kaoyanschool section {
+  max-width: 1200px;
+  margin: 70px auto 63px;
+  text-align: center;
+}
+.cd_kaoyanschool section h2 {
+  line-height: 23px;
+  font-size: 24px;
+  color: #000;
+}
+.cd_kaoyanschool section h2 img {
+  margin: 0 10px -4px;
+}
+@media (max-width: 892px) {
+  .cd_kaoyanschool section h2 img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .cd_kaoyanschool section {
+    margin: 30px auto 25px;
+  }
+  .cd_kaoyanschool section h2 {
+    font-size: 20px;
+  }
+}
+.cd_kaoyanhotspot1 {
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.cd_kaoyanhotspot1 section {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 40px auto 40px;
+  padding: 0 30px;
+  text-align: center;
+}
+.cd_kaoyanhotspot1 section h2 {
+  line-height: 23px;
+  font-size: 24px;
+}
+.cd_kaoyanhotspot1 section h2 img {
+  margin: 0 10px -4px;
+}
+@media (max-width: 892px) {
+  .cd_kaoyanhotspot1 section h2 img {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .cd_kaoyanhotspot1 section {
+    margin: 30px auto 25px;
+  }
+}
+@media (max-width: 500px) {
+  .cd_kaoyanhotspot1 section {
+    margin: 30px auto 25px;
+  }
+  .cd_kaoyanhotspot1 section h2 {
+    font-size: 20px;
+  }
+}
+.cd_kaoyanstep {
+  overflow: hidden;
+  background: #fff;
+}
+.cd_kaoyanstep section {
+  max-width: 1200px;
+  margin: 50px auto 35px;
+  text-align: center;
+}
+.cd_kaoyanstep section h2 {
+  line-height: 23px;
+  font-size: 24px;
+  color: #000;
+}
+.cd_kaoyanstep section h2 img {
+  margin: 0 10px -4px;
+}
+@media (max-width: 892px) {
+  .cd_kaoyanstep section h2 img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .cd_kaoyanstep section {
+    margin: 30px auto 25px;
+  }
+  .cd_kaoyanstep section h2 {
+    font-size: 20px;
+  }
+}
+.cd_kaoyanbanner {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bannerbg.jpg) top no-repeat;
+  background-size: cover;
+  padding: 30px 30px 0px;
+}
+.cd_kaoyanbanner > img {
+  display: block;
+  width: 100%;
+  max-width: 1281px;
+  margin: 0 auto;
+}
+.cd_kaoyanbanner_bottom section {
+  padding: 0 30px;
+  text-align: center;
+  margin: 35px auto 30px;
+}
+.cd_kaoyanbanner_bottom section p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.875;
+}
+.cd_kaoyanbanner_bottom section p b {
+  float: left;
+  font-size: 48px;
+  font-family: "Arial";
+  color: #333333;
+  line-height: 1;
+  font-weight: bold;
+}
+.cd_kaoyanbanner_bottom section p b:nth-of-type(2) {
+  float: none;
+  position: absolute;
+}
+.cd_kaoyanbanner_bottom section span {
+  display: block;
+  margin: 30px auto;
+  font-style: italic;
+  font-size: 18px;
+  color: #ff5621;
+}
+@media (max-width: 640px) {
+  .cd_kaoyanbanner_bottom section span {
+    margin: 20px auto;
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .cd_kaoyanbanner_bottom section {
+    margin: 30px auto 20px;
+  }
+  .cd_kaoyanbanner_bottom section p {
+    font-size: 14px;
+  }
+  .cd_kaoyanbanner_bottom section p b {
+    font-size: 36px;
+  }
+}
+.cd_kaoyancurriculum {
+  overflow: hidden;
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg2.jpg) top no-repeat;
+  background-size: cover;
+}
+.cd_kaoyancurriculum section {
+  max-width: 1200px;
+  margin: 47px auto 0px;
+  text-align: center;
+}
+.cd_kaoyancurriculum section > p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #2159ab;
+  margin-top: 30px;
+}
+.cd_kaoyancurriculum section > p img {
+  margin-bottom: -4px;
+  margin-left: 4px;
+}
+.cd_kaoyancurriculum section ul {
+  position: relative;
+}
+.cd_kaoyancurriculum section ul li {
+  position: absolute;
+}
+.cd_kaoyancurriculum section ul li p {
+  display: inline-block;
+  width: 78px;
+  height: 24px;
+  background: #ffd77c;
+  font-size: 16px;
+  color: #ff7e00;
+  line-height: 24px;
+  border-radius: 12px;
+}
+.cd_kaoyancurriculum section ul li span {
+  font-size: 16px;
+  color: #fffffe;
+  line-height: 1.875;
+}
+.cd_kaoyancurriculum section ul li i {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1) {
+  top: -313px;
+  left: 119px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1) span {
+  margin-right: 15px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1) p:nth-of-type(1) {
+  display: none;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(2) {
+  top: -313px;
+  left: 833px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(2) p {
+  margin-right: 7px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) {
+  top: -245px;
+  left: 13px;
+  width: 325px;
+  text-align: right;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) span {
+  margin-right: 7px;
+  max-width: 240px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) p {
+  text-align: center;
+  margin-top: 4px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) p:nth-of-type(1) {
+  display: none;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) i {
+  display: inline-block;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) div {
+  width: 240px;
+  float: left;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(4) {
+  top: -226px;
+  left: 861px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(4) p {
+  margin-right: 7px;
+  margin-top: 4px;
+  float: left;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(4) span {
+  text-align: left;
+  max-width: 237px;
+  display: inline-block;
+}
+.cd_kaoyancurriculum section > i {
+  display: none;
+}
+.cd_kaoyancurriculum section a {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  width: 140px;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 28px;
+  box-shadow: 0px 5px 15px #c2ae83;
+  border: 1px solid #3a6db8;
+  background: #3a6db8;
+  margin-right: 100px;
+  border-radius: 15px;
+}
+.cd_kaoyancurriculum section a:nth-of-type(2) {
+  border: 1px solid #ff5824;
+  background: #ff5824;
+  margin-right: 0px;
+}
+.cd_kaoyancurriculum section a:nth-of-type(2):hover {
+  background: #ffe4dc;
+  color: #ff5824;
+}
+.cd_kaoyancurriculum section a:hover {
+  background: #bbd2f4;
+  color: #3a6db8;
+}
+.cd_kaoyancurriculum section > span {
+  display: block;
+  font-size: 14px;
+  color: #ff5621;
+  margin-top: -16px;
+  padding-left: 643px;
+}
+.cd_kaoyancurriculum section > span i {
+  font-size: 16px;
+  font-style: italic;
+}
+.cd_kaoyancurriculum section > div {
+  margin-top: 30px;
+  background: #fff url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg5.png) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.cd_kaoyancurriculum section > div article {
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+}
+.cd_kaoyancurriculum section > div article > p {
+  font-size: 16px;
+  color: #1f59af;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+}
+.cd_kaoyancurriculum section > div article > div {
+  margin-top: 33px;
+  margin-bottom: 23px;
+  text-align: left;
+  float: left;
+}
+.cd_kaoyancurriculum section > div article > div > i {
+  font-size: 18px;
+  color: #1f59af;
+  font-weight: bold;
+  line-height: 2;
+}
+.cd_kaoyancurriculum section > div article > div > p {
+  font-size: 18px;
+  font-style: italic;
+}
+.cd_kaoyancurriculum section > div article > div > p b {
+  font-size: 24px;
+  color: #ff5621;
+  font-weight: bold;
+}
+.cd_kaoyancurriculum section > div article > div > p b:nth-of-type(2) {
+  font-size: 34px;
+}
+.cd_kaoyancurriculum section > div article > div > span {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin: 5px 0 20px 0;
+}
+.cd_kaoyancurriculum section > div article > div > span i {
+  color: #ff5621;
+}
+.cd_kaoyancurriculum section > div article > div > a {
+  width: 223px;
+  background: #ff5824;
+  border: 1px solid #ff5824;
+}
+.cd_kaoyancurriculum section > div article > div > a:hover {
+  background: #ffe4dc;
+  color: #ff5824;
+}
+.cd_kaoyancurriculum section > div article > div:nth-of-type(1) {
+  margin-left: 5%;
+  width: 28%;
+  margin-right: 5%;
+}
+.cd_kaoyancurriculum section > div article > div:nth-of-type(1) > img {
+  width: 100%;
+}
+.cd_kaoyancurriculum section > div article > div:nth-of-type(2) {
+  width: 62%;
+  max-width: 443px;
+}
+@media (max-width: 550px) {
+  .cd_kaoyancurriculum section > div article > div:nth-of-type(1) {
+    float: initial;
+    width: 96%;
+    margin-left: 2%;
+    text-align: center;
+    margin-right: 2%;
+  }
+  .cd_kaoyancurriculum section > div article > div:nth-of-type(1) > img {
+    max-width: 230px;
+  }
+  .cd_kaoyancurriculum section > div article > div:nth-of-type(2) {
+    float: initial;
+    max-width: 550px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+.cd_kaoyancurriculum .video {
+  cursor: pointer;
+}
+.cd_kaoyancurriculum section ul li {
+  position: relative;
+  width: 50%;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1) {
+  text-align: right;
+  border-right: 2px solid #ffd77c;
+  top: initial;
+  left: initial;
+  padding-right: 1.3%;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1):before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFD77C;
+  position: absolute;
+  right: -6px;
+  top: 10px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1):after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFD77C;
+  position: absolute;
+  right: -6px;
+  top: 70px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(1) span {
+  margin-right: 10px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(2) {
+  border-left: 2px solid #ffd77c;
+  text-align: left;
+  margin-left: 51.3%;
+  padding-left: 1.8%;
+  top: initial;
+  left: initial;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(2):before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFD77C;
+  position: absolute;
+  left: -6px;
+  top: 10px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) {
+  overflow: hidden;
+  border-right: 2px solid #ffd77c;
+  position: relative;
+  top: initial;
+  padding-right: 1.3%;
+  left: initial;
+  width: 50%;
+  text-align: right;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) div {
+  float: right;
+  width: initial;
+  max-width: 240px;
+  margin-right: 89px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) p {
+  position: absolute;
+  right: 16px;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(3) i {
+  display: block;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(4) {
+  text-align: left;
+  border-left: 2px solid #ffd77c;
+  top: initial;
+  left: initial;
+  margin-left: 51.3%;
+  padding-left: 1.8%;
+}
+.cd_kaoyancurriculum section ul li:nth-of-type(4):before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFD77C;
+  position: absolute;
+  left: -6px;
+  top: 10px;
+}
+.cd_kaoyancurriculum section ul li p {
+  text-align: center;
+}
+.cd_kaoyancurriculum section > i {
+  display: block;
+  width: 185px;
+  height: 47px;
+  background: #ffd77c;
+  font-size: 16px;
+  color: #ff5621;
+  border-radius: 23px;
+  margin: auto;
+  font-style: initial;
+  line-height: 45px;
+}
+.cd_kaoyancurriculum section > i b {
+  font-size: 34px;
+  font-style: italic;
+}
+.cd_kaoyancurriculum section > span {
+  margin-top: 20px;
+  padding-left: initial;
+}
+@media (max-width: 892px) {
+  .cd_kaoyancurriculum section h2 img {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .cd_kaoyancurriculum section ul li {
+    position: relative;
+    width: 50%;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1) {
+    text-align: right;
+    border-right: 1px solid #ffd77c;
+    top: initial;
+    left: initial;
+    padding-right: 1.3%;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1):before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFD77C;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1):after {
+    top: 100px;
+  }
+}
+@media (max-width: 550px) {
+  .cd_kaoyancurriculum section > div {
+    margin-top: 26px;
+  }
+  .cd_kaoyancurriculum section > div article > div {
+    float: none;
+  }
+  .cd_kaoyancurriculum section > div article > div:nth-of-type(1) {
+    margin-right: initial;
+  }
+  .cd_kaoyancurriculum section > div article > div > p {
+    margin-top: 0;
+  }
+  .cd_kaoyancurriculum section > div article > div > a {
+    margin-right: initial;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .cd_kaoyancurriculum section {
+    margin: 30px auto 0px;
+  }
+  .cd_kaoyancurriculum section h2 {
+    font-size: 20px;
+  }
+  .cd_kaoyancurriculum section p {
+    margin-top: 20px;
+  }
+  .cd_kaoyancurriculum section > img {
+    width: 100%;
+    max-width: 521px;
+  }
+  .cd_kaoyancurriculum section ul {
+    padding: 10px;
+  }
+  .cd_kaoyancurriculum section ul li {
+    width: initial;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1) {
+    border-right: none;
+    text-align: left;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1) p {
+    margin-right: 7px;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1) p:nth-of-type(1) {
+    display: inline-block;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(1) p:nth-of-type(2) {
+    display: none;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(2) {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+    border-left: none;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(3) {
+    text-align: left;
+    border-right: none;
+    width: initial;
+    padding-right: initial;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(3) p {
+    position: initial;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(3) p:nth-of-type(1) {
+    display: inline-block;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(3) p:nth-of-type(2) {
+    display: none;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(3) div {
+    max-width: initial;
+    margin-right: initial;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(3) div span {
+    max-width: initial;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(4) {
+    border-left: none;
+    text-align: left;
+    padding-left: initial;
+    margin-left: initial;
+  }
+  .cd_kaoyancurriculum section ul li:nth-of-type(4) span {
+    max-width: initial;
+  }
+  .cd_kaoyancurriculum section ul li:before,
+  .cd_kaoyancurriculum section ul li:after {
+    display: none;
+  }
+  .cd_kaoyancurriculum section ul li span {
+    line-height: 1.6;
+  }
+  .cd_kaoyancurriculum section a {
+    width: 120px;
+  }
+  .cd_kaoyancurriculum section a:nth-of-type(1) {
+    margin-right: 30px;
+  }
+}
+.oldexam section div {
+  position: relative;
+  overflow: hidden;
+}
+.oldexam section div #examul {
+  left: 0;
+}
+.oldexam section div ul {
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+  width: 3600px;
+}
+.oldexam section div ul li {
+  overflow: hidden;
+  width: 1200px;
+  float: left;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.oldexam section div ul li > div {
+  text-align: left;
+  min-height: 334px;
+  margin-left: 5%;
+  margin-right: 2%;
+  float: left;
+  box-shadow: 0px 1px 10px #a5cce6;
+  border-radius: 2px;
+  width: 44%;
+}
+.oldexam section div ul li > div:nth-of-type(2) {
+  margin-left: 0;
+  margin-right: 5%;
+}
+.oldexam section div ul li > div > p {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg3.png) center no-repeat;
+  background-size: cover;
+  padding: 14px 0 14px 24px;
+  font-size: 18px;
+  color: #ffffff;
+  font-style: italic;
+}
+.oldexam section div ul li > div > p img {
+  margin-bottom: -4px;
+  margin-left: 15px;
+}
+.oldexam section div ul li > div > div {
+  padding: 20px 36px 23px 26px;
+}
+.oldexam section div ul li > div > div > p {
+  padding-top: 15px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.714;
+}
+.oldexam section div ul li > div > div > p:nth-of-type(1) {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.875;
+  padding-bottom: 10px;
+  padding-top: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.oldexam section div ul li > div > div > p:nth-of-type(2) {
+  font-size: 16px;
+  padding-top: 15px;
+  color: #666666;
+  line-height: 1.875;
+}
+.oldexam section div ul li > div:nth-of-type(2) > p {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg4.png) center no-repeat;
+  background-size: cover;
+}
+.oldexam section div ul .examon {
+  display: block;
+}
+.oldexam section div > a {
+  top: 70px;
+}
+.oldexam section div > a:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+}
+.oldexam section div > a:nth-of-type(2) {
+  position: absolute;
+  left: 1172px;
+}
+.oldexam section > a {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  width: 140px;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 28px;
+  box-shadow: 0px 5px 15px #c2ae83;
+  border: 1px solid #ff5824;
+  background: #ff5824;
+  margin-top: 45px;
+  border-radius: 15px;
+}
+.oldexam section > a:hover {
+  background: #ffe4dc;
+  color: #ff5824;
+}
+#oldexam {
+  background: #fff;
+}
+#oldexam > section .oldexamh2 {
+  color: #000;
+  margin-bottom: 70px;
+}
+#oldexam > section > a {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  width: 140px;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 28px;
+  box-shadow: 0px 5px 15px #c2ae83;
+  border: 1px solid #ff5824;
+  background: #ff5824;
+  margin-top: 45px;
+  border-radius: 15px;
+}
+#oldexam > section > a:hover {
+  background: #ffe4dc;
+  color: #ff5824;
+}
+@media (max-width: 640px) {
+  #oldexam > section > a {
+    margin-top: 15px;
+  }
+}
+#oldexam .team-1 {
+  overflow: hidden;
+  padding: 0;
+}
+#oldexam .team-1 p {
+  color: #000;
+}
+#oldexam .team-1 > div {
+  height: 334px;
+  float: left;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px #a5cce6;
+  border-radius: 2px;
+  margin-left: 10px;
+  width: 505px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+#oldexam .team-1 > div:nth-of-type(2) {
+  margin-right: 10px;
+  margin-left: 0px;
+}
+#oldexam .team-1 > div:nth-of-type(2) > p {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg4.png) center no-repeat;
+  background-size: cover;
+}
+#oldexam .team-1 > div > p {
+  padding-left: 25px;
+  text-align: left;
+  line-height: 50px;
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg3.png) center no-repeat;
+  background-size: cover;
+  height: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  font-style: italic;
+}
+#oldexam .team-1 > div > p > img {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: -4px;
+  margin-left: 15px;
+}
+#oldexam .team-1 > div > div {
+  text-align: left;
+  padding: 20px 36px 23px 26px;
+}
+#oldexam .team-1 > div > div > p {
+  text-align: left;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.714;
+}
+#oldexam .team-1 > div > div > p:nth-of-type(1) {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.875;
+  padding-bottom: 10px;
+  padding-top: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+#oldexam .team-1 > div > div > p:nth-of-type(2) {
+  font-size: 16px;
+  padding-top: 15px;
+  color: #666666;
+  line-height: 1.875;
+}
+#oldexam .team-1 .disiti > p {
+  padding-top: 0;
+}
+#oldexam .mianlive .wrap {
+  overflow: initial;
+}
+#oldexam .hd1 em {
+  top: 30px;
+  opacity: .7;
+}
+#oldexam .hd1 em:hover {
+  opacity: 1;
+}
+#oldexam #kwod2 {
+  padding: 0 30px;
+}
+#oldexam #kwod2 > div {
+  margin-left: 0;
+  float: left;
+  overflow: hidden;
+  min-height: 347px;
+  box-shadow: 0px 1px 10px #a5cce6;
+  border-radius: 2px;
+  width: 49%;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
+#oldexam #kwod2 > div:nth-of-type(2) {
+  margin-right: 0px;
+}
+#oldexam #kwod2 > div:nth-of-type(2) > p {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg4.png) center no-repeat;
+  background-size: cover;
+}
+#oldexam #kwod2 > div:nth-of-type(4) {
+  margin-right: 0px;
+}
+#oldexam #kwod2 > div:nth-of-type(4) > p {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg4.png) center no-repeat;
+  background-size: cover;
+}
+#oldexam #kwod2 > div:nth-of-type(4) > div > p {
+  padding-top: 0px;
+}
+#oldexam #kwod2 > div > p {
+  padding-left: 25px;
+  text-align: left;
+  line-height: 50px;
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg3.png) center no-repeat;
+  background-size: cover;
+  height: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  font-style: italic;
+}
+#oldexam #kwod2 > div > p > img {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: -4px;
+  margin-left: 15px;
+}
+#oldexam #kwod2 > div > div {
+  text-align: left;
+  padding: 20px 36px 23px 26px;
+}
+#oldexam #kwod2 > div > div > p {
+  text-align: left;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.714;
+}
+#oldexam #kwod2 > div > div > p:nth-of-type(1) {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.875;
+  padding-bottom: 10px;
+  padding-top: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+#oldexam #kwod2 > div > div > p:nth-of-type(2) {
+  font-size: 16px;
+  padding-top: 15px;
+  color: #666666;
+  line-height: 1.875;
+}
+@media (max-width: 1126px) {
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 354px;
+  }
+}
+@media (max-width: 1085px) {
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 370px;
+  }
+}
+@media (max-width: 1028px) {
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 393px;
+  }
+}
+@media (max-width: 1020px) {
+  #oldexam #kwod2 > div {
+    min-height: 354px;
+  }
+}
+@media (max-width: 960px) {
+  #oldexam #kwod2 > div {
+    min-height: 384px;
+  }
+}
+@media (max-width: 914px) {
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 416px;
+  }
+}
+@media (max-width: 890px) {
+  #oldexam #kwod2 > div {
+    min-height: 271px;
+  }
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 295px;
+  }
+  #oldexam #kwod2 > div > p {
+    height: 40px;
+    line-height: 40px;
+  }
+  #oldexam #kwod2 > div > div {
+    padding: 10px 15px 15px 20px;
+  }
+  #oldexam #kwod2 > div > div > p {
+    line-height: 1.3;
+    padding-top: 5px;
+  }
+  #oldexam #kwod2 > div > div > p:nth-of-type(1) {
+    line-height: 1.3;
+  }
+  #oldexam #kwod2 > div > div > p:nth-of-type(2) {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 865px) {
+  #oldexam #kwod2 > div {
+    min-height: 289px;
+  }
+}
+@media (max-width: 859px) {
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 313px;
+  }
+}
+@media (max-width: 749px) {
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 349px;
+  }
+}
+@media (max-width: 741px) {
+  #oldexam #kwod2 > div {
+    min-height: 319px;
+  }
+}
+@media (max-width: 715px) {
+  #oldexam #kwod2 > div {
+    min-height: 357px;
+  }
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: 399px;
+  }
+}
+@media (max-width: 640px) {
+  #oldexam #kwod2 > div {
+    width: 100%;
+    min-height: initial;
+  }
+  #oldexam #kwod2 > div:nth-of-type(3),
+  #oldexam #kwod2 > div:nth-of-type(4) {
+    min-height: initial;
+  }
+}
+#oldexam #kwod2 .disiti > p {
+  padding-top: 0;
+}
+.cd_kaoyanschool {
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg1.jpg) center no-repeat;
+  background-size: cover;
+}
+.cd_kaoyanschool section > div {
+  margin-top: 60px;
+  overflow-x: auto;
+  overflow-y: visible;
+  display: list-item;
+}
+.cd_kaoyanschool section > div .qiehuan {
+  width: 1200px;
+  height: 43px;
+  border-bottom: 1px solid #fff;
+}
+.cd_kaoyanschool section > div .qiehuan li {
+  cursor: pointer;
+  float: left;
+  margin-left: 195px;
+}
+.cd_kaoyanschool section > div .qiehuan li p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.875;
+}
+.cd_kaoyanschool section > div .qiehuan li img {
+  margin: auto;
+}
+.cd_kaoyanschool section > div .qiehuan li img:nth-of-type(2) {
+  display: none;
+}
+.cd_kaoyanschool section > div .qiehuan .lbxon img {
+  display: none;
+}
+.cd_kaoyanschool section > div .qiehuan .lbxon img:nth-of-type(2) {
+  display: block;
+}
+.cd_kaoyanschool section > div .qiehuanneirong {
+  width: 1200px;
+  margin-top: 40px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li {
+  padding: 7px;
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+  border: 1px solid #e9ecf7;
+  display: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr td {
+  height: 55px;
+  font-size: 13px;
+  color: #999999;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr td:nth-of-type(1) {
+  width: 142px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr td:nth-of-type(2) {
+  width: 252px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr td:nth-of-type(3) {
+  width: 100px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr td:nth-of-type(4) {
+  text-align: left;
+  padding-left: 47px;
+  width: 689px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr:nth-of-type(1) {
+  border: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr:nth-of-type(1) td {
+  border: none;
+  color: #fff;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr:nth-of-type(1) td:nth-of-type(4) {
+  text-align: center;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li table tr:nth-of-type(2) {
+  border-top: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 14px solid #fff;
+  position: absolute;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(1):before {
+  left: 201px;
+  top: -14px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(1) table tr:nth-of-type(1) {
+  background: #33abb3;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(1) table tr:nth-of-type(1) td {
+  border: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(1) table tr td {
+  border: 1px solid #d6eef0;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(2):before {
+  left: 437px;
+  top: -14px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(2) table tr:nth-of-type(1) {
+  background: #7fb63b;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(2) table tr:nth-of-type(1) td {
+  border: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(2) table tr td {
+  border: 1px solid #c6e79d;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(3):before {
+  left: 670px;
+  top: -14px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(3) table tr:nth-of-type(1) {
+  background: #f5bf0b;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(3) table tr:nth-of-type(1) td {
+  border: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(3) table tr td {
+  border: 1px solid #e9d9a3;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(4):before {
+  left: 905px;
+  top: -14px;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(4) table tr:nth-of-type(1) {
+  background: #ea7d08;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(4) table tr:nth-of-type(1) td {
+  border: none;
+}
+.cd_kaoyanschool section > div .qiehuanneirong > li:nth-of-type(4) table tr td {
+  border: 1px solid #e4b582;
+}
+.cd_kaoyanschool section > div .qiehuanneirong .lion {
+  display: block;
+}
+.cd_kaoyanschool section > o {
+  display: none;
+  color: #fff;
+}
+.cd_kaoyanschool section > article {
+  margin-top: 48px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.cd_kaoyanschool section > article img {
+  float: left;
+  width: 38%;
+  margin-right: 7.5%;
+}
+.cd_kaoyanschool section > article div {
+  width: 54.5%;
+  float: left;
+  text-align: left;
+}
+.cd_kaoyanschool section > article div p {
+  display: block;
+  font-size: 12px;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 1.8;
+  text-align: left;
+  text-indent: 23px;
+  margin-bottom: 5px;
+}
+.cd_kaoyanschool section > article div a {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 23px;
+  color: #ffffff;
+  font-style: italic;
+  width: 173px;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 28px;
+  border: 1px solid #f5bf0b;
+  background: #f5bf0b;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+.cd_kaoyanschool section > article div a:hover {
+  background: #f8edc8;
+  color: #f5bf0b;
+}
+@media (max-width: 1024px) {
+  .cd_kaoyanschool section > article {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .cd_kaoyanschool section > article img {
+    display: none;
+  }
+  .cd_kaoyanschool section > article div {
+    float: none;
+    padding: 20px;
+    width: initial;
+  }
+}
+@media (max-width: 1200px) {
+  .cd_kaoyanschool section > o {
+    padding-top: 10px;
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .cd_kaoyanschool section {
+    margin: 70px auto 30px;
+  }
+  .cd_kaoyanschool section > o {
+    display: block;
+  }
+  .cd_kaoyanschool section > div {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 640px) {
+  .cd_kaoyanschool section {
+    margin: 30px auto 30px;
+  }
+  .cd_kaoyanschool section > div {
+    margin-top: 5px;
+  }
+  .cd_kaoyanschool section > article {
+    margin-top: 5px;
+  }
+}
+.cd_kaoyanhotspot1 > section > article {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 35px;
+  width: 100%;
+  float: left;
+}
+.cd_kaoyanhotspot1 > section > article > p {
+  position: relative;
+  width: 152px;
+  height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 16px;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 32px;
+  font-style: italic;
+  margin-bottom: 20px;
+  background: #aab2be;
+}
+.cd_kaoyanhotspot1 > section > article > p:before {
+  content: "";
+  width: 8px;
+  position: absolute;
+  display: inline-block;
+  top: 12px;
+  left: 13px;
+  height: 8px;
+  border-radius: 4px;
+  background: #fff;
+}
+.cd_kaoyanhotspot1 > section > article > i {
+  font-size: 14px;
+  color: #999999;
+  padding-left: 15px;
+  font-style: italic;
+}
+.cd_kaoyanhotspot1 > section > article > ul {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 4px;
+}
+.cd_kaoyanhotspot1 > section > article > ul > li {
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #999999;
+  padding-left: 27px;
+  background: #fff;
+}
+.cd_kaoyanhotspot1 > section > article > ul > li:nth-of-type(2n) {
+  background: #edf0f4;
+  height: 37px;
+  line-height: 37px;
+}
+.cd_kaoyanhotspot1 > section > article > div {
+  background: #fff;
+  padding: 1px;
+  border: 1px solid #eeeeee;
+}
+.cd_kaoyanhotspot1 > section > article > div > table {
+  width: 100%;
+}
+.cd_kaoyanhotspot1 > section > article > div > table > tbody > tr {
+  background: #fff;
+  height: 28px;
+}
+.cd_kaoyanhotspot1 > section > article > div > table > tbody > tr:nth-of-type(2n-1) {
+  background: #edf0f4;
+  height: 32px;
+}
+.cd_kaoyanhotspot1 > section > article > div > table > tbody > tr > td {
+  font-size: 12px;
+  color: #999999;
+  padding-left: 26px;
+  width: 30%;
+  border-right: 4px solid #fff;
+}
+.cd_kaoyanhotspot1 > section > article > div > table > tbody > tr > td:nth-of-type(3) {
+  border-right: 0;
+  width: 40%;
+}
+@media (max-width: 1024px) {
+  .cd_kaoyanhotspot1 > section > article {
+    float: none;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .cd_kaoyanhotspot1 > section > article > ul {
+    max-width: initial;
+  }
+}
+@media (max-width: 640px) {
+  .cd_kaoyanhotspot1 > section > article {
+    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-left: 2%;
+    width: 96%;
+  }
+  .cd_kaoyanhotspot1 > section > article > i {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .cd_kaoyanhotspot1 > section > article > p {
+    margin-bottom: 10px;
+  }
+  .cd_kaoyanhotspot1 > section > article > ul > li {
+    padding-left: 5px;
+    height: initial;
+    padding: 5px;
+    line-height: initial;
+  }
+  .cd_kaoyanhotspot1 > section > article > ul > li:nth-of-type(2n-1) {
+    height: initial;
+    line-height: initial;
+  }
+  .cd_kaoyanhotspot1 > section > article > div > table > tbody > tr {
+    height: initial;
+    line-height: initial;
+  }
+  .cd_kaoyanhotspot1 > section > article > div > table > tbody > tr:nth-of-type(2n-1) {
+    height: initial;
+    line-height: initial;
+    padding: 5px;
+  }
+  .cd_kaoyanhotspot1 > section > article > div > table > tbody > tr > td {
+    padding-left: 5px;
+    padding: 5px;
+  }
+}
+.s_teacher {
+  padding-top: 60px;
+  text-align: center;
+  width: 100%;
+  /*height:750px;*/
+  overflow: hidden;
+  position: relative;
+  background: url(http://static.gfedu.net/special/cd_kaoyan_hotspot170913/mobile/images/bg3.jpg) center no-repeat;
+  background-size: cover;
+}
+.s_teacher > section > h2 {
+  color: #f9d96c;
+  font-style: italic;
+}
+.s_teacher > section > h2 > img {
+  margin: 0 10px -4px;
+}
+@media (max-width: 892px) {
+  .s_teacher > section > h2 > img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .s_teacher > section > h2 {
+    font-size: 20px;
+  }
+}
+.s_teacher h3 {
+  font-size: 16px;
+  color: #681b02;
+  line-height: 1.875;
+  font-style: italic;
+  margin-top: 25px;
+}
+.s_teacher .team-1 img {
+  display: block;
+  margin: 0 auto;
+  padding: 60px 0px 20px 0px ;
+}
+.s_teacher .team-1 h4 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.s_teacher .team-1 p {
+  margin: 0 auto;
+  max-width: 590px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 36px;
+}
+.s_teacher .team-1 p b {
+  float: left;
+  font-size: 48px;
+  font-family: "Arial";
+  color: #ffc5b3;
+  line-height: 1;
+  font-weight: bold;
+}
+.s_teacher .team-1 p b:nth-of-type(2) {
+  float: none;
+  position: absolute;
+}
+.mianlive {
+  *zoom: 1;
+}
+.mianlive:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.mianlive .wrap {
+  position: relative;
+  overflow: hidden;
+}
+.mianlive .wrap em {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  display: none;
+  cursor: pointer;
+  opacity: 0.1;
+}
+.mianlive .wrap em:hover {
+  opacity: 0.4;
+}
+.mianlive .wrap .prev {
+  left: 0;
+}
+.mianlive .wrap .next {
+  right: 0;
+}
+.mianlive .livscroll {
+  margin: 0 auto;
+  position: relative;
+  *zoom: 1;
+}
+.mianlive .livscroll:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.mianlive .livscroll li {
+  float: left;
+  width: 540px;
+  *zoom: 1;
+}
+.mianlive .livscroll li:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.mianlive .livscroll li .team-1 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: auto;
+}
+#circle {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+#circle li {
+  display: inline-block;
+  width: 26px;
+  height: 6px;
+  border-radius: 3px;
+  background: #b14b2c;
+  margin: 0 10px;
+}
+#circle .current {
+  width: 88px;
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+}
+@media (min-width: 1200px) {
+  .km-picshow {
+    padding: 100px 0;
+  }
+  .mianlive {
+    width: 1200px;
+  }
+  .mianlive .wrap {
+    width: 1200px;
+  }
+  .mianlive .wrap em {
+    display: block;
+  }
+  .mianlive .livscroll {
+    width: 1080px;
+  }
+  .mianlive .livscroll li {
+    width: 1080px;
+  }
+  #circle {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .mianlive {
+    display: none;
+  }
+}
+#kwod2 {
+  display: block;
+  padding: 30px 26px 47px 30px;
+  overflow: hidden;
+}
+#kwod2 li {
+  float: left;
+  padding: 27px 0px 26px 0px;
+  min-height: 303px;
+  background: #ff7348;
+  border-radius: 3px;
+  width: 32%;
+  margin-right: 2%;
+}
+#kwod2 li:nth-of-type(3) {
+  margin-right: 0;
+}
+#kwod2 li div img {
+  border: 7px solid #ff9c7d;
+  padding: 0;
+  border-radius: 50%;
+}
+#kwod2 li div h4 {
+  color: #8d2f12;
+  margin-bottom: 20px;
+}
+#kwod2 li div p {
+  line-height: 1.7;
+  text-align: left;
+  text-indent: 27px;
+  padding: 0 20px;
+}
+#kwod2 li div p i {
+  color: #ff7348;
+}
+@media (max-width: 941px) {
+  #kwod2 li {
+    min-height: 349px;
+  }
+}
+@media (max-width: 843px) {
+  #kwod2 li {
+    min-height: 372px;
+  }
+}
+@media (max-width: 640px) {
+  .s_teacher h3 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #kwod2 {
+    padding: 30px 26px 0px 30px;
+  }
+  #kwod2 li {
+    width: 100%;
+    min-height: initial;
+    margin-bottom: 25px;
+  }
+  #kwod2 li:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 555px) {
+  #kwod2 li {
+    min-height: 372px;
+  }
+}
+@media (max-width: 420px) {
+  #kwod2 {
+    padding: 25px 15px 0px 15px;
+  }
+  #kwod2 li {
+    width: 100%;
+    min-height: initial;
+  }
+  #kwod2 li i {
+    display: none;
+  }
+}
+.cd_kaoyanstep {
+  background: #f5f5f5;
+}
+.cd_kaoyanstep section {
+  padding: 0 30px;
+  overflow: hidden;
+}
+.cd_kaoyanstep section > ul {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.cd_kaoyanstep section > ul > li {
+  text-align: right;
+  float: left;
+  font-size: 16px;
+  color: #ed7b5c;
+}
+.cd_kaoyanstep section > ul > li:nth-of-type(1) {
+  width: 29%;
+}
+.cd_kaoyanstep section > ul > li:nth-of-type(2) {
+  width: 23.5%;
+  color: #5896cc;
+}
+.cd_kaoyanstep section > ul > li:nth-of-type(3) {
+  width: 22.5%;
+}
+@media (max-width: 640px) {
+  .cd_kaoyanstep section > ul {
+    display: none;
+  }
+}
+.cd_kaoyanstep section > div > ul {
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  .cd_kaoyanstep section > div > ul {
+    margin-top: 25px;
+  }
+}
+.cd_kaoyanstep section > div > ul > img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 41px;
+}
+@media (max-width: 640px) {
+  .cd_kaoyanstep section > div > ul > img {
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+.cd_kaoyanstep section > div > ul > li {
+  min-height: 274px;
+  background: #fff;
+  border-radius: 3px;
+  width: 28%;
+  padding: 0 2%;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin-right: 2%;
+}
+@media (max-width: 826px) {
+  .cd_kaoyanstep section > div > ul > li {
+    min-height: 297px;
+  }
+}
+@media (max-width: 676px) {
+  .cd_kaoyanstep section > div > ul > li {
+    min-height: 320px;
+  }
+}
+@media (max-width: 640px) {
+  .cd_kaoyanstep section > div > ul > li {
+    width: 90%;
+    padding: 0 5% 20px;
+    margin-bottom: 20px;
+    min-height: initial;
+  }
+  .cd_kaoyanstep section > div > ul > li:before {
+    display: ;
+  }
+}
+.cd_kaoyanstep section > div > ul > li:nth-of-type(1):before {
+  left: 186px;
+}
+.cd_kaoyanstep section > div > ul > li:nth-of-type(2) p {
+  color: #5896cc;
+}
+.cd_kaoyanstep section > div > ul > li:nth-of-type(2):before {
+  left: 106px;
+}
+.cd_kaoyanstep section > div > ul > li:nth-of-type(3) {
+  margin-right: 0;
+}
+.cd_kaoyanstep section > div > ul > li:nth-of-type(3):before {
+  left: 18px;
+}
+.cd_kaoyanstep section > div > ul > li > img {
+  padding: 12px 0px 15px 0px;
+}
+.cd_kaoyanstep section > div > ul > li > p {
+  font-size: 18px;
+  color: #ed7b5c;
+  font-weight: bold;
+  font-style: italic;
+  padding: 25px 0 7px 0;
+}
+.cd_kaoyanstep section > div > ul > li span {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.714;
+}
+.cd_kaoyanstep section > div > ul > li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: -10px;
+  left: 181px;
+}
+.cd_kaoyan_mobile_hotspot170913 {
+  background: #f5f5f5;
+  max-width: 830px;
+  margin: auto;
+}

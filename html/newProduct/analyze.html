@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>中文测试</title>
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/fontmain.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/blackheader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/study/online.css">
+
+    <!-- 弹窗所用 -->
+    <link rel="stylesheet" href="../../css/commoncss/popup2/popupLayer.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/questions/analysisQue.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/questionfonts.css">
+    
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="script2015/html5shiv.js"></script>
+    <script type="text/javascript" src="http://www.gfedu.cn/script2015/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+    <script src="../../script/study/notes.js"></script>
+    <script src="../../script/study/courseLearn.js"></script>
+    <script src="../../script/study/online.js"></script>
+    <script src="../../script/questions/timeCc.js"></script>
+
+</head>
+<body>
+    <!--顶部菜单-->
+    <div class="index-header2">
+        <div class="wrap">
+            <div class="indexleft">
+                <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo.png"></a>
+                <ul>
+                    <li><a href="javascript:;">课程</a></li>
+                    <li><a href="javascript:;">题库</a></li>
+                    <li><a href="javascript:;">直播</a></li>
+                    <li><a href="javascript:;">咨询</a></li>
+                    <li><a href="javascript:;">商城</a></li>
+                </ul>
+            </div>
+            <div class="indexright">
+                <div class="info">
+                    <ul>
+                        <li class="phone"><i>&#xf002;</i><i>&#xf020;</i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">金程网校APP</a></li>
+                                    <li><a href="javascript:;">天天CPA</a></li>
+                                    <li><a href="javascript:;">金网公众号</a></li>
+                                    <li><a href="javascript:;">金网题库服务号</a></li>
+                                    <li><a href="javascript:;">金网CFA APP</a></li>
+                                    <li><a href="javascript:;">金网CFA服务号</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i>&#xe902;</i><span><i>&#xf038;</i></span></li>
+                        <li><i>&#xf004;</i><span>6</span></li>
+                        <li class="people"><i>&#xf005;</i><i>&#xf020;</i>
+                            <div class="peo-copy"></div>
+                            <div class="people-sel">
+                                <ul>
+                                    <li><a href="javascript:;">学习空间</a></li>
+                                    <li><a href="javascript:;">我的订单</a></li>
+                                    <li><a href="javascript:;">个人信息</a></li>
+                                    <li><a href="javascript:;">账号设置</a></li>
+                                    <li><a href="javascript:;">退出</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchinput">
+                    <input type="text" placeholder="请输入想搜索的内容">
+                    <a href="javascript:;"><i>&#xf001;</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr50"></div>
+    <div class="contain">
+        <div class="tabUl">
+            <p>职业伦理科目测试</p>
+        </div>
+        <div class="wrap">
+            <div class="datiTil">题型介绍：按照考纲要求，找出每级考试科目的核心知识点、难点并逐个攻破。再从分值比重着手，将财务报表分析、职业伦理、数量、资产定价等重要科目投入更多 的精力复习，总结出科目的理论、公式，经典题、难题。在吃透每门科目的基础上，再将整个知识体系融会贯通，全面性、条理性、逻辑性地把握知识要点。</div>
+            <div class="nav">
+                <ul>
+                    <li class="selit jsAnswerC">
+                        <a href="javascript:;"><i>&#xe97b;</i><p>答题卡</p>
+                          <div class="copydiv"></div>
+                      </a>
+                    </li>
+                    <li class="selit">
+                        <a href="javascript:;"><i>&#xe97f;</i>
+                          <small class="change" id="testTimeCc" data-timSta="60" data-timEnd=""><!-- 小于0为正计时，大于零为倒计时时间 单位为秒-->
+                            <em id="t_h">00</em>:<em id="t_m">00</em>:<em id="t_s">00</em>
+                          </small>
+                          <div class="copydiv"></div>
+                      </a>
+                    </li>
+                    <li class="sub endT">
+                        <a href="javascript:;"><i>&#xe980;</i>
+                          <p>下次再做</p>
+                          <div class="copydiv"></div>
+                      </a>
+                    </li>
+                    <li class="sub popOut endT" data-popname="#submitTest">
+                        <a href="javascript:;"><i>&#xe982;</i>
+                          <p>提交</p>
+                          <div class="copydiv"></div>
+                      </a>
+                    </li>
+                </ul>
+                <!-- 超出时间 -->
+                <span class="popOut timeOut" data-popname="#timeOut"></span>
+            </div>
+            <div class="ques">
+            <!-- 答题卡 start-->
+              <div class="answer_card_full" style="display: none;">
+                <div class="top">
+                  <a href="####" class="on">按题型</a>
+                  <a href="####">按顺序</a>
+                  <span class="rig">
+                    <span class="y">你的选择</span>
+                    <span class="w">错误</span>
+                    <span class="r">正确</span>
+                    <span class="n">未答</span>
+                  </span>
+                </div>
+                <div class="mainBox">
+                  <div class="on">
+                    <dl>
+                      <dt>单选题</dt>
+                      <dd data-quesid="92"><a href="####">1</a></dd><!--r = right 对的题目 -->
+                      <dd class="r"><a href="####">2</a></dd>
+                      <dd class="y"><a href="####">3</a></dd>
+                      <dd><a href="####">4</a></dd>
+                      <dd><a href="####">5</a></dd>
+                      <dd><a href="####">6</a></dd>
+                      <dd class="w"><a href="####">7</a></dd><!--w = wrong 错的题目 -->
+                      <dd><a href="####">8</a></dd>
+                      <dd><a href="####">9</a></dd>
+                      <dd><a href="####">10</a></dd>
+                      <dd><a href="####">11</a></dd>
+                      <dd><a href="####">999</a></dd>
+                    </dl>
+                    <dl>
+                      <dt>多选题</dt>
+                      <dd class="r"><a href="####">1</a></dd><!--r = right 对的题目 -->
+                      <dd><a href="####">2</a></dd>
+                      <dd><a href="####">3</a></dd>
+                      <dd><a href="####">4</a></dd>
+                      <dd><a href="####">5</a></dd>
+                      <dd><a href="####">6</a></dd>
+                      <dd class="w"><a href="####">7</a></dd><!--w = wrong 错的题目 -->
+                      <dd><a href="####">8</a></dd>
+                      <dd><a href="####">9</a></dd>
+                      <dd><a href="####">10</a></dd>
+                      <dd><a href="####">11</a></dd>
+                      <dd><a href="####">999</a></dd>
+                    </dl>
+                  </div>
+                  <div class="">
+                    <dl>
+                      <dd class="r"><a href="####">1</a></dd><!--r = right 对的题目 -->
+                      <dd><a href="####">2</a></dd>
+                      <dd><a href="####">3</a></dd>
+                      <dd><a href="####">4</a></dd>
+                      <dd><a href="####">5</a></dd>
+                      <dd><a href="####">6</a></dd>
+                      <dd class="w"><a href="####">7</a></dd><!--w = wrong 错的题目 -->
+                      <dd><a href="####">8</a></dd>
+                      <dd><a href="####">9</a></dd>
+                      <dd><a href="####">10</a></dd>
+                      <dd><a href="####">11</a></dd>
+                      <dd><a href="####">999</a></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <!-- 答题卡 end -->
+                <div class="allItem">
+                    <div class="item basics_item"  data-quesid="92">
+                        <h3>单选题（经济学）
+                            <span class="binsBox">
+                                <span class="sc"><i class="icon-heart-hollow">&nbsp;收藏</i><i class="icon-heart">&nbsp;已收藏</i></span>
+                                <span class="bj"><i class="icon-abxs">&nbsp;标记</i><i class="icon-abx">&nbsp;已标记</i></span>
+                                <span class="jc popOut" data-popname=".jiucuo"><i class="icon-wrench02">&nbsp;纠错</i></span>                 
+                              </span>
+                        </h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which to their encrypted email accounts through the Tor network.</p>
+                            </div>
+                            <div class="jz">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web
+                                        browsing activity. AFirms should disclose to clients
+                                    </dd>
+                                </dl>
+                                <dl class="error-c">
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        Prior approval must be obtained for the personal investment transactions of all employees.
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">C</a></dt>
+                                    <dd>
+                                        The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing activity. AFirms should disclose
+                                        to clients
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="type">
+                                    <div class="typeLeft">
+                                        <span><i>&#xe985;</i>经济学理论基础</span>
+                                        <span><i>&#xe986;</i>单选题 | 模拟题</span>
+                                    </div>
+                                    <div class="typeRight">
+                                        <span>难度：一般</span>
+                                        <span> 推荐：<i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析-有视频</h3>
+                                    <div class="videos">
+                                        <div class="videoLeft">
+                                            <img src="../../images/study/i_08.jpg">
+                                        </div>
+                                        <div class="videoRight">
+                                            <p>Evergreen Investment Management acquires a new, very large account with two concentrated positions. Catherine is responsible for calculating the firm's performance returns. The firm's current policy is to add
+                                                new accounts for the purpose of performance calculation after the first full month of management. Before the end of the initial month, Catherine noticed that one of the significant holdings of the new accounts
+                                                was acquired by another company, causing the value of the investment to double. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment
+                                                to reap the positible. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positible. Therefore, Catherine decided
+                                                to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positive impact of that month's portfolio return.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析-无视频</h3>
+                                    <div class="articlep">
+                                        Evergreen Investment Management acquires a new, very large account with two concentrated positions. Catherine is responsible for calculating the firm's performance returns. The firm's current policy is to add new accounts for the purpose of performance
+                                        calculation after the first full month of management. Before the end of the initial month, Catherine noticed that one of the significant holdings of the new accounts was acquired by another company, causing the
+                                        value of the investment to double. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positive impact of that month's portfolio
+                                        return.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item basics_item">
+                        <h3>单选题（经济学）<a href="javascript:;" class="comeout tabPerson"><span><i>&#xe984;</i><em>标记</em></span><span class="yesDo"><i>&#xe983;</i><em>已标记</em></span></a></h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which to their encrypted email accounts through the Tor network.</p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web
+                                        browsing activity. AFirms should disclose to clients
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        Prior approval must be obtained for the personal investment transactions of all employees.
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">C</a></dt>
+                                    <dd>
+                                        The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing activity. AFirms should disclose
+                                        to clients
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="type">
+                                    <div class="typeLeft">
+                                        <span><i>&#xe985;</i>经济学理论基础</span>
+                                        <span><i>&#xe986;</i>单选题 | 模拟题</span>
+                                    </div>
+                                    <div class="typeRight">
+                                        <span>难度：一般</span>
+                                        <span> 推荐：<i>&#xe900;</i><i>&#xe900;</i><i>&#xe900;</i><i>&#xe900;</i><i>&#xe900;</i></span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析-无视频</h3>
+                                    <div class="articlep">
+                                        Evergreen Investment Management acquires a new, very large account with two concentrated positions. Catherine is responsible for calculating the firm's performance returns. The firm's current policy is to add new accounts for the purpose of performance
+                                        calculation after the first full month of management. Before the end of the initial month, Catherine noticed that one of the significant holdings of the new accounts was acquired by another company, causing the
+                                        value of the investment to double. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positive impact of that month's portfolio
+                                        return.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item basics_item">
+                        <h3>单选题（经济学）<a href="javascript:;" class="comeout tabPerson"><span><i>&#xe984;</i><em>标记</em></span><span class="yesDo"><i>&#xe983;</i><em>已标记</em></span></a></h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which to their encrypted email accounts through the Tor network.</p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web
+                                        browsing activity. AFirms should disclose to clients
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        Prior approval must be obtained for the personal investment transactions of all employees.
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">C</a></dt>
+                                    <dd>
+                                        The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing activity. AFirms should disclose
+                                        to clients
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="type">
+                                    <div class="typeLeft">
+                                        <span><i>&#xe985;</i>经济学理论基础</span>
+                                        <span><i>&#xe986;</i>单选题 | 模拟题</span>
+                                    </div>
+                                    <div class="typeRight">
+                                        <span>难度：一般</span>
+                                        <span> 推荐：<i>&#xe900;</i><i>&#xe900;</i><i>&#xe900;</i><i>&#xe900;</i><i>&#xe900;</i></span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析-无视频</h3>
+                                    <div class="articlep">
+                                        Evergreen Investment Management acquires a new, very large account with two concentrated positions. Catherine is responsible for calculating the firm's performance returns. The firm's current policy is to add new accounts for the purpose of performance
+                                        calculation after the first full month of management. Before the end of the initial month, Catherine noticed that one of the significant holdings of the new accounts was acquired by another company, causing the
+                                        value of the investment to double. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positive impact of that month's portfolio
+                                        return.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item basics_item">
+                        <h3>单选题（经济学）<a href="javascript:;" class="comeout tabPerson"><span><i>&#xe984;</i><em>标记</em></span><span class="yesDo"><i>&#xe983;</i><em>已标记</em></span></a></h3>
+                        <div class="quswrap">
+                            <div class="article">
+                                <p>ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which to their encrypted email accounts through the Tor network.</p>
+                            </div>
+                            <div class="selectitem">
+                                <dl class="sel">
+                                    <dt><a href="javascript:;">A</a></dt>
+                                    <dd>The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web
+                                        browsing activity. AFirms should disclose to clients
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">B</a></dt>
+                                    <dd>
+                                        Prior approval must be obtained for the personal investment transactions of all employees.
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">C</a></dt>
+                                    <dd>
+                                        The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing activity. AFirms should disclose
+                                        to clients
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="answer">
+                                <div class="page">
+                                    <a href="javascript:;" class="prev">上一题</a>
+                                    <a href="javascript:;" class="next">下一题</a>
+                                </div>
+                            </div>
+                            <div class="analy">
+                                <div class="answer_ques">
+                                    <div class="error">
+                                        <i>&#xf054;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                    <div class="gou">
+                                        <i>&#xf053;</i><span>正确答案B  您的答案 A</span><span>本题平均正确率：56.5%</span>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析-有视频</h3>
+                                    <div class="video">
+                                        <div class="">
+                                            <img src="../../images/study/bc_03.jpg">
+                                        </div>
+                                        <div class="">
+                                            <p>Evergreen Investment Management acquires a new, very large account with two concentrated positions. Catherine is responsible for calculating the firm's performance returns. The firm's current policy is to add
+                                                new accounts for the purpose of performance calculation after the first full month of management. Before the end of the initial month, Catherine noticed that one of the significant holdings of the new accounts
+                                                was acquired by another company, causing the value of the investment to double. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment
+                                                to reap the positible. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positible. Therefore, Catherine decided
+                                                to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positive impact of that month's portfolio return.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="anaarticle">
+                                    <h3>答案解析-无视频</h3>
+                                    <div class="articlep">
+                                        Evergreen Investment Management acquires a new, very large account with two concentrated positions. Catherine is responsible for calculating the firm's performance returns. The firm's current policy is to add new accounts for the purpose of performance
+                                        calculation after the first full month of management. Before the end of the initial month, Catherine noticed that one of the significant holdings of the new accounts was acquired by another company, causing the
+                                        value of the investment to double. Therefore, Catherine decided to account for the new portfolio as of the date of transfer, thereby allowing Evergreen Investment to reap the positive impact of that month's portfolio
+                                        return.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 弹出层 -->
+<div class="popupLayer">
+    <!-- 纠错 start -->
+    <div class="popBox jiucuo">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">感谢您为金程网校试题纠错</h3>
+        <div class="main">
+          <p>为方便我们排查错误。请您详细描述本题错误，例如：</p>
+          <div class="opinion">
+             <ul>
+               <li>错别字</li>
+               <li>答案有误</li>
+               <li>排版错误</li>
+               <li>图片模糊</li>
+               <li>答案有异议</li>
+               <li>其他错误</li>
+             </ul>
+         </div>
+          <div class="tarea">
+            <textarea onkeyup="javascript:checkWord(this,'jiucuoCheck');" onmousedown="javascript:checkWord(this,'jiucuoCheck');"
+              name="content"  placeholder="请填写具体内容帮助我们了解您的意见与建议"></textarea>
+              <span><label id="jiucuoCheck">0</label>/1000</span>
+          </div>
+          <div class="btns">
+            <button type="button">提交</button>
+            <button type="button" class="cancel jsClose">取消</button>  
+          </div>          
+        </div>
+    </div>
+    <!-- 未做完 start -->
+    <div class="popBox unfin" id="submitTest">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">温馨提示</h3>
+        <div class="main">
+            <div class="f18">是否提交试卷？</div>
+            <div>您还有<em class="cm0">15</em>道题没有完</div>
+            <button class="btn_1 wc jsClose shartT">继续做题</button>
+            <button class="btn_2">确认提交</button>  
+        </div>     
+    </div>
+    <!-- 已做完 start -->
+    <div class="popBox fin" id="submitTure">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">温馨提示</h3>
+        <div class="main">
+          <div class="f18">确认提交</div>
+          <button class="btn_1 wc jsClose shartT">去检查</button>
+          <a href="####" class="btn_2">查看能力评估</a>  
+        </div>        
+    </div>
+    <!-- 时间到 start -->
+    <div class="popBox fin" id="timeOut">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">温馨提示</h3>
+        <div class="main">
+          <div class="f18">本张试卷做题时长为120分钟</div>
+          <div>已耗时完毕，系统已帮你提交试卷</div>
+          <a class="btn_1 wc jsClose">查看能力评估</a> 
+        </div>        
+    </div>
+
+    <!-- 采集用户信息 -->
+    <div class="popBox" id="getUserMes"><!-- data-sta 状态，1为加载页面后自动弹出 2为不弹出-->
+      <h3 class="popTitle">问卷调查</h3>
+      <div class="main">
+        <dl>
+          <dt>1、您的年龄</dt>
+          <dd><label><input type="radio" name="mes01" />A、20岁以下</label></dd>
+          <dd><label><input type="radio" name="mes01" />B、20岁~30岁</label></dd>
+          <dd><label><input type="radio" name="mes01" />C、30岁~40岁</label></dd>
+          <dd><label><input type="radio" name="mes01" />D、40岁以上</label></dd>
+        </dl>
+        <dl>
+          <dt>2、您的最高学历</dt>
+          <dd><label><input type="radio" name="mes02" />A、高中或大专</label></dd>
+          <dd><label><input type="radio" name="mes02" />B、本科</label></dd>
+          <dd><label><input type="radio" name="mes02" />C、研究生</label></dd>
+          <dd><label><input type="radio" name="mes02" />D、博士以及博士后</label></dd>
+        </dl>
+        <dl>
+          <dt>3、您学习的专业</dt>
+          <dd><label><input type="radio" name="mes03" />A、财经专业</label></dd>
+          <dd><label><input type="radio" name="mes03" />B、非财经专业</label></dd>
+        </dl>
+        <dl>
+          <dt>4、您的备考状态是？</dt>
+          <dd><label><input type="radio" name="mes04" />A、全职</label></dd>
+          <dd><label><input type="radio" name="mes04" />B、在职</label></dd>
+          <dd><label><input type="radio" name="mes04" />C、应届毕业生</label></dd>
+          <dd><label><input type="radio" name="mes04" />D、在校研究生</label></dd>
+          <dd><label><input type="radio" name="mes04" />E、其他</label></dd>
+        </dl>
+        <dl>
+          <dt>5、您一天的学习时长是？</dt>
+          <dd><label><input type="radio" name="mes05" />A、1小时内</label></dd>
+          <dd><label><input type="radio" name="mes05" />B、1-2小时</label></dd>
+          <dd><label><input type="radio" name="mes05" />C、3-4小时</label></dd>
+          <dd><label><input type="radio" name="mes05" />D、5-7小时</label></dd>
+          <dd><label><input type="radio" name="mes05" />E、8小时以上</label></dd>
+        </dl>
+        <dl>
+          <dt>6、你的年薪收入范围是？</dt>
+          <dd><label><input type="radio" name="mes06" />A、60,001—100,000</label></dd>
+          <dd><label><input type="radio" name="mes06" />B、100,001—150,000</label></dd>
+          <dd><label><input type="radio" name="mes06" />C、150,001—200,000 </label></dd>
+          <dd><label><input type="radio" name="mes06" />D、200,001—300,000 </label></dd>
+          <dd><label><input type="radio" name="mes06" />E、300,000 以上</label></dd>
+        </dl>  
+      </div>
+      <button class="btnR btnGetUserMes">提交</button>      
+    </div>
+</div>
+<!-- 获取用户信息弹出层 -->
+<span class="popOut btngetUserMes" data-popname="#getUserMes"></span>
+<!-- 弹出层end -->
+<script src="../../script/commonjs/popup2/popupLayer.js"></script>
+<!-- 本页 -->
+<script type="text/javascript" src="../../script/questions/question.js"></script>
+<script type="text/javascript" src="../../script/newProduct/analyze.js"></script>
+
+</body>
+</html>

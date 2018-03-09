@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/study/learning0.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/study/directory.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../css/study/report.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="script2015/html5shiv.js"></script>
+    <script type="text/javascript" src="http://www.gfedu.cn/script2015/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+    <!-- <script src="../../script/study/notes.js"></script> -->
+    <script src="../../script/study/baseJs.js"></script>
+</head>
+<body>
+  <!--顶部菜单-->
+  <!-- <div class="index-header">
+      <div class="wrap">
+          <div class="indexleft">
+              <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo.png"></a>
+              <ul>
+                  <li><a href="javascript:;">课程</a></li>
+                  <li><a href="javascript:;">题库</a></li>
+                  <li><a href="javascript:;">直播</a></li>
+                  <li><a href="javascript:;">咨询</a></li>
+                  <li><a href="javascript:;">商城</a></li>
+              </ul>
+          </div>
+          <div class="indexright">
+              <div class="info">
+                  <ul>
+                      <li class="phone"><i>&#xf002;</i><i>&#xf020;</i>
+                          <div class="peo-copy"></div>
+                          <div class="people-sel">
+                              <ul>
+                                  <li><a href="javascript:;">金程网校APP</a></li>
+                                  <li><a href="javascript:;">天天CPA</a></li>
+                                  <li><a href="javascript:;">金网公众号</a></li>
+                                  <li><a href="javascript:;">金网题库服务号</a></li>
+                                  <li><a href="javascript:;">金网CFA APP</a></li>
+                                  <li><a href="javascript:;">金网CFA服务号</a></li>
+                              </ul>
+                          </div>
+  
+                      </li>
+                      <li><i>&#xe902;</i><span><i>&#xf038;</i></span></li>
+                      <li><i>&#xf004;</i><span>6</span></li>
+                      <li class="people"><i>&#xf005;</i><i>&#xf020;</i>
+                          <div class="peo-copy"></div>
+                          <div class="people-sel">
+                              <ul>
+                                  <li><a href="javascript:;">学习空间</a></li>
+                                  <li><a href="javascript:;">我的订单</a></li>
+                                  <li><a href="javascript:;">个人信息</a></li>
+                                  <li><a href="javascript:;">账号设置</a></li>
+                                  <li><a href="javascript:;">退出</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="searchinput">
+                  <input type="text" placeholder="请输入想搜索的内容">
+                  <a href="javascript:;"><i>&#xf001;</i></a>
+              </div>
+          </div>
+      </div>
+  </div> -->
+
+<div class="contain">
+    <div class="tabUl">
+      <p>老汤十招测长投</p>
+      <a href="#" class="ct_title1">独家有秘笈 敢不敢试 测一测你有多牛？ </a>
+      <a href="#" class="ct_title2">老汤说：会做这10道题，你基本上可以通过CPA会计</a>
+    </div>
+    <div class="indexwrap">
+      <div class="title">
+        <h1>测试报告</h1>
+        <p>共<span id="qnum">15</span>题，<span id="numRight">5</span>道答对</p>
+      </div>
+       <ul>
+         <li>用时：<span id="useTime">00'00</span></li>
+        <li>交卷时间：<span id="submitTime">2017-05-21  16:23:49</span></li>
+        <li>正确率：<strong id="accuracy">45%</strong></li>
+       </ul>
+       <div class="selectContent">
+         <dl>
+            <dt><h2>答题卡</h2></dt>
+            <dd id="answerSheet"><a class="grren">01</a><a class="red">02</a><a class="grren">03</a><a class="grren">04</a><a>05</a><a >06</a><a class="grren">07</a><a class="grren">08</a></dd>
+         </dl>
+         <div class="lookmore">
+           <button type="button" name="button" onclick="location.href='analyze.html'">查看解析</button>
+         </div>
+       </div>
+
+   </div>
+
+</div>
+
+<script type="text/javascript">
+  $(function(){
+    $('#qnum').text(GetLocalItemValue('qnum'));
+    $('#accuracy').text(GetLocalItemValue('numRightPer'));
+    $('#numRight').text(GetLocalItemValue('numRight'));
+    $('#answerSheet').html(GetLocalItemValue('answerSheetHtml'));
+    $('#useTime').text(GetLocalItemValue('useTime'));
+    $('#submitTime').text(GetLocalItemValue('submitTime'));
+  })
+</script>
+</body>
+</html>

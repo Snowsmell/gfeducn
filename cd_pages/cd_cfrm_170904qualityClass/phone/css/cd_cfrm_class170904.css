@@ -1,0 +1,574 @@
+/*LESS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+del {
+  font-family: Arial;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+  font-weight: normal;
+}
+em,
+q,
+cite,
+address {
+  font-weight: normal;
+  font-style: normal;
+}
+address {
+  display: inline;
+}
+big,
+small {
+  font-size: 12px;
+}
+body {
+  font: 14px/1.5 "PinFang SC", "Microsoft Yahei", Microsoft Yahei, "Hiragino Sans GB", sans-serif;
+  vertical-align: middle;
+  color: #333;
+  background: #ffffff;
+}
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: "";
+}
+strong {
+  font-weight: bold;
+}
+del {
+  font-family: Simsun;
+}
+dfn {
+  padding-right: 2px;
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+  font-weight: normal;
+}
+fieldset,
+legend {
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button,
+input,
+select,
+select optgroup,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+button,
+input,
+select[multiple],
+textarea {
+  background-image: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* link */
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+  outline-style: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #06c;
+  text-decoration: underline;
+  transition: color .20s linear;
+  -o-transition: color .20s linear;
+  -webkit-transition: color .20s linear;
+  -moz-transition: color .20s linear;
+}
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 课程详情模板 start */
+.cd_pz_banner {
+  padding-top: 20px;
+  height: 90px;
+  margin-bottom: 33px;
+  padding-right: 8px;
+  background: url(http://static.gfedu.net/special/cd_cfrm_qualityClass170904/phone/images/banner_cd.png) no-repeat;
+}
+.cd_pz_banner h3 {
+  text-align: right;
+  font-size: 17px;
+  color: #e96039;
+}
+.cd_pz_banner p {
+  text-align: right;
+}
+.cd_pz_banner p span {
+  color: #e96039;
+  font-size: 15px;
+}
+@media (min-width: 375px) {
+  .cd_pz_banner h3 {
+    font-size: 20px;
+  }
+  .cd_pz_banner p span {
+    font-size: 18px;
+  }
+}
+@media (min-width: 640px) {
+  .cd_pz_banner {
+    background: url(http://static.gfedu.net/special/cd_cfrm_qualityClass170904/phone/images/banner_cd.png) no-repeat;
+    background-size: cover;
+  }
+  .cd_pz_banner h3 {
+    text-align: center;
+  }
+  .cd_pz_banner p {
+    text-align: center;
+  }
+}
+.cd_pz_title {
+  width: 163px;
+  line-height: 40px;
+  margin: 44px auto;
+  font-size: 18px;
+  color: #fff;
+  background: #e96039;
+  border-radius: 20px;
+  text-align: center;
+}
+.cf-dotted {
+  border-top: 1px dotted #ddd;
+  width: 100%;
+  margin: 30px 0;
+}
+/* 公共部分end */
+.cd_cfrm_qualityClass170904 .ctn {
+  max-width: 1024px;
+  margin: 20px auto;
+}
+.cd_cfrm_qualityClass170904 .cicmode {
+  width: 100%;
+}
+.cd_cfrm_qualityClass170904 .cicmode:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.cd_cfrm_qualityClass170904 .cicmode .bordereee {
+  border: solid 1px #ddd;
+  padding: 15px 30px;
+  position: relative;
+}
+.cd_cfrm_qualityClass170904 .cicmode .bordereee:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd {
+  margin: 0 20px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic:after,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit:after,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic h2,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit h2,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd h2 {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  background-color: #fff;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic h2 i,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit h2 i,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd h2 i {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+  background: #ccc;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic h2 strong,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit h2 strong,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd h2 strong {
+  display: inline-block;
+  width: 142px;
+  text-align: right;
+  padding-right: 8px;
+  box-sizing: border-box;
+  color: #30aec5;
+  line-height: 30px;
+  font-size: 18px;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd {
+  text-align: center;
+  box-sizing: border-box;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic img,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit img,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd img {
+  width: 45px;
+  height: 45px;
+  margin: 10px 0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  position: absolute;
+  top: -20px;
+  left: 25px;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic p,
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit p,
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd p {
+  text-align: justify;
+  color: #666;
+  line-height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  margin: 20px 0;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicharacteristic img {
+  background-color: #51dcca;
+}
+.cd_cfrm_qualityClass170904 .cicmode .cicprofit img {
+  background-color: #7db9f4;
+}
+.cd_cfrm_qualityClass170904 .cicmode .ciccrowd img {
+  background-color: #51c1dc;
+}
+/*  简介 start */
+.cf_jj {
+  margin: 0 20px;
+  border: 1px solid #ddd;
+  padding: 30px;
+  overflow: hidden;
+}
+.cf_jj p {
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
+  text-indent: 2em;
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 20px;
+}
+.cf_jj img {
+  padding-top: 40px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media (min-width: 920px) {
+  .cf_jj {
+    border: 1px solid #ddd;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .cf_jj p {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    text-indent: 2em;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 20px;
+  }
+  .cf_jj img {
+    padding-top: 40px;
+    display: inline-block;
+    float: right;
+  }
+  .cf_jj img:nth-of-type(1) {
+    padding-right: 60px;
+    float: left;
+    border-right: 1px dotted #ddd;
+  }
+}
+/*  简介 end */
+/* 品质班 start */
+.qu_quality {
+  margin: 0 20px;
+  border: 1px solid #ddd;
+  padding: 40px 20px 20px;
+  overflow: hidden;
+}
+.qu_quality .qu_top {
+  overflow: hidden;
+}
+.qu_quality dl {
+  margin: 15px auto;
+  text-align: center;
+}
+.qu_quality dl dt {
+  position: relative;
+}
+.qu_quality dl dt img {
+  max-width: 232px;
+  width: 100%;
+}
+.qu_quality dl dt span {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+.qu_quality dl dd {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-top: 10px;
+  max-width: 232px;
+  margin: 10px auto 0 auto;
+}
+.qu_quality dl:last-of-type {
+  margin-right: 0px;
+}
+.qu_quality .cf-addservice {
+  margin-top: 40px;
+}
+.qu_quality .cf-addservice .addbottom {
+  background: #f5f5f5;
+  margin-top: -4px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.qu_quality .cf-addservice .addbottom .addtitle {
+  background: url(http://static.gfedu.net/special/cd_cfrm_qualityClass170904/phone/images/add_title_bg.png) no-repeat;
+  width: 114px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.qu_quality .cf-addservice .addbottom a {
+  border: 1px solid #ddd;
+  padding: 0 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.qu_quality .cf-addservice .addbottom a.aclick,
+.qu_quality .cf-addservice .addbottom a:hover {
+  background: #e96039;
+  color: #fff!important;
+  border: 1px solid #e96039;
+}
+.qu_quality .cf-addservice .addbottom a.active {
+  border: 1px solid #e96039;
+  color: #e96039;
+}
+.qu_quality .cf-addservice .addbottom a.active:hover {
+  color: #fff;
+}
+@media (min-width: 530px) {
+  .qu_quality dl {
+    overflow: hidden;
+  }
+  .qu_quality dl dt {
+    position: relative;
+    float: left;
+  }
+  .qu_quality dl dt span {
+    position: absolute;
+    left: 15px;
+    margin-left: 0;
+  }
+  .qu_quality dl dd {
+    margin-left: 20px;
+    max-width: 100%;
+  }
+  .qu_quality .cf-addservice .addbottom a {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .qu_quality dl {
+    float: left;
+    width: 31%;
+    margin-right: 3%;
+  }
+  .qu_quality dl dt {
+    float: none;
+  }
+  .qu_quality dl dt span {
+    position: absolute;
+    left: 15%;
+    margin-left: 0;
+  }
+  .qu_quality dl dd {
+    float: none;
+    margin-left: 0;
+    max-width: 232px;
+    margin: 0 auto;
+  }
+}
+/* 品质班 end */
+/* 课程详情模板 end*/

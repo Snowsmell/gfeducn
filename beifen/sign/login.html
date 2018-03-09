@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="../commonjs/jquery-2.1.4.min.js"></script>
+    <script src="script/index.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="login_header">
+            <div class="login_hleft">
+                <a href="javascript:;"> <img src="../commonimages/logon.png"></a>
+            </div>
+            <div class="login_hright">
+                还没有金程账号，<a href="register.html">立即注册&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="logincontainer">
+            <div class="loginc_left">
+                <div class="loginform">
+                    <div class="logintab J_secTabs">
+                        <a href="javascript:;" class="selected">普通登陆</a>
+                        <a href="javascript:;">手机快速登陆</a>
+                    </div>
+                    <div class="ctn">
+                        <div class="pclogin">
+                            <ul>
+                                <li>
+                                    <div class="pcinput">
+                                        <span><i>&#xf030;</i></span>
+                                        <input type="text" placeholder="请输入手机号码或用户名" class="tells">
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                                </li>
+                                <li>
+                                    <div class="pcinput password">
+                                        <span><i>&#xf025;</i></span>
+                                        <input type="password" placeholder="请输入密码">
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入密码错误</p>
+                                </li>
+                                <li class="mian"><span><label class="check_radio cehecked"><i>&#xf053;</i></label>两周内免登陆</span><a href="register.html">忘记密码？</a></li>
+                                <li class="sub">
+                                    <button class="btn">登陆</button>
+                                </li>
+                                <li class="cor">合作账号直接登陆:<a href="sign.html"><i>&#xf031;</i></a><a href="sign.html"><i>&#xf026;</i></a><a href="sign.html"><i>&#xf051;</i></a></li>
+                            </ul>
+                        </div>
+                        <div class="phonelogin">
+                            <ul>
+                                <li>
+                                    <div class="pcinput">
+                                        <span><i>&#xf048;</i></span>
+                                        <input type="text" placeholder="请输入11位手机号" class="tell">
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                                </li>
+                                <li class="yan">
+                                    <div class="pcinput">
+                                        <span><i>&#xe903;</i></span>
+                                        <input type="text" placeholder="请输入验证码">
+                                        <a href="javascript:;">0789</a>
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入验证码</p>
+                                </li>
+                                <li class="dongtai">
+                                    <div class="pcinput">
+                                        <span><i>&#xf047;</i></span>
+                                        <input type="text" placeholder="请输入动态码">
+                                        <a href="javascript:;">获取动态码</a>
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入动态码</p>
+                                </li>
+                                <li class="zuce">
+                                    <button>登陆</button>
+                                </li>
+                                  <li class="will">未注册的手机号码验证后自动创建金程账号，且代表您已
+同意<a href="read.html" target="_blank">《金程用户协议》</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfectform">
+                  <div class="logintab J_secTabs">
+                      <a href="javascript:;">完善信息</a>
+                  </div>
+                  <div class="pl">
+                          <ul>
+                              <li>
+                                  <div class="pcinput">
+                                      <span><i>&#xf030;</i></span>
+                                      <input type="text" placeholder="请输入昵称">
+                                  </div>
+                                  <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                              </li>
+                              <li>
+                                  <div class="pcinput">
+                                      <span><i>&#xf025;</i></span>
+                                      <input type="text" placeholder="密码由8~15数字和字母组成">
+                                  </div>
+                                  <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                              </li>
+                              <li>
+                                  <div class="pcinput">
+                                      <span><i>&#xf025;</i></span>
+                                      <input type="text" placeholder="确认密码">
+                                  </div>
+                                  <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                              </li>
+                              <li class="sub">
+                                  <button>完成</button>
+                              </li>
+                          </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="loginc_right"></div>
+        </div>
+        <div class="copy">
+            Copyright © 2001-2017 金程网校 All Rights Reserved.
+        </div>
+    </div>
+</body>
+
+</html>

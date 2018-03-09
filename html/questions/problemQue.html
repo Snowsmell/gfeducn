@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/fontmain.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/blackheader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/study/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/study/online.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/popup2/popupLayer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/analysisQue.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/questionfonts.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="script2015/html5shiv.js"></script>
+    <script type="text/javascript" src="http://www.gfedu.cn/script2015/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="http://192.168.10.104:8080/gfeducn/script2015/jquery.min.js"></script>
+    <script src="../../script/study/notes.js"></script>
+    <script src="../../script/study/courseLearn.js"></script>
+    <script src="../../script/study/online.js"></script>
+    <script src="../../script/study/backtime.js"></script>
+
+</head>
+
+<body>
+<!--顶部菜单-->
+<div class="index-header2">
+    <div class="wrap">
+        <div class="indexleft">
+            <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo2.png"></a>
+            <ul>
+                <li><a href="javascript:;">课程</a></li>
+                <li><a href="javascript:;">题库</a></li>
+                <li><a href="javascript:;">直播</a></li>
+                <li><a href="javascript:;">咨询</a></li>
+                <li><a href="javascript:;">商城</a></li>
+            </ul>
+        </div>
+        <div class="indexright">
+            <div class="info">
+                <ul>
+                    <li class="phone"><i>&#xf002;</i><i>&#xf020;</i>
+                        <div class="peo-copy"></div>
+                        <div class="people-sel">
+                            <ul>
+                                <li><a href="javascript:;">金程网校APP</a></li>
+                                <li><a href="javascript:;">天天CPA</a></li>
+                                <li><a href="javascript:;">金网公众号</a></li>
+                                <li><a href="javascript:;">金网题库服务号</a></li>
+                                <li><a href="javascript:;">金网CFA APP</a></li>
+                                <li><a href="javascript:;">金网CFA服务号</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li><i>&#xe902;</i><span><i>&#xf038;</i></span></li>
+                    <li><i>&#xf004;</i><span>6</span></li>
+                    <li class="people"><i>&#xf005;</i><i>&#xf020;</i>
+                        <div class="peo-copy"></div>
+                        <div class="people-sel">
+                            <ul>
+                                <li><a href="javascript:;">学习空间</a></li>
+                                <li><a href="javascript:;">我的订单</a></li>
+                                <li><a href="javascript:;">个人信息</a></li>
+                                <li><a href="javascript:;">账号设置</a></li>
+                                <li><a href="javascript:;">退出</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchinput">
+                <input type="text" placeholder="请输入想搜索的内容">
+                <a href="javascript:;"><i>&#xf001;</i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hr50"></div>
+<div class="contain">
+  <div class="wrap">
+    <div class="nav">
+      <ul>
+          <li class="selit jsAnswerC">
+              <a href="javascript:;"><i>&#xe97b;</i><p>答题卡</p>
+                <div class="copydiv"></div>
+            </a>
+          </li>
+          <li class="selit">
+              <a href="javascript:;"><i>&#xe97f;</i>
+                <small class="backTime change">
+                  <em id="t_h">00</em>:<em id="t_m">00</em>:<em id="t_s">00</em>
+                </small>
+                <div class="copydiv"></div>
+            </a>
+          </li>
+          <li class="nextDone">
+              <a href="javascript:;"><i>&#xe980;</i>  <p>下次再做</p>
+                <div class="copydiv"></div>
+            </a>
+          </li>
+          <li class="sub popOut" data-popname=".fin">
+              <a href="javascript:;"><i>&#xe982;</i>  <p>提交</p>
+                <div class="copydiv"></div>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="ques">
+      <!-- 答题卡 start-->
+      <div class="answer_card_full">
+        <div class="top">
+          <a href="####" class="on">按题型</a>
+          <a href="####">按顺序</a>
+          <span class="rig">
+            <span class="y">你的选择</span>
+            <span class="w">错误</span>
+            <span class="r">正确</span>
+            <span class="n">未答</span>
+          </span>
+        </div>
+        <dl>
+          <dt>单选题</dt>
+          <dd class="r"><a href="####">1</a></dd><!--r = right 对的题目 -->
+          <dd><a href="####">2</a></dd>
+          <dd><a href="####">3</a></dd>
+          <dd><a href="####">4</a></dd>
+          <dd><a href="####">5</a></dd>
+          <dd><a href="####">6</a></dd>
+          <dd class="w"><a href="####">7</a></dd><!--w = wrong 错的题目 -->
+          <dd><a href="####">8</a></dd>
+          <dd><a href="####">9</a></dd>
+          <dd><a href="####">10</a></dd>
+          <dd><a href="####">11</a></dd>
+          <dd><a href="####">999</a></dd>
+        </dl>
+        <dl>
+          <dt>多选题</dt>
+          <dd class="r"><a href="####">1</a></dd><!--r = right 对的题目 -->
+          <dd><a href="####">2</a></dd>
+          <dd><a href="####">3</a></dd>
+          <dd><a href="####">4</a></dd>
+          <dd><a href="####">5</a></dd>
+          <dd><a href="####">6</a></dd>
+          <dd class="w"><a href="####">7</a></dd><!--w = wrong 错的题目 -->
+          <dd><a href="####">8</a></dd>
+          <dd><a href="####">9</a></dd>
+          <dd><a href="####">10</a></dd>
+          <dd><a href="####">11</a></dd>
+          <dd><a href="####">999</a></dd>
+        </dl>
+      </div>
+      <!-- 答题卡 end -->
+        <div class="allItem">
+          <div class="item basics_item">
+              <h3>单选题（经济学）
+                <span class="binsBox">
+                  <span class="sc"><i class="icon-heart-hollow">&nbsp;收藏</i><i class="icon-heart">&nbsp;已收藏</i></span>
+                  <span class="bj"><i class="icon-abxs">&nbsp;标记</i><i class="icon-abx">&nbsp;已标记</i></span>
+                  <span class="jc popOut" data-popname=".jiucuo"><i class="icon-wrench02">&nbsp;纠错</i></span>                  
+                </span>
+              </h3>
+              <div class="quswrap">
+                  <div class="article">
+                      <p class="drug-text"> hidden service (onion site) which to their encrypted email accounts hidden service (onion site) which to their encrypted email accounts through the Tor network.ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which to their encrypted email accounts through the Tor network.ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which to their encrypted email accounts through the Tor network.</p>
+                      <div class="toggleOpen">
+                        <p class="dug-toggle">
+                          <em>点击展开</em>
+                          <i>收起</i>
+                          <span class="icon-uniF0D7"></span>
+                        </p>
+                      </div>
+                  </div>
+                  <div class="selectitem">
+                      <dl class="sel">
+                          <dt><a href="javascript:;">A</a></dt>
+                          <dd>The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing
+                              activity. AFirms should disclose to clients
+                          </dd>
+                      </dl>
+                      <dl>
+                          <dt><a href="javascript:;">B</a></dt>
+                          <dd>
+                            The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing
+                                activity. AFirms should disclose
+                          </dd>
+                      </dl>
+                      <dl>
+                          <dt><a href="javascript:;">C</a></dt>
+                          <dd>
+                              The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing activity. AFirms should disclose
+                              to clients
+                          </dd>
+                      </dl>
+                  </div>
+                  <div class="answer">
+                      <div class="page">
+                          <a href="javascript:;" class="prev">上一题</a>
+                          <a href="javascript:;" class="next">下一题</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="item multiple_item">
+              <h3>多选题（经济学）
+                <span class="binsBox">
+                  <span class="sc"><i class="icon-heart-hollow">&nbsp;收藏</i><i class="icon-heart">&nbsp;已收藏</i></span>
+                  <span class="bj"><i class="icon-abxs">&nbsp;标记</i><i class="icon-abx">&nbsp;已标记</i></span>
+                  <span class="jc"><i class="icon-wrench02">&nbsp;纠错</i></span>                  
+                </span>
+              </h3>
+              <div class="quswrap">
+                  <div class="article">
+                      <p>ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which will allow users to directly connect to their encrypted email accounts through the Tor network. The move is aimed at countering actions by totalitarian governments around the world that are cutting off access to privacy tools.</p>
+                  </div>
+                  <div class="selectitem">
+                      <dl class="sel">
+                          <dt><a href="javascript:;">A</a></dt>
+                          <dd>The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing
+                              activity. AFirms should disclose to clients
+                          </dd>
+                      </dl>
+                      <dl>
+                          <dt><a href="javascript:;">B</a></dt>
+                          <dd>
+                            The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing
+                                activity. AFirms should disclose
+                          </dd>
+                      </dl>
+                      <dl>
+                          <dt><a href="javascript:;">C</a></dt>
+                          <dd>
+                              The move also comes on the heels of recent events such as the Egyptian government’s move to block encrypted chat app Signal, and the passage of the Investigat-ory Powers Bill in the UK that mandates tracking all web browsing activity. AFirms should disclose
+                              to clients
+                          </dd>
+                      </dl>
+                  </div>
+                  <div class="answer">
+                      <div class="page">
+                          <a href="javascript:;" class="prev">上一题</a>
+                          <a href="javascript:;" class="next">下一题</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="item shortAnswer">
+              <h3>简答题（经济学）
+                <span class="binsBox">
+                  <span class="sc"><i class="icon-heart-hollow">&nbsp;收藏</i><i class="icon-heart">&nbsp;已收藏</i></span>
+                  <span class="bj"><i class="icon-abxs">&nbsp;标记</i><i class="icon-abx">&nbsp;已标记</i></span>
+                  <span class="jc"><i class="icon-wrench02">&nbsp;纠错</i></span>                  
+                </span>
+              </h3>
+              <div class="quswrap">
+                  <div class="article">
+                      <p>ProtonMail is announcing today the introduction of a Tor hidden service (onion site) which will allow users to directly connect to their encrypted email accounts through the Tor network. The move is aimed at countering actions by totalitarian governments around the world that are cutting off access to privacy tools.</p>
+                  </div>
+                  <div class="selectitem">
+                        <textarea></textarea>
+                        <ul class="img">
+                            <li><img src="../../images/study/test.png"></li>
+                            <li><img src="../../images/study/test.png"></li>
+                            <li><img src="../../images/study/test.png"></li>
+                        </ul>
+                        <div class="imgUp">
+                             <p class="up">上传图片</p>
+                             <input type="file" class="filebutton" />
+                             <div class="modelImg">
+                                 <ul class="ulData">
+                                    <li class="imgDta">
+                                      <span><i>&#xf054;</i></span>
+                                      <img src="../../images/study/i_03.jpg"/>
+                                    </li>
+                                    <li class="imgDta">
+                                      <span><i>&#xf054;</i></span>
+                                      <img src="../../images/study/i_03.jpg"/>
+                                    </li>
+                                    <li class="imgDta">
+                                      <span><i>&#xf054;</i></span>
+                                      <img src="../../images/study/i_03.jpg"/>
+                                    </li>
+                                 </ul>
+                                 <p>可上传多张图片</p>
+                             </div>
+                             <div class="sucess">
+                                 成功上传图片!
+                             </div>
+                        </div>
+                  </div>
+                  <div class="answer">
+                      <div class="page">
+                          <a href="javascript:;" class="prev">上一题</a>
+                          <a href="javascript:;" class="next">下一题</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="item fillUp">
+              <h3>填空题（经济学）
+                <span class="binsBox">
+                  <span class="sc"><i class="icon-heart-hollow">&nbsp;收藏</i><i class="icon-heart">&nbsp;已收藏</i></span>
+                  <span class="bj"><i class="icon-abxs">&nbsp;标记</i><i class="icon-abx">&nbsp;已标记</i></span>
+                  <span class="jc"><i class="icon-wrench02">&nbsp;纠错</i></span>                  
+                </span>
+              </h3>
+              <div class="quswrap">
+                  <div class="article">
+                      <p class="drug-text">ProtonMail is announcing _________ the introduction of a Tor hidden service ProtonMail is announcing _________ the introduction of a Tor hidden serviceProtonMail is announcing _________ the introduction of a Tor hidden service (onion site) which will allow users to _________ connect to their encrypted email accounts through the Tor network. The move is _________ at countering actions by totalitarian governments around the world that are cutting off access to privacy tools.</p>
+                      <div class="toggleOpen">
+                        <p class="dug-toggle">
+                          <em>点击展开</em>
+                          <i>收起</i>
+                          <span class="icon-uniF0D7"></span>
+                        </p>
+                      </div>
+                  </div>
+                  <div class="selectitem">
+                    <dl class="sel">
+                        <dt><a href="javascript:;">A</a></dt>
+                        <dd>
+                            <input type="text" placeholder="请输入答案"/>
+                            <img src="../../images/study/hi_03.jpg" alt="">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">B</a></dt>
+                        <dd>
+                            <input type="text" placeholder="请输入答案"/>
+                            <img src="../../images/study/hi_03.jpg" alt="">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">C</a></dt>
+                        <dd>
+                            <input type="text" placeholder="请输入答案"/>
+                            <img src="../../images/study/hi_03.jpg" alt="">
+                        </dd>
+                    </dl>
+
+                  </div>
+                  <div class="answer">
+                      <div class="page">
+                          <a href="javascript:;" class="prev">上一题</a>
+                          <a href="javascript:;" class="next">下一题</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="submit">
+     <section>
+          <h2>确认提交<span <span class="icon-gf-wrong32" onclick="closeSubmit()">&#xf054;</span></h2>
+          <p class="wen">还有<span>2</span>题没完成，确定提交吗？</p>
+          <div class="stu-button">
+              <button>确定提交</button>
+              <button class="red" onclick="closeSubmit()">再检查一下</button>
+          </div>
+
+     </section>
+</div>
+<div class="done">
+     <section>
+          <h2>休息一下<span <span class="icon-gf-wrong32" onclick="closedone()">&#xf054;</span></h2>
+          <p class="wen">本项练习一共10题，您还有<span>2</span>题未完成！</p>
+          <div class="stu-button">
+              <button class="stopTime">下次再做</button>
+              <button class="red go" onclick="closedone()">继续做题</button>
+          </div>
+
+     </section>
+</div> -->
+
+<div class="tanpoto">
+    <section>
+        <img src="../../images/study/test.png" style="max-height: 801px;">
+    </section>
+</div>
+
+
+  <div class="popupLayer">
+    <!-- 纠错 start -->
+    <div class="popBox jiucuo">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">感谢您为金程网校试题纠错</h3>
+        <div class="main">
+          <p>为方便我们排查错误。请您详细描述本题错误，例如：</p>
+          <div class="opinion">
+             <ul>
+               <li>错别字</li>
+               <li>答案有误</li>
+               <li>排版错误</li>
+               <li>图片模糊</li>
+               <li>答案有异议</li>
+               <li>其他错误</li>
+             </ul>
+         </div>
+          <div class="tarea">
+            <textarea onkeyup="javascript:checkWord(this,'jiucuoCheck');" onmousedown="javascript:checkWord(this,'jiucuoCheck');"
+              name="content"  placeholder="请填写具体内容帮助我们了解您的意见与建议"></textarea>
+              <span><label id="jiucuoCheck">0</label>/1000</span>
+          </div>
+          <div class="btns">
+            <button type="button">提交</button>
+            <button type="button" class="cancel jsClose">取消</button>  
+          </div>          
+        </div>
+    </div>
+    <!-- 未做完 start -->
+    <div class="popBox unfin">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">未做完提示</h3>
+        <div class="main">
+          <p>您还有<em>15</em>道题没有做，确定要交卷？</p>
+          <button class="btn_1 wc jsClose">确定</button><button class="btn_2">取消</button>  
+        </div>        
+    </div>
+    <!-- 已做完 start -->
+    <div class="popBox fin">
+        <span class="closeX icon-gf-wrong32"></span>
+        <h3 class="popTitle">已做完提示</h3>
+        <div class="main">
+          <p>到时间啦，已为您自动交卷！</p>
+          <button class="btn_1 wc jsClose">确定</button> 
+        </div>        
+    </div>
+
+  </div>
+
+<script src="../../script/commonjs/common_textarea.js"></script>
+<script src="../../script/commonjs/popup2/popupLayer.js"></script>
+<script type="text/javascript" src="../../script/questions/question.js"></script>
+
+</body>
+
+</html>

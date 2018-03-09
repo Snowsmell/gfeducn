@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/fontmain.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sign/sign.css">
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+    <script src="../../script/sign/index.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="login_header">
+            <div class="login_hleft">
+                <a href="javascript:;"> <img src="../../images/commonimages/logon.png"></a>
+            </div>
+            <div class="login_hright">
+                还没有金程账号，<a href="register.html">立即注册&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="logincontainer">
+            <div class="loginc_left">
+                <div class="loginform">
+                    <div class="logintab J_secTabs">
+                        <a href="javascript:;" class="selected">无金程账号</a>
+                        <a href="javascript:;">有金程账号</a>
+                    </div>
+                    <div class="ctn">
+                        <div class="phonelogin">
+                            <ul>
+                                <li>
+                                    <div class="pcinput">
+                                        <span><i>&#xe9a2;</i></span>
+                                        <input type="text" placeholder="请输入11位手机号" class="tell">
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                                </li>
+                                <li class="yan">
+                                    <div class="pcinput">
+                                        <span><i>&#xe9a3;</i></span>
+                                        <input type="text" placeholder="请输入验证码">
+                                        <a href="javascript:;">0789</a>
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入验证码</p>
+                                </li>
+                                <li class="dongtai">
+                                    <div class="pcinput">
+                                        <span><i>&#xe9aa;</i></span>
+                                        <input type="text" placeholder="请输入动态码">
+                                        <a href="javascript:;">获取动态码</a>
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入动态码</p>
+                                </li>
+                                <li>
+                                    <div class="pcinput password">
+                                        <span><i>&#xe9a6;</i></span>
+                                        <!-- <input type="password" placeholder="密码由8~15数字和字母组成"> -->
+                                        <input name="" type="password" class="input_text_password mima_dd " placeholder="密码由8~15数字和字母组成">
+                                        <input name="" type="text" class="input_text_password mima_wz" style="display: none;" placeholder="密码由8~15数字和字母组成">
+                                        <a class="sbsote " data-show="1" href="javascript:void(0);"><i class="icon iconfont">&#xe964;</i></a>
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入密码错误</p>
+                                </li>
+                                <li class="zuce">
+                                    <button>完成</button>
+                                </li>
+                                  <li class="will">未注册的手机号码验证后自动创建金程账号，且代表您已同意<a href="javascript:;">《金程用户协议》</a></li>
+                            </ul>
+                        </div>
+                        <div class="pclogin">
+                            <ul>
+                                <li>
+                                    <div class="pcinput">
+                                        <span><i>&#xe99d;</i></span>
+                                        <input type="text" placeholder="请输入手机号码或用户名" class="tells">
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                                </li>
+
+                                <li>
+                                    <div class="pcinput password">
+                                        <span><i>&#xe9a6;</i></span>
+                                        <input name="" type="password" class="input_text_password mima_dd " placeholder="请输入密码">
+                                        <input name="" type="text" class="input_text_password mima_wz" style="display: none;" placeholder="请输入密码">
+                                        <a class="sbsote " data-show="1" href="javascript:void(0);"><i class="icon iconfont">&#xe924;</i></a>
+                                    </div>
+                                    <p class="warning"><i>&#xf050;</i>输入密码错误</p>
+                                </li>
+                                <li class="mian"><span><label class="check_radio cehecked"><i class="icon-xiaogou"></i></label>两周内免登陆</span><a href="sms_restpwd.html">忘记密码？</a></li>
+                                <li class="sub">
+                                    <button class="btn">绑定</button>
+                                </li>
+                                <li class="cor">合作账号直接登陆:<a href="javascript:;"><i style="font-size28px;">&#xf031;</i></a><a href="javascript:;"><i>&#xf026;</i></a><a href="javascript:;"><i>&#xf051;</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfectform">
+                  <div class="logintab J_secTabs">
+                      <a href="javascript:;">完善信息</a>
+                  </div>
+                  <div class="pl">
+                          <ul>
+                              <li>
+                                  <div class="pcinput">
+                                      <span><i>&#xf030;</i></span>
+                                      <input type="text" placeholder="请输入昵称">
+                                  </div>
+                                  <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                              </li>
+                              <li>
+                                  <div class="pcinput">
+                                      <span><i>&#xf025;</i></span>
+                                      <input type="text" placeholder="密码由8~15数字和字母组成">
+                                  </div>
+                                  <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                              </li>
+                              <li>
+                                  <div class="pcinput">
+                                      <span><i>&#xf025;</i></span>
+                                      <input type="text" placeholder="确认密码">
+                                  </div>
+                                  <p class="warning"><i>&#xf050;</i>输入格式错误</p>
+                              </li>
+                              <li class="sub">
+                                  <button>完成</button>
+                              </li>
+                          </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="loginc_right"></div>
+        </div>
+        <div class="copy">
+            Copyright © 2001-2017 金程网校 All Rights Reserved.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+// 优惠券详情 171025 by cc
+
+@import url(../commoncss/variable.less);
+
+@cm0:#d55;//主色红
+.coupon-d{
+	.coupon-dBox{
+		width: 80%;
+		min-width: 1000px;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	background-color: #fff;
+	padding: 40px 0;
+	table{
+		width: 100%;
+		.main{
+			margin-left: 20px;
+			dt{
+				font-size: 24px;
+				line-height: 1.8;
+				em{
+					color: @cm0;
+				}
+			}
+			dd{
+				line-height: 30px;
+				color:#666;
+				span{
+					float: left;
+					width: 5em;
+				}
+				ul{
+					margin-left: 5em;
+					margin-right: 10px;
+					li{
+						display: inline-block;
+						&:after{
+							content: "、";
+						}
+						&:last-child{
+							&:after{content: "";}
+						}
+					}
+				}
+			}
+		}
+		.ruler{
+			border-left:1px solid #ddd;
+			dl{
+				margin-left: 40px;
+				dt{
+					line-height: 1.8;
+				}
+				dd {
+					line-height: 24px;
+					color:#666;
+				}
+			}
+		}
+	} 
+}
+.list{
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 40px;
+	.mes{
+		background-color: #f4f5f9;
+		padding: 10px 20px;
+		margin: 20px 25px;
+	}
+	.livelist{
+		.line{
+			.mid{
+				margin-right: 220px;
+				.til{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

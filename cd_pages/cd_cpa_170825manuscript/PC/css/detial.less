@@ -1,0 +1,261 @@
+@import url(../../../../css/commoncss/variable.less);
+@import url(../../../../css/commoncss/common.less);
+
+.di_tang {
+    .cf();
+    background: #fff;
+    .bdr(5px);
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+    h2 {
+        .left();
+        width: 109px;
+        height: 109px;
+        .bdr(100%);
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .article {
+        .cf();
+        overflow: hidden;
+        box-sizing: border-box;
+        padding-left: 22px;
+        .pos(r);
+        h3 {
+            .f30();
+            margin-bottom: 20px;
+        }
+        .nameT {
+            .pos(a);
+            left: 170px;
+            top: 13px;
+            color: #f86924;
+        }
+        .zan {
+            .cf();
+            color: @c9;
+            .f14();
+            padding-bottom: 5px;
+            border-bottom: 1px solid @cd;
+            .szjs {
+                max-width: 100%;
+                .left();
+                em {
+                    color: #f86924;
+                }
+            }
+            ul {
+                .right();
+                .cf();
+                li {
+                    margin-right: 10px;
+                    .bdr(4px);
+                    margin-bottom: 15px;
+                    a {
+                        color: @cw;
+                        .f18();
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    a,
+                    i {
+                        display: inline-block;
+                        width: 35px;
+                        height: 28px;
+                        line-height: 25px;
+                        .tcenter;
+                        background: #fac0a5;
+                        vertical-align: middle;
+                    }
+                    i {
+                        width: 55px;
+                        background: #f4f6f8;
+                    }
+                    &.on1 {
+                        a {
+                            background: #f86924;
+                        }
+                    }
+                    &:last-of-type {
+                        display: none
+                    }
+                }
+            }
+        }
+    }
+    .imgbox {
+        margin: 10px 0;
+        img {
+            max-width: 100%
+        }
+    }
+    .kcjs {
+        .dis;
+        clear: both;
+        float: none;
+        color: @c6;
+        line-height: 26px;
+        margin-top: 10px;
+        .spill6();
+        max-height: 156px;
+    }
+}
+.server {
+    // background: #f2f3f8;
+    padding: 10px 0;
+    .cf();
+    h3 {
+        font-size: 20px;
+        color: #333;
+        margin: 25px 0;
+        margin-left: -5px;
+    }
+    section {
+        max-width: 100%;
+        margin: 0 auto;
+        article {
+            padding: 5px 0px;
+            h4 {
+                font-size: 16px;
+                color: #f86924;
+                padding-bottom: 10px;
+                border-bottom: 1px dashed #d2d2d2;
+                span {
+                    float: right;
+                    font-size: 6px;
+                    color: #666;
+                    display: none;
+                    margin-top: 5px;
+                }
+                .showed {
+                    display: none;
+                    cursor: pointer;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: #666;
+                line-height: 25px;
+                &:nth-of-type(1) {
+                    margin-top: 10px;
+                }
+                &:nth-last-of-type(1) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+} //课程列表start
+.courselist {
+    h3 {
+        font-size: 24px;
+        color: #333;
+        margin: 35px 0;
+    }
+    .course {
+        margin-bottom: 30px;
+        h4 {
+            font-size: 18px;
+            color: #f86924;
+            margin-bottom: 15px;
+            span {
+                float: right;
+                width: 18px;
+                height: 18px;
+                margin: 3px 13px 0 0;
+            }
+            span.hide {
+                background: url('http://static.gfedu.net/special/cd_cpa_manuscript170825/PC/images/open.png') no-repeat center center;
+            }
+            span.open {
+                background: url('http://static.gfedu.net/special/cd_cpa_manuscript170825/PC/images/hide.png') no-repeat center center;
+            }
+        }
+        ul {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            li {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+                box-sizing: border-box;
+                padding-left: 110px;
+                line-height: 40px;
+                font-size: 16px;
+                padding-right: 30px;
+                position: relative;
+                // padding-bottom: 15px;
+                >p {
+                    font-size: 14px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #666;
+                    padding-right: 30px;
+                    padding-bottom: 12px;
+                    margin-top: -5px;
+                    b {
+                        color: #f86924;
+                        font-weight: 400;
+                    }
+                }
+                >p.off {
+                    display: none;
+                }
+                >div {
+                    position: absolute;
+                    top: 16px;
+                    right: 15px;
+                    width: 14px;
+                    height: 8px;
+                    cursor: pointer;
+                }
+                >div.closed {
+                    background: url("http://static.gfedu.net/special/cd_cpa_manuscript170825/PC/images/down.png") no-repeat center center;
+                }
+                >div.opend {
+                    background: url("http://static.gfedu.net/special/cd_cpa_manuscript170825/PC/images/up.png") no-repeat center center;
+                }
+                >span {
+                    display: inline-block;
+                    width: 110px;
+                    height: 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    text-align: center;
+                }
+                >a {
+                    position: absolute;
+                    width: 60%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+                &:last-of-type {
+                    border-bottom: none;
+                }
+                &:hover {
+                    background-color: #f4f6f8;
+                    color: #f86924;
+                    >p {
+                        color: #666;
+                        b {
+                            color: #f86924
+                        }
+                    }
+                }
+            }
+        }
+        ul.off {
+            display: none;
+        }
+    }
+}

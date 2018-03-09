@@ -1,0 +1,304 @@
+@import "../common.less";
+// @import "headfooter.less";
+
+body {
+  background-color: #f4f4f4;
+}
+img{
+  vertical-align: middle;
+}
+// 公共部分start
+.btn_1{
+  width: 160px;
+  height: 50px;
+  list-style: normal;
+  background: #db5557;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid #db5557;
+  // border-radius: 4px;
+  margin: 25px 25px 25px 0;
+}
+.btn_2{
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  background: @cw;
+  .f18();
+  color: #db5557;
+  border: 1px solid #db5557;
+  // border-radius: 4px;
+  margin: 25px 0px 40px 0;
+}
+
+
+
+
+.fqf{
+  color: #1876b7;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+
+
+//弹窗 start
+.mode{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:9999;
+    display: none;
+    background:rgba(0, 0, 0, 0.5);
+}
+#apDiv{
+    border: 1px solid #eee;
+    width: 90%;
+    display: table;
+    clear: both;
+    position: relative;
+    max-width: 400px;
+    height: 300px;
+    z-index: 10;
+    padding: 0px 15px 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color:#333;
+    background: #fff;
+    top: 50%;
+    // left:50%;
+    margin-top: -150px!important;
+    // margin-top: -250px!important;
+    left: 50%;
+    z-index: 9999999;
+    transform:translate(-50%);
+    -webkit-transform:translate(-50%);
+    -moz-transform:translate(-50%);
+    -ms-transform:translate(-50%);
+    -o-transform:translate(-50%);
+    .close{
+        position:absolute;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        .f28();
+        text-align: center;
+        color: @c9;
+        right:13px;
+        top:17px;
+        cursor: pointer;
+        // background: rgba(0, 0, 0, 0.6);
+    }
+    p{
+      margin-top: 20px;
+    }
+    .c_red{
+      color: #e26863;
+      .f18();
+    }
+    button{
+      width: 150px;
+      height: 40px;
+      padding: 0;
+      .f14();
+      // border-radius: 3px;
+      line-height: 40px;
+      margin: 25px 0px 25px 0;
+    }
+    .btn_1{
+      background: #db5557;
+      color: #fff;
+      border: 1px solid #db5557;
+      float: left;
+      margin-left: 10px;
+    }
+    .btn_2{
+      background: @cw;
+      color: #db5557;
+      border: 1px solid #db5557;
+      float: right;
+      margin-right: 10px;
+    }
+    a{margin-top: 0;}
+}
+//弹窗 end
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+.icon-44:before {
+  content: "\e9c4";
+}
+
+
+//弹出层
+
+  .mes{
+    margin-top: 26px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color:@cf1;
+    >i{
+      font-size: 22px;
+      margin-right: 10px;
+    }
+  }
+
+
+  .mes{
+    color:@cf1;
+  }
+
+.uorder{
+  .mes{
+    color:@cm0;
+  }
+}
+
+
+
+// 微信支付start
+.wxpay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index:9999;
+  display: none;
+  background:rgba(0, 0, 0, 0.5);
+  #apDiv{
+      border: 1px solid #eee;
+      width: 90%;
+      display: table;
+      clear: both;
+      position: relative;
+      max-width: 400px;
+      height: 450px;
+      z-index: 10;
+      padding: 0px;
+      box-sizing: border-box;
+      text-align: center;
+      color:#333;
+      background: #fff;
+      top: 50%;
+      // left:50%;
+      margin-top: -225px!important;
+      // margin-top: -250px!important;
+      left: 50%;
+      z-index: 9999999;
+      transform:translate(-50%);
+      -webkit-transform:translate(-50%);
+      -moz-transform:translate(-50%);
+      -ms-transform:translate(-50%);
+      -o-transform:translate(-50%);
+      .top{
+        .f16();
+        // font-weight: bold;
+        .tcenter();
+        padding:13px 0;
+        border-bottom: 1px solid #eee;
+        .close{
+          position:absolute;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          .f28();
+          text-align: center;
+          color: @c9;
+          right:13px;
+          top:17px;
+          cursor: pointer;
+          // background: rgba(0, 0, 0, 0.6);
+        }
+      }
+      p.pay-zj{
+        margin-top: 20px;
+        .f18();
+        span{
+          color: #d65957;
+        }
+      }
+      .ewm{
+        margin-top: 18px;
+        .pos(r);
+        .tleft();
+        padding-left: 55px;
+        .img1{
+          border: 1px solid @cd;
+        }
+        .img2{
+          .pos(a);
+          right: 37px;
+          top: 8px;
+
+        }
+      }
+      .ewm_bottom{
+        margin-top: 25px;
+        .cf();
+        p{
+          .tright();
+          margin-top: 0;
+          img{
+            margin-right: 7px;
+          }
+          span{
+            width: 100%;
+            display: inline-block;
+            .f14();
+            line-height: 14px;
+          }
+        }
+        .left{
+            width: 120px;
+            .left;
+          }
+          .right{
+            width: 120px;
+            .left;
+            .tleft;
+            line-height: 18px;
+          }
+      }
+
+  }
+}
+// 微信支付end
+//170811
+.popupLayer .popBox{
+  width: 400px;
+}
+.payMes{
+  width: 400px;
+  box-sizing: border-box;
+  padding:15px 20px 0;
+  h4{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p{
+    padding: 8px 0;
+  }
+  .btn1,.btn2{
+    display: inline-block;
+    line-height: 1.8em;
+    border: 1px solid #3AA646;    
+    .bdr(2px);
+    padding:2px 10px;
+    margin-right: 8px;
+  }
+  .btn1{
+    color: #fff;
+    background: #3AA646;
+  }
+  .btn2{
+    color: #3AA646;
+    background: #fff;
+  }
+}

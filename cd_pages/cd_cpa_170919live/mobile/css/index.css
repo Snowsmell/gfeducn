@@ -1,0 +1,943 @@
+/*导入字体*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微软雅黑';
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxs {
+  box-sizing: border-box;
+}
+.indis {
+  display: inline-block;
+}
+.curp {
+  cursor: pointer;
+}
+i {
+  font-style: normal;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.tra {
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+}
+.cd_cpa_mobile_live170919 {
+  background-color: #f8f9f9;
+  width: 100%;
+  max-width: 830px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.cd_cpa_banner {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/bannerbg.jpg) center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 52px 165px 43px;
+}
+.cd_cpa_banner > h1 {
+  position: absolute;
+  top: -200px;
+}
+.cd_cpa_banner > img {
+  width: 100%;
+  max-width: 515px;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_banner {
+    padding: 68px 99px 54px;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cpa_banner {
+    padding: 30px 30px 20px;
+  }
+}
+.cd_cpa_djs section {
+  max-width: 1200px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.cd_cpa_djs section h5 {
+  font-size: 20px;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  color: #484996;
+}
+.cd_cpa_djs section h5:before,
+.cd_cpa_djs section h5:after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  background: #484996;
+  position: absolute;
+  bottom: 50%;
+  right: -30px;
+}
+.cd_cpa_djs section h5:before {
+  left: -30px;
+}
+.cd_cpa_djs section #timer {
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.cd_cpa_djs section #timer span {
+  font-size: 16px;
+  padding: 0 10px;
+}
+.cd_cpa_djs section #video {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 60%;
+  float: left;
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/video.jpg) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1140px) {
+  .cd_cpa_djs section #video {
+    width: 68%;
+    margin: 0 1% ;
+  }
+}
+.cd_cpa_djs section #video > div {
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(6, 9, 57, 0.3);
+}
+.cd_cpa_djs section #video > div p {
+  margin: 64px 0 40px;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 2;
+}
+.cd_cpa_djs section #video > div img {
+  margin-bottom: 55px;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_djs section #video > div p {
+    margin: 60px 0 30px;
+  }
+  .cd_cpa_djs section #video > div img {
+    margin-bottom: 60px;
+  }
+}
+.cd_cpa_djs section > img {
+  width: 18%;
+  margin-right: 2%;
+  float: left;
+}
+@media (max-width: 1176px) {
+  .cd_cpa_djs section > img {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1140px) {
+  .cd_cpa_djs section > img {
+    width: 15%;
+  }
+}
+.cd_cpa_djs section > img:nth-of-type(3) {
+  float: right;
+  margin-right: 0px;
+}
+.cd_cpa_djs section > img:nth-of-type(2) {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_djs section {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cpa_djs section h5 {
+    margin-top: 22px;
+  }
+  .cd_cpa_djs section #timer {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .cd_cpa_djs section #video {
+    float: none;
+    width: 96%;
+    margin: auto;
+  }
+  .cd_cpa_djs section #video > div p {
+    margin: 30px 0 10px;
+    font-size: 14px;
+  }
+  .cd_cpa_djs section #video > div img {
+    margin-bottom: 30px;
+  }
+  .cd_cpa_djs section > img {
+    margin-top: 15px;
+    max-width: 130px;
+    width: 31%;
+  }
+  .cd_cpa_djs section > img:nth-of-type(1) {
+    display: none;
+  }
+  .cd_cpa_djs section > img:nth-of-type(2) {
+    margin-left: 18%;
+    display: block;
+  }
+  .cd_cpa_djs section > img:nth-of-type(3) {
+    margin-right: 2%;
+    float: none;
+  }
+}
+@media (max-width: 440px) {
+  .cd_cpa_djs section > img:nth-of-type(2) {
+    margin-left: 14%;
+  }
+}
+.cd_cpa_drtang {
+  overflow: hidden;
+  background: #f1f3fb;
+}
+.cd_cpa_drtang section {
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.cd_cpa_drtang section h2 {
+  font-size: 30px;
+  color: #333333;
+  margin: 30px 0 20px;
+}
+.cd_cpa_drtang section div {
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0 4px 12px #dcdee9;
+  background: #fff;
+}
+.cd_cpa_drtang section div article {
+  margin: 40px 0;
+  float: left;
+}
+.cd_cpa_drtang section div article:nth-of-type(1) {
+  margin-left: 5.5%;
+  width: 23.33%;
+  margin-right: 4.8%;
+}
+.cd_cpa_drtang section div article:nth-of-type(1) img {
+  width: 100%;
+  max-width: 280px;
+}
+.cd_cpa_drtang section div article:nth-of-type(2) {
+  text-align: left;
+  width: 63.87%;
+  margin-right: 2.5%;
+}
+.cd_cpa_drtang section div article h3 {
+  font-size: 36px;
+  margin-bottom: 26px;
+  color: #484996;
+}
+.cd_cpa_drtang section div article h3 i {
+  font-size: 20px;
+  color: #666666;
+  margin-left: 20px;
+}
+.cd_cpa_drtang section div article h4 {
+  font-size: 18px;
+  color: #333333;
+  line-height: 2;
+  margin-bottom: 18px;
+}
+.cd_cpa_drtang section div article p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.875;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_drtang section div article {
+    margin: 60px 0;
+  }
+  .cd_cpa_drtang section div article:nth-of-type(1) {
+    margin-left: 3.5%;
+    width: 30.33%;
+    margin-right: 2.8%;
+  }
+  .cd_cpa_drtang section div article:nth-of-type(2) {
+    width: 59.87%;
+    margin-right: 3.5%;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cpa_drtang section {
+    margin-bottom: 30px;
+  }
+  .cd_cpa_drtang section h2 {
+    font-size: 24px;
+    margin: 20px 0 5px;
+  }
+  .cd_cpa_drtang section div article {
+    margin: 20px 0;
+    float: none;
+  }
+  .cd_cpa_drtang section div article:nth-of-type(1) {
+    width: initial;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .cd_cpa_drtang section div article:nth-of-type(2) {
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .cd_cpa_drtang section div article h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .cd_cpa_drtang section div article h3 i {
+    font-size: 15px;
+  }
+  .cd_cpa_drtang section div article h4 {
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .cd_cpa_drtang section div article p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+.cd_cpa_accounting {
+  background: #fff;
+  overflow: hidden;
+}
+.cd_cpa_accounting section {
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.cd_cpa_accounting section h2 {
+  font-size: 30px;
+  color: #333333;
+  margin: 30px 0 20px;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section h2 {
+    font-size: 24px;
+    margin: 20px 0 5px;
+  }
+}
+.cd_cpa_accounting section > ul {
+  overflow: hidden;
+}
+.cd_cpa_accounting section > ul > li {
+  float: left;
+  width: 18.66%;
+  margin-right: 1.66%;
+}
+.cd_cpa_accounting section > ul > li > p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666666;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li > p {
+    margin-top: 5px;
+  }
+}
+.cd_cpa_accounting section > ul > li div {
+  min-height: 311px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px #eeeff0;
+}
+.cd_cpa_accounting section > ul > li div > article {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/bg1.png) center no-repeat;
+  background-size: cover;
+  min-height: 89px;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li div > article {
+    min-height: 65px;
+  }
+}
+.cd_cpa_accounting section > ul > li div > article h4 {
+  padding-top: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li div > article h4 {
+    padding-top: 8px;
+    font-size: 16px;
+  }
+}
+.cd_cpa_accounting section > ul > li div > article p {
+  padding-top: 5px;
+  font-size: 14px;
+  color: #fefefe;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li div > article p {
+    padding-top: 0px;
+    font-size: 14px;
+  }
+}
+.cd_cpa_accounting section > ul > li div > ul {
+  min-height: 155px;
+  padding: 10px 10px 5px 16px;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li div > ul {
+    padding: 10px 6px 0px 19px;
+  }
+}
+.cd_cpa_accounting section > ul > li div > ul li {
+  font-size: 12px;
+  padding-bottom: 5px;
+  color: #666666;
+  line-height: 1.571;
+  text-align: left;
+  position: relative;
+}
+.cd_cpa_accounting section > ul > li div > ul li:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  position: absolute;
+  height: 4px;
+  left: -10px;
+  top: 8px;
+  border-radius: 50%;
+  background: #bcc0cf;
+}
+.cd_cpa_accounting section > ul > li div > ul .yincang {
+  color: #fff;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.cd_cpa_accounting section > ul > li div > ul .yincang:before {
+  display: none;
+}
+.cd_cpa_accounting section > ul > li div > a {
+  margin-bottom: 14px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #484996;
+  border-radius: 15px;
+  border: 1px solid #484996;
+}
+.cd_cpa_accounting section > ul > li div > a:hover {
+  color: #fff;
+  background: #484996;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li div > a {
+    margin-top: 0px;
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+}
+@media (max-width: 455px) {
+  .cd_cpa_accounting section > ul > li div > a {
+    position: initial;
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1158px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 321px;
+  }
+}
+@media (max-width: 1050px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 327px;
+  }
+}
+@media (max-width: 1024px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 300px;
+  }
+}
+@media (max-width: 726px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 321px;
+  }
+}
+@media (max-width: 659px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 327px;
+  }
+}
+@media (max-width: 643px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 327px;
+  }
+  .cd_cpa_accounting section > ul > li div .yincang {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: 250px;
+    position: relative;
+  }
+}
+@media (max-width: 455px) {
+  .cd_cpa_accounting section > ul > li div {
+    min-height: initial;
+  }
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(1) > p {
+  color: #999999;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(1) div > a {
+  margin-top: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  background: #c7ccdc;
+  border: 1px solid #c7ccdc;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(2) > p {
+  color: #999999;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(2) div > article {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/bg2.png) center no-repeat;
+  background-size: cover;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(2) div > a {
+  margin-top: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  background: #c7ccdc;
+  border: 1px solid #c7ccdc;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(3) > p {
+  color: #484996;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(3) div > article {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/bg3.png) center no-repeat;
+  background-size: cover;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(3) div > a {
+  border: none;
+  background: #484996;
+  color: #ffffff;
+  background: -webkit-linear-gradient(left, #7d68c5, #4c4b99);
+  background: -o-linear-gradient(left, #7d68c5, #4c4b99);
+  background: -moz-linear-gradient(left, #7d68c5, #4c4b99);
+  background: linear-gradient(to left, #4c4b99, #7d68c5);
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(3) div > a:hover {
+  box-shadow: 0 0 10px #b0aed3;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(4) div > article {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/bg4.png) center no-repeat;
+  background-size: cover;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(5) {
+  margin-right: 0;
+}
+.cd_cpa_accounting section > ul > li:nth-of-type(5) div > article {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170919/mobile/images/bg5.png) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_accounting section > ul > li {
+    margin-bottom: 20px;
+    width: 30%;
+    margin-right: 0;
+    margin-left: 2.5%;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > ul > li {
+    width: 48%;
+    margin-left: 1.33%;
+  }
+}
+@media (max-width: 455px) {
+  .cd_cpa_accounting section > ul > li {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+.cd_cpa_accounting section > img {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_accounting section > img {
+    display: none;
+  }
+}
+.cd_cpa_accounting section > div {
+  padding: 0 30px 20px;
+  position: relative;
+  background: #f6f6fa;
+  margin-top: 26px;
+  border: 1px solid #e9ecf7;
+  border-radius: 4px;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > div {
+    padding: 0 10px 15px;
+    margin-top: 0px;
+  }
+}
+.cd_cpa_accounting section > div .triangle_border_up {
+  width: 0;
+  height: 0;
+  border-width: 0px 25px 14px;
+  border-style: solid;
+  border-color: transparent transparent #e9ecf7;
+  left: 26.63%;
+  top: -14px;
+  position: absolute;
+}
+@media (max-width: 1024px) {
+  .cd_cpa_accounting section > div .triangle_border_up {
+    display: none;
+  }
+}
+.cd_cpa_accounting section > div .triangle_border_up span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0 24px 13px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6fa;
+  position: absolute;
+  top: 1px;
+  left: -24px;
+}
+.cd_cpa_accounting section > div h3 {
+  padding: 25px 0 21px;
+  font-size: 16px;
+  color: #484996;
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > div h3 {
+    padding: 10px 0 9px;
+  }
+}
+.cd_cpa_accounting section > div b {
+  font-size: 14px;
+  color: #e76b57;
+  max-width: 860px;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+.cd_cpa_accounting section > div h4 {
+  border-top: 1px solid #d9dde9;
+  padding-top: 25px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.cd_cpa_accounting section > div table {
+  width: 100%;
+  text-align: left;
+}
+.cd_cpa_accounting section > div table tr {
+  margin-bottom: 5px;
+}
+.cd_cpa_accounting section > div table tr td {
+  font-size: 14px;
+  width: 30%;
+  color: #666666;
+}
+.cd_cpa_accounting section > div table tr td:nth-of-type(1) {
+  width: 40%;
+}
+.cd_cpa_accounting section > div > ul {
+  font-size: 14px;
+  color: #666666;
+  max-width: 317px;
+  margin: auto;
+  text-align: left;
+  display: none;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > div table {
+    display: none;
+  }
+  .cd_cpa_accounting section > div > ul {
+    display: block;
+  }
+}
+.cd_cpa_accounting section > i {
+  font-size: 24px;
+  color: #f24427;
+  line-height: 1.5;
+  display: block;
+  margin-top: 15px;
+  font-style: italic;
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section > i {
+    font-size: 18px;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cpa_accounting section {
+    margin-bottom: 30px;
+  }
+}
+.recommend {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170908/images/bg.jpg) center;
+  background-size: cover;
+  overflow: hidden;
+}
+.recommend section {
+  max-width: 1240px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.recommend section h2 {
+  font-size: 30px;
+  color: #333333;
+  margin: 30px 0 0px;
+}
+@media (max-width: 640px) {
+  .recommend section h2 {
+    font-size: 24px;
+    margin: 20px 0 5px;
+  }
+}
+.recommend section > ul {
+  overflow: hidden;
+  padding: 20px 15px;
+}
+.recommend section > ul > li {
+  float: left;
+  background: #ffffff;
+  width: 18.66%;
+  margin-right: 1.66%;
+  min-height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px #b7b7bc;
+}
+.recommend section > ul > li > h3 {
+  height: 60px;
+  background: url(http://static.gfedu.net/special/cd_cpa_live170908/images/bg6.png) center no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 60px;
+}
+.recommend section > ul > li > ul {
+  min-height: 288px;
+  text-align: left;
+  padding: 8px 10px 0 18px;
+}
+.recommend section > ul > li > ul > li {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #5d5d6c;
+  margin-bottom: 3px;
+  position: relative;
+}
+.recommend section > ul > li > ul > li:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  position: absolute;
+  height: 4px;
+  left: -10px;
+  top: 8px;
+  border-radius: 50%;
+  background: #c7ccdc;
+}
+@media (max-width: 1069px) {
+  .recommend section > ul > li > ul {
+    min-height: 309px;
+  }
+}
+@media (max-width: 1024px) {
+  .recommend section > ul > li > ul {
+    min-height: 190px;
+  }
+}
+@media (max-width: 936px) {
+  .recommend section > ul > li > ul {
+    min-height: 225px;
+  }
+}
+@media (max-width: 886px) {
+  .recommend section > ul > li > ul {
+    min-height: 246px;
+  }
+  .recommend section > ul > li > ul:nth-of-type(4),
+  .recommend section > ul > li > ul:nth-of-type(5) {
+    min-height: 185px;
+  }
+}
+@media (max-width: 736px) {
+  .recommend section > ul > li > ul {
+    min-height: 267px;
+  }
+}
+@media (max-width: 686px) {
+  .recommend section > ul > li > ul {
+    min-height: 309px;
+  }
+}
+.recommend section > ul > li > div {
+  position: relative;
+  height: 40px;
+  background: #f2f2ff;
+}
+.recommend section > ul > li > div:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  position: absolute;
+  height: 18px;
+  left: 50%;
+  top: 11px;
+  background: #d0d0ec;
+}
+.recommend section > ul > li > div > a {
+  line-height: 40px;
+  display: inline-block;
+  width: 48%;
+  font-size: 14px;
+  color: #484996;
+}
+.recommend section > ul > li:nth-of-type(2) > h3 {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170908/images/bg7.png) center no-repeat;
+  background-size: cover;
+}
+.recommend section > ul > li:nth-of-type(3) > h3 {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170908/images/bg8.png) center no-repeat;
+  background-size: cover;
+}
+.recommend section > ul > li:nth-of-type(4) > h3 {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170908/images/bg9.png) center no-repeat;
+  background-size: cover;
+}
+.recommend section > ul > li:nth-of-type(5) {
+  margin-right: 0;
+}
+.recommend section > ul > li:nth-of-type(5) > h3 {
+  background: url(http://static.gfedu.net/special/cd_cpa_live170908/images/bg10.png) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .recommend section > ul > li {
+    margin-bottom: 20px;
+    width: 30%;
+    margin-right: 0;
+    margin-left: 2.5%;
+  }
+}
+@media (max-width: 886px) {
+  .recommend section > ul > li:nth-of-type(4) > ul,
+  .recommend section > ul > li:nth-of-type(5) > ul {
+    min-height: 185px;
+  }
+}
+@media (max-width: 640px) {
+  .recommend section > ul > li {
+    width: 48%;
+    margin-left: 1.33%;
+  }
+  .recommend section > ul > li > ul {
+    min-height: 246px;
+  }
+  .recommend section > ul > li:nth-of-type(3) > ul {
+    min-height: 204px;
+  }
+  .recommend section > ul > li:nth-of-type(4) > ul,
+  .recommend section > ul > li:nth-of-type(5) > ul {
+    min-height: 204px;
+  }
+}
+@media (max-width: 455px) {
+  .recommend section > ul > li {
+    width: 96%;
+    min-height: initial;
+    margin-left: 2%;
+  }
+  .recommend section > ul > li > ul {
+    min-height: initial;
+  }
+  .recommend section > ul > li:nth-of-type(3) > ul,
+  .recommend section > ul > li:nth-of-type(4) > ul,
+  .recommend section > ul > li:nth-of-type(5) > ul {
+    min-height: initial;
+  }
+}
+@media (max-width: 640px) {
+  .recommend section {
+    margin-bottom: 10px;
+  }
+  .recommend section > ul {
+    padding: 0;
+  }
+}

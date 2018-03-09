@@ -1,0 +1,281 @@
+@import url(../commoncss/variable.less);
+
+body{
+  background-color: #f4f4f4;
+}
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+
+//
+
+.statisticsQue{
+  background-color: #fff;
+  padding-top: 55px;
+  .stathead{
+    text-align: center;
+    .h1{
+      font-size: 24px;
+      color: #333;
+      padding-bottom: 5px;
+    }
+    >p{
+      color: #999;
+    }
+  }
+  .staBox{
+    .cf();
+
+    box-sizing: border-box;
+    padding: 40px 0;
+    color: #666;
+    >div{
+      float: left;
+      .h3{
+        font-size: 16px;
+        color:#333;
+        margin:15px 20px 20px;
+      }
+    }
+    .t,.b,.r{
+      background-color: #f6f8f9;
+      border:1px solid #ddd;
+      .bdr(4px);
+    }
+    .t{
+      height: 458px;
+    }
+    .b{
+      height: 208px;
+      margin-top: 15px;
+    }
+    .l{
+      margin-left: 3.333%;
+      width: 28.333%; 
+    }
+    .m{
+      margin-left: 1.666%;
+      width: 33.333%;
+    }
+
+    //左边
+    .l{
+      .t{        
+        position: relative;
+        .chart{
+          width: 220px;height:220px;
+          margin: 0 auto;
+        }
+        .chart1mes{
+          position: absolute;
+          width: 180px;
+          top: 136px;
+          left: 50%;
+          margin-left: -90px;
+          text-align: center;
+          >em{
+            font-size: 36px;
+            color: #0bc2aa;
+            display: block;
+            line-height: 1.2em;
+          }
+        }
+        .mes{
+          margin: 5px 20px;
+          >p{
+            text-align: center;
+            margin-top: 20px;
+          }
+          >ul{
+            margin-top: 50px;
+            >li{
+              border-top:1px solid #ddd;
+              height: 39px;
+              line-height: 39px;
+              >em,>span{
+                display: inline-block;
+                text-align: center;
+              }
+              >em{
+                width: 30%;
+              }
+              >span{
+                width: 38%;              
+              }
+            }  
+          }          
+        }
+      }
+
+      .b{
+        .main{
+          margin: 20px;
+          p{
+            line-height: 30px;
+            padding-bottom: 10px;
+          }
+          a{
+            color: @cf2;
+            &:hover{
+              color: @cf2 - 20;
+            }
+          }
+        }
+      }
+    }
+    //中间
+    .m{
+      .t{
+        .chart{
+          width: 330px;
+          height:340px;
+          margin: -45px auto -20px;
+        }
+        .mes{
+          >p{
+            text-align: center;
+          }
+          >div{
+            margin-top: 35px;
+            height: 63px;
+            line-height: 63px;
+            border-top:1px solid #ddd;
+            text-align: center;
+            >em{
+              font-size: 24px;
+              display: inline-block;
+              vertical-align: sub;
+              margin: 0 5px;
+            }
+            >span{
+              color: #f6c3bf;
+              // background: url(../../images/questions/icon_1.png) left no-repeat;
+            }  
+          }          
+        }
+      }
+
+      .b{
+        //有内容
+        .lis{
+          margin: 20px;
+          >li{
+            position: relative;
+            margin-bottom: 17px;
+            >a{
+              position: absolute;
+              top:0;
+              right: 0;
+              height: 22px;
+              line-height: 22px;
+            }
+            >p{
+              margin-right: 90px;
+              line-height: 24px;
+              height: 24px;
+              .spill(1);
+            }
+          }
+        }
+
+        //无内容
+        .no{
+          margin-top: 25px;
+          text-align: center;
+          >p{
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+    //排行榜
+    .r{
+      margin-left: 1.666%;
+      width: 28.333%; 
+      height: 683px;
+      .rank{
+        margin: 20px;
+        >li{
+          position: relative;
+          margin-top: 20px;
+          height: 40px;
+          >b{
+            position: absolute;
+            top:8px;
+            left: 3px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            .bdr(50%);
+            text-align: center;
+            line-height: 24px;
+            background-color: #ddd;
+            font-weight: normal;
+            color: #333;
+          }
+          >img{
+            width: 40px;
+            height: 40px;
+            .bdr(50%);
+            position: absolute;
+            top:0;
+            left: 40px;
+          }
+          >p{
+            color: #333;
+            margin: 0 5em 0 90px;
+            line-height: 40px;
+            height: 40px;
+            .spill(1);
+          }
+          >span{
+            position: absolute;
+            display: inline-block;
+            width: 5em;
+            top:0;
+            right: 0;
+            font-size: 12px;
+            >em{
+              display: block;
+              color: @cf1;
+              .spill(1);
+            }
+          }
+          &:nth-child(1),&:nth-child(2),&:nth-child(3){
+            >b{
+              width: 32px;
+              height: 40px;
+              top:-5px;
+              left: 0;
+              .bdr(0);
+              box-sizing: border-box;
+              padding-top: 13px;
+              background-color: transparent;
+              background-position:center;
+              background-repeat: no-repeat;
+            }
+          }
+          &:nth-child(1){
+            >b{
+              background-image: url(../../images/questions/icon_rank1.png);
+            }
+          }
+          &:nth-child(2){
+            >b{
+              background-image: url(../../images/questions/icon_rank2.png);
+            }
+          }
+          &:nth-child(3){
+            >b{
+              background-image: url(../../images/questions/icon_rank3.png);
+            }
+          }
+        }
+      }
+    }
+  }
+}

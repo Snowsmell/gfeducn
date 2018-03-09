@@ -1,0 +1,580 @@
+/*导入字体*/
+//清除默认样式和自定义的各种基础样式
+* {
+    padding: 0;
+    margin: 0;
+    font-family: '微软雅黑'
+}
+
+a {
+    text-decoration: none;
+}
+
+.boxs() {
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+//comment
+.boxs{
+    box-sizing: border-box;
+}
+.fw(b){
+    font-weight: bold;
+}
+.indis{
+    display: inline-block;
+}
+.curp{
+    cursor: pointer;
+}
+i{
+    font-style: normal;
+    font-family:"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+}
+.tra{
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+}
+.cd_cfa_mobile_math171117{
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    padding-top: 10px; //标题
+}
+//banner
+//http://static.gfedu.net/special/cd_cfa_math171117/mobile/images/
+.cd_cfa_banner{
+    .boxs();
+    position: relative;
+    text-align: center;
+    img{
+        width: 100%;
+        max-width: 830px;
+    }
+}
+.title{
+    text-align: center;
+    margin: 60px 0 40px 0;
+    p{
+        display: inline-block;
+        font-size: 24px;
+        font-family: "Microsoft YaHei";
+        padding: 0 10px;
+        color: rgb(38, 38, 38);
+        font-weight: bold;
+    }
+    img{
+        margin: 5px auto;
+        display: block;
+    }
+    @media (max-width: 480px){
+        p{
+            font-size: 15px;
+        }
+    }
+}
+//banner end
+// start
+.cd_cfa_importance{
+    background: #fdf9f6;
+    overflow: hidden;
+    section{
+        width: 50%;
+        float: left;
+        margin: 0 auto 70px;
+        &:nth-of-type(1){
+            article{
+                p{
+                    padding: 43px 0;
+                    height: 56px;
+                }
+            }
+            
+//          margin: 0 10%;
+        }
+        &:nth-of-type(2){
+            p{
+                padding: 15px;
+                width: 230px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 600px){
+            width: 100%;
+            margin: 0 auto 30px;
+        }
+    }
+    article{
+        margin: auto;
+        background: url(../../mobile/images/bg1.jpg) center center no-repeat;
+        background-size: cover;
+        width: 289px;
+        height: 263px;
+        text-align: center;
+        img{
+            margin: 30px 0 44px 0;
+        }
+        p{
+            
+            height: 112px;
+            width: 260px;
+            background: #eaeaea;
+            margin: 0 auto;
+            font-size: 16px;
+            color: rgb(42, 42, 42);
+            
+            line-height: 1.7;
+            i{
+                color: #f96e31;
+            }
+        }
+        
+    }
+}
+.cd_cfa_nice{
+    background: #fdf9f7;
+    text-align: center;
+    overflow: hidden;
+    .title{
+        
+    }
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            width: 42%;
+            margin-left: 4%;
+            background: #ff8149;
+            border-radius: 7px;
+            width: 42%;
+            &:nth-of-type(1){
+                margin-left: 6%;
+            }
+            @media(max-width: 560px){
+                width: 96%;
+                margin-bottom: 20px;
+                margin-left: 2%;
+                &:nth-of-type(1){
+                    margin-left: 2%;
+                }
+            }
+            div{
+                text-align: center;
+                img{
+                    
+                }
+                p{
+                    padding: 26px 10px 10px 20px;
+                    font-size: 16px;
+                    min-height: 120px;
+                    line-height: 1.875;
+                    color: #666666;
+                    i{
+                        color: rgb(51, 51, 51);
+                    }
+                }
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 18px;
+                    color: rgb(249, 110, 49);
+                }
+                &:nth-of-type(2){
+                    text-align: left;
+                    box-sizing: border-box;
+                    border: 1px solid #cccccc;
+                    border-top: none;
+                    border-bottom: none;
+                    background: #fdf9f7;
+                    @media(max-width: 698px){
+                        min-height: 186px;
+                    }
+                    
+                }
+                &:nth-of-type(3){
+                    border-bottom-left-radius: 7px;
+                    border-bottom-right-radius: 7px;
+                    box-sizing: border-box;
+                    border: 1px solid #cccccc;
+                    border-top: none;
+                    background: #f2f2f2;
+                }
+            }
+        }
+    }
+    >a{
+        display: inline-block;
+        width: 122px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        background: #f96e31;
+        font-size: 16px;
+        border-radius: 14px;
+        margin: 40px 0 60px 0;
+        color: rgb(255, 255, 255);
+        
+        &:nth-of-type(1){
+            margin:40px 4% 60px 0 ;
+        }
+    }
+}
+.cd_cfa_math{
+    overflow: hidden;
+    margin: 56px 0 0 0 ;
+    >img{
+        width: 92%;
+        margin: 0 4%;
+    }
+    p{
+        font-size: 18px;
+        color: rgb(102, 102, 102);
+        line-height: 2;
+        width: 92%;
+        margin: 30px 4% 0 ;
+        @media(max-width:480px){
+            font-size: 12px;
+        }
+    }
+    a{
+        display: inline-block;
+        float: right;
+        margin: 40px 0 0 0;
+    }
+}
+.cd_cfa_teacher{
+    overflow: hidden;
+    background: #fdf9f7;
+    >div{
+        &:nth-of-type(2){
+            overflow: hidden;
+            height: 303px;
+            width: 88%;
+            margin-left: 6%;
+            position: relative;
+            min-width: 623px;
+            background: #f6f6f6;
+            div{
+                background: #d2d5d8;
+                overflow: hidden;
+                margin: 50px 0 0 0;
+                height: 253px;
+                padding-left: 400px;
+                h3{
+                    margin: 30px 0 5px 0;
+                    font-size: 30px;
+                    color: rgb(51, 51, 51);
+                    font-weight: bold;
+                    line-height: 1.6;
+                }
+                p{
+                    &:nth-of-type(1){
+                        width: 189px;
+                        font-size: 20px;
+                        border-top: 1px solid #a4a7aa;
+                        font-style: italic;
+                        color: rgb(51, 51, 51);
+                        line-height: 2.4;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 14px;
+                        color: rgb(102, 102, 102);
+                        line-height: 1.929;
+                    }
+                }
+            }
+            img{
+                position: absolute;
+                bottom: 0;
+                left: 60px;
+            }
+            @media(max-width:640px){
+                width: 96%;
+                margin-left: 2%;
+                height: initial;
+                min-width: initial;
+                text-align: center;
+                div{
+                    margin: -4px 0 0 0;
+                    height: initial;
+                    padding: 0 20px;
+                    p{
+                        &:nth-of-type(1){
+                            width: initial;
+                        }
+                        &:nth-of-type(2){
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                img{
+                    position: initial;
+                }
+                
+            }
+        }
+    }
+}
+.cd_cfa_recommend{
+    background: #fdf9f7;
+    margin: 0 0 40px 0;
+    overflow: hidden;
+    ul{
+        li{
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+            width: 88%;
+            overflow: hidden;
+            margin: 0 auto 23px;
+            
+            img{
+                float: left;
+                width: 34%;
+                height: 167px;
+            }
+            div{
+                float: left;
+                width: 66%;
+                height: 100%;
+                background: #f8f8f8;
+                position: relative;
+                p{
+                    padding-left:  20px;
+                    &:nth-of-type(1){
+                        font-size: 24px;
+                        padding: 13px 20px;
+                        color: rgb(51, 51, 51);
+                        line-height: 1.2;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 18px;
+                        color: rgb(102, 102, 102);
+                    }
+                    &:nth-of-type(3){
+                          font-size: 22px;
+                          color: rgb(249, 110, 49);
+                          padding: 40px 0 20px 20px;
+                          i{
+                              font-size: 16px;
+                              width: 9px;
+                              height: 12px;
+                              display: inline-block;
+                              background: url(http://static.gfedu.net/special/cd_frm_english171120/phone/images/money.jpg ) no-repeat;
+                          }
+                    }
+                }
+                a{
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    display: inline-block;
+                    width: 109px;
+                    height: 27px;
+                    background: #f96e31;
+                    font-size: 16px;
+                    color: rgb(255, 255, 255);
+                    line-height: 27px;
+                    border-radius: 13px;
+                    text-align: center;
+                }
+            }
+            @media (max-width: 480px){
+                img{
+                    width: 100%;
+                }
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.cd_cfa_class{
+    .zyck {
+        color: #666;
+        text-align: center;
+        margin: 15px auto;
+    }
+    margin-bottom: 87px;
+    .table_cont{
+        overflow: hidden;
+        width: 100%;
+        overflow-x: auto;
+    }
+    table{
+        border-collapse: collapse;
+        width: 830px;
+        border: #ddd;
+        font-size: 16px;
+        color: #666;
+        text-align: left;
+        tr{
+            line-height: 28px;
+            &:first-child{
+                font-size: 18px;
+                td{
+                    background:#ff8d5b;
+                    color: #fff;
+                    text-align: center;
+                    &:first-child{
+                        width: 167px;
+                        line-height: 57px;
+                    }
+                }
+            }
+            &:nth-of-type(2),&:nth-of-type(3){
+                td{
+                    text-align: center;
+                    &:first-child{
+                        background: #ffdbcb;
+                        color: rgb(249, 110, 49);
+                        font-weight: bold;
+                        font-size: 18px;
+
+                    }
+                }
+            }
+            ul{
+                li{
+                    position: relative;
+                    margin-bottom: 50px;
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 4px;
+                        background: #666666;
+                        height: 4px;
+                        border-radius: 2px;
+                        left: -18px;
+                        top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:830px) {
+    .cd_cfa_class{
+        .zyck {display: none;}
+    }
+}
+
+.cd_cfa_quality{
+    margin: 0 0 40px 0;
+    overflow: hidden;
+    ul{
+        margin-top: 25px;
+        li{
+            float: left;
+            width: 100%;
+            text-align: center;
+            // width: 307px;
+            p{
+                background: #f4ebe8;
+                font-size: 16px;
+                box-shadow: 0px 4px;
+                color: #f96e31;
+                text-align: center;
+                margin-bottom: 15px;
+                padding:10px 0;
+                border-radius: 0  30px 0  30px;
+                border: 1px solid #f96e31;
+                span{
+                    background: #f96e31;
+                    width: 6px;
+                    height: 6px;
+                    display: none;
+                    border-radius: 100%;
+                }
+                &:last-child{
+
+                }
+            }
+            &:nth-child(2){
+                // width: 199px;
+                width: 96%;
+                margin: 0 8px;
+                img{
+                    max-width: 147px;
+                    width: 100%;
+                }
+
+            }
+            &:nth-child(3){
+                p{
+                    border-radius: 30px 0 30px 0;
+                    &:last-child{
+
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:830px){
+        ul{
+            margin-top: 65px;
+            li{
+                float: left;
+                width: 323px;
+                p{
+                    margin-bottom: 25px;
+                    padding:10px 0;
+                    text-align: right;
+                    padding-right: 14px;
+                    position: relative;
+                    span{
+                        display: inline-block;
+                        position: absolute;right: 6px;
+                        bottom: 6px;
+                    }
+                    &:last-child{
+    
+                    }
+                }
+                &:nth-child(2){
+                    width: 147px;
+                    margin: 0 15px;
+    
+                }
+                &:nth-child(3){
+                    p{
+                        text-align: left;
+                        padding-left: 20px;
+                        span{
+                            position: absolute;left: 6px;
+                            bottom: 6px;
+                        }
+                        &:last-child{
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

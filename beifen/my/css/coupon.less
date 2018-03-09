@@ -1,0 +1,252 @@
+@import "../../commoncss/common.less";
+@import "headfooter.less";
+
+body {
+	min-width: 1024px;
+	background-color: #f4f4f4;
+}
+
+.sp_top {
+	font-size: 20px;
+	background-image: url("../images/sp_top1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.sp_top_box {
+		max-width: 1200px;
+		padding: 2.5em 2em 2.5em 8em;
+		margin: 0 auto 1.5em;
+		box-sizing: border-box;
+		position: relative;
+
+		div {
+			width: 5em;
+			height: 5em;
+			.bdr(50%);
+			overflow: hidden;
+			margin-top: -2.5em;
+			position: absolute;
+			left: 2em;
+			top: 50%;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		h2 {
+			font-size: 1em;
+			color: #333;
+		}
+
+		p {
+			font-size: 0.8em;
+			color: #a09f9b;
+		}
+	}
+}
+
+.sp_main {
+	max-width: 1200px;
+	margin: auto;
+	font-size: 14px;
+	.cf();
+
+	.sp_main_left {
+		width: 15%;
+		float: left;
+		background: #fff;
+		padding: 0.4em 0;
+
+		a {
+			display: block;
+			padding-left: 35%;
+			line-height: 2.8em;
+			box-sizing: border-box;
+
+			i {
+				margin-left: -1.2em;
+				margin-right: 0.2em;
+				font-size: 1.2em;
+				color: #d25454;
+			}
+		}
+
+		.sp_sel {
+			background: #e45050;
+			color: #fff;
+
+			i {
+				color: #fff;
+			}
+		}
+	}
+
+	.sp_main_right {
+		width: 83.333%;
+		float: right;
+		background: #fff;
+		padding: 0 25px 25px;
+		margin-bottom: 100px;
+		box-sizing: border-box;
+
+		ul {
+			border-bottom: 2px solid #efefef;
+			padding-left: 0.8em;
+			box-sizing: border-box;
+
+			li {
+				display: inline-block;
+				color: #666;
+				margin-bottom: -2px;
+				border-bottom: 2px solid transparent;
+				padding: 1.3em 0.8em 1.1em;
+				cursor: pointer;
+			}
+
+			.sp_selected {
+				border-color: #e45050;
+				color: #dd5555;
+			}
+		}
+
+		.pages {
+			width: 100%;
+			position: absolute;
+			bottom: -80px;
+			text-align: center;
+
+			.pagesword {
+				display: inline-block;
+				color: @c6;
+			}
+
+			.page {
+				display: inline-block;
+				.cf();
+
+				.next,
+				.prev {
+					i {
+						font-size: 18px;
+					}
+				}
+
+				i {
+					color: @c9;
+				}
+
+				a,
+				span {
+					background-color: #fafafa;
+					cursor: pointer;
+					padding: 6px 14px;
+					margin: 0 5px;
+					color: @c6;
+
+					&.selected {
+						background-color: #df5555;
+						color: @cw;
+					}
+				}
+
+				span{
+					i{
+						color: #df5555;
+					}
+					&.nolink{
+						i{
+							color: @c9;
+						}
+					}
+				}
+			}
+		}
+
+		dl{
+			margin-top: 14px;
+			padding: 0 0.8em;
+			.cf();
+			dt{
+				color: #666;
+				margin-bottom: 14px;
+			}
+			dd{
+				width: 33.3333%;
+				margin-bottom: 25px;
+				float: left;
+				.cou{
+					width: 14.28em;
+					height: 13.57em;
+					background-image: url(../images/coupon2.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					.top{
+						height: 5.71em;
+						text-align: center;
+						color: #fff;
+						b{
+							display: block;
+							font-size: 2.2em;
+							line-height: 1.2em;
+							padding-top: 0.5em;
+						}
+					}
+					.bottom{
+						height: 7.86em;
+						padding: 0.8em 0.8em 0 1.4em;
+						box-sizing: border-box;
+						color: #666;
+						position: relative;
+						button{
+							color: #189d28;
+							border: 1px solid #189d28;
+							background: transparent;
+							.bdr(3px);
+							padding: 0.3em 0.6em;
+							outline: none;
+						}
+						span{
+							color: #999;
+						}
+						button,img,span{
+							position: absolute;
+							right: 1.1em;
+							bottom: 1em;
+						}
+					}
+				}
+			}
+		}
+
+		.sp_ulSel{
+			display: none;
+			box-sizing: border-box;
+			position: relative;
+			&:nth-of-type(1){
+				display: block;
+				dl{
+					dd{
+						.cou{
+							background-image: url(../images/coupon1.png);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width:1200px) {
+	.sp_main{
+		.sp_main_right{
+			dl{
+				dd{
+					width: 25%;
+				}
+			}
+		}
+	}
+}

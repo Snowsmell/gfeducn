@@ -1,0 +1,247 @@
+@import url(../commoncss/variable.less);
+
+body{
+  background-color: #f4f4f4;
+}
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+//我的直播
+.mylive{
+  border-top:1px solid #ddd;
+  background-color: #f9fafb;
+  padding-bottom: 20px;
+
+.calendar{
+  margin:20px;
+  overflow: hidden;
+  .ny{
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+    float: left;
+    width: 128px;
+    margin-top: 18px;
+  }
+  .date{
+    margin-left: 128px;
+    position: relative;
+    overflow: hidden;
+    height: 64px;
+    .prev,.next{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      font-size: 28px;
+      line-height: 64px;
+      color: #ccc;
+      display: inline-block;
+      width: 27px;
+      background-color: #f9fafb;
+      &.on{
+        color: #999;
+        cursor: pointer;
+      }
+    }
+    .prev{
+      left: 0;
+    }
+    .next{
+      right: 0;
+    }
+    .main{
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin:0 27px;
+      white-space: nowrap;
+      li{
+        display: inline-block;
+        width: 52px;
+        text-align: center;
+        color: #666;
+        box-sizing: border-box;
+        cursor: pointer;
+        >span,>em{
+          display: block;
+          margin: 0 15px;
+          padding-bottom: 10px;
+        }
+        >span{
+          display: block;
+          margin: 0 15px;
+          padding-bottom: 10px;
+        }
+        &.on{
+          >em{border-bottom: 3px solid @cm0;}
+          color: @cm0;
+          >span{color: @cm0;}
+        }
+      }
+    }
+  }
+}
+
+//补充spaceCourse
+.ctn-title{
+  margin: 40px 20px 0;
+  >span{
+    font-size: 18px;
+    border-left:2px solid #d55;
+    padding-left: 6px;
+    color: #333;
+  }
+  .tright{
+    float: right;
+    label{
+      color: @c6;
+      margin-right: 10px;
+      cursor: pointer;
+      i{
+        margin-right: 5px;
+        margin-top: -1px;
+        color: #f6f8f9;
+        border:1px solid #ccc;
+        background-color: #f6f8f9;
+        .bdr(3px);
+      }
+      &.on{
+          i{
+            color: #d55; 
+            border-color:#fff; 
+            background-color: #fff;
+          }
+      }
+    }
+  }
+}
+.daylive,.dayNolive{
+  display: none;
+  &.on{
+    display: block;
+  }
+}
+  .livelist{
+  margin:15px 20px 20px;    
+    >ul.line{
+      background-color: #f9fafb;
+      >li{
+        margin-top: 20px;
+        padding: 0;
+        border:1px solid #eee;
+        cursor:auto ;
+        &:first-child{
+          margin-top: 0;
+        }
+        .top{
+          font-size: 16px;
+          padding: 8px 20px;
+          border-bottom: 1px solid #eee;
+          color: #333;
+          >span{
+            margin-right: 17px;
+          }
+        }
+        .mid-noimg{
+          padding: 15px 20px 22px;
+          margin-right: 486px;
+          .til{
+            font-size: 16px;
+            color:#666;
+            i{
+              margin-right: 5px;
+              color:@cm0;
+              font-weight: bold;
+            }
+            height: 1.5em;
+            .spill(1);
+          }
+          .tim{
+            color: #999;
+            padding-top: 7px;
+          }          
+        }
+        .mid-r{
+          position: absolute;
+          top: 69px;
+          right: 195px;
+          width: 260px;
+          >div{
+            display: inline-block;
+            vertical-align: bottom; 
+            width: 160px;
+            >div{
+              height: 3px;
+              margin-right: 35px;
+              background-color: #ccc;
+              >span{
+                  display: block;
+                  background-color: #39b747;
+                  height: 3px;
+                  width: 0%;
+              }
+            }            
+          }
+          >a{
+            color: @cf2;
+          }
+        }
+        .rig{
+          >a{
+            // margin-top: 32px;
+            font-size: 16px;
+            width: 110px;
+            padding: 5px;
+          }
+          .yuy{
+            margin-top: 0;
+          }
+        }
+        &:hover{
+          outline:none;
+          background-color: #fff;
+        }
+      }
+      &.today{
+        >li{
+          border-color: #f6c3bf;
+          .top{
+            color: @cm0;
+            background-color: #fbf4f4;
+            border-bottom-color: #f6c3bf;
+            >img{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+// 没有课程页面
+.icon-uniF105:before {
+  content: "\f022";
+}
+.courseList{
+  border:none;
+  .tcenter;
+  padding: 115px 0 155px 0;
+  margin-bottom: 15px;
+  background-color: #F9FAFB;
+  p{
+    margin: 20px 0 5px 0;
+    color: #666;
+  }
+}
+
+.cred{
+  color:#d32a29;
+}
+.cgray{
+  color:@c9;
+}

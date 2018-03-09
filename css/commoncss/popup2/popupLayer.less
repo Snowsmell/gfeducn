@@ -1,0 +1,895 @@
+// create by cc 2017 ie9+
+@import "../variable.less";
+// html,
+// body {
+//     height: 100%;
+// }
+
+//公共部分
+.popupLayer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 100;
+}
+
+.popupLayer .popBox {
+    color: #666;
+    background-color: #fff;
+    position: absolute;
+    max-width: 80%;
+    min-width: 400px;
+    max-height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #b2a59a;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+.popupLayer .popBox .closeX {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: inline-block;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    cursor: pointer;
+    font-weight: normal;
+    color: #999;
+}
+
+.popupLayer .popBox .popTitle {
+    font-size: 18px;
+    line-height: 1em;
+    padding: 1em 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+//实例
+@cf1: #419f45; //绿色
+@cf2: #2679bd; //蓝色
+@cf3: #f5a623; //橙色
+@cm0: #d55; //主色红
+// //倒计时提示框
+// #countdown_pop {
+//     width: 400px;
+//     min-height: 240px;
+//     padding: 30px;
+//     .bdr(3px);
+//     text-align: center;
+//     .mes {
+//         margin-top: 50px;
+//         margin-bottom: 15px;
+//         font-size: 18px;
+//         &.red {
+//             color: @cm0;
+//         }
+//         &.green {
+//             color: @cf1;
+//         }
+//         >i {
+//             font-size: 22px;
+//             margin-right: 10px;
+//         }
+//     }
+// }
+
+// // 用户交互提示框
+// #interactive_pop {
+//     border: 1px solid #eee;
+//     max-width: 400px;
+//     min-height: 300px;
+//     padding: 0px 15px 30px;
+//     box-sizing: border-box;
+//     text-align: center;
+//     color: #333;
+//     .mes {
+//         margin-top: 80px;
+//         margin-bottom: 15px;
+//         font-size: 18px;
+//         color: @cm0;
+//         >i {
+//             font-size: 22px;
+//             margin-right: 10px;
+//         }
+//     }
+//     p {
+//         margin-top: 20px;
+//     }
+//     .c_red {
+//         color: #e26863;
+//         .f18();
+//     }
+//     .c_blue {
+//         color: @cf2;
+//     }
+//     button {
+//         width: 150px;
+//         height: 40px;
+//         padding: 0;
+//         font-size: 14px;
+//         line-height: 40px;
+//         margin: 25px 12px 0;
+//     }
+//     .btn_1 {
+//         background: #db5557;
+//         color: #fff;
+//         border: 1px solid #db5557;
+//     }
+//     .btn_2 {
+//         background: @cw;
+//         color: #db5557;
+//         border: 1px solid #db5557;
+//     }
+// }
+
+// // 微信扫码
+// #scancode_pop {
+//     width: 400px;
+//     height: 450px;
+//     .popTitle {
+//         text-align: center;
+//         color: @c9;
+//     }
+//     p.pay-zj {
+//         margin-top: 20px;
+//         .f18();
+//         text-align: center;
+//         span {
+//             color: #d65957;
+//         }
+//     }
+//     .ewm {
+//         margin-top: 18px;
+//         .pos(r);
+//         .tleft();
+//         padding-left: 55px;
+//         .img1 {
+//             border: 1px solid @cd;
+//         }
+//         .img2 {
+//             .pos(a);
+//             right: 37px;
+//             top: 8px;
+//         }
+//     }
+//     .ewm_bottom {
+//         margin-top: 25px;
+//         .cf();
+//         p {
+//             .tright();
+//             margin-top: 0;
+//             img {
+//                 margin-right: 7px;
+//             }
+//             span {
+//                 width: 100%;
+//                 display: inline-block;
+//                 .f14();
+//                 line-height: 14px;
+//             }
+//         }
+//         .left {
+//             width: 120px;
+//             .left;
+//         }
+//         .right {
+//             width: 120px;
+//             .left;
+//             .tleft;
+//             line-height: 18px;
+//         }
+//     }
+// }
+
+// // 表单输入
+// #form_pop {
+//     width: 600px;
+//     .formList {
+//         .cf();
+//         padding: 20px 40px 20px 20px;
+//         box-sizing: border-box;
+//         section {
+//             margin-top: 10px;
+//             min-height: 40px;
+//             line-height: 1.8;
+//             .cf();
+//             &:first-child {
+//                 margin-top: 0;
+//             }
+//             >span {
+//                 .left();
+//                 text-align: right;
+//                 padding-right: 20px;
+//                 display: inline-block;
+//                 width: 24%;
+//                 box-sizing: border-box;
+//                 line-height: 35px;
+//                 vertical-align: middle;
+//                 >i {
+//                     display: inline-block;
+//                     font-size: 1.2em;
+//                     height: 35px;
+//                     line-height: 32px;
+//                     overflow: hidden;
+//                     color: @cm0;
+//                     vertical-align: middle;
+//                     margin-right: 5px;
+//                 }
+//             }
+//             >p {
+//                 .left();
+//                 display: inline-block;
+//                 width: 76%;
+//                 padding-top: 5px;
+//             }
+//             >div {
+//                 .left();
+//                 display: inline-block;
+//                 width: 76%;
+//                 input[type="text"],
+//                 textarea {
+//                     width: 100%;
+//                     border: 1px solid #ddd;
+//                     box-sizing: border-box;
+//                     padding: 5px 10px;
+//                     &.warn {
+//                         border-color: @cm0;
+//                     }
+//                 }
+//                 input[type="text"] {
+//                     height: 34px;
+//                 }
+//                 textarea {
+//                     height: 3.6em;
+//                     resize: none;
+//                 }
+//                 &.tait {
+//                     >label {
+//                         margin: 5px 5px 10px 0;
+//                         display: inline-block;
+//                         span {
+//                             display: inline-block;
+//                             width: 16px;
+//                             height: 16px;
+//                             .bdr(50%);
+//                             border: 1px solid #ccc;
+//                             margin-right: 5px;
+//                             width: 14px;
+//                             height: 14px;
+//                             vertical-align: middle;
+//                         }
+//                         input[type="radio"] {
+//                             width: 16px;
+//                             height: 16px;
+//                         }
+//                         &.on {
+//                             color: @cm0;
+//                             background: url(../../../images/commonimages/popup/choose.png) left center no-repeat;
+//                             input[type="radio"] {
+//                                 opacity: 0;
+//                                 -webkit-appearance: none;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 &.fap {
+//                     margin-top: -10px;
+//                     >label {
+//                         display: inline-block;
+//                         resize: none;
+//                         box-sizing: border-box;
+//                         border: 1px solid #ddd;
+//                         padding: 5px 15px 5px 0;
+//                         margin-top: 10px;
+//                         margin-right: 10px;
+//                         position: relative;
+//                         input[type="radio"] {
+//                             opacity: 0;
+//                             width: 6px;
+//                         }
+//                         >i {
+//                             display: none;
+//                             position: absolute;
+//                             right: -5px;
+//                             bottom: -4px;
+//                             font-size: 26px;
+//                         }
+//                         &.on {
+//                             border-color: @cm0;
+//                             color: @cm0;
+//                             >i {
+//                                 display: inline-block;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 &.addr {
+//                     .cf();
+//                     select {
+//                         width: 48%;
+//                         height: 40px;
+//                         border: 1px solid #ddd;
+//                         float: left;
+//                         margin-left: 4%;
+//                         &:first-child {
+//                             margin-left: 0;
+//                         }
+//                     }
+//                 }
+//                 &.checkbox {
+//                     label {
+//                         margin: 5px 5px 10px 0;
+//                         &:before {
+//                             content: "";
+//                             display: inline-block;
+//                             width: 16px;
+//                             height: 16px;
+//                             .bdr(50%);
+//                             border: 1px solid #ccc;
+//                             margin-right: 5px;
+//                             width: 14px;
+//                             height: 14px;
+//                             vertical-align: middle;
+//                         }
+//                         input[type="checkbox"] {
+//                             width: 16px;
+//                             height: 16px;
+//                             visibility: hidden;
+//                             position: absolute;
+//                         }
+//                         &.on {
+//                             // color:@cm0;
+//                             background: url(../../../images/commonimages/popup/choose.png) left center no-repeat;
+//                             &:before {
+//                                 visibility: hidden;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         .conItem {
+//             display: none;
+//         }
+//     }
+//     .xuz {
+//         float: none;
+//         width: auto;
+//         padding-left: 5em;
+//         padding-right: 40px;
+//         >ol {
+//             margin-left: 1.2em;
+//             color: #666;
+//             >li {
+//                 list-style-type: decimal;
+//                 text-align: justify;
+//                 margin: 5px 0;
+//             }
+//         }
+//     }
+//     .btnRed {
+//         display: block;
+//         background-color: @cm0;
+//         color: #fff;
+//         width: 160px;
+//         height: 40px;
+//         border: 0;
+//         margin: 20px auto;
+//         text-align: center;
+//         line-height: 40px;
+//         font-size: 16px;
+//     }
+//     .messages {
+//         background-color: #fffdf9;
+//         padding: 14px 20px 20px;
+//         box-sizing: border-box;
+//         font-size: 14px;
+//         line-height: 1.8;
+//         vertical-align: middle;
+//         p {
+//             vertical-align: middle;
+//         }
+//         p>i {
+//             margin-right: 5px;
+//             font-size: 14px;
+//             vertical-align: middle;
+//         }
+//         .red {
+//             color: @cm0;
+//         }
+//         .green {
+//             color: @cf2;
+//         }
+//     }
+// }
+
+// // 多步骤
+// #hasnext_pop {
+//     width: 400px;
+//     min-height: 280px;
+//     >div {
+//         margin-top: 40px;
+//         >div {
+//             width: 320px;
+//             height: 42px;
+//             margin: 20px auto;
+//             border: 1px solid #ddd;
+//             padding-left: 40px;
+//             box-sizing: border-box;
+//             position: relative;
+//             >i {
+//                 width: 40px;
+//                 display: block;
+//                 font-size: 18px;
+//                 line-height: 40px;
+//                 margin-left: -40px;
+//                 text-align: center;
+//                 float: left;
+//                 color: #999;
+//             }
+//             input {
+//                 display: block;
+//                 width: 100%;
+//                 height: 100%;
+//                 border: none;
+//                 background: none;
+//             }
+//         }
+//         >button {
+//             display: block;
+//             width: 320px;
+//             height: 40px;
+//             margin: auto;
+//             background: #df5452;
+//             border: none;
+//             outline: none;
+//             color: #fff;
+//             margin: 20px auto;
+//         }
+//     }
+//     .tel1 {
+//         display: block;
+//     }
+//     .tel2 {
+//         display: none;
+//         div {
+//             &:nth-of-type(2) {
+//                 padding-right: 124px;
+//                 img {
+//                     width: 114px;
+//                     height: 38px;
+//                     position: absolute;
+//                     right: 1px;
+//                     top: 1px;
+//                 }
+//             }
+//             &:nth-of-type(3) {
+//                 padding-right: 124px;
+//                 button {
+//                     width: 114px;
+//                     height: 38px;
+//                     border: none;
+//                     background: #eee;
+//                     color: #666;
+//                     outline: none;
+//                     box-sizing: border-box;
+//                     position: absolute;
+//                     right: 1px;
+//                     top: 1px;
+//                 }
+//             }
+//         }
+//     }
+//     .tel3 {
+//         display: none;
+//         >div {
+//             border: none;
+//             width: auto;
+//             height: auto;
+//             padding: 0;
+//             text-align: center;
+//             h4 {
+//                 color: #37a243;
+//                 font-size: 18px;
+//                 line-height: 2em;
+//             }
+//             p {
+//                 color: #666;
+//                 line-height: 2em;
+//                 margin: 10px 0 30px;
+//             }
+//         }
+//     }
+// }
+
+// // 特殊框
+// #special_pop {
+//     max-height: 550px;
+//     min-width: 695px;
+//     overflow: hidden;
+//     .modelTop {
+//         padding: 20px 65px;
+//         background: #f8f3ef;
+//         .cf();
+//         .modelImg {
+//             float: left;
+//             font-size: 16px;
+//             color: #aba098;
+//         }
+//         .opinion {
+//             float: right;
+//             margin-left: 87px;
+//             h3 {
+//                 font-size: 18px;
+//                 padding: 15px 0;
+//             }
+//             ul {
+//                 min-width: 310px;
+//                 color: #000;
+//                 .cf();
+//             }
+//             li {
+//                 float: left;
+//                 width: 50%;
+//                 text-indent: 27px;
+//                 font-size: 14px;
+//                 margin-bottom: 12px;
+//                 background: url(../../../images/index/q_06.jpg)no-repeat left center;
+//                 cursor: pointer;
+//                 &.sele {
+//                     background: url(../../../images/index/q_03.jpg)no-repeat left center;
+//                 }
+//             }
+//         }
+//     }
+//     .contCenter {
+//         padding: 35px;
+//         text-align: center;
+//         .tarea {
+//             position: relative;
+//             box-sizing: border-box;
+//             span {
+//                 position: absolute;
+//                 right: 10px;
+//                 bottom: 10px;
+//                 padding-top: 3px;
+//                 color: #999;
+//             }
+//         }
+//         textarea {
+//             width: 97%;
+//             height: 83px;
+//             resize: none;
+//             padding: 6px 10px 30px 10px;
+//             border: 1px solid #ddd;
+//         }
+//         .up {
+//             margin-top: 10px;
+//         }
+//         input[type="text"] {
+//             width: 97%;
+//             margin-top: 10px;
+//             padding: 8px 10px;
+//             border: 1px solid #ddd;
+//         }
+//         button {
+//             width: 150px;
+//             height: 40px;
+//             background: #dd5555;
+//             line-height: 40px;
+//             border: none;
+//             margin-top: 25px;
+//             color: #fff;
+//             margin-bottom: 20px;
+//             &:nth-of-type(2) {
+//                 margin-left: 36px;
+//                 background: #ebe6e1;
+//                 color: #999;
+//             }
+//         }
+//     }
+// }
+
+
+// /*2017.12.29 snowsmell add  */
+
+// //选择框
+// #choose_pop {
+//     ul {
+//         font-size: 0;
+//         padding: 35px 15% 15px;
+//         li {
+//             box-sizing: border-box;
+//             display: inline-block;
+//             font-size: 14px;
+//             color: #666;
+//             text-align: center;
+//             height: 40px;
+//             line-height: 40px;
+//             width: 45%;
+//             border: 1px solid #999;
+//             cursor: pointer;
+//             &:nth-of-type(2n-1) {
+//                 margin-right: 10%;
+//                 margin-bottom: 20px;
+//             }
+//         }
+//         li.on {
+//             border-color: #db5658;
+//             color: #db5658;
+//         }
+//     }
+//     button {
+//         display: block;
+//         width: 70%;
+//         height: 40px;
+//         margin: auto;
+//         background: #df5452;
+//         border: none;
+//         outline: none;
+//         color: #fff;
+//         margin: 0 auto 35px;
+//     }
+// }
+
+// //欢迎弹窗小版块
+// #welcome_pop_s {
+//     >div {
+//         padding: 40px;
+//         text-align: center;
+//         h4 {
+//             font-size: 18px;
+//             color: #333;
+//         }
+//         p {
+//             font-size: 14px;
+//             margin-bottom: 40px;
+//             color: #666;
+//         }
+//         a {
+//             display: inline-block;
+//             box-sizing: border-box;
+//             width: 150px;
+//             height: 40px;
+//             line-height: 40px;
+//             border-radius: 5px;
+//             background-color: #db5658;
+//             border: 1px solid #db5658;
+//             outline: none;
+//             font-size: 16px;
+//             color: #fff;
+//             &:nth-of-type(2) {
+//                 background-color: #fff;
+//                 color: #db5658;
+//                 margin-left: 10px;
+//             }
+//         }
+//     }
+// }
+
+// //欢迎弹窗大版块
+// #welcome_pop_l {
+//     width: 680px;
+//     >div {
+//         padding: 40px 40px 80px;
+//         text-align: center;
+//         h4 {
+//             font-size: 18px;
+//             color: #333;
+//         }
+//         p {
+//             font-size: 14px;
+//             margin-bottom: 40px;
+//             color: #666;
+//         }
+//         a,
+//         button {
+//             display: inline-block;
+//             box-sizing: border-box;
+//             position: relative;
+//             width: 150px;
+//             height: 40px;
+//             line-height: 40px;
+//             border-radius: 5px;
+//             background-color: #db5658;
+//             border: 1px solid #db5658;
+//             outline: none;
+//             font-size: 16px;
+//             color: #fff;
+//             margin: 0 20px;
+//             &:after {
+//                 content: '中文评测';
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 100%;
+//                 top: 40px;
+//                 left: 0;
+//                 text-align: center;
+//                 line-height: 40px;
+//                 color: #666;
+//             }
+//             &:nth-of-type(2) {
+//                 &:after {
+//                     content: "English Evaluation"
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// //准备创建计划
+// #prepareplan_pop{
+//     border: none;
+//     background: transparent;
+//     text-align: center;
+//     padding: 40px;
+//     p{
+//         color:#fff;
+//         font-size: 16px;
+//         margin-bottom: 20px;
+//     }
+//     button {
+//         display: inline-block;
+//         box-sizing: border-box;
+//         width: 150px;
+//         height: 40px;
+//         line-height: 40px;
+//         border-radius: 5px;
+//         background-color: #db5658;
+//         border: 1px solid #db5658;
+//         outline: none;
+//         font-size: 16px;
+//         color: #fff;
+//     }
+// }
+// //创建计划
+// #createplan_pop{
+//     width: 680px;
+//     h3.popTitle{
+//         span{
+//             float: right;
+//             margin-right: 30px;
+//             font-size:0.8em;
+//             color:#999;
+//             b{
+//                 color:#d65957;
+//             }
+//         }
+//     }
+//     >div{
+//         padding: 25px 30px;
+//         div.des{
+//             background-color: #fdfafa;
+//             border: 1px dashed #f4c2bf;
+//             box-sizing: border-box;
+//             padding: 20px;
+//             color:#666;
+//             line-height: 24px;
+//         }
+//         ul.detail{
+//             width: 330px;
+//             margin: 20px auto;
+//             li{
+//                 width: 100%;
+//                 line-height: 40px;
+//                 margin-bottom: 16px;
+//                 span{
+//                     float: left;
+//                     width: 85px;
+//                     text-align: right;
+//                     color:#999;
+//                     font-size: 14px;
+//                     line-height: 40px;
+//                 }
+//                 div{
+//                     margin-left: 97px;
+//                     height: 40px;
+//                     input[type="text"],select{
+//                         box-sizing: border-box;                        
+//                         padding-left: 12px;
+//                         border:1px solid #ededed;
+//                         height: 40px;
+//                         line-height: 40px;
+//                         width: 100%;
+//                     }
+//                     label{
+//                         background: url("../../../images/person/notchecked.png") no-repeat left center;
+//                         input[type="radio"]{
+//                             opacity: 0;
+//                         }
+//                     }
+//                     label.on{
+//                         background: url("../../../images/person/checked.png") no-repeat left center;
+//                     }
+//                 }
+//                 button{
+//                     height: 40px;
+//                     width: 100%;
+//                     color:#fff;
+//                     background-color: #dd5555;
+//                     font-size: 16px;
+//                     border: none;
+//                     outline: none;
+//                 }
+//                 &:last-of-type{
+//                     margin-bottom: 0;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//预约弹出层
+.order,.uorder{
+  width: 400px;
+  height: 240px;
+  .bdr(3px);
+  text-align: center;
+  .mes{
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    >i{
+      font-size: 22px;
+      margin-right: 10px;
+    }
+  }
+}
+.order{
+  .mes{
+    color:@cf1;
+  }
+}
+.uorder{
+  .mes{
+    color:@cm0;
+  }
+}
+
+#permission {
+    padding-bottom: 30px;
+    p {
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        &:first-of-type{
+          font-size: 18px;
+          color:#333;
+          margin-top: 30px;
+        }
+    }
+    button{
+      display: block;
+      margin: 10px auto;
+      width: 255px;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #db5658;
+      &:first-of-type{
+        background-color: #db5658;
+        color:#fff;
+      }
+      &:nth-of-type(2){
+        background-color: #fff;
+        color:#db5658;
+      }
+    }
+}

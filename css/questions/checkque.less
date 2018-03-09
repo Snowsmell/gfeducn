@@ -1,0 +1,223 @@
+@import url(../commoncss/variable.less);
+
+body{
+  background-color: #f4f4f4;
+}
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+
+//
+.myclass-sel {
+  .cf();
+  padding: 15px 0;
+  dl {
+    .cf();
+    margin: 10px auto;
+    dt {
+      float: left;
+      color: #999;
+      text-align: right;
+    }
+    dd{
+      a{
+        padding: 2px 10px;
+        background: #eee;
+        display: inline-block;
+        margin:0 5px;
+        .left;
+        &:hover{
+          color: #f08880;
+        }
+      }
+      a:hover,.active{
+        background: #f08880;
+        color: @cw;
+      }
+    }
+  }
+}
+
+.checkQue{
+  margin-top: 30px;
+  .cf();
+  .leftmain{
+    width: 73%;
+    float: left;
+    background-color: #fff;
+
+    
+    #red, #green, #blue {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+  }
+  #swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+  }
+  #red .ui-slider-range { background: #ef2929; }
+  #red .ui-slider-handle { border-color: #ef2929; }
+  #green .ui-slider-range { background: #8ae234; }
+  #green .ui-slider-handle { border-color: #8ae234; }
+  #blue .ui-slider-range { background: #729fcf; }
+  #blue .ui-slider-handle { border-color: #729fcf; }
+
+
+    .myclass-sel{
+      margin-left: 20px;
+      dl{
+        min-height: 40px;
+        dt{
+          text-align: right;
+          display: block;
+          width: 7em;
+          >span{
+            display: inline-block;
+            font-size: 12px;
+            &:before{
+              content: "";
+              display: inline-block;
+              width: 5px;
+              height: 5px;
+              .bdr(50%);
+              background-color: @cm0;
+              vertical-align: middle;
+            }
+          }
+        }
+        dd{
+          margin-left: 8em;
+          >input[type="text"]{
+            margin-top: -8px;
+            box-sizing: border-box;
+            height: 38px;
+            line-height: 22px;
+            padding: 8px;
+            border:1px solid #eee;
+            width: 85%;
+            color: #666;
+          }
+        }  
+      }      
+    }
+    .btnBox{
+      margin-left: 40px;
+      margin-top: 30px;
+    }
+    .btnhR,.btnhG{
+      display: inline-block;
+      width: 150px;
+      height: 40px;      
+      font-size: 16px;
+      text-align: center;
+      line-height: 40px;      
+    }
+    .btnhR{
+      background-color: @cm0;
+      color: #fff;
+      &:hover{
+        background-color: @cm0 - 20;
+      }
+    }
+    .btnhG{
+      margin-left: 40px;
+      background-color: #ebe6e1;
+      color: #666;
+      &:hover{
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+
+//滑块
+.sliderBox{
+  position: relative;
+  padding-top: 1px;
+  width: 85%;
+  margin-top: 20px;
+  color: #999;
+}
+.recome1-num,.recome2-num,.recome3-num,.recome4-num,.recome5-num,.recome2-time{position: absolute;top:-27px;font-size:40px;color: @cm0; z-index: 1;}
+.recome1-nums,.recome2-nums,.recome3-nums,.recome4-nums,.recome5-nums,.recome2-times{position: absolute;}
+.recome1-num,.recome1-nums{left: 2px;}
+.recome2-num,.recome2-nums{left: 10%;}
+.recome3-num,.recome3-nums{left: 21%;}
+.recome4-num,.recome4-nums{left: 65%;}
+.recome2-time,.recome2-times{left: 32%;}
+.recome5-num,.recome5-nums{right: -2px;}
+.leftGrip{
+  i{
+    position: absolute;
+    top:-13px;
+    left: 3px;
+    color: #9ea7b4;
+  }
+ span {
+    position: absolute;
+    bottom: 22px;
+    border-radius: 2px;
+    font-size: 12px;
+    background: #9ea7b4;
+    line-height: 18px;
+    text-align: center;
+    left: -5px;
+    color: white!important;
+    width: 24px!important;
+}
+}
+
+//下拉菜单
+.set-namesBox{
+  display: none;
+}
+.points{
+  padding-top: 1px;  
+  .set-myPanel{
+    display: none;
+    border:1px solid #ddd;
+    margin-top: 35px;
+    margin-left: 5px;
+    width: 80%;
+  }
+  .panel-heading{
+    padding: 0 5px;
+    line-height: 38px;
+    >i{
+      float: right;
+      background-color: @cm0 + 50;
+      color: #fff;
+      display: inline-block;
+      padding:5px;
+      margin-top: 7px;
+    }
+  }
+  ul{
+    display: none;
+    li{
+      border-top: 1px solid #eee;
+      padding: 8px 5px;
+      line-height: 21px;
+      >i{
+        padding: 3px;
+        font-size: 12px;
+        float: right;
+        background-color: #eee;
+        color: #fff;
+        margin-right: 3px;
+      }
+      &.si-curr{
+        >i{background-color: @cm0 + 20;}
+      }
+    }
+  }
+}

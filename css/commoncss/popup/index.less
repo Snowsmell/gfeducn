@@ -1,0 +1,339 @@
+@import "../common.less";
+.imgUp{
+   position: relative;
+   .up{
+     width: 90px;
+     height: 30px;
+     line-height: 30px;
+     text-indent: 20px;
+     color: #dd5555;
+     border: 1px solid #dd5555;
+     margin-top: 20px;
+     background: url(../../images/index/j_03.jpg) no-repeat 10px center;
+   }
+   .filebutton{
+     width: 90px !important;
+     height: 32px;
+     position: absolute;
+     top: 0;
+      border: none;
+      opacity: 0;
+      left: 0;
+   }
+   .modelImg{
+     background: #fff;
+     z-index: 55;
+     display: none;
+     text-align: center;
+     color: #999;
+     font-size: 12px;
+       p{
+         .cf();
+         text-align: left;
+             margin-top: 30px;
+       }
+       ul{
+          position: absolute;
+         left: 91px;
+         z-index: 5;
+         top: 0;
+           &::after{
+             display: table;
+           }
+             padding: 0 8px;
+         .cf();
+         li{
+           border: 1px solid #eee;
+           float: left;
+           width: 65px;
+           height: 30px;
+           position: relative;
+           margin-right: 8px;
+           text-align: left;
+           img{
+             height: 25px;
+             width: 40px;
+             margin: 2px 0 2px 4px;;
+           }
+           span{
+              width: 17px;
+              height: 25px;
+             right: -25px;
+             float: right;
+              display: block;
+
+              i{
+                color: #999;
+              }
+           }
+           &:nth-last-of-type(1){
+             margin-right: 0;
+           }
+           &.filebutton{
+             width: 80px;
+             height: 80px;
+
+               background: url(../../images/study/jia_03.jpg) no-repeat center center;
+               input {
+                 width: 100%;
+                 height: 100%;
+                 opacity: 0;
+                 cursor: pointer;
+               }
+           }
+         }
+       }
+       .filecton {
+         display: none;
+         width: 80px;
+         height: 80px;
+           margin: 25px auto 10px;
+           background: url(../../images/study/jia_03.jpg) no-repeat center center;
+           input {
+             width: 100%;
+             height: 100%;
+             opacity: 0;
+             cursor: pointer;
+           }
+       }
+
+   }
+   .sucess{
+       background: #fffdf9;
+       color: #dd5555;
+       font-size: 18px;
+       width: 200px;
+       height: 120px;
+       line-height: 120px;
+       border: 1px solid #eee;
+       position: absolute;
+       top: 250px;
+       text-align: center;
+       display: none;
+   }
+}
+.tanpoto{
+   display: none;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    section{
+      width: auto;
+      max-width: 600px;
+      position: fixed;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        // transform: translate(-50%, -50%);
+        // -webkit-transform: translate(-50%, -50%);
+        // -moz-transform: translate(-50%, -50%);
+        // -ms-transform: translate(-50%, -50%);
+        // -o-transform: translate(-50%, -50%);
+    }
+}
+p,div,span,dd,dt,h1,h2,h3,em,a{
+  word-break: break-all;
+  word-wrap:break-word;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+
+.model{
+   position: fixed;
+   z-index: 99999;
+   width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+   background: rgba(0,0, 0, .7);
+   section{
+     position: absolute;
+     background: #fff;
+     left: 50%;
+     top:50%;
+     height: 100%;
+     max-height: 550px;
+     min-width: 695px;
+     transform: translate(-50%,-50%);
+     -webkit-transform: translate(-50%,-50%);
+     -mos-transform: translate(-50%,-50%);
+     -o-transform: translate(-50%,-50%);
+     -moz-transform: translate(-50%,-50%);
+      .modelTop{
+        padding: 20px 65px;
+        background: #f8f3ef;
+        .cf();
+          .modelImg{
+            float: left;
+            font-size: 16px;
+            color: #aba098;
+          }
+          .opinion{
+            float: right;
+            margin-left: 87px;
+            h3{
+              font-size: 18px;
+              padding: 15px 0;
+            }
+            ul{
+              min-width: 310px;
+              color: #000;
+              .cf();
+            }
+            li{
+              cursor: pointer;
+              float: left;
+              width: 50%;
+              text-indent: 27px;
+              font-size: 14px;
+              margin-bottom: 12px;
+              background: url(../../../images/commonimages/popup/q_06.jpg)no-repeat left center;
+               &.sele{
+                     background: url(../../../images/commonimages/popup/q_03.jpg)no-repeat left center;
+               }
+            }
+          }
+      }
+      .contCenter{
+         padding: 35px;
+         text-align: center;
+         .tarea{
+           position: relative;
+               box-sizing: border-box;
+                  //  padding-top: 3px;
+           span{
+             position: absolute;
+             right: 10px;
+             bottom: 10px;
+            padding-top: 3px;
+            color: #999;
+           }
+         }
+         textarea{
+           width: 97%;
+          height: 83px;
+          padding: 6px 10px 30px 10px;
+          border: 1px solid #ddd;
+         }
+         .up{
+           width: 90px;
+            height: 30px;
+            line-height: 30px;
+            text-indent: 20px;
+            color: #dd5555;
+            border: 1px solid #dd5555;
+            margin-top: 10px;
+
+            background: url(../../images/index/j_03.jpg) no-repeat 10px center;
+         }
+         input{
+            width: 97%;
+           margin-top: 10px;
+               padding: 8px 10px;
+               border: 1px solid #ddd;
+         }
+         button{
+           width: 150px;
+           height: 40px;
+           background: #dd5555;
+           line-height: 40px;
+           border: none;
+           margin-top: 25px;
+           color: #fff;
+           margin-bottom: 20px;
+           &:nth-of-type(2){
+             margin-left: 36px;
+             background: #ebe6e1;
+             color: #999;
+
+           }
+         }
+      }
+   }
+}
+
+.imgHover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.finimg{
+  overflow: hidden;
+  img:hover{
+    .imgHover();
+  }
+}
+
+//170823 cc start
+.wrap{
+  width: 100%;
+  min-width: 1000px;
+}
+.finance .financeleft,
+.kuaiji .kleft,
+.kaoyan .kaoleft {
+    box-sizing: border-box;
+    width: 26.315%;
+    max-width: 300px;
+    float: left;
+    h3 {
+      font-size: 20px;
+      color: #666;
+      padding-bottom: 14px;
+    }
+    .img{
+      width: 100%;
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    h4{
+      margin-top: 6px;
+      font-size: 16px;
+      height: 1.5em;
+      .ellipsis();
+      color:@c3;
+    }
+    p{
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 24px;
+      height: 48px;
+      .spill(2);
+      color:@c9;
+    }
+    // a:hover{
+    //   h4,p{
+    //     color:#d55;
+    //   }
+    // }
+  }
+.licai .licaileft{
+  width: 26.315%;
+  max-width: 300px;
+  img{
+    width: 100%;
+    height: 185px;
+    display: block;
+  }
+}
+.finance .financeright,
+.kuaiji .kright,
+.kaoyan .kaoright,
+.licai .licairight{
+  float: right;
+  width: 72.1%;
+}
+//end

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页</title>
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/fontmain.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sign/login.css">
+    <script src="../../script/commonjs/jquery-1.9.1.min.js"></script>
+    <script src="../../script/sign/index.js"></script>
+
+    <!-- 弹窗所用 -->
+    <link rel="stylesheet" href="../../css/commoncss/popup2/popupLayer.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="login_header">
+            <div class="login_hleft">
+                <a href="javascript:;">
+                    <img src="../../images/commonimages/logon.png">
+                </a>
+            </div>
+            <div class="login_hright">
+                已有账号,
+                <a href="login.html">马上登陆&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="logincontainer">
+            <div class="loginc_left">
+                <div class="loginform loginform1">
+                    <div class="logintab">
+                        手机注册
+                    </div>
+                    <div class="pl">
+                        <ul>
+                            <li>
+                                <div class="pcinput">
+                                    <span>
+                                        <i>&#xe99d;</i>
+                                    </span>
+                                    <input type="text" placeholder="请输入昵称">
+                                </div>
+                                <p class="warning">
+                                    <i>&#xf050;</i>输入格式错误</p>
+                            </li>
+                            <li>
+                                <div class="pcinput">
+                                    <span>
+                                        <i>&#xe9a2;</i>
+                                    </span>
+                                    <input type="text" placeholder="请输入11位手机号" class="tell">
+                                </div>
+                                <p class="warning">
+                                    <i>&#xf050;</i>输入格式错误</p>
+                            </li>
+                            <li class="yan">
+                                <div class="pcinput">
+                                    <span>
+                                        <i>&#xf024;</i>
+                                    </span>
+                                    <input type="text" placeholder="请输入验证码">
+                                    <a href="javascript:;">0789</a>
+                                </div>
+                                <p class="warning">
+                                    <i>&#xf050;</i>输入验证码</p>
+                            </li>
+                            <li class="dongtai">
+                                <div class="pcinput">
+                                    <span>
+                                        <i>&#xe9aa;</i>
+                                    </span>
+                                    <input type="text" placeholder="请输入动态码">
+                                    <a href="javascript:;">获取动态码</a>
+                                </div>
+                                <p class="warning">
+                                    <i>&#xf050;</i>输入动态码</p>
+                            </li>
+                            <li>
+                                <div class="pcinput password">
+                                    <span>
+                                        <i>&#xe9a6;</i>
+                                    </span>
+                                    <input name="" type="password" class="input_text_password mima_dd " placeholder="请输入密码">
+                                    <input name="" type="text" class="input_text_password mima_wz" style="display: none;" placeholder="请输入密码">
+                                    <a class="sbsote " data-show="1" href="javascript:void(0);">
+                                        <i class="icon iconfont">&#xe964;</i>
+                                    </a>
+                                </div>
+                                <p class="warning">
+                                    <i>&#xf050;</i>输入格式错误</p>
+                            </li>
+                            <li>
+                                <p class="agree">
+                                    <label class="check_radio cehecked">
+                                        <i class="icon-xiaogou"></i>
+                                    </label>我已阅读并同意
+                                    <a href="javascript:;">《金程用户协议》</a>
+                                </p>
+                            </li>
+                            <li class="zuce">
+                                <button class="popOut" data-popname="#choose_pop">注册</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="loginc_right">
+            </div>
+        </div>
+        <div class="copy">
+            Copyright © 2001-2017 金程网校 All Rights Reserved.
+        </div>
+    </div>
+
+    <!-- 弹出层 start -->
+    <div class="popupLayer">
+        <!--选择感兴趣的  -->
+        <div class="popBox" id="choose_pop">
+            <span class="closeX icon-gf-wrong32"></span>
+            <h3 class="popTitle">选择你感兴趣的项目</h3>
+            <ul>
+                <li class="on">CFA</li>
+                <li>FRM</li>
+                <li>ACCA</li>
+                <li>CPA</li>
+            </ul>
+            <button class="popOut" data-popname="#welcome_pop_s">提交</button>
+        </div>
+
+        <!--欢迎弹窗小版-->
+        <div class="popBox" id="welcome_pop_s">
+            <span class="closeX icon-gf-wrong32"></span>
+            <h3 class="popTitle">温馨提示</h3>
+            <div>
+                <h4>同学，你好！欢迎你来到金程网校。</h4>
+                <p>金程网校诚邀您进行免费学前测评。</p>
+                <a href="../person/studyplan.html">去评估</a>
+                <a href="javascript:;">残忍拒绝</a>
+            </div>
+        </div>
+    </div>
+    <!-- 弹出层end -->
+    <script src="../../script/commonjs/popup2/popupLayer.js"></script>
+</body>
+
+</html>

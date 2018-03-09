@@ -1,0 +1,499 @@
+@import url(../../../css/commoncss/variable.less);
+
+.cd_cpa_accounting171116{
+	@cO:#ff7634;
+	text-align: center;
+	width: 100%;
+	max-width: 830px;
+	overflow: hidden;
+	margin: 0 auto;
+
+	.c_til{
+		position: relative;
+		display: inline-block;
+		font-size: 24px;
+		color: #252234;
+		>i{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px;
+			width: 6px;
+			height: 6px;
+			background-color: #00000c;
+			.bdr(50%);
+		}
+		&:before,&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			top:50%;
+			margin-top: -3px;
+			width: 164px;
+			height: 7px;
+		}
+		&:before{
+			background: url(./../images/bg_til_l.png) right 0 no-repeat;
+			left:-180px;
+		}
+		&:after{
+			background: url(./../images/bg_til_r.png) left 0 no-repeat;
+			right: -180px;
+		}
+	}
+
+	.c_main{
+		text-align: justify;
+		color: #666;
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.c_btn,.c_btnO{
+		display: inline-block;
+		height: 38px;
+		line-height: 38px;
+		width:250px;
+		font-size: 20px;
+		border:1px solid @cO;
+		.bdr(20px);		
+	}
+	.c_btn{
+		background-color: #fff;
+		background: transparent url(./../images/icon_a.png) 218px center no-repeat;
+		color: @cO;
+		&:hover{
+			background-color: @cO;
+			background-image: url(./../images/icon_b.png);
+			color: #fff;
+		}
+	}
+	.c_btnO{
+		background: @cO url(./../images/icon_b.png) 218px center no-repeat;
+		color: #fff;
+		&:hover{
+			background-color: #fff;
+			background-color: transparent;
+			background-image: url(./../images/icon_a.png);
+			color: @cO;
+		}
+	}
+
+	
+
+	.c_banner{
+		padding-top: 75px 20px 0;
+		background: #21222f url(./../images/bg_banner.jpg) center no-repeat;
+		.bg(cover);
+		color: #fff;
+		.c_bantil{
+			padding:75px 20px 0;
+			img{
+				max-width: 100%;
+			}
+		}
+		.c_main{
+			background: url(./../images/teacher0.png) left bottom no-repeat;
+			min-height: 353px;
+			padding-left: 303px;
+			color: #fff;
+			text-align: left;
+			padding-right: 40px;
+			margin-top: 40px;
+			padding-bottom: 10px;
+			.img{
+				display: none;
+				width: 110px;
+				height: 110px;
+				margin:0 auto;
+				border:4px solid #fff;
+				.bdr(50%);
+				overflow: hidden;
+				background: #fff;
+				>img{
+					width: 100%;
+					display: block;	
+				}
+			}
+			strong,em{
+				display: block;
+			}
+			>strong{
+				padding-top: 55px;
+				font-size: 32px;
+			}
+			>em{
+				font-size: 24px;
+				padding: 8px 0 10px;
+			}
+			>p{
+				>em{
+					font-size: 16px;
+					display: block;
+					padding-bottom: 2px;
+					letter-spacing: normal;
+				}
+				font-size: 14px;
+				line-height: 1.75;
+				letter-spacing: 1px;
+			}
+			@media (max-width:815px) {
+				>strong{
+					padding-top: 0;
+				}
+			}
+			@media (max-width:640px) {
+				padding-right: 20px;
+				background-position: -20px bottom;
+				padding-left: 283px;
+				>strong{
+					font-size: 30px;
+				}
+				>em{
+					font-size: 22px;
+				}
+				>p{
+					>em{
+						font-size: 14px;
+						display: inline;
+					}
+				}
+			}
+			@media (max-width:570px) {
+				padding-left: 20px;
+				padding-bottom: 30px;
+				background: none;
+				.img{
+					display: block;
+				}
+				>strong{
+					font-size: 24px;
+					text-align: center;
+				}
+				>em{
+					font-size: 16px;
+					text-align: center;
+				}
+				>p{
+					font-size: 12px;
+					text-align: justify;
+				}
+			}
+		}
+	}
+	//公有
+	.c_why,.c_one,.c_two,.c_three,.c_four,.c_five{
+		padding: 40px 20px;
+	}
+//会计为什么会这么难？
+	.c_why{
+		.c_main{
+			>dl{
+				display: table;
+				width: 100%;
+				margin-top: 40px;
+				>dt{
+					display: table-cell;
+					vertical-align: middle;
+					width: 16%;
+					text-align: center;
+					img{
+						max-width: 100%;
+						margin: 5px;
+					}
+					&:nth-child(3){
+						width: 15%;
+						img{margin-left: 20px;}
+					}
+				}
+				>dd{
+					display: table-cell;
+					vertical-align: middle;
+					width: 34%;
+					line-height: 1.8;
+				}
+				@media (max-width:800px) {
+					>dt{
+						width: 10%;
+						text-align: left;
+						img{
+							margin-left: 0;
+						}
+						&:nth-child(3){
+							width: 10%;
+							img{margin-left: 0;}
+						}
+					}
+					>dd{
+						width: 34%;
+						&:nth-child(4){
+							width: 46%;
+						}
+					}
+				}
+				@media (max-width:550px) {
+					.cf();
+					display: block;
+					margin-top: 0;
+					>dt,>dd{
+						float: left;
+						display: block;
+						margin-top: 20px;
+					}
+					>dt{
+						width: 30%;
+						text-align: center;
+						&:nth-child(3){
+							width: 30%;
+						}
+					}
+					>dd{
+						width: 70%;
+						&:nth-child(4){
+							width: 70%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+//广告位
+	.midad{
+		img{
+			max-width: 100%;
+		}
+	}
+
+//CPA会计第一式
+	.c_one{
+		margin-top: -19px;
+		ul{
+			width: 94%;
+			max-width: 600px;
+			padding-top: 12px;
+			>li{
+				.cf();
+				background-color: #f3f7fd;
+				.bdr(6px);
+				margin-top: 23px;
+				padding:20px 20px 15px;
+				text-align: left;
+				>img{
+					float: left;
+					margin-right: 40px;
+					margin-top: 7px;
+				}
+				>strong{
+					font-size: 20px;
+					color: #333;
+					font-weight: normal;
+					&:hover{
+						color: #f86924;
+					}
+				}
+				>p{
+					padding-top: 10px;
+					line-height: 1.8;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+//CPA会计第二式
+	.c_two{
+		padding:40px 0 0;
+		.c_main{
+			background: #fff2ec url(./../images/bg_01b.png) center no-repeat;
+			//.bg(cover);
+			margin-top: 38px;
+			padding-top: 1px;
+			>img{
+				display: block;
+				width: 95%;
+				max-width: 551px;
+				margin: 29px auto;
+			}
+			ul{
+				width: 95%;
+				max-width: 695px;
+				margin: 0 auto;
+				color: #fff;
+				background: rgba(255, 118, 52, 0.77);
+				box-sizing: border-box;
+				padding: 20px;
+				>li{
+					margin: 22px 0;
+					position: relative;
+					padding-left: 89px;
+					font-size: 14px;
+					line-height: 1.6;
+					>b{
+						position: absolute;
+						left: 20px;
+						top:19px;
+						display: block;
+						width: 54px;
+						line-height: 54px;
+						height: 54px;
+						background: @cO;
+						text-align: center;
+						font-size: 30px;
+						.bdr(50%);
+					}
+					>strong{
+						font-size: 20px;
+						display: block;
+						padding-bottom: 10px;
+					}
+				}
+			}
+
+			.c_til2{
+				font-weight: bold;
+				color: #252234;
+				font-size: 20px;
+				text-align: center;
+				margin-top: 25px;
+			}
+			ol{
+				text-align: center;
+				padding: 16px 0;
+				>li{
+					display: inline-block;
+					margin:5px 15px;
+					padding-left: 20px;
+					background: url(./../images/icon_start.png) left center no-repeat; 
+					font-size: 14px;
+					color: @cO;
+				}
+			}
+		}
+		.c_other{
+			background-color: #fff2ec;
+			padding-bottom: 32px;
+		}
+		.c_btn{
+			width: 200px;
+			background-position: 168px center;
+		}
+	}
+
+//CPA会计第三式
+	.c_three{
+		background-color: #fcfdff;
+		.c_main{
+			width: 88%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+
+//CPA会计第四式
+	.c_four{
+		background-color: #fafafa;
+		.c_main{
+			width: 85%;
+			max-width: 41em;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+
+//CPA会计第五式
+	.c_five{
+		background: #f7f7fe url(./../images/bg_02.jpg) center no-repeat;
+		.bg(cover);
+		.c_main{
+			width: 80%;
+			max-width: 29em;
+			margin-top: 28px;
+			margin-bottom: 28px;
+			line-height: 1.8;
+		}
+	}
+
+@media(max-width:640px){
+	.c_til{
+		font-size: 18px;
+	}
+	.c_main{
+		font-size: 14px;
+	}
+	.c_btn,.c_btnO{
+		font-size: 14px;
+		height: 32px;
+		line-height: 32px;
+		.bdr(17px);
+		width: 200px;
+		background-position: 168px center;
+	}
+	.c_banner{
+		.c_bantil{
+			padding-top: 40px;
+		}
+	}
+	.c_why{
+
+	}
+	.c_one{
+		ul{
+			>li{
+				>strong{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.c_two{
+		.c_main{
+			ul{
+				>li{
+					padding-left: 54px;
+					font-size: 12px;
+					>b{
+						left:0;
+						font-size: 20px;
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+					}
+					>strong{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+@media(max-width:414px){
+	.c_til{
+		font-size: 16px;
+	}
+	.c_one{
+		ul{
+			>li{
+				>strong{
+					font-size: 14px;
+				}
+				>p{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.c_two{
+		.c_main{
+			ul{
+				>li{
+					>strong{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+}

@@ -1,0 +1,264 @@
+@import "../../css/commoncss/variable.less";
+// @import "../../css/class/headfooter.less";
+
+body {
+  background-color: #f4f4f4;
+}
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+
+//
+.livelist-top{  
+  padding: 25px 0 20px;
+  h1{
+    display: inline-block;    
+    font-size: 24px;    
+  }
+  .poplist-nav{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    >i{
+      cursor: pointer;
+      font-size: 24px;
+    }
+    >dl{
+      display: none;
+      position: absolute;
+      z-index: 20;
+      left: 10px;
+      margin-top:5px;
+      background-color: #fffdf9;
+      border:1px solid #ddd;
+      padding: 10px 30px;
+      width: 335px;
+      &:before{
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: #fffdf9;
+        border-top:1px solid #ddd;
+        border-left:1px solid #ddd;
+        transform:rotate(45deg);
+      }
+      dd{
+        color: @c6;
+        margin: 10px 0;
+        .cf();
+        padding-left: 4em;
+        strong{
+          display: inline-block;
+          width: 4em;
+          color: @cm0;
+          text-align: right;
+          float: left;
+          margin-left: -4em;
+        }
+        a{
+          margin: 0 0 10px 20px;
+          display: inline-block;
+        }
+      }      
+    }
+    &.on,&:hover{
+      >dl{display: block;}
+    }
+  } 
+}
+.livelist-nav{
+  .cf();
+  li{
+    float: left;
+    margin-right: 30px;
+    cursor: pointer;
+    &.on{
+      color: @cm0;
+      a{color: @cm0};
+    }
+  }
+}
+
+//选择题目
+.list {
+  margin-top: 25px;
+  .cf();
+  .listleft {
+    .listtitle {
+      background-color: @cw;
+      padding: 0 15px;
+      line-height: 50px;
+      padding-top: 10px;
+      border-bottom: 1px solid #eee;
+      .titleleft {
+        float: left;
+        a {
+          margin: 0 7px;
+          display: inline-block;
+          width: 50px;
+          height: 25px;
+          line-height: 25px;
+          border: 1px solid @cd;
+          color: @c3;
+          text-align: center;
+          >i{
+            vertical-align: 10%;
+          }
+          &.selected {
+            border-color: @d5;
+            color: @cw;
+            background-color: @d5;
+          }
+        }
+      }
+      .titleright {
+        float: right;
+        label{
+          color: @c6;
+          margin-right: 10px;
+          cursor: pointer;
+          i{
+            margin-right: 5px;
+            color: @cw;
+            border:1px solid #ccc;
+            .bdr(3px);
+          }
+          &.g.on{
+            i{color: @cf1; border-color:@cw;}
+          }
+          &.r.on{
+            i{color: @cm0; border-color:@cw;}
+          }
+        }
+        span {
+          color: @c9;
+          font-size: 12px;
+        }
+        >a{
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          border: 1px solid #ddd;
+          line-height: 20px;
+          text-align: center;
+          color: @c9;
+          &:hover{
+            i{
+              color: #dc585a;
+            }
+          }
+        }
+      }
+      .cf();
+    }
+    width: 73%;
+    float: left;
+    box-sizing: border-box;
+    .pages{
+      margin: 40px auto;
+      text-align: center;
+      .pagesword{
+        display: inline-block;
+        color: @c6;
+      }
+      .page{
+        display: inline-block;
+        .cf();
+        .prev,.next{
+          i{
+            font-size: 18px;
+          }
+        }
+        i{
+          color: @c9;
+        }
+        span,a{
+          background-color: @cw;
+          cursor: pointer;
+          padding: 6px 14px;
+          margin: 0 5px;
+          color: @c6;
+          &.selected{
+            background-color: @cm0;
+            color: @cw;
+          }
+        }
+      }
+    }
+  }
+  .bottomright{
+    width: 25%;
+    float: right;
+    background: #FBFBFB;
+    .aboutcourse{
+      // background-color: #f6f8f9;
+      >h3{
+        font-size: 16px;
+        line-height: 16px;
+            text-indent: 15px;
+        border-left: 2px solid #db5557;
+        margin: 30px 16px 10px 16px;
+      }
+      ul{
+        overflow: hidden;
+        li{
+          .cf();
+          padding: 0 20px;
+          .img{
+            float: left;
+            margin-right:12px;
+            img{
+              width: 90px;
+              height: 60px;
+            }
+          }
+          h3{
+            font-size: 14px;
+            color: @c6;
+            height: 42px;
+            .spill(2);
+          }
+          p{
+            color: #f26a2f;
+            height: 20px;
+            .spill(1);
+          }
+          margin: 15px 0;
+        }
+      }
+
+    }
+    .onlinepeople{
+      .cf();
+      >h3{
+        font-size: 16px;
+        line-height: 50px;
+        // border-bottom: 1px solid @cd;
+        padding: 0 16px;
+      }
+      margin-top: 10px;
+      // background-color:#f6f8f9;
+      ul{
+        margin: 10px 0;
+        li{
+          margin: 10px 0;
+          width: 25%;
+          float: left;
+          text-align: center;
+          cursor: pointer;
+          img{
+            width: 46px;
+            height: 46px;
+          }
+        }
+      }
+    }
+  }
+}

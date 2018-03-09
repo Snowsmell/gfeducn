@@ -1,0 +1,12 @@
+/* LESS Document */
+.mainnav {
+  background-color: #25b9f6;
+}
+.mainnav li.selecded a,
+.mainnav li:hover a {
+  background-color: #2babe0;
+}
+.mainheader .protitle p .timedate {
+  font-size: 24px;
+  color: #e60012;
+}

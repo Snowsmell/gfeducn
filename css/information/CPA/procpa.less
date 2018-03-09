@@ -1,0 +1,1725 @@
+/* LESS Document */
+
+/**
+*  type:CPA资讯首页
+*  author: lotus
+*  date: 2016-03-30 14:00
+*  description：－－
+
+**************************************************/
+
+@import '../../../css/commoncss/variable.less';
+@import 'cpavariable.less';
+
+/*导入字体*/
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-ivr5ln');
+  src:url('fonts/icomoon.eot?#iefix-ivr5ln') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?-ivr5ln') format('truetype'),
+  url('fonts/icomoon.woff?-ivr5ln') format('woff'),
+  url('fonts/icomoon.svg?-ivr5ln#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 标题样式 */
+div[class^="procpa_"], div[class*="procpa_"]{
+	h2{
+		.f18();
+	}
+}
+@media (min-width: 768px){
+	[class^="procpa_"], [class*=" procpa_"]{
+		h2{
+			.f24();
+			line-height:50px;
+		}
+	}
+}
+
+.wrap{
+	padding:0 15px;
+	box-sizing:border-box;
+	min-width: 320px;
+}
+@media (min-width: 768px){
+	.wrap{
+		padding:0;
+	}
+}
+
+/* 广告位平台链接 */
+/*轮翻大图*/
+.topTitle{
+    height:170px;
+    .pos(r);
+    overflow-y: hidden;
+    .bdIndex{
+    li{
+        span{
+          display: block;
+          width: 100%;
+          height:170px;
+          background-size: cover;
+           //background-size: 100% 100% !important;
+            article{
+              box-sizing:border-box;
+              height:240px;
+              padding:30px 0;
+            }
+            section{
+                .pos(a);
+                padding:20px 20px 0;
+                top:50%;
+                box-sizing: border-box;
+                -webkit-transform:translate(0,-50%);
+                -moz-transform:translate(0,-50%);
+                -ms-transform:translate(0,-50%);
+                -o-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+            }
+        }
+
+        h1{
+          font-size:42px;
+          color:@cw;
+        }
+        h2{
+          color:#ffb013;
+          .f36();
+        }
+        p{
+          padding:20px 0;
+          line-height:24px;
+          color:@cw;
+        }
+        a{
+          color:#437bbb;
+          .f16();
+          display:block;
+          width:180px;
+          line-height:50px;
+          text-align:center;
+          background: @cw;
+          .bdr(25px);
+        }
+      }
+  }
+  .hdIndex{display:none;}
+}
+@media(min-width:640px){
+  .topTitle{
+    height:360px;
+    .bdIndex{
+        li{
+          span{
+            height: 360px;
+              article{height:360px;}
+              section{
+                padding:0 40px;
+                width:540px;
+              }
+          }
+          h1{font-size:60px;}
+          h2{.f48();line-height:40px;}
+          p{
+            .f18();
+            line-height:36px;
+          }
+        }
+    }
+ }
+}
+@media(min-width:768px){
+  .topTitle{
+    height:400px;
+    .bdIndex{
+      li{
+        span{height: 400px;}
+      }
+    }
+    .hdIndex{
+      display:block;
+      width:144px;
+      .cf();
+      .pos(a);
+      bottom:30px;
+      left:50%;
+      margin-left:-58px;
+      li{
+        .left();
+        text-indent:-9999em;
+        margin-right:20px;
+        width:10px;
+        height:10px;
+        .bdr(100%);
+        overflow:hidden;
+        border:2px solid #fff;
+        background:@proc1;
+        cursor:pointer ;
+        &.on{background: @cw;}
+      }
+    }
+ }
+}
+@media(min-width:1200px){
+  .topTitle{
+      height:400px;
+    .bdIndex{
+        li{
+          span{
+            height: 400px;
+            article{
+              width:1200px;
+              margin:0 auto;
+            }
+          }
+          h1{font-size:60px;}
+          h2{.f48();}
+          p{
+            padding-top:0;
+            .f18();
+            line-height:36px;
+          }
+        }
+    }
+ }
+}
+// @media(min-width:1920px){
+//   .topTitle{
+//     height:400px;
+//     .bdIndex{
+//         li{
+//           span{
+//             height: 400px;
+//             article{height:400px;}
+//             section{
+//               padding:0 50px;
+//             }
+//           }
+//         }
+//     }
+//  }
+// }
+.g-fadeSlide {
+	.pos(r);
+}
+.g-fadeSlide-list {
+	.pos(r);
+	li{
+		display: none;
+		.pos(a);
+		left: 0; right: 0; bottom: 0; top: 0; 
+		opacity: 0; filter: alpha(opacity=0);
+		img{
+			vertical-align: top;
+		}
+	}
+}
+.ie8 .g-fadeSlide-list li { background-color: #fff;}
+
+.topTitle{
+	.obtain{
+		display:none;
+	}
+}
+@media (min-width:992px) {
+	.topTitle{
+		.obtain{
+			display:block;
+			.pos(a);
+			top:0;
+			right:0;
+			height:100%;
+			width:330px;
+			padding:20px 0;
+			box-sizing:border-box;
+			ul{
+				padding:20px;
+				.cf();
+				background-color:@cw;
+				height:100%;
+				box-sizing:border-box;
+			}
+			li{
+				width:33.33%;
+				box-sizing:border-box;
+				padding:5px 0;
+				padding-bottom:15px;
+				float:left;
+				text-align:center;
+				i{
+					width:54px;
+					height:54px;
+					display:block;
+					margin:0 auto;
+					.f30();
+					color:@proc1;
+					line-height:54px;
+				}
+			}
+		}
+	}
+}
+@media (min-width:1200px) {
+	.topTitle{
+		.obtain{
+			top:0;
+			right:50%;
+			margin-right:-600px;
+		}
+	}
+}
+
+#slideBox {
+	.cf();
+	.pos(r);
+	img{width:100%;}
+	.hdIndex{
+		.pos(a);
+		bottom: 15px;
+		left:50%;
+		transform:translateX(-50%);
+		-webkit-transform:translateX(-50%);
+		-ms-transform:translateX(-50%);
+		-moz-transform:translateX(-50%);
+		ul{
+			.cf();
+			li{
+				width: 5px;
+				height: 5px;
+				border-radius: 100%;
+				background: @cw;
+				float: left;
+				margin-right: 10px;
+				text-indent: 9999px;
+			}
+		}
+	}
+} 
+@media(min-width:640px){
+	#slideBox {
+		img{width: 100%;}
+	}
+}
+
+/* banner修改添加 start */
+/* .topTitle{
+     height: 170px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{
+
+               a{
+                    display: block;
+                    width: 100%;
+                    height:170px;
+                    background-position: 20% 50% !important;
+                    background-size: auto 100% !important;
+                 //   background-repeat-x: no-repeat !important;
+                  /!*  background-size: cover !important;
+                    -webkit-background-size: cover !important;
+                    -moz-background-size: cover !important;
+                    -ms-background-size: cover !important;
+                    -o-background-size: cover !important; *!/
+                }
+            }
+        }
+    }
+}
+@media(min-width:480px){
+  .topTitle{
+     height: 200px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{
+               a{
+                  height: 200px;
+                }
+            }
+        }
+    }
+ }
+}
+@media(min-width:640px){
+  .topTitle{
+     height: 240px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{
+               a{
+                  height: 240px;
+                }
+            }
+        }
+    }
+ }
+}
+@media(min-width:768px){
+  .topTitle{
+     height: 300px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{
+               a{
+                  height: 300px;
+                }
+            }
+        }
+    }
+ }
+}
+@media(min-width:992px){
+  .topTitle{
+     height: 350px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{ a{ height: 350px;  background-size: 100% 100% !important; }
+            }
+        }
+    }
+ }
+}
+@media(min-width:1200px){
+  .topTitle{
+     height: 400px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{ a{ height: 400px; }
+            }
+        }
+    }
+ }
+}
+@media(min-width:1500px){
+  .topTitle{
+     height: 400px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{ a{ height: 450px; }
+            }
+        }
+    }
+ }
+}
+@media(min-width:1920px){
+  .topTitle{
+     height: 400px;
+    .slideBoxIndex{
+        .bdIndex{
+            li{ a{ height: 450px; background-position: 0 0 !important; }
+            }
+        }
+    }
+ }
+}*/
+/* banner修改添加 end */
+
+
+
+
+
+
+/* 最新公告广告 */
+.procpa_notice{
+	.cf();
+	padding:20px 10px;
+	h2{
+		.cf();
+		float:left;
+		background-color:@proc1;
+		color:@cw;
+		padding:15px 20px;
+		text-align:center;
+		height:120px;
+		box-sizing:border-box;
+		overflow:hidden;
+		img{
+			width:90%;
+			max-width:113px;
+			display:block;
+			margin:0 auto;
+			padding-bottom:10px;
+		}
+	}
+	ul{
+		overflow:hidden;
+		border:solid 1px @cd; 
+		border-left:none;
+		.cf();
+		height:120px;
+		box-sizing:border-box;
+	}
+	li{
+		padding:15px 20px;
+		a{
+			width:100%;
+			line-height:35px;
+			.ellipsis();
+			.f14();
+			.dis();
+		}
+		p{
+			width:100%;
+			color:@c9;
+			.f14();
+			line-height:30px;
+			display:none;
+			.spill2();
+		}
+	}
+	article{
+		padding-top:20px;
+		img{ width:100%;}
+	}
+}
+@media (min-width: 768px){
+	.procpa_notice{
+		padding:40px 0;
+		h2,ul{
+			height:200px;
+		}
+		h2{
+			width:200px;
+			padding-top:40px;
+		}
+		li{
+			width:33.33%;
+			float:left;
+			height:100%;
+			overflow:hidden;
+			padding-top:30px;
+			box-sizing:border-box;
+			border-left:solid 1px @cd;
+			a{.f18(); line-height:50px;}
+			// p{ display:block;}
+		}
+		article{
+			padding-top:40px;
+		}
+	}
+
+}
+
+/* 最新直播 */
+.procpa_live{
+	padding-bottom:20px;
+	ul{
+		.cf();
+		border:solid 1px @cd;
+	}
+	li{
+		width:100%;
+		padding:15px;
+		box-sizing:border-box;
+		text-align:center;
+		float:left;
+		border-right:solid 1px @cd;
+		h4{
+			width:100%;
+			overflow:hidden;
+			img{
+				width:100%;
+			}
+		}
+		h3{
+			.f14();
+			padding-bottom:10px;
+			text-align: left;
+		}
+		p{
+			color:@c6;
+			.f12();
+			line-height:30px;
+			span{ color:proc3;}
+		}
+		button{
+			margin:10px 0;
+			width:70%;
+			height:40px;
+			line-height:40px;
+			border:solid 1px @proc1;
+			background-color:@proc2;
+		}
+		&:nth-child(1){ border-bottom:solid 1px @cd;}
+		&:nth-child(2){ border-bottom:solid 1px @cd;}
+		&:nth-child(3){ display:none;}
+		&:nth-child(4){ display:none;}
+	}
+	
+}
+@media (min-width: 480px){
+	.procpa_live{
+		li{
+			width:50%;
+			&:nth-child(3){ display:block;}
+			&:nth-child(4){ display:block;}
+		}
+	}
+}
+@media (min-width: 768px){
+	.procpa_live{
+		
+		li{
+			width:25%;
+			h4{
+				height:180px;
+				img{
+					width:100%;
+					-webkit-transition: .3s;
+					-moz-transition: .3s;
+					-ms-transition: .3s;
+					-o-transition: .3s;
+					transition: .3s;
+					&:hover{
+						-webkit-transform: scale(1.2);
+						-moz-transform: scale(1.2);
+						-ms-transform: scale(1.2);
+						-o-transform: scale(1.2);
+						transform: scale(1.2);
+					}
+				}
+			}
+			h3{
+				.f20();
+			}
+			&:nth-child(1){border-bottom: none;}
+			&:nth-child(2){border-bottom: none;}
+			&:last-child{border-right: none;}
+		}
+	}
+}
+
+/* 公共底部链接 */
+.procpa_com{
+	margin-bottom:20px;
+	h2{
+		width:120px;
+		height:120px; 
+		text-align:center;
+		line-height:120px;
+		color:@cw;
+		float:left;
+		background-color:@proc1;
+	}
+	ul{
+		overflow:hidden;
+		border:solid 1px @cd; 
+		border-left:none;
+		.cf();
+		height:120px;
+		box-sizing:border-box;
+		padding:20px;
+	}
+	li{
+		width:100%;
+		line-height:40px;
+		.ellipsis();
+		display:none;
+		box-sizing:border-box;
+		&:nth-child(1),&:nth-child(2){ display:block;}
+		a{ color:@c6;}
+		i{
+			color:@proc1;
+			.f12();
+			padding-right:10px;
+		}
+	}
+}
+@media (min-width: 768px){
+	.procpa_com{
+		padding-bottom:60px;
+		li{
+			width:33.33%;
+			float:left;
+			display:block;
+		}
+	}
+}
+
+.procpa_com2{
+	margin-bottom:20px;
+	display: none;
+	h2{
+		width:100%;
+		height:120px; 
+		text-align:center;
+		background-color:@proc7;
+		box-sizing:border-box;
+		padding:15px 0;
+		img{
+			height:65px;
+			padding-bottom:0;
+			margin-bottom:0;
+	
+		}
+		p{
+			margin-top:-10px;
+			padding-top:0;
+			color:@c6;
+			line-height:20px;
+		}
+	}
+	ul{
+		overflow:hidden;
+		border:solid 1px @cd; 
+		border-left:none;
+		.cf();
+		height:120px;
+		box-sizing:border-box;
+		padding:20px;
+		display:none;
+	}
+}
+@media (min-width: 768px){
+	.procpa_com2{
+		padding-bottom:60px;
+		h2{
+			width:180px;
+			float:left;
+		}
+		ul{
+			display:block;
+		}
+		li{
+			width:33.33%;
+			float:left;
+			line-height:40px;
+			box-sizing:border-box;
+			a{ color:@c6;}
+			i{
+				color:@proc7;
+				.f12();
+				padding-right:10px;
+			}
+		}
+	}
+}
+
+.procpatabttl{
+	.pos(r);
+	p{
+		.pos(a);
+		background-color:@cf8;
+		width:100%;
+		top:0;
+		left:0;
+		height:50px;
+		border:solid 1px @cd;
+		box-sizing:border-box;
+		z-index:-1;
+	}
+	ul{
+		.cf();
+	#mCSB_2_container{width: 1200px!important;.cf();}
+	}
+	li{
+		float:left;
+		a{
+			.f12();
+			color:@c3;
+			line-height:50px;
+			padding:0 10px;
+			display:block;
+			box-sizing:border-box;
+		}
+		&:hover,&.selected{a{
+			background-color:@cw;
+			border-left:solid 1px @cd;
+			border-right:solid 1px @cd;
+			border-top:solid 2px @proc1;
+			line-height:48px;
+		}}
+	}
+}
+@media (min-width: 768px){
+	.procpatabttl{
+		li{
+			a{
+				.f16();
+				padding:0 30px;
+			}
+		}
+	}
+}
+/* 精品课程 */
+.procpa_course{
+}
+
+/* 名师风采 */
+.procpa_teacher{
+}
+.proc_content{
+	.cf();
+	margin-bottom:20px;
+	display:none;
+	&:first-child{ display:block;}
+	article{
+		h4{
+			display:none;
+			img{
+				width:100%;
+				max-width:300px;
+			}
+		}
+		dl{
+			.cf();
+		}
+		dt{
+			.cf();
+			padding-bottom:15px;
+			h3{
+				.f18();
+				line-height:50px;
+				color:@c3;
+				.ellipsis();
+			}
+			p{
+				.f14();
+				color:@c6;
+			}
+			h4{
+				background-color:@cf8;
+				padding:15px;
+				display:block;
+				width:100%;
+				box-sizing:border-box;
+				.f24();
+				color:@cred;
+				margin-top:15px;
+				del{
+					.f14();
+					color:@c9;
+					padding-left:10px;
+				}
+			}
+		}
+		dd{
+			p{
+				.f14();
+				color:@c9;
+				.spill2();
+				max-height: 40px;
+			}
+			a{
+				margin:10px 0;
+				width:100%;
+				display:block;
+				text-align:center;
+				height:40px;
+				line-height:40px;
+				border:solid 1px @proc1;
+				background-color:@proc1;
+				color:@cw;
+				&:last-child{
+					background-color:@proc2;
+					color:@proc1;
+				}
+			}
+		}
+	}
+	section{
+		
+		dl{
+			.cf();
+			padding:10px 0;
+			border-bottom:solid 1px @cd;
+			clear: both;
+		}
+		dt{
+			
+			img{
+				width:100%;
+			}
+		}
+		dd{
+			h3{
+				.f18();
+				// line-height:50px;
+			}
+			p{
+				.f14();
+				color:@c9;
+				.spill2();
+				max-height: 40px;
+			}
+			span{
+				display:block;
+				padding:15px 0;
+				border-top:dashed 1px @cd;
+				color:@c6;
+				margin-top:20px;
+			}
+		}
+	}
+}
+@media (min-width: 640px){
+	.proc_content{
+		article{
+			h4{
+				float:left;
+				display:block;
+				width:50%;
+				box-sizing:border-box;
+				padding-right:20px;
+			}
+			dl{
+				width:50%;
+				float:left;
+				box-sizing:border-box;
+			}
+		}
+		section{
+			dt{
+				width:50%;
+				float:left;
+				box-sizing:border-box;
+			}
+			dd{
+				width:50%;
+				float:left;
+				padding-left: 20px;
+				box-sizing:border-box;
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	.proc_content{
+		padding:20px;
+		border:solid 1px @cd;
+		border-top:none;
+		article{
+			width:50%;
+			float:left;
+			box-sizing:border-box;
+			dl{
+				
+				padding-right:20px;
+			}
+		}
+		section{
+			width:50%;
+			float:left;
+			box-sizing:border-box;
+			border-left:solid 1px @cd;
+			dt{
+				padding:0 20px;
+			}
+			dl:first-child{
+				padding-top:0;
+			}
+			dl:last-child{
+				padding-bottom:0;
+				border-bottom:none;
+			}
+		}
+	}
+}
+
+/* 名师风采 */
+.procpa_teacher{
+	margin-bottom:20px;
+	.pos(r);
+	background-color:@cf8;
+	border:solid 1px @cd;
+	padding:80px 0 200px;
+	h2{
+		.pos(a);
+		top:-2px;
+		left:50%;
+		margin-left:-127px;
+		width:254px;
+		height:63px;
+		line-height:62px;
+		text-align: center;
+		background-image:url(../images/procpa_teacherttlbg.png);
+		background-repeat:no-repeat;
+	}
+	.procpatabttl2{
+		.pos(a);
+		bottom:30px;
+		left:0;
+		width:100%;
+		height:140px;
+		overflow:hidden;
+		.cf();
+		ul{
+			.cf();
+		}
+		li{
+			float:left;
+			padding:0 10px;
+			height:140px;
+			width: 162px;
+			a{
+				width:120px;
+				height:120px;
+				.bdr(50%);
+				display:block;
+				border:solid 1px @cd;
+				margin:10px 0;
+				img{
+					width:100%;
+					.bdr(50%);
+				}
+			}
+			&:hover,&.selected{a{
+				width:140px;
+				height:140px;
+				background-color:@cw;
+				border:solid 1px @proc1;
+				margin:0;
+			}}
+		}
+	}
+	.procpat_content{
+		.cf();
+		background-color:@cw;
+		border:solid 1px @cd;
+		padding:20px;
+		width:100%;
+		box-sizing:border-box;
+		display:none;
+		&:first-child{ display:block;}
+		h4{
+			text-align:center;
+			img{
+				width:100%;
+				max-width:360px;
+			}
+		}
+		dl{
+			.cf();
+			max-width: 370px;
+			margin: auto;
+		}
+		dt{
+			.f14();
+			h3{
+				.f18();
+				color:@c3;
+				line-height:50px;
+				strong{.f30();}
+			}
+			p{
+				.f14();
+				line-height:30px;
+				color:@c6;
+				padding:5px 0;
+				.ellipsis();
+				span{color:@c9;}
+				&:first-child{ border-top:dashed 1px @cd}
+				&:last-child{ border-bottom:dashed 1px @cd}
+				img{
+					vertical-align:middle;
+					padding:0 15px;
+					width: auto;
+				}
+			}
+		}
+		dd{
+			p{
+				.f14();
+				color:@c9;
+				line-height:30px;
+				.spill4();
+				margin:15px 0;
+				display:none;
+			}
+			a{
+				width:240px;
+				display:block;
+				text-align:center;
+				height:40px;
+				line-height:40px;
+				color:@cw;
+				background-color:@proc1;
+				margin:10px auto;
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	.procpa_teacher{
+		margin-bottom:60px;
+		.procpatabttl2{
+		}
+		.procpat_content{
+			padding-bottom:0;
+			h4{
+				width:30%;
+				float:left;
+				img{
+					vertical-align:bottom;
+				}
+			}
+			dl{
+				overflow:hidden;
+				padding:20px;
+			}
+			dd{
+				p{display:block;.spill3();max-height: 90px;}
+			}
+			
+		}
+	}
+}
+@media (min-width: 1200px){
+	.procpa_teacher{
+		.procpatabttl2{
+			width:1200px;
+			left:50%;
+			margin-left:-600px;
+		}
+		.procpat_content{
+			.lgscreen();
+			h4{
+				width:360px;
+			}
+		}
+	}
+}
+
+/* 我要做题 */
+.procpa_exercise{
+	padding-bottom:20px;
+	.cf();
+}
+@media (min-width:768px){
+	.procpa_exercise{
+		padding-bottom:60px;
+	}
+}
+// 我要做题左侧
+.procpaex_link{
+	.cf();
+	article{
+		padding-bottom:20px;
+		li{
+			width:33.33%;
+			float:left;
+			box-sizing:border-box;
+			padding-bottom:20px;
+			a{
+				text-align:center;
+				display:block;
+				.pos(r);
+				img{
+					width:90px;
+					height:90px;
+					.bdr(50%);
+					display:block;
+					margin:0 auto;
+					border:solid 1px @proc4;
+					//&:hover{
+						//border:solid 1px @proc5;
+						//background-color:@proc5;
+						//filter:alpha(opacity=50);
+						//-moz-opacity:0.8;
+						//-khtml-opacity: 0.8;
+						//opacity: 0.8;
+					//}
+					
+				}
+				em{
+					line-height:40px;
+					&:hover{
+						color:@proc5;
+					}
+				}
+				span{
+					display:none;
+				}
+				&:hover{
+					span{
+						display:block;
+						.pos(a);
+						top:0;
+						left:50%;
+						.bdr(50%);
+						margin-left:-46px;
+						width:92px;
+						height:92px;
+						line-height:92px;
+						color:@cw;
+						filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#25a5c537',endColorstr='#25a5c537');/* IE */
+	background:rgba(37, 165, 197, 0.8);
+					}
+				}
+				
+			}
+		}
+	}
+	section{
+		width:100%;
+		max-width:460px;
+		height:180px;
+		overflow:hidden;
+		margin:0 auto;
+		.cf();
+		ul{
+		}
+		li{}
+	}
+}
+@media (min-width: 768px){
+	.procpaex_link{
+		width:41.5%;
+		float:left;
+		box-sizing:border-box;
+		padding-right:25px;
+	}
+}
+//牛人榜,大家都在做
+.prosuper,.prodoing{ display:none}
+@media (min-width: 768px){
+	.prosuper,.prodoing{
+		display:block;
+		float:left;
+		box-sizing:border-box;
+		.cf();
+		
+	}
+	.prosuper,.prodoing>article{
+		padding-top:65px;
+		border:solid 1px @cd;
+		h3{
+			.pos(a);
+			top:-30px;
+			left:0;
+			width:100%;
+			height:95px;
+			text-align:center;
+			border-bottom:solid 1px @cd;
+			p{
+				line-height:30px;
+				.f18();
+				color:@c6;
+			}	
+		}
+		ul{
+			padding:10px;
+		}
+		li{
+			img{
+				width:30px;
+				height:30px;
+				border-radius:50%;
+				vertical-align:middle;
+				margin-right:10px;
+			}
+		}
+	}
+}
+.prosuper{
+	width:25%;
+	.pos(r);
+	h3{
+		img{width: auto;}
+	}
+	li{
+		
+		padding:6px;
+		border-bottom:dashed 1px #eee;
+		color:#666;
+		font-size:12px;
+		i{
+			width:18px;
+			height:18px;
+			display:inline-block;
+			background-color:#cw;
+			border-radius:2px;
+			text-align:center;
+			line-height:18px;
+			color:#666;
+			margin-right:10px;
+			border:solid 1px @cd;
+			&.goldc{
+				background-color:@proc2;
+				color:@proc1;
+				border:solid 1px @proc1;
+			}
+		}
+
+		span{
+			float:right;
+			strong{
+				color:@proc1;
+				padding-right:10px;
+			}
+		}
+	
+	}
+}
+.prodoing{
+	width:33.5%;
+	padding-left:25px;
+	article{
+		.pos(r);
+	}	
+	li{
+		padding:12px 5px;
+		border-bottom:dashed 1px #eee;
+		color:#666;
+		font-size:14px;
+		line-height:24px;
+		h4{
+			button{
+				float:right;
+				width:90px;
+				height:25px;
+				line-height:25px;
+				background-color:@proc1;
+				.bdr(2px);
+				border:none;
+				text-align:center;
+				a{
+					color:@cw;
+				}
+			}
+		}
+		p{
+			padding-left:35px;
+			line-height:26px;
+			color:@c9;
+			span{
+				color:@proc1;
+			}
+			&:last-child{
+				color:@c6;
+			}
+		}
+	}
+}
+/* 备考辅导 */
+.procpa_coach{
+	display: none;
+	.procpatabttl{
+		h2{
+			width:100px;
+			float: left;
+			text-align:center;
+		}
+		ul{
+			overflow:hidden;
+		}
+	}
+	.ctn{
+		ul{
+			padding:20px 0;
+			.cf();
+			display:none;
+			&:first-child{ display:block;}
+		}
+		li{
+			width:100%;
+			float:left;
+			box-sizing:border-box;
+			
+			&:nth-child(3){ display:none}
+			&:nth-child(4){ display:none}
+			a{
+				display:block;
+				border:solid 1px @cd;
+				padding-bottom:30px;
+			}
+			h4{
+				width:100%;
+				overflow:hidden;
+				img{
+					width:100%;
+				}
+			}
+			h3{
+				width:100%;
+				padding:0 15px;
+				margin:10px 0;
+				box-sizing:border-box;
+				.ellipsis();
+				.f18();
+				color:@c3;
+			}
+			p{
+				width:100%;
+				padding:0 15px;
+				box-sizing:border-box;
+				.spill3();
+				.f14();
+				color:@c9;
+				max-height: 60px;
+			}
+		}
+		
+	}
+}
+@media (min-width: 480px){
+	.procpa_coach{.ctn{
+		li{
+			width:50%;
+			&:nth-child(1){ padding-right:10px; padding-bottom:10px;}
+			&:nth-child(2){ padding-left:10px; padding-bottom:10px;}
+			&:nth-child(3){ display:block; padding-right:10px;}
+			&:nth-child(4){ display:block; padding-left:10px;}
+		}
+	}}
+}
+@media (min-width: 768px){
+	.procpa_coach{
+
+		.procpatabttl{
+			h2{
+				width:150px;
+			}
+		}
+		.ctn{
+			li{
+				h4{
+					height:180px;
+					img{
+						width:100%;
+						-webkit-transition: .3s;
+						-moz-transition: .3s;
+						-ms-transition: .3s;
+						-o-transition: .3s;
+						transition: .3s;
+						&:hover{
+							-webkit-transform: scale(1.2);
+							-moz-transform: scale(1.2);
+							-ms-transform: scale(1.2);
+							-o-transform: scale(1.2);
+							transform: scale(1.2);
+						}
+					}
+				}
+				&:nth-child(1){width:24%; padding-right:20px; padding-bottom:0;}
+				&:nth-child(2){width:26%; padding:0 20px; padding-bottom:0;}
+				&:nth-child(3){width:26%; padding:0 20px; display:block;}
+				&:nth-child(4){width:24%; padding-left:20px; display:block;}
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+	.procpa_coach,.procpa_com2{display: block;}
+
+}
+/* 辅导切换 */
+.ctn{
+	.pcc_content{
+		display:none;
+		&:first-child{ display:block;}
+	}
+}
+.pcc_content{
+	border:solid 1px @cd;
+	border-top:none;
+	box-sizing:border-box;
+	padding:20px;
+	margin-bottom:20px;
+	.cf();
+	h4{
+		border-bottom:solid 1px @cd;
+		margin-bottom:15px;
+		a{
+			display:inline-block;
+			padding:10px 20px;
+			color:@c9;
+		}
+	}
+	li{
+		width:100%;
+		.ellipsis();
+		box-sizing:border-box;
+		padding:0 15px 0 20px;
+		color:@c6;
+		line-height:36px;
+		i{
+			color:@proc1;
+			.f12();
+			padding-right:10px;
+		}
+	}
+
+	dl{
+		padding-bottom:10px;
+		.cf();
+	}
+	dt{
+		float:left;
+		width: 140px;
+		img{width: 100%;}
+	}
+	dd{
+		overflow:hidden;
+		padding-left:10px;
+		h3{
+			.ellipsis();
+			a{
+				.f16();
+				color:@c3;
+				line-height:40px;
+				strong{
+					color:@cred;
+				}
+			}
+		}
+		p{
+			.spill2();
+			color:@c9;
+		}
+	}
+	article,section{
+		box-sizing:border-box;
+		.cf();
+		width:100%;
+	}
+	
+}
+@media (min-width: 768px){
+	.pcc_content{
+		margin-bottom:60px;
+		h4{
+		}
+		.columns{
+			//height:180px;
+			column-width:50%;
+			column-count:2;
+		}
+		article,section{
+			float:left;
+			width:50%;
+			
+		}
+	}
+}
+/* 快捷入口 */
+.procpa_link{
+	margin-bottom:20px;
+	box-sizing: border-box;
+	.pos(r);
+	article{
+		width:100%;
+		height:98px;
+		border:solid 1px @cd;
+		box-sizing: border-box;
+		overflow:hidden;
+		ul{
+		.pos(a);
+		left:0px;
+		top:0;
+		overflow:hidden; zoom:1;
+	}
+	.madegame{
+		width: 100%;
+		overflow: hidden;
+		.cf();
+	}
+	#kwod{
+		position: relative;
+
+	}
+		li{
+			.pos(r);
+			padding-top:12px;
+			width:143px;
+			float:left;
+			text-align:center;
+			i{
+				width:54px;
+				height:54px;
+				display:block;
+				margin:0 auto;
+				.bdr(50%);
+				.f30();
+				color:@cw;
+				line-height:54px;
+			}
+			&:nth-child(1){i{ background-color:#b398e5;}}
+			&:nth-child(2){i{ background-color:#50abfc;}}
+			&:nth-child(3){i{ background-color:#ffaf02;}}
+			&:nth-child(4){i{ background-color:#75b526;}}
+			&:nth-child(5){i{ background-color:#2d9cfc;}}
+			&:nth-child(6){i{ background-color:#74b321;}}
+			&:nth-child(7){i{ background-color:#2e9ef9;}}
+			&:nth-child(8){i{ background-color:#fdae02;}}
+		}
+	}
+}
+@media (min-width: 768px){
+	.procpa_link{
+		margin-bottom:60px;
+		.madegame{
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+
+//预约提醒弹窗
+.blockUI{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0,0.7);
+    -webkit-background-color: rgba(0, 0, 0,0.7);
+    -moz-background-color: rgba(0, 0, 0,0.7);
+    -ms-background-color: rgba(0, 0, 0,0.7);
+    cursor: auto;
+}
+.blockMsg{
+	z-index: 1011;
+	.cf();
+    position: fixed;
+    padding: 0px;
+    color: rgb(77, 77, 77);
+    border: none;
+    cursor: default;
+    background:none;
+    width: 85%;
+    left: 50%;
+    margin: 0;
+    top: 35%;
+    transform:translate(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+	span{
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          color: @cc;
+          border: 2px solid @cc;
+          display: inline-block;
+          float: right;
+          text-align: center;
+          line-height: 20px;
+          .bdr(50%);
+      }
+}
+ #qpdiv{
+	 z-index: 99999;
+	 cursor: text;
+	 .tit1 {
+	    position: relative;
+	    line-height: 28px;
+	    text-align: left;
+	    font-size: 28px;
+	    // z-index: 9999;
+	}
+	.tab-cma {
+    .cf();
+    #sgd{
+    	color:@cw;
+    	background-color: #000;
+    }
+    #fgd{float: left;}
+    em{
+    	.tcenter();
+    	display: inline-block;
+    	 border-top-left-radius: 6px;
+	    border-top-right-radius: 6px;
+	    cursor: pointer;
+	    margin-left: 10px;
+	    height: 50px;
+	   line-height: 50px;
+	   padding: 0 10px;
+	   width: 45%;
+	   .f14();
+	   box-sizing: border-box;
+    }
+	    em.current{
+	    	background: #fff;
+	    	color: @c3;
+	    }
+	}
+
+	.cma_tab_div {
+    	padding: 15px;
+    	border: solid 5px #f5f5f5;
+    	border-radius: 6px;
+    	background: #fff!important;
+	}
+	.floatDiv .failTips {
+    	margin: 10px 0 0;
+    	border: solid 1px #ffc7c7;
+    	padding: 5px 30px;
+    	    display: none;
+	}
+	.lgCont .yzm {
+    	position: relative;
+    	margin-top: 15px;
+    	.yzmBtn {
+   			 top: 0;
+   			 right: 0;
+   			 position: absolute;
+   			 height: 35px;
+   			 .btn{
+   			 	background:none;
+   			 	border: none;
+   			 	width: 118px;
+   			 	padding:4px 0 4px;
+   			 	color: @c3;
+   			 }
+		}
+	}
+	.lgCont input[type="text"], #qpdiv .lgCont input[type="password"]{
+		padding: 15px 10px;
+		-webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    border: 1px solid #ababab;
+	    -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+	    width: 100%;
+	}
+	input{background: @cw;height: 50px!important;}
+	.form-item {
+   		 margin-top: 15px;
+	}
+	.btndiv {
+    	margin: 25px 0;
+    	.btn-success {
+		    line-height: 18px;
+		    height: 40px;
+		        background: #e63939;
+			    background: -moz-linear-gradient(top, #ff5151, #e63939);
+			    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff5151), to(#e63939));
+			    font-size: 20px;
+			    box-shadow: none;
+			    text-shadow: none;
+			    border: none;
+			        text-align: center;
+			    vertical-align: middle;
+			    cursor: pointer;
+		}
+	}
+
+	#qpdiv .cRed {
+    font-size: 20px;
+  	color:#ff0000;
+	}
+	.pwd{width: 100%;border: 1px solid #ababab;color:@c0;}
+}
+
+@media(min-width:640px){
+	.blockMsg{
+		max-width: 580px;
+		.tab-cma {
+			   font-size: 20px;
+			 #fgd,#sgd{
+	    	.f18();
+	    	padding: 0 30px;
+	    	}
+		}
+	}
+}
+
+footer .newlinks dl dd img{width: auto;}

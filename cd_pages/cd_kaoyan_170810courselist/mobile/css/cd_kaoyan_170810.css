@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微软雅黑';
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: 'icomoon-cd-170810';
+  src: url('fonts/icomoon.eot?gsyju5');
+  src: url('fonts/icomoon.eot?gsyju5#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?gsyju5') format('truetype'), url('fonts/icomoon.woff?gsyju5') format('woff'), url('fonts/icomoon.svg?gsyju5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-cd-170810-"],
+[class*=" icon-cd-170810-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-cd-170810' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-cd-170810-data:before {
+  content: "\e901";
+}
+.icon-cd-170810-QQ:before {
+  content: "\e900";
+}
+.icon-cd-170810-bank:before {
+  content: "\e90a";
+}
+.icon-cd-170810-weibo:before {
+  content: "\e90b";
+}
+.icon-cd-170810-weixin:before {
+  content: "\e90c";
+}
+.icon-cd-170810-live:before {
+  content: "\e90d";
+}
+.icon-cd-170810-gouwu:before {
+  content: "\e918";
+}
+.icon-cd-170810-luntan:before {
+  content: "\e919";
+}
+.cd_kaoyan_mobile_170810 {
+  background-color: #f8f9f9;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.cd_kaoyan_mobile_170810 .titleone,
+.cd_kaoyan_mobile_170810 .titletwo {
+  width: 216px;
+  height: 48px;
+  position: relative;
+  margin: 35px auto;
+}
+.cd_kaoyan_mobile_170810 .titleone h3,
+.cd_kaoyan_mobile_170810 .titletwo h3,
+.cd_kaoyan_mobile_170810 .titleone p,
+.cd_kaoyan_mobile_170810 .titletwo p {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+}
+.cd_kaoyan_mobile_170810 .titleone h3,
+.cd_kaoyan_mobile_170810 .titletwo h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  top: -15px;
+}
+.cd_kaoyan_mobile_170810 .titleone p,
+.cd_kaoyan_mobile_170810 .titletwo p {
+  font-size: 18px;
+  color: #666;
+  bottom: -10px;
+}
+.cd_kaoyan_mobile_170810 .titleone {
+  background: url("../images/titleone-bg.png") no-repeat center center;
+}
+.cd_kaoyan_mobile_170810 .titletwo {
+  background: url("../images/titletwo-bg.png") no-repeat center center;
+}
+.cd_kaoyan_mobile_170810 .titletwo h3,
+.cd_kaoyan_mobile_170810 .titletwo p {
+  color: #fff;
+}
+.cd_kaoyan_mobile_170810 > div {
+  width: 100%;
+  box-sizing: border-box;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul {
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 200px;
+  padding: 35px 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .imgbox {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .imgbox img {
+  max-width: 100%;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail > p {
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+  font-weight: 600;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail > div {
+  box-sizing: border-box;
+  margin-top: 15px;
+  position: relative;
+  padding-left: 90px;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail > div > span {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #00afcf;
+  top: 0;
+  left: 0;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail > div p {
+  line-height: 24px;
+  font-size: 14px;
+  color: #666;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail > div:last-of-type > span {
+  background-color: #3a83c1;
+}
+.cd_kaoyan_mobile_170810 .coursesystem ul li:last-of-type {
+  border-bottom: none;
+}
+@media (max-width: 480px) {
+  .cd_kaoyan_mobile_170810 .coursesystem ul li {
+    padding: 15px 0;
+  }
+  .cd_kaoyan_mobile_170810 .coursesystem ul li .imgbox {
+    width: 100%;
+  }
+  .cd_kaoyan_mobile_170810 .coursesystem ul li .imgbox img {
+    width: 60%;
+    max-width: auto;
+  }
+  .cd_kaoyan_mobile_170810 .coursesystem ul li .course-detail {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.cd_kaoyan_mobile_170810 .teacher {
+  margin-top: 35px;
+}
+.cd_kaoyan_mobile_170810 .teacher .teacher-top {
+  box-sizing: border-box;
+  padding: 10px 18% 30px;
+  background-color: #00afcf;
+}
+.cd_kaoyan_mobile_170810 .teacher .teacher-top > p {
+  box-sizing: border-box;
+  line-height: 24px;
+  font-size: 14px;
+  color: #e6fbff;
+  text-indent: 20px;
+}
+.cd_kaoyan_mobile_170810 .teacher .teacher-bottom {
+  width: 100%;
+}
+.cd_kaoyan_mobile_170810 .teacher .teacher-bottom img {
+  max-width: 100%;
+}
+.cd_kaoyan_mobile_170810 .service {
+  min-height: 446px;
+  background: url("../images/service.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 15px;
+}
+.cd_kaoyan_mobile_170810 .service ul {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 18%;
+}
+.cd_kaoyan_mobile_170810 .service ul li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  line-height: 40px;
+}
+.cd_kaoyan_mobile_170810 .service ul li span {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #333;
+}
+@media (max-width: 640px) {
+  .cd_kaoyan_mobile_170810 .service ul {
+    padding: 10px 20px;
+  }
+  .cd_kaoyan_mobile_170810 .service ul li {
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .cd_kaoyan_mobile_170810 .service ul li span {
+    top: 10px;
+  }
+}
+.cd_kaoyan_mobile_170810 .success {
+  min-height: 507px;
+  background: url("../images/success.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 10px;
+}
+.cd_kaoyan_mobile_170810 .success > p {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #e6fbff;
+  padding: 0 10%;
+  line-height: 24px;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line1,
+.cd_kaoyan_mobile_170810 .success .schools-line2 {
+  margin: 30px 0;
+  padding: 0 10%;
+  overflow: hidden;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line1 img,
+.cd_kaoyan_mobile_170810 .success .schools-line2 img {
+  float: left;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line1 img {
+  width: 28%;
+  margin-right: 5%;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line1 img:nth-of-type(2) {
+  width: 34%;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line1 img:last-of-type {
+  margin-right: 0;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line2 img {
+  width: 11%;
+  margin-right: 2%;
+}
+.cd_kaoyan_mobile_170810 .success .schools-line2 img:last-of-type {
+  max-width: 51px;
+  margin-right: 0;
+}
+@media (max-width: 800px) {
+  .cd_kaoyan_mobile_170810 .success .schools-line2 img {
+    margin-right: 1.5%;
+  }
+}
+.cd_kaoyan_mobile_170810 .platform {
+  padding: 10px 10%;
+}
+.cd_kaoyan_mobile_170810 .platform ul {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+.cd_kaoyan_mobile_170810 .platform ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  height: 90px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  color: #999;
+  position: relative;
+  font-size: 16px;
+}
+.cd_kaoyan_mobile_170810 .platform ul li > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.cd_kaoyan_mobile_170810 .platform ul li > a img {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  width: 180px;
+  height: 180px;
+}
+.cd_kaoyan_mobile_170810 .platform ul li div {
+  padding-top: 8px;
+  font-size: 40px;
+}
+.cd_kaoyan_mobile_170810 .platform ul li:nth-of-type(4),
+.cd_kaoyan_mobile_170810 .platform ul li:nth-of-type(8) {
+  border-right-color: transparent;
+}
+.cd_kaoyan_mobile_170810 .platform ul li:nth-of-type(2):hover {
+  border: 1px solid transparent;
+  color: transparent;
+}
+.cd_kaoyan_mobile_170810 .platform ul li:hover {
+  border: 1px solid #ff4200;
+  color: #ff4200;
+}
+.cd_kaoyan_mobile_170810 .platform ul li:hover > a img {
+  display: block;
+}
+.cd_kaoyan_mobile_170810 .platform > p {
+  margin: 50px 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+.cd_kaoyan_mobile_170810 .platform > p img {
+  max-width: 100%;
+  vertical-align: middle;
+}

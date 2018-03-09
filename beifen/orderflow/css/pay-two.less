@@ -1,0 +1,387 @@
+@import "../../commoncss/common.less";
+@import "headfooter.less";
+
+body {
+  background-color: #f4f4f4;
+}
+img{
+  vertical-align: middle;
+}
+// 公共部分start
+.bdtop{
+  border-top: 2px solid @cd;
+  border-bottom: 2px solid @cd;
+}
+
+.btn_1{
+  width: 160px;
+  height: 50px;
+  list-style: normal;
+  background: #db5557;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid #db5557;
+  border-radius: 4px;
+  margin: 25px 25px 25px 0;
+}
+.btn_2{
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  background: @cw;
+  .f18();
+  color: #db5557;
+  border: 1px solid #db5557;
+  border-radius: 4px;
+  margin: 25px 0px 40px 0;
+}
+
+// 主体 start
+//pay-two start
+.pay-two-title_bg{
+  background: @cw;
+  .pay-two-title {
+    padding: 30px 0 30px;
+    line-height: 40px;
+    .cf();
+    .pay-two-title-left{
+      .left;
+      .f24();
+    }
+    .pay-two-title-right {
+      .right;
+      color: @c6;
+      a {
+        color: #1876b7;
+        margin:0 15px 0 40px;
+      }
+    }
+  }
+}
+
+.pay-two{
+    .pay-two-paycenter{
+      // border-top: 1px solid #f3f3f3;
+      background: @cw;
+      padding: 0 25px 45px 25px;
+      .paycenter-money{
+        padding:25px 25px 0 0px;
+        background: @cw;
+        // border: 1px solid @cd;
+        margin-top: 20px;
+        .cf();
+        p{
+          width: 50%;
+          .left;
+          .tleft();
+        }
+        .paycenter-money-r{
+          .tright();
+          span{
+            color: #e1545a;
+            font-weight: bold;
+            font-size: 22px;
+          }
+        }
+
+      }
+
+      .pay-main{
+        margin-top: 20px;
+        padding: 0px 30px 30px 30px;
+        border: 1px solid @cd;
+        background: @cw;
+        .pay-p{
+          margin: 10px 0 25px 0;
+          span{
+            color:#e1545a;
+          }
+          input{
+            width: 120px;
+            padding:5px;
+            margin: 0 5px 0 10px;
+          }
+        }
+        // 支付方式 start
+        .pay-mode{
+          .cf();
+          .pay-pt,.pay-bank{.cf();}
+          p{
+            .f16();
+            // font-weight: bold;
+            margin: 30px 0 20px;
+          }
+          ul{
+            li{
+              width: 120px;
+              height: 40px;
+              .left;
+              margin:0 12px 10px 0;
+              box-sizing: border-box;
+              line-height: 40px;
+            }
+            .hidebank{.undis();}
+          }
+        }
+        // 支付问题 start
+        .pay-problem{
+          .cf();
+          margin-top: 30px;
+          p{
+            color: #9b9b9b;
+            margin-bottom: 5px;
+          }
+          .p-title{
+            color: @c3;
+            font-weight:bold;
+          }
+        }
+      }
+      .problem{
+        padding:0;
+        margin-top: 0;
+        border-top: 1px solid #ddd;
+        border-bottom:none;
+        border-left:none;
+        border-right:none;
+      }
+      .pay-problem{
+        margin-top: 20px!important;
+      }
+    }
+}
+
+
+// 单次支付页面 start
+.pay-success{
+  .tcenter();
+  width: 100%!important;
+  .f18();
+}
+.pay-success-b{
+  color: #3bb747;
+  line-height: 30px!important;
+  img{
+    vertical-align: middle;
+    margin-bottom: 4px;
+  }
+}
+.pay-success-s{
+  .f14();
+  padding-left: 25px;
+  /* padding-bottom: 30px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid @cd; */
+  box-sizing: border-box;
+}
+.fqf{
+  color: #1876b7;
+  .f16();
+  margin-top: 12px;
+  display: inline-block;
+}
+
+
+// 分次第一次付款开始
+.pay-p{
+  .fcf{
+    margin-right: 5px;
+  }
+  em{
+    color: @c9;
+  }
+}
+.pay-xq{padding-top: 20px;}
+.pay-p-2{padding-left: 23px;}
+
+
+
+//弹窗 start
+.mode{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:9999;
+    display: none;
+    background:rgba(0, 0, 0, 0.5);
+}
+#apDiv{
+    border: 1px solid #eee;
+    width: 90%;
+    display: table;
+    clear: both;
+    position: relative;
+    max-width: 400px;
+    height: 300px;
+    z-index: 10;
+    padding: 50px 15px 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color:#333;
+    background: #fff;
+    top: 50%;
+    // left:50%;
+    margin-top: -150px!important;
+    // margin-top: -250px!important;
+    left: 50%;
+    z-index: 9999999;
+    transform:translate(-50%);
+    -webkit-transform:translate(-50%);
+    -moz-transform:translate(-50%);
+    -ms-transform:translate(-50%);
+    -o-transform:translate(-50%);
+    .close{
+        position:absolute;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        .f28();
+        text-align: center;
+        color: @c9;
+        right:13px;
+        top:17px;
+        cursor: pointer;
+        // background: rgba(0, 0, 0, 0.6);
+    }
+    p{
+      margin-top: 20px;
+    }
+    .c_red{
+      color: #e26863;
+      .f18();
+    }
+    button{
+      width: 148px;
+      height: 40px;
+      padding: 0;
+      .f18();
+      border-radius: 3px;
+      line-height: 40px;
+      margin: 25px 25px 25px 0;
+    }
+    .btn_1{
+      background: #db5557;
+      color: #fff;
+      border: 1px solid #db5557;
+    }
+    .btn_2{
+      background: @cw;
+      color: #db5557;
+      border: 1px solid #db5557;
+    }
+    a{.right;margin-top: 0;}
+}
+//弹窗 end
+
+
+// 微信支付start
+.wxpay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index:9999;
+  display: none;
+  background:rgba(0, 0, 0, 0.5);
+  #apDiv{
+      border: 1px solid #eee;
+      width: 90%;
+      display: table;
+      clear: both;
+      position: relative;
+      max-width: 400px;
+      height: 450px;
+      z-index: 10;
+      padding: 0px;
+      box-sizing: border-box;
+      text-align: center;
+      color:#333;
+      background: #fff;
+      top: 50%;
+      // left:50%;
+      margin-top: -225px!important;
+      // margin-top: -250px!important;
+      left: 50%;
+      z-index: 9999999;
+      transform:translate(-50%);
+      -webkit-transform:translate(-50%);
+      -moz-transform:translate(-50%);
+      -ms-transform:translate(-50%);
+      -o-transform:translate(-50%);
+      .top{
+        .f16();
+        // font-weight: bold;
+        .tcenter();
+        padding:13px 0;
+        border-bottom: 1px solid #eee;
+        .close{
+          position:absolute;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          .f28();
+          text-align: center;
+          color: @c9;
+          right:13px;
+          top:17px;
+          cursor: pointer;
+          // background: rgba(0, 0, 0, 0.6);
+        }
+      }
+      p.pay-zj{
+        margin-top: 20px;
+        .f18();
+        span{
+          color: #d65957;
+        }
+      }
+      .ewm{
+        margin-top: 18px;
+        .pos(r);
+        .tleft();
+        padding-left: 55px;
+        .img1{
+          border: 1px solid @cd;
+        }
+        .img2{
+          .pos(a);
+          right: 37px;
+          top: 8px;
+
+        }
+      }
+      .ewm_bottom{
+        margin-top: 25px;
+        .cf();
+        p{
+          .tright();
+          margin-top: 0;
+          img{
+            margin-right: 7px;
+          }
+          span{
+            width: 100%;
+            display: inline-block;
+            .f14();
+            line-height: 14px;
+          }
+        }
+        .left{
+            width: 120px;
+            .left;
+          }
+          .right{
+            width: 120px;
+            .left;
+            .tleft;
+            line-height: 18px;
+          }
+      }
+
+  }
+}
+// 微信支付end

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>能力评估报告</title>
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/fontmain.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/blackHeader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/questionfonts.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/comque.css">
+    <link rel="stylesheet" type="text/css" href="../../css/questions/statisticsQue.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../../script/html5shiv.js"></script>
+    <script type="text/javascript" src="../../script/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../script/commonjs/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../script/commonjs/echarts.min.js"></script>
+
+</head>
+<body>
+<!--顶部菜单-->
+<div class="index-header2">
+      <div class="wrap">
+          <div class="indexleft">
+              <a href="javascript:;" class="logo"><img src="../../images/commonimages/logo2.png"></a>
+              <ul>
+                  <li><a href="javascript:;">课程</a></li>
+                  <li><a href="javascript:;">题库</a></li>
+                  <li><a href="javascript:;">直播</a></li>
+                  <li><a href="javascript:;">咨询</a></li>
+                  <li><a href="javascript:;">商城</a></li>
+              </ul>
+          </div>
+          <div class="indexright">
+              <div class="info">
+                  <ul>
+                      <li class="phone"><i class="icon-xx">&#xf002;</i><i class="icon-xx">&#xf020;</i>
+                          <div class="peo-copy"></div>
+                          <div class="people-sel">
+                              <ul>
+                                  <li><a href="javascript:;">金程网校APP</a></li>
+                                  <li><a href="javascript:;">天天CPA</a></li>
+                                  <li><a href="javascript:;">金网公众号</a></li>
+                                  <li><a href="javascript:;">金网题库服务号</a></li>
+                                  <li><a href="javascript:;">金网CFA APP</a></li>
+                                  <li><a href="javascript:;">金网CFA服务号</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><i class="icon-xx">&#xe92d;</i><span><i class="icon-xx">&#xf038;</i></span></li>
+                      <li><i class="icon-xx">&#xf004;</i><span>6</span></li>
+                      <li class="people"><i class="icon-xx">&#xf005;<!--<img src="http://img0.imgtn.bdimg.com/it/u=4128355576,3453965016&fm=214&gp=0.jpg">--></i><i class="icon-xx">&#xf020;</i>
+                          <div class="peo-copy"></div>
+                          <div class="people-sel">
+                              <ul>
+                                  <li><a href="javascript:;">学习空间</a></li>
+                                  <li><a href="javascript:;">我的订单</a></li>
+                                  <li><a href="javascript:;">个人信息</a></li>
+                                  <li><a href="javascript:;">账号设置</a></li>
+                                  <li><a href="javascript:;">退出</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <!-- <li id="loginM"><a href="/user/login">登录</a></li>
+                      <li id="registerM"><a href="/user/register">注册</a></li> -->
+                  </ul>
+              </div>
+              <div class="searchinput">
+                  <input type="text" placeholder="请输入想搜索的内容">
+                  <a href="javascript:;"><i class="icon-xx">&#xf001;</i></a>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="hr50"></div>
+<!-- 直播列表 start -->
+<div class="wrap">
+
+<!--  start-->
+<div class="livelist-top">
+  <h1>金程题库考研</h1>
+  <div class="poplist-nav"><i class="icon-b1"></i>
+  <dl>
+  <dd><strong>金融</strong><a href="####">CFA</a><a href="####">FRM</a><a href="####">CFRM</a><a href="####">保荐代表人</a></dd>
+  <dd><strong>从业</strong><a href="####">证券</a><a href="####">银行</a><a href="####">期货</a><a href="####">基金</a></dd>
+  <dd><strong>理财</strong><a href="####">RFP</a><a href="####">精算师</a></dd>
+  <dd><strong>国内会计</strong><a href="####">CPA</a><a href="####">税务师</a><a href="####">会计职称</a><a href="####">保荐代表人</a></dd>
+  <dd><strong>国外会计</strong><a href="####">CMA</a><a href="####">CIMA</a><a href="####">USCPA</a><a href="####">ACCA</a></dd>
+  </dl></div>
+  <span>
+    <a href="####">考试形式介绍<i class="icon-right"></i></a>
+  </span>
+  <div class="rig">
+    <a href="####">练习/模考</a>
+    <a href="####">做题记录</a>
+    <a href="statisticsQue.html" class="on">能力评估</a>
+    <span>20/100</span>
+  </div>
+</div>
+<!---->
+<div class="statisticsQue">
+  <div class="stathead">
+    <div class="h1">能力评估报告</div>
+    <p>报告生成时间：2017年07月06日 14:33:13</p>
+  </div>
+  <div class="staBox">
+    <div class="l">
+      <div class="t">
+        <div class="h3">答题正确率</div>
+        <div class="chart" id="chart1"></div>
+        <span class="chart1mes"><em>55%</em>55/100分</span>
+        <div class="mes">
+          <p>答对55题/共100题</p>
+          <ul>
+            <li><em>单选题</em><span>4/35题</span><em>16%</em></li>
+            <li><em>多选题</em><span>4/35题</span><em>16%</em></li>
+          </ul>
+        </div>        
+      </div>
+      <div class="b">
+        <div class="h3">学习建议</div>
+        <div class="main">
+          <p>边学习边做题，学习效率更高！<br>推荐学习网课教程：</p>
+          <a href="####">CFA零基础必修课之金融英语（预售）</a>
+        </div>
+      </div>
+    </div>
+    <div class="m">
+      <div class="t">
+        <div class="h3">五次做题情况</div>
+        <div class="chart" id="chart2"></div>        
+        <div class="mes">
+          <p>2016年注会《审计》真题精选</p>
+          <div>
+            平均分<em>4</em><span><i class="icon-24"></i></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            平均时间<em>00:10:40</em><span><i class="icon-24"></i></span>  
+          </div>          
+        </div>
+      </div>
+      <div class="b">
+        <div class="h3">薄弱知识点</div>
+        <!-- 有内容 -->
+        <ul class="lis">
+          <li><p><a href="####">Ethics and Trust in the Investment Ethics and Trust in the Investment</a></p><a href="####" class="btnOB">相关试题</a></li>
+          <li><p>Code of Ethics</p><a href="####" class="btnOB">相关试题</a></li>
+          <li><p>Guidance for Standards I-VII</p><a href="####" class="btnOB">相关试题</a></li>
+        </ul>
+        <!-- 啥都木有 -->
+        <!-- <div class="no">
+          <p>想发现薄弱知识点？</p>
+          <a href="####" class="btnOB">开始做题</a>
+        </div> -->
+      </div>
+    </div>
+    <div class="r">
+      <div class="h3">答题排行榜</div>
+      <ul class="rank">
+        <li>
+          <b>1</b>
+          <img src="http://img1.imgtn.bdimg.com/it/u=2764371306,3467823016&fm=214&gp=0.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>2</b>
+          <img src="http://www.qqzhi.com/uploadpic/2014-09-22/113849391.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>3</b>
+          <img src="http://www.feizl.com/upload2007/2014_08/14080922455200.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>4</b>        
+          <img src="http://www.feizl.com/upload2007/2011_11/111114031328587.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>5</b>
+          <img src="http://img2.imgtn.bdimg.com/it/u=3746075707,1914896074&fm=214&gp=0.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>6</b>
+          <img src="http://b.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=2fd40670b8389b5038aae854b505c9e5/0df3d7ca7bcb0a46eb1a97576a63f6246b60afa7.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>7</b>
+          <img src="http://img0.imgtn.bdimg.com/it/u=3960472725,4292408921&fm=214&gp=0.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>8</b>        
+          <img src="http://img4.imgtn.bdimg.com/it/u=3245780674,242766829&fm=214&gp=0.jpg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>9</b>
+          <img src="http://img5.duitang.com/uploads/item/201511/03/20151103133513_BARtz.thumb.224_0.jpeg">
+          <p>name</p>
+          <span>做题总数<em>99999</em></span></li>
+        <li>
+          <b>10</b>
+          <img src="http://img.dongqiudi.com/uploads/avatar/2015/07/25/QM387nh7As_thumb_1437790672318.jpg">
+          <p>namenamenamenamenamenamenamenamenamename</p>
+          <span>做题总数<em>99999999999999999999</em></span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!--  end-->
+<div class="hr50"></div>
+<!--  end -->
+
+<!--底部-->
+<div class="footbottom">
+    <div class="wrap">
+        <div class="footnav">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="javascript:;">如何注册会员</a></dd>
+                <dd><a href="javascript:;">如何购买课程</a></dd>
+                <dd><a href="javascript:;">如何观看课程</a></dd>
+            </dl>
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="javascript:;">网校学习方式</a></dd>
+                <dd><a href="javascript:;">学习效果如何保障</a></dd>
+                <dd><a href="javascript:;">学习条件</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="javascript:;">会计支付</a></dd>
+                <dd><a href="javascript:;">如何购买课程</a></dd>
+                <dd><a href="javascript:;">如何观看课程</a></dd>
+            </dl>
+            <dl>
+                <dt>关于金程</dt>
+                <dd><a href="javascript:;">关于我们</a></dd>
+                <dd><a href="javascript:;">联系我们</a></dd>
+                <dd><a href="javascript:;">加入我们</a></dd>
+            </dl>
+            <ul>
+                <li>
+                    <p><a href="javascript:;"><i class="icon-weib"></i>@金程教育</a></p>
+                </li><li>
+                    <p><img src="../../images/index/bottomWX.png"></p>
+                </li>
+            </ul>
+        </div>
+        <div class="foota">
+            <a href="javascript:;"><img src="../../images/index/foot1.png">沪IPC备08016784号-25</a>
+            <a href="javascript:;"><img src="../../images/index/foot2.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot3.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot4.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot5.png"></a>
+            <a href="javascript:;"><img src="../../images/index/foot6.png"></a>
+        </div>
+        <div class="copy">
+            Copyright © 2001-2017 金程网校 All Rights Reserved.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+<div class="sidelan">
+    <ul>
+        <li><a href="javascript:;"><i class="icon-blisten"></i>
+            <p>课程咨询</p></a>
+        </li>
+        <li id="hotline">
+            <a href="javascript:;">
+                <i class="icon-b24"></i>
+                <p>24h热线</p>
+            </a>
+            <em>400-700-9596</em>
+        </li>
+        <li class="outModel"><a href="javascript:;"><i class="icon-c1"></i>
+            <p>意见反馈</p></a>
+        </li>
+        <li><a href="javascript:scroll(0,0);"><i class="icon-zhidingsvg"></i></a></li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="../../script/questions/question.js"></script>
+<script type="text/javascript">
+  var myChart1 = echarts.init(document.getElementById('chart1'));
+  var option1 = {
+    color: ['#0bc2aa','#f3f3f3'],
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+        {
+            name:'访问来源',
+            type:'pie',
+            radius: ['72%', '80%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:55, name:''},
+                {value:45, name:''}
+            ]
+        }
+    ]
+  };
+  myChart1.setOption(option1);
+
+  var myChart2 = echarts.init(document.getElementById('chart2'));
+  var option2 = {
+    
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['题一','题二','题三','题四','题五']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            magicType: {show: true, type: ['stack', 'tiled']},
+            saveAsImage: {show: true}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['15','30','45','60','75','90','105']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series:[{
+        name: '题一',
+        type: 'line',
+        smooth: true,
+        data: [30, 182, 434, 791, 390, 30, 10]
+    },
+    {
+        name: '题二',
+        type: 'line',
+        smooth: true,
+        data: [601, 234, 120, 90, 20, 791, 390,]
+    },
+    {
+        name: '题三',
+        type: 'line',
+        smooth: true,
+        data: [30, 182, 434,1320, 1132,  30, 10]
+    },
+    {
+        name: '题四',
+        type: 'line',
+        smooth: true,
+        data: [1320,  120, 90, 20, 434, 791, 390]
+    },
+    {
+        name: '题五',
+        type: 'line',
+        smooth: true,
+        data: [1132, 601, 234,30, 182, 30, 10]
+    }]
+  };
+  myChart2.setOption(option2);
+</script>
+</body>
+</html>

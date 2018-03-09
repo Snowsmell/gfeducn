@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微软雅黑';
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+p {
+  font-family: "SimHei";
+}
+/*CFA趣味金融课程-课程详情专题样式*/
+.cd_cfa_171213interest {
+  width: 100%;
+  max-width: 830px;
+  margin: 0 auto;
+  padding-top: 10px;
+  /*CFA趣味金融课程-标题*/
+}
+.cd_cfa_171213interest [class*="cd_cfa_in_"] {
+  padding: 50px 0 40px 0;
+  text-align: center;
+}
+.cd_cfa_171213interest .cd_cfa_in_title {
+  padding: 0;
+  margin: 0 auto 37px ;
+  width: 175px;
+  height: 94px;
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/title.png) center center no-repeat;
+}
+.cd_cfa_171213interest .cd_cfa_in_title p {
+  font-size: 24px;
+  color: #030000;
+  line-height: 1;
+  display: inline-block;
+}
+.cd_cfa_171213interest .cd_cfa_in_title i {
+  font-size: 16px;
+  font-family: "SimHei";
+  display: block;
+  color: #ffffff;
+  padding: 4px 0 20px 0;
+}
+.cd_cfa_171213interest .cd_cfa_in_banner {
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+.cd_cfa_171213interest .cd_cfa_in_banner img {
+  width: 100%;
+  max-width: 830px;
+}
+.cd_cfa_171213interest .cd_cfa_in_objective > p {
+  font-size: 16px;
+  color: #999;
+  line-height: 2.3;
+}
+.cd_cfa_171213interest .cd_cfa_in_objective > p i {
+  font-size: 18px;
+  color: #5385c3;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd {
+  background: #f6f8fa;
+  padding: 50px 40px 40px;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul {
+  overflow: hidden;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul li {
+  float: left;
+  height: 234px;
+  width: 22.5%;
+  margin-right: 3.33%;
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo8.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul li img {
+  margin: 29px auto;
+  padding: 21.5px 21px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 50%;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul li p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.714;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul li:nth-of-type(2) {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo5.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul li:nth-of-type(3) {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo6.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_crowd ul li:nth-of-type(4) {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo7.jpg) center center no-repeat;
+  background-size: cover;
+  margin-right: 0;
+}
+@media (max-width: 1090px) {
+  .cd_cfa_171213interest .cd_cfa_in_crowd ul li {
+    width: 22.5%;
+    margin-right: 3.33%;
+  }
+}
+@media (max-width: 540px) {
+  .cd_cfa_171213interest .cd_cfa_in_crowd ul li {
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 49%;
+  }
+  .cd_cfa_171213interest .cd_cfa_in_crowd ul li:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1090px) {
+  .cd_cfa_171213interest .cd_cfa_in_crowd {
+    padding: 50px 0 40px;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum div {
+  overflow-x: auto;
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum div img {
+  width: 828px;
+  max-width: initial;
+}
+@media (max-width: 640px) {
+  .cd_cfa_171213interest .cd_cfa_in_curriculum div {
+    display: none;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum o {
+  font-size: 16px;
+  color: #999;
+  display: none;
+}
+@media (max-width: 1200px) {
+  .cd_cfa_171213interest .cd_cfa_in_curriculum o {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cfa_171213interest .cd_cfa_in_curriculum o {
+    display: none;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum table {
+  border-collapse: collapse;
+  width: 100%;
+  display: none;
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum table tr th {
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #ddd;
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum table tr th:nth-of-type(1) {
+  width: 17%;
+  background: #7d6ac3;
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum table tr th:nth-of-type(2) {
+  width: 46%;
+  background: #53b4c3;
+}
+.cd_cfa_171213interest .cd_cfa_in_curriculum table tr td {
+  height: 50px;
+  font-size: 16px;
+  color: #666666;
+  border: 1px solid #ddd;
+}
+@media (max-width: 640px) {
+  .cd_cfa_171213interest .cd_cfa_in_curriculum table {
+    display: block;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_profit {
+  padding: 50px 40px 40px;
+  background: #f6f8fa;
+  overflow: hidden;
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl {
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  float: left;
+  min-height: 234px;
+  width: 22.5%;
+  margin-right: 3.33%;
+  background: #fff;
+}
+@media (max-width: 1090px) {
+  .cd_cfa_171213interest .cd_cfa_in_profit dl {
+    min-height: 289px;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl dt {
+  height: 56px;
+  border-bottom: 1px solid #eeeeee;
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/bg1.jpg);
+  background-size: cover;
+  font-size: 20px;
+  line-height: 55px;
+  color: #ffffff;
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl dd {
+  font-size: 14px;
+  color: #999999;
+  line-height: 2.143;
+  text-align: left;
+  padding: 20px 20px 0 20px;
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl:nth-of-type(2) dt {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/bg2.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl:nth-of-type(3) dt {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/bg3.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl:nth-of-type(4) {
+  margin-right: 0;
+}
+.cd_cfa_171213interest .cd_cfa_in_profit dl:nth-of-type(4) dt {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/bg4.jpg) center center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1090px) {
+  .cd_cfa_171213interest .cd_cfa_in_profit {
+    padding: 50px 0 40px;
+  }
+  .cd_cfa_171213interest .cd_cfa_in_profit dl {
+    width: 22.5%;
+    margin-right: 3.33%;
+  }
+}
+@media (max-width: 640px) {
+  .cd_cfa_171213interest .cd_cfa_in_profit dl {
+    min-height: 225px;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 49%;
+  }
+  .cd_cfa_171213interest .cd_cfa_in_profit dl:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 403px) {
+  .cd_cfa_171213interest .cd_cfa_in_profit dl dd {
+    padding: 10px 10px 0 10px;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_authority {
+  text-align: center;
+  overflow: hidden;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl {
+  float: left;
+  width: 22%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  margin-right: 4%;
+  background: #f6f8fa;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl dt {
+  height: 165px;
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo4.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl dt img {
+  margin: 40px auto 5px;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl dt p {
+  font-size: 18px;
+  font-family: "SimHei";
+  color: #ffffff;
+  line-height: 1.333;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl dd p {
+  font-size: 15px;
+  font-family: "SimHei";
+  color: #666666;
+  line-height: 1.6;
+  margin: 7px 0 1px 0;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl dd p i {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media (max-width: 1130px) {
+  .cd_cfa_171213interest .cd_cfa_in_authority dl dd p {
+    height: 74px;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl:nth-of-type(2) dt {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl:nth-of-type(3) dt {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo3.jpg) center center no-repeat;
+  background-size: cover;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl:nth-of-type(4) {
+  margin-right: 0;
+}
+.cd_cfa_171213interest .cd_cfa_in_authority dl:nth-of-type(4) dt {
+  background: url(http://static.gfedu.net/special/cd_cfa_171213interest/pc/images/photo2.jpg) center center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 640px) {
+  .cd_cfa_171213interest .cd_cfa_in_authority dl {
+    margin-right: 2%;
+    margin-bottom: 20px;
+    width: 49%;
+  }
+  .cd_cfa_171213interest .cd_cfa_in_authority dl:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .cd_cfa_171213interest .cd_cfa_in_authority dl dd p {
+    height: initial;
+  }
+}
+@media (max-width: 400px) {
+  .cd_cfa_171213interest .cd_cfa_in_authority dl dd p {
+    height: 74px;
+  }
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend {
+  overflow: hidden;
+  background: #f6f8fa;
+  padding: 50px 40px 40px;
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend div {
+  overflow-x: auto;
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend div ul {
+  width: 749px;
+  overflow: hidden;
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend div ul li {
+  float: left;
+  width: 227px;
+  margin-right: 34px;
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend div ul li:nth-of-type(3) {
+  margin-right: 0;
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend div ul li img {
+  margin: 0;
+}
+.cd_cfa_171213interest .cd_cfa_in_recommend o {
+  font-size: 16px;
+  color: #999;
+  display: none;
+}
+@media (max-width: 1104px) {
+  .cd_cfa_171213interest .cd_cfa_in_recommend o {
+    display: block;
+  }
+}
+@media (max-width: 940px) {
+  .cd_cfa_171213interest .cd_cfa_in_recommend o {
+    display: none;
+  }
+}
+@media (max-width: 781px) {
+  .cd_cfa_171213interest .cd_cfa_in_recommend o {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .cd_cfa_171213interest .cd_cfa_in_recommend {
+    padding: 50px 0 40px;
+  }
+}

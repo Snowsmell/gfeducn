@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>面包屑、分页、tab、无内容</title>
+
+	<link rel="stylesheet" type="text/css" href="../../../css/commoncss/common.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/commoncss/smallunit/smallunit.css">
+
+	<script src="../../../script/commonjs/jquery-2.1.4.min.js"></script>
+
+
+	<style type="text/css">
+		h1{font-size: 20px; font-weight: bold; text-align: center; padding: 20px;}
+    h2{font-size: 16px; font-weight: bold; text-align: center; padding: 20px;}
+    .Box{
+      width: 1000px;
+      margin: 0 auto;
+    }
+	</style>
+</head>
+<body>
+<h1>《小组件集》</h1>
+<hr>
+
+<div class="Box">
+  
+<h2>面包屑</h2>
+<div class="crumbs">
+  <a href="javascript:;">全部课程</a><i class="icon-uniF105"></i>
+  <a href="javascript:;">金融</a><i class="icon-uniF105"></i>
+  <a href="javascript:;">CFA</a><i class="icon-uniF105"></i>
+  <a href="javascript:;">CFA一级</a><i class="icon-uniF105"></i>
+  <a href="javascript:;">asdajshdk</a>
+</div>
+
+
+<h2>分页</h2>
+<div class="pages">
+    <div class="pagesword">3/13 页</div>
+    <div class="page">
+        <span><i></i></span>
+        <span class="prev"><i></i></span>
+        <a href="javascript:;" class="selected">1</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+        <i></i>
+        <span class="next"><i></i></span>
+        <span><i></i></span>
+    </div>
+</div>
+
+<h2>tab切换</h2>
+<div class="tabSwitch">
+  <ul>
+    <li class="on">全部课程</li>
+    <li>最近学习</li>
+    <li>已学习</li>
+  </ul>
+  <div class="on">1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+
+<h2>tab选择</h2>
+<div class="tabOption">
+  <dl>
+    <dt>项目：</dt>
+    <dd>
+      <a href="javascript:;" class="active">全部</a>
+      <a href="javascript:;">CFA</a>
+      <a href="javascript:;">FRM</a>
+      <a href="javascript:;">CPA</a>
+    </dd>
+  </dl>
+  <dl>
+    <dt>科目：</dt>
+    <dd>
+      <a href="javascript:;" class="active">全部</a>
+      <a href="javascript:;">CFA一级</a>
+      <a href="javascript:;">CFA二级</a>
+      <a href="javascript:;">CFA三级</a>
+    </dd>
+  </dl>
+  <dl>
+    <dt>项目：</dt>
+    <dd>
+      <a href="javascript:;">全部</a>
+      <a href="javascript:;" class="active">在线</a>
+      <a href="javascript:;">面授</a>
+      <a href="javascript:;">直播</a>
+    </dd>
+  </dl>
+</div>
+
+<h2>无内容公共样式</h2>
+<div class="noList">
+  <img src="../../../images/person/search.png">
+  <p>没有找到您想要的内容</p>
+  <a href="">发现更多<span class="icon-uniF105"></span></a>
+</div>
+
+</div>
+<script type="text/javascript">
+ $(function () {
+
+   //tab切换
+   $(".tabSwitch li").click(function () {
+     var n = $(this).index();
+     $(this).addClass("on").siblings().removeClass("on");
+     $(this).parent().siblings("div").removeClass("on").eq(n).addClass("on");
+   })
+   //tab选择
+   $(".tabOption a").click(function () {
+     $(this).addClass("active").siblings().removeClass("active");
+   })
+
+ })
+</script>
+
+</body>
+</html>

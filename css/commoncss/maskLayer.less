@@ -1,0 +1,42 @@
+@import url(variable.less);
+.popupLayer{
+    display: none;
+    position: fixed;
+    top:0;  left: 0;bottom: 0;right: 0;
+    background-color: #333;
+    background-color: rgba(0,0,0,.7);
+}
+.popupLayer .popBox{
+    color: #666;
+    background-color: #fff;
+    position: absolute;
+    width: 80%;
+    max-width: 600px;
+    max-height: 76%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top:50%;
+    left:50%;
+    border:1px solid #b2a59a;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*margin-left: -50%;
+    margin-top: -50%;*/
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.popupLayer .popBox .closeX{
+    color: #999;
+    position: absolute;
+    top:15px;
+    right: 10px;
+    display: inline-block;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    cursor: pointer;
+    font-weight: normal;
+}

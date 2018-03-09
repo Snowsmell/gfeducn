@@ -1,0 +1,505 @@
+@import url(../commoncss/variable.less);
+
+html,body{
+  height: 100%;
+  &.full{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+@cm0:#d55;//主色红
+@cf1b:#7ed321;//亮绿色
+
+.btnGl,.btnRl{
+  color:#fff;
+  display: inline-block;
+  border:none;
+  text-align: center;
+}
+.btnGl{
+  background: #3aa979;
+  background-image: linear-gradient(to top,#329f70, #44b384);
+}
+.btnRl{
+  background: #d54f4f;
+  background-image: linear-gradient(to top,#ce4949, #de5656);
+}
+
+.livefull{
+  background: #141414 url(../../images/live/bg_livefull.jpg) center no-repeat;
+  .bg(cover);
+  width: 100%;
+  height: 100%;
+  min-width: 1024px;
+  min-height: 740px;
+  position: relative;  
+  .nav{
+    width: 60px;
+    height: 100%;
+    background-color: #1f1e1f;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    color: #ccc;
+    .top{
+      width: 100%;
+      position: absolute;
+      top: 52px;
+      >span,>a{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        .icon-12{
+          font-size: 34px;
+          color:#d55;
+        }
+        .himg{
+          >img{
+            width: 34px;
+            height: 34px;
+            .bdr(50%);
+          }
+        }
+      }
+    }
+    .bot{
+      width: 100%;
+      position: absolute;
+      bottom: 84px;
+      >span,>a{
+        display: block;
+        margin-top: 30px;
+        position: relative;
+        z-index: 1;
+        color: #ccc;
+        >div{
+          display: none;
+          position: absolute;
+          left: 60px;
+          background-color: #fff;
+          padding: 10px;
+          &:before{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 7px 9px 7px 0;
+            border-color: transparent #fff transparent transparent;
+            position: absolute;
+            left: -9px;
+            top: 50%;
+            margin-top: -7px;
+          }
+          &.shaBox{
+              width: 240px;
+              height: 100px;
+              padding: 10px;
+              box-sizing: border-box;
+              color:@c6;
+              top:-40px;
+              >h4{
+                  font-size: 14px;
+                  text-align: left;
+              }
+              font-size: 12px;
+              >div{
+                  width: 25%;
+                  float: left;
+                  .tcenter();
+                  padding-top: 15px;
+                  a{
+                    display: block;
+                  }
+                  img{
+                      display: block;
+                      width: 24px;
+                      margin: 0 auto 5px;
+                  }
+              }
+          }
+          &.mimg{
+            width: 482px;
+            height: 160px;
+            top:-80px;
+            >div{
+              display: table-cell;
+              >img{
+                width: 110px;
+                height: 110px;
+                margin: 10px 25px 5px; 
+              }
+              >span{
+                display: inline-block;
+                margin-bottom: 10px;
+                height: 24px;
+                line-height: 24px;
+                width: 132px;
+                font-size: 12px;
+                color: #fff;
+                background: #cc2c6d;
+                background-image: linear-gradient(to right,#f65c69,#cc2c6d,#b6152f);
+                .bdr(12px);
+                i{
+                  margin-right: 5px;
+                  color: #47161e;
+                  font-size: 16px;
+                  vertical-align: -10%;
+                }
+              }
+            }
+                        
+          }
+        }
+        &:hover{
+          >div{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .main{
+    background: #000 url(../../images/live/bg_livemain.jpg) center no-repeat;
+    .bg(cover);
+    .bdr(4px);
+    width: 1060px;
+    height: 730px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -365px;
+    margin-left: -530px;
+    .cf();
+    box-sizing: border-box;
+    padding: 5px;
+    color:#fff;    
+    >div{
+      float: left;
+      >img{
+        width: 100%;
+      }
+    }
+    .teacher,.connect{
+      width: 480px;
+      height: 50%;
+    }
+    .window,.talk{
+      width: 570px;
+      height: 50%;
+    }
+    .teacher{}
+    .window{
+      background: #f7f7f8 url(../../images/live/bg_screen.jpg) center no-repeat;
+      .bg(cover); 
+      position: relative;
+      .jsBtn{
+        position: absolute;
+        padding: 5px;
+        top:10px;
+        right: 15px;
+        font-size: 25px;
+        color: @c6;
+        cursor: pointer;
+        &:hover{
+          color:@c6 + 20;
+        }
+      }
+      &.full{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .connect{
+      background: #2b2b28 url(../../images/live/bg-jiaol.png) no-repeat 349px 2px;
+      box-sizing: border-box;
+      padding:80px 0 0 80px;
+      >img{
+        float: left;
+        width: 132px;
+        height: 132px;
+        margin-right: 30px;
+      }
+      >h4{
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      >p{
+        color: @cf1b;
+      }
+      .btnK{
+        margin-top: 34px;
+        border:none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #1f1e1f;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 26px;
+        .bdr(20px);
+        color:#fff;
+        &:hover{
+          background-color: #1f1e1f + 30;
+        }
+      }
+    }
+    .talk{
+      background: #3b3b3c url(../../images/live/bg-jiaor.png) no-repeat 0 2px;
+      .tab{
+        background-color: #2e2e31;
+        padding-top: 10px;
+        padding-left: 26px;
+        margin: 3px 0 0 1px;
+        >li{
+          display: inline-block;
+          line-height: 40px;
+          height: 40px;
+          padding: 0 26px;
+          cursor: pointer;
+          .bdr(4px 4px 0 0);
+          font-size: 16px;
+          &.on{
+            background-color: #3b3b3c;
+          }
+        }
+      }
+      .talks{
+        height: 100%;
+        box-sizing: border-box;
+        padding-bottom: 53px;
+        padding-top: 10px;
+        >div{
+          position: relative;
+          height: 100%;
+          overflow: hidden;
+          .talkWin{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 65px;
+            box-sizing: border-box;
+            >div{
+              width: 105%;
+              height: 100%;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              padding-right: 20px;
+              padding-left: 26px;
+              overflow-x: hidden;
+              overflow-y: scroll;
+            }
+          }
+        }
+        .item,.queItem{
+          max-width: 98.63%;
+          box-sizing: border-box;
+          vertical-align: middle;          
+          
+          span{
+            display:table-cell;
+            white-space: nowrap;
+            padding: 5px;
+            color: @cm0;
+            >img{
+              width: 24px;
+              height: 24px;
+              .bdr(50%);              
+              margin-right: 10px;
+              vertical-align: middle;
+            }
+          }
+          p{
+            display:table-cell;
+            word-break: break-all;
+            padding: 5px;
+            em{
+              margin-left: 10px;
+              display: inline-block;
+            }
+          }
+          &.no{
+            span,p{color: #666;}
+          }
+        }
+        .queItem{
+            background-color: #626263;
+            background-color: rgba(255, 255, 255, 0.2);
+            span{
+              color: #33ff99;
+            }
+        }
+      }
+      .chapter{
+        margin-top: -5px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        .h40{
+          height: 40px;
+        }
+        .til, li{
+          line-height: 40px;
+          height: 40px;
+          padding-left: 30px;
+          width: 95.238%;
+        }
+        .til{
+          border-bottom: 1px solid #2e2e31;
+          background-color:#3b3b3c;
+          .cf();
+          >em,>p,>span{
+            float: left;
+          }
+          >em{
+            width: 10%;
+          }
+          >p{
+            width: 70%;
+            text-align: center;
+          }
+          >span{
+            width: 20%;
+          }
+        }
+        ol{
+          width: 105%;
+          height: 100%;
+          overflow-x: hidden;
+          overflow-y: scroll;
+        }
+        li{
+          width: 95.23%;
+          cursor: pointer;
+          .cf();
+          >em,>p,>span{
+            float: left;
+          }
+          >em{
+            width: 10%;
+          }
+          >p{
+            width: 66.667%;
+            margin-right: 2%;
+            height: 40px;
+            .spill(1);
+          }
+          >span{
+            width: 20%;
+          }
+          &.on,&:hover{
+            color: @cf1b;
+            background-color: #454548;
+          }
+        }
+        
+      }
+      .send{
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        >div{
+          margin-right: 70px;
+          >span{
+            position: absolute;
+            top: 25px;
+            left: 34px;
+            color: #8d8d8d;
+            font-size: 20px;
+          }
+          input[type="text"]{
+            height: 40px;
+            box-sizing: border-box;
+            padding: 10px 10px 10px 45px;
+            width: 100%;
+            background: #2c2c2c;
+            border:none;
+            color: #fff;
+          }
+        }
+        .btnGl,.btnRl{
+          position: absolute;
+          top: 15px;
+          font-size: 16px;
+          line-height: 40px;
+          height: 40px;
+        }
+        .btnGl{
+          width: 62px;
+          right: 20px;
+        }
+        .btnRl{
+          width: 100px;
+          right:20px;
+        }
+        &.two{
+          >div{
+            margin-right: 175px
+          }
+          .btnGl{
+            right:127px;
+          }
+        }
+      }
+    }
+    //点播段菜单
+    .thelist{
+      position: absolute;
+      right: 0;
+      top: 0;
+      -ms-transform:translateX(100%);
+      -webkit-transform:translateX(100%);
+      -moz-transform:translateX(100%);
+      transform:translateX(100%);
+      >li{
+        margin-top: 10px;
+        background: #28282c url(../../images/live/bg_thelistb.png) right top no-repeat;  
+        a{
+          display: block;
+          height: 21px;
+          padding: 9px 15px;
+          color:#999;
+        }
+        &.on{
+          a{color: #fff;}
+          background-image: url(../../images/live/bg_thelist.png);
+        }
+      }
+    }
+    @media (max-width:1200px) {
+      width: 880px;
+      height: 606px;
+      margin-top: -303px;
+      margin-left: -440px;
+      .teacher,.connect{
+        width: 398px;
+      }
+      .window,.talk{
+        width: 472px;
+      }
+      .connect{
+        background-position:  267px 2px;
+        padding: 80px 0 0 50px;
+      }
+    }
+  }  
+}
+
+
+//统计代码的bug
+#trans-tooltip,#tip-arrow-bottom,#tip-arrow-top{
+  position: absolute;
+  top: 0;
+}

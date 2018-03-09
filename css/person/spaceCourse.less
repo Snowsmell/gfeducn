@@ -1,0 +1,493 @@
+@import "../../css/commoncss/variable.less";
+//@import "/headfooter.less";
+
+body {
+	min-width: 1024px;
+	background-color: #f4f4f4;
+}
+// top start
+.sp_top {
+	font-size: 20px;
+	background-image: url("../../images/person/sp_top1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.sp_top_box {
+		max-width: 1200px;
+		padding: 2.5em 2em 2.5em 8em;
+		margin: 0 auto 1.5em;
+		box-sizing: border-box;
+		position: relative;
+
+		div {
+			width: 5em;
+			height: 5em;
+			.bdr(50%);
+			overflow: hidden;
+			margin-top: -2.5em;
+			position: absolute;
+			left: 2em;
+			top: 50%;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		h2 {
+			font-size: 1em;
+			color: #333;
+		}
+
+		p {
+			font-size: 0.8em;
+			color: #a09f9b;
+		}
+		.door{
+			position: absolute;
+			top:58px;
+			right: 25px;
+			display: inline-block;
+			vertical-align: middle;
+			background-color: #fcf8f7;
+			font-size: 14px;
+			border:1px solid #d55;
+			padding: 8px 18px;
+			.bdr(4px);
+			color: #666;
+			i{
+				margin-right: 5px;
+				color:#d55;
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+
+// 有课程页面
+// 主体 start
+.sp_main {
+	max-width: 1200px;
+	margin: auto;
+	font-size: 14px;
+	.cf();
+	// 左侧start
+	.sp_main_left {
+		width: 15%;
+		float: left;
+		background: #fff;
+		padding: 0.4em 0;
+
+		a {
+			display: block;
+			padding-left: 35%;
+			line-height: 2.8em;
+			box-sizing: border-box;
+
+			i {
+				margin-left: -1.2em;
+				margin-right: 0.2em;
+				font-size: 1.2em;
+				color: #d25454;
+			}
+		}
+
+		.sp_sel {
+			background: #e45050;
+			color: #fff;
+
+			i {
+				color: #fff;
+			}
+		}
+	}
+	// 右侧 start
+	.sp_main_right {
+		width: 83.333%;
+		float: right;
+		background: #fff;
+		padding: 0 25px 25px;
+		margin-bottom: 50px;
+		box-sizing: border-box;
+		ul {
+			border-bottom: 2px solid #efefef;
+			// padding-left: 0.8em;
+			box-sizing: border-box;
+
+			li {
+				display: inline-block;
+				color: #666;
+				margin-bottom: -2px;
+				border-bottom: 2px solid transparent;
+				padding: 1.3em 0.8em 1.1em;
+				cursor: pointer;
+			}
+
+			.sp_selected {
+				border-color: #e45050;
+				color: #dd5555;
+			}
+			&.line{
+				border-bottom: none;
+				li{
+					&:hover{
+						outline: 1px solid #eee;
+					}
+				}
+			}
+		}
+		.myclass-sel {
+		    // display: none;
+		    // border: 1px solid #efeeed;
+		    .cf();
+		    padding: 15px 0;
+		    dl {
+				line-height: 30px;
+				.cf();
+				margin: 10px auto;
+				dt {
+					float: left;
+					// width: 60px;
+					color: #666;
+					text-align: right;
+				}
+				dd{
+					word-break: break-all;
+					margin-left: 60px;
+					a{
+						padding: 0 10px;
+						background: #eee;
+						margin:0 5px;
+						.left;
+						&:hover{
+							color: #f08880;
+						}
+					}
+
+					a:hover,.active{
+						background: #f08880;
+						color: @cw;
+					}
+				}
+			}
+		}
+		.ctn-title {
+			.cf();
+			// line-height: 40px;
+			color: #999;
+			// position: relative;
+			.tleft {
+				float: left;
+				// padding-left: 20px;
+				cursor: pointer;
+				margin: 10px 0;
+
+				span {
+					color: #1c9bb9;
+				}
+			}
+			// .tright{
+			// 	float: right;
+			// 	label{
+		 //          color: @c6;
+		 //          margin-right: 10px;
+		 //          cursor: pointer;
+		 //          i{
+		 //            margin-right: 5px;
+		 //            margin-top: -1px;
+		 //            color: #f6f8f9;
+		 //            border:1px solid #ccc;
+		 //            background-color: #f6f8f9;
+		 //            .bdr(3px);
+		 //          }
+		 //          &.on{
+		 //              i{
+		 //              	color: #d55; 
+		 //              	// border-color:#d55; 
+		 //              	border: none;
+		 //              	background-color: #fff;
+		 //              }
+		 //          }
+		 //      	}
+			// }
+
+		}
+
+
+		table {
+			width: 100%;
+			border: 1px solid #eee;
+			margin-bottom: 20px;
+			background-color: #fafafa;
+			.hzp{
+				display: none;
+			}
+			&.zp{
+			 	position: relative;
+			 	.hzp{
+			 		display: block;
+					background: url(../../images/person/bg_zp_03.png) center repeat-x;
+					height: 55px;
+					width: 55px;
+					position: absolute;
+					left: 1px;
+					top:1px;
+				}
+			}
+			.tips{
+				position: relative;
+				.tip{
+					position: absolute;
+					top:0;
+					left: 0;
+					padding: 2px 5px;
+					background-color: #d55;
+					color:#fff;
+					font-size: 12px;
+					.bdr(3px);
+				}
+			}
+			&:hover{
+				border-color: #ddd;
+			}
+			tr {
+
+				td {
+					vertical-align: middle;
+					// border: 1px solid #ddd;
+					padding:20px;
+					.percentage{
+						margin-bottom: 20px;
+						p{
+							width: 100px;
+							height: 3px;
+							margin: 0 auto;
+							background: @cc;
+							span{
+								width: 10%;
+								height: 100%;
+								background: #3cb54c;
+								display: inherit;
+							}
+						}
+					}
+					a {
+						color: #999;
+					}
+					.learning,.before,.after{
+						width: 100px;
+						height: 33px;
+						line-height: 33px;
+						.tcenter();
+						border: 1px solid transparent;
+						display: inline-block;
+						border-radius: 3px;
+						background-color: transparent;
+						margin:5px;
+					}
+					.learning{
+						color: #2679bf;
+						border-color: #2679bf;
+						cursor: pointer;
+					}
+					.learning:hover{
+						background:#2679bf;
+						color: @cw;
+					}
+					.before{
+						color: #666;
+						border-color: #ccc;
+					}
+					.after{
+						color: #999;
+						border-color: #ccc;
+					}
+
+					&:nth-of-type(1) {
+						width: 76%;
+						.cf();
+
+						.sp_wraps {
+							width: 100%;
+							// padding: 10px 0 10px 10px;
+							float: left;
+							.cf();
+						}
+
+						.sp_title {
+							width: 70%;
+							// padding: 0 0 0 8.9em;
+							float: left;
+							box-sizing: border-box;
+							.cf();
+							position: relative;
+							div {
+								width: 135px;
+								height: 90px;
+								// margin-left: -8.1em;
+								float: left;
+								margin-right: 15px;
+
+								img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+							h5{
+								.f16();
+								color: @c6;
+							}
+							.time{
+								color: @c9;
+								.f14();
+								margin: 5px 0 20px 0
+							}
+							span{
+								color: @c6;
+								margin-right: 15px;
+								>img{
+									vertical-align: middle;
+									margin-right: 5px;
+								}
+								&.mians{color:#da7315;}
+								&.zaix{color:#d32a29;}
+								&.zhib{color:#4172b8;}
+								&.bottom{
+									position: absolute;
+									bottom: 0;
+									color:#999;
+								}
+							}
+							a{
+								line-height: 16px;
+								margin-right: 22px;
+								color: @c6;
+								img{
+									vertical-align: middle;
+									margin-right: 4px;
+									margin-bottom: 4px;
+								}
+							}
+						}
+
+					}
+
+					&:nth-of-type(2) {
+						width: 24%;
+						padding: 20px 0;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.pages {
+			margin: 40px auto 0;
+			text-align: center;
+
+			.pagesword {
+				display: inline-block;
+				color: @c6;
+			}
+
+			.page {
+				display: inline-block;
+				.cf();
+
+				.next,
+				.prev {
+					i {
+						font-size: 18px;
+					}
+				}
+
+				i {
+					color: @c9;
+				}
+
+				a,
+				span {
+					background-color: #fafafa;
+					cursor: pointer;
+					padding: 6px 14px;
+					margin: 0 5px;
+					color: @c6;
+
+					&.selected {
+						background-color: #df5555;
+						color: @cw;
+					}
+				}
+
+				span{
+					i{
+						color: #df5555;
+					}
+					&.nolink{
+						i{
+							color: @c9;
+						}
+					}
+				}
+			}
+		}
+
+
+		.sp_ulSel{
+			display: none;
+			// &:nth-of-type(1){
+			// 	display: block;
+			// }
+		}
+
+		.sp_sale{
+			display: block;
+			table{
+				tr td{
+					.sp_quantity{
+						padding-top: 0.5em;
+					}
+					&:nth-of-type(2){
+						div p span{
+							color: #dd5555;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// 没有课程页面
+.icon-uniF105:before {
+  content: "\f022";
+}
+.courseList{
+	.tcenter;
+	padding: 75px 0 100px 0;
+	border: 1px solid #eee;
+	margin-bottom: 15px;
+	background-color: #F9FAFB;
+	p{
+		margin: 20px 0 5px 0;
+	}
+	a{
+		.f14();
+		color: #3f7cb2;
+		span{
+			color: #a6a7a9;
+			margin-left: 5px;
+			.f18();
+		}
+	}
+}
+
+.cred{
+	color:#d32a29;
+}
+.cgray{
+	color:@c9;
+}

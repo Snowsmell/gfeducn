@@ -1,0 +1,54 @@
+var maxstrlen = 1000;
+   function Q(s) { return document.getElementById(s); }
+
+   function checkWord(c) {
+     $(".signName").siblings().hide()
+    //  alert(111)
+      //  len = maxstrlen;
+      //  var str = c.value;
+      //  myLen = getStrleng(str);
+      //  var wck = Q("wordCheck");
+       //
+      //  if (myLen > len * 2) {
+      //      c.value = str.substring(0, i + 1);
+      //  }
+      //  else {
+      //      wck.innerHTML = (Math.floor(myLen / 2));
+      //  }
+   }
+
+   function getStrleng(str) {
+       myLen = 0;
+       i = 0;
+       for (; (i < str.length) && (myLen <= maxstrlen * 2); i++) {
+           if (str.charCodeAt(i) > 0 && str.charCodeAt(i) < 128)
+               myLen++;
+           else
+               myLen += 2;
+       }
+       return myLen;
+   }
+   $(function(){
+         $(".dug-toggle").toggle(function(){
+            $(this).parents().siblings(".itmli .drug-text").attr("style","max-height:100%");
+            $(this).html("收起<span>&#xf062;</span>");
+        }, function () {
+            $(this).parents().siblings(".itmli .drug-text").attr("style","max-height:72px");
+            $(this).html("点击展开<span>&#xf062;</span>");
+        });
+        // $(this).toggle(function(){
+        //   $(this).css("background-color","#EE7A39");
+        // },function(){
+        //   $(this).css("background-color","#609FFF");
+        // });
+        $(".itmli .drug-text").each(function() {
+            var thisText = $(this);
+            if (thisText.height()>70) {
+                thisText.siblings(".itmli toggleOpen").show();
+            }
+        })
+   })
+   function closeModel(){
+    //  alert(333)
+     $(".model").hide();
+   }

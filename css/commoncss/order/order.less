@@ -1,0 +1,57 @@
+@import url(../variable.less);
+
+@cf1:#419f45;//绿色
+@cf2:#2679bd;//蓝色
+@cf3:#f5a623;//橙色
+@cm0:#d55;//主色红
+
+.btn{
+  display: inline-block;
+  border: none;
+  padding: 10px 28px;
+  .bdr(2px);
+  color:#FFF;
+  &:hover{
+    color: #fff;
+  }
+}
+.btnG{
+  .btn();
+  background-color: @cf1;
+  &:hover{
+    background-color: @cf1 - 10;
+  }
+}
+.btnR{
+  .btn();
+  background-color: @cm0;
+  &:hover{
+    background-color: @cm0 - 10;
+  }
+}
+.btnO{
+  .btn();
+  background-color: @cf3;
+  &:hover{
+    background-color: @cf3 - 10;
+  }
+}
+.ubtn{
+  .btn();
+  background-color: #ddd;
+  color: #999;
+  &:hover{
+    color: #999;
+  }
+}
+.btnB0{
+  display: inline-block;
+  border: 1px solid @cf2;
+  padding: 8px 20px;
+  .bdr(4px);
+  color:@cf2;
+  &:hover{
+    background-color: @cf2;
+    color: #fff;
+  }
+}
